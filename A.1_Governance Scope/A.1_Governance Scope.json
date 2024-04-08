@@ -1,4 +1,3 @@
-
 {
     "A.0": {
         "Name": "Atlas Preamble",
@@ -2255,7 +2254,7 @@
     "A.1.5": {
         "Name": "Aligned Voter Committees (AVCs)",
         "Version": 1,
-        "Type": "Section",
+        "Type": "Article",
         "Components": {
             "Content": "AVC are standardized Voter Committees made up of Alignment Conservers that hold MKR and participate in the Maker Governance process as actors that are deeply aligned with MKR holders. They are subject to specific requirements, and receive various benefits, resources, and support from the Support Scope. They have significant formal powers, but no direct physical power, making them well-suited to be in control and making key decisions during normal conditions.\n AVCs focus on making sure that the day-to-day Letter of the Rules of the Atlas are aligned with the Spirit of the Atlas. The AVCs impact on Maker Governance is to make marginal improvements to the Adaptive Documents of the Atlas that strengthen them. As AVCs make detailed Universal Alignment interpretations, they must all follow a particular Strategic Perspective that informs their subjective definition of Universal Alignment."
         },
