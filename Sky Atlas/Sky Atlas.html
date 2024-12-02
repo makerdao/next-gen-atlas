@@ -530,10 +530,28 @@
           </td>
           <td>Emissions</td>
           <td>Article</td>
-          <td>This Article governs the emissions of SKY and Star tokens for various tokenomics and bootstrapping
-            reasons. For the reward mechanisms that are multichain, the rate of distribution is balanced across
-            each SkyLink destination deployment to attempt to target an equal Reward Rate per supplied USDS or
-            Activated token.</td>
+          <td>This Article governs the emissions of Star tokens. For the reward mechanisms that are multichain, 
+            the rate of distribution is balanced across each SkyLink destination deployment to attempt to target 
+            an equal Reward Rate per supplied USDS or Activated SKY.<br>Star Token Emissions:<br>The genesis 
+            emissions of Star Tokens happens over a period of 10 years, with half of the emissions happening in 
+            the first 2 years, and the emission rate halving every 2 years from then on. The Star Token genesis 
+            emissions are split across 3 types of recipients: USDS holders, SKY holders that Activate (no exit 
+            fee) and SKY holders that Seal (locks the SKY behind an exit fee). Each type of recipient share the 
+            total Star Token emission rate among their own type.<br>Year 1 and 2:<br>Total: 2 billion Star 
+            Tokens/year.<br>USDS Token Rewards: 1.4 billion Star Tokens/year.<br>SKY Activation Rewards: 300 million 
+            Star Tokens/year.<br>SKY Seal Rewards: 300 million Star Tokens/year.<br>Year 3 and 4:<br>Total: 1 
+            billion Star Tokens/year.<br>USDS Token Rewards: 700 million Star Tokens/year.<br>SKY Activation 
+            Rewards: 150 million Star Tokens/year.<br>SKY Seal Rewards: 150 million Star Tokens/year.<br>Year 5 
+            and 6:<br>Total: 500 million Star Tokens/year.<br>USDS Token Rewards: 350 million Star Tokens/year.<br>
+            SKY Activation Rewards: 75 million Star Tokens/year.<br>SKY Seal Rewards: 75 million Star Tokens/year.<br>
+            Year 7, 8, 9 and 10:<br>Total: 250 million Star Tokens/year.<br>USDS Token Rewards: 175 million Star 
+            Tokens/year.<br>SKY Activation Rewards: 37.5 million Star Tokens/year.<br>SKY Seal Rewards: 37.5 million 
+            Star Tokens/year.<br>Bootstrapping emissions:<br>Contributor token grants: 1 billion Star Tokens.<br>
+            Contributor token grants are managed by Star governance controlled processes, subject to milestones and 
+            performance deliverables.<br>Liquidity bootstrapping: 1 billion Star Tokens.<br>Liquidity bootstrapping 
+            tokens are managed by Star governance controlled processes, subject to transparency and reporting of what 
+            is happening with the assets. After a finite period of time the liquidity bootstrapping program must be 
+            wound down and all remaining assets from the program must be returned to Star control.</td>
         </tr>
         <tr>
           <td>
@@ -7051,7 +7069,7 @@
           </td>
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</td>
           <td>Section</td>
-          <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 60m (Threshold of Surplus buffer for Splitter to activate)•
+          <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 120m (Threshold of Surplus buffer for Splitter to activate)•
               Estimated Net protocol Income: 100,765,523• 50% of estimated net protocol income is sent to Splitter: 50,382,762 (for SBE and 
               Seal Module, remaining 50% is accumulated in Surplus Buffer). This value must be regularly updated through an executive vote to 
               continue to target 50% of the estimated net protocol income.• vow.bump: 25,000 DAI• splitter.hop: 15,649 seconds• 70% of 
@@ -8176,7 +8194,7 @@
           </td>
           <td>Measures For Endgame Transition - SparkLend Risk Parameters - WBTC Risk Parameters</td>
           <td>Core</td>
-          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 65%* E-mode Category: N/A•
+          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 70%* E-mode Category: N/A•
             Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automater• Borrow Cap: Set by cap
             automater• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope
             2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated
@@ -8245,6 +8263,32 @@
             Liquidation Bonus: 7%• Reserve Factor: 15%• Supply Cap: Set by cap automater• Borrow Cap: Set by cap
             automater• Optimal Utilization: 45%• Isolated Debt Ceiling: N/A• Base Rate: 0.25%• Slope 1: 7%•
             Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No•
+            Isolated Borrowing: No• Siloed Borrowing: No</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - SparkLend Risk Parameters - cbBTC Risk Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - SparkLend Risk Parameters - cbBTC Risk Parameters</td>
+          <td>Core</td>
+          <td>The current cbBTC risk parameters are:• LTV: 65%• Liquidation Threshold: 70%• E-mode Category: N/A
+            • Liquidation Bonus: 8%• Reserve Factor: 20%• Supply Cap: 500 cbBTC• Borrow Cap: 50 cbBTC
+            • Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 4%
+            • Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No•
+            Isolated Borrowing: No• Siloed Borrowing: No</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - SparkLend Risk Parameters - sUSDS Risk Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - SparkLend Risk Parameters - sUSDS Risk Parameters</td>
+          <td>Core</td>
+          <td>The current sUSDS risk parameters are:• LTV: 79%• Liquidation Threshold: 80%• E-mode Category: N/A
+            • Liquidation Bonus: 5%• Reserve Factor: 10%• Supply Cap: 50,000,000 sUSDS• Borrow Cap: 0 sUSDS
+            • Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%
+            • Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No•
             Isolated Borrowing: No• Siloed Borrowing: No</td>
         </tr>
         <tr>
@@ -8366,8 +8410,8 @@
           </td>
           <td>Measures For Endgame Transition - SparkLend Risk Parameters - Cap Automator WBTC Parameters</td>
           <td>Core</td>
-          <td>The current WBTC cap automator parameters are:• Supply cap ◦ gap: 500 WBTC ◦ ttl: 12 hours ◦ max:
-            5,000 WBTC• Borrow cap ◦ gap: 100 WBTC ◦ ttl: 12 hours ◦ max: 2,000 WBTC</td>
+          <td>The current WBTC cap automator parameters are:• Supply cap ◦ gap: 200 WBTC ◦ ttl: 12 hours ◦ max:
+            5,000 WBTC• Borrow cap ◦ gap: 1 WBTC ◦ ttl: 12 hours ◦ max: 1 WBTC</td>
         </tr>
         <tr>
           <td>
@@ -8402,6 +8446,28 @@
           <td>Core</td>
           <td>The current USDT cap automator parameters are:• Supply cap ◦ gap: n/a ◦ ttl: n/a ◦ max: 30 million
             USDT• Borrow cap ◦ gap: 3 million USDT ◦ ttl: 12 hours ◦ max: 28.5 million USDT</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - SparkLend Risk Parameters - Cap Automator cbBTC
+              Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - SparkLend Risk Parameters - Cap Automator cbBTC Parameters</td>
+          <td>Core</td>
+          <td>The current cbBTC cap automator parameters are:• Supply cap ◦ gap: 500 cbBTC ◦ ttl: 12 hours ◦ max: 3,000 cbBTC
+          • Borrow cap ◦ gap: 50 cbBTC ◦ ttl: 12 hours ◦ max: 500 cbBTC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - SparkLend Risk Parameters - Cap Automator sUSDS
+              Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - SparkLend Risk Parameters - Cap Automator sUSDS Parameters</td>
+          <td>Core</td>
+          <td>The current sUSDS cap automator parameters are:• Supply cap ◦ gap: 50 million sUSDS ◦ ttl: 12 hours ◦ max: 500 million sUSDS
+            • Borrow cap ◦ gap: N/A ◦ ttl: N/A ◦ max: N/A</td>
         </tr>
         <tr>
           <td>
@@ -8591,80 +8657,6 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.5
-              - Emissions - SKY Emissions - Total Emissions</dfn>
-          </td>
-          <td>Emissions - SKY Emissions - Total Emissions</td>
-          <td>Section</td>
-          <td>SKY emissions take place through two mechanisms, USDS Token Rewards and Star Token Activation.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - SKY Emissions - USDS Rewards</dfn>
-          </td>
-          <td>Emissions - SKY Emissions - USDS Rewards</td>
-          <td>Section</td>
-          <td>600 million SKY are emitted per year to be distributed through the USDS Token Reward Mechanism.
-            Every time a new Star is launched and begins its SKY Star Token Activation Rewards, the SKY USDS
-            Token Reward amount is reduced by an amount equivalent to the newly added rewards.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - SKY Emissions - Star Token Activation Rewards</dfn>
-          </td>
-          <td>Emissions - SKY Emissions - Star Token Activation Rewards</td>
-          <td>Section</td>
-          <td>Every Star that launches, starting with Spark, will offer Star Token Activation Rewards in SKY at a
-            rate of 80 million SKY per year. Whenever a Star launches, the SKY USDS Token Reward rate is reduced
-            by 80m SKY per year.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - Star Emissions - Total Emissions</dfn>
-          </td>
-          <td>Emissions - Star Emissions - Total Emissions</td>
-          <td>Section</td>
-          <td>Every Star distributes a total of 4.9 billion Star tokens as its genesis emissions, used for Token
-            Rewards, Contributor Bonuses, and other bootstrapping uses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - Star Emissions - USDS Rewards</dfn>
-          </td>
-          <td>Emissions - Star Emissions - USDS Rewards</td>
-          <td>Section</td>
-          <td>Every Star distributes a total of 2.8 billion Star tokens to USDS holders receiving Token Rewards.
-            The rate is 700 million Star tokens per year for the first 2 years; 350 million per year from year
-            3-4; 175 million per year from year 5-6; and 87.5 million per year from year 7-10.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - Star Emissions - SKY Activation Rewards</dfn>
-          </td>
-          <td>Emissions - Star Emissions - SKY Activation Rewards</td>
-          <td>Section</td>
-          <td>Every Star distributes a total of 600 million Star tokens to Activated SKY holders. The rate is 150
-            million Star tokens per year for the first 2 years; 75 million per year from year 3-4; 37.5 million
-            per year from year 5-6; and 18.75 million per year from year 7-10.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.5
-              - Emissions - Star Emissions - SKY Seal Rewards</dfn>
-          </td>
-          <td>Emissions - Star Emissions - SKY Seal Rewards</td>
-          <td>Section</td>
-          <td>Every Star distributes a total of 600 million Star tokens to Sealed SKY holders. The rate is 150
-            million Star tokens per year for the first 2 years; 75 million per year from year 3-4; 37.5 million
-            per year from year 5-6; and 18.75 million per year from year 7-10.</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>A.5.2
               - A1 - Brand Identity</dfn>
           </td>
@@ -8824,7 +8816,7 @@
             Integration Boost can also be delivered to other forms of DeFi protocols than Lending Protocols, as
             long as there is a reasonable equivalence in how the integration boost helps grow USDS adoption.<br>
             The Integration Boost is delivered through a multisig that the Accessibility Facilitator can request
-            to have topped up to 2 million USDS through Executive Votes whenever necessary to ensure the
+            to have topped up to 3 million USDS through Executive Votes whenever necessary to ensure the
             Integration Boost is delivered successfully.<br> Since the Integration Boost is delivered with a lag,
             for strategic integrations, the Accessibility Facilitator may choose to provide an extra high
             Integration Boost, to encourage rapid adoption and prevent the Integration Boost value from getting
@@ -8982,7 +8974,7 @@
           </td>
           <td>Location Resilience - Limited Filtering Of Features & IPs - Flagged IPs</td>
           <td>Core</td>
-          <td>User IPs flagged for limited filtering are:• USA• United Kingdom• VPN users</td>
+          <td>Frontends must develop internal processes to determine their strategy for limited filtering, to ensure optimal balance of resilience and accessibility.</td>
         </tr>
         <tr>
           <td>
@@ -9180,7 +9172,7 @@
           </td>
           <td>Launch Project - Budget - Amount</td>
           <td>Core</td>
-          <td>Initial one-time budget for the Launch Project:• 60,000,000 USDS• 240,000,000 SKY - The SKY can at
+          <td>Initial one-time budget for the Launch Project:• 80,000,000 USDS• 360,000,000 SKY - The SKY can at
             most be spent at the rate of 48,000,000 SKY per month.</td>
         </tr>
         <tr>
@@ -9218,7 +9210,7 @@
           </td>
           <td>Launch Project - Sky Ecosystem Liquidity Bootstrapping</td>
           <td>Core</td>
-          <td>The Accessibility Facilitators must work with advisors and Ecosystem Actors to implement a liquidity bootstrapping program using 10 million USDS and 320 million SKY. The assets must be provided through an Executive Vote immediately, and the value of the assets must be returned to the Sky Protocol after the bootstrapping phase is over.
+          <td>The Accessibility Facilitators must work with advisors and Ecosystem Actors to implement a liquidity bootstrapping program using up to 20 million USDS and 320 million SKY. These assets can be used for liquidity programs, or for liquidity infrastructure integration costs. Anything leftover from usage in liquidity programs must be returned to Sky control at the end of the bootstrapping program.<br>The funds can be paid into multisig accounts for future use via executive votes at will by the Accessibility Facilitators.
           </td>
         </tr>
       </tbody>
@@ -12182,13 +12174,7 @@
             ------------------------------------------------------------------------------------------------------------------------------------------------------------------
             |
             ------------------------------------------------------------------------------------------------------------------------------------------------------------------
-            | --------------------------------------------------------------------------------- || vigilant | <a
-              href="https://etherscan.io/address/0x2474937cB55500601BCCE9f4cb0A0A72Dc226F61">https://etherscan.io/address/0x2474937cB55500601BCCE9f4cb0A0A72Dc226F61</a>
-            <a href="https://etherscan.io/verifySig/16682">https://etherscan.io/verifySig/16682</a> | <a
-              href="https://etherscan.io/address/0xDE08aEf2b221274231b3547491ec8f0Fc80917e1">https://etherscan.io/address/0xDE08aEf2b221274231b3547491ec8f0Fc80917e1</a>
-            <a href="https://etherscan.io/verifySig/255532">https://etherscan.io/verifySig/255532</a> | <a
-              href="https://forum.makerdao.com/t/cd-recognition-submission-vigilant/20457">https://forum.makerdao.com/t/cd-recognition-submission-vigilant/20457</a>
-            || QGov | <a
+            | --------------------------------------------------------------------------------- || QGov | <a
               href="https://etherscan.io/address/0xB0524D8707F76c681901b782372EbeD2d4bA28a6">https://etherscan.io/address/0xB0524D8707F76c681901b782372EbeD2d4bA28a6</a>
             <a href="https://etherscan.io/verifySig/16763">https://etherscan.io/verifySig/16763</a> | <a
               href="https://etherscan.io/address/0x0a907fe3adb890db7db27a7f21e188a4127b2e7c">https://etherscan.io/address/0x0a907fe3adb890db7db27a7f21e188a4127b2e7c</a>
@@ -12197,14 +12183,14 @@
             || Bonapublica | <a
               href="https://etherscan.io/address/0x167c1a762B08D7e78dbF8f24e5C3f1Ab415021D3">https://etherscan.io/address/0x167c1a762B08D7e78dbF8f24e5C3f1Ab415021D3</a>
             <a href="https://etherscan.io/verifySig/21271">https://etherscan.io/verifySig/21271</a> | <a
-              href="https://etherscan.io/address/0x452a7626f587d6811509dC071768168ea763EA3C">https://etherscan.io/address/0x452a7626f587d6811509dC071768168ea763EA3C</a>
-            <a href="https://etherscan.io/verifySig/39656">https://etherscan.io/verifySig/39656</a> | <a
+              href="https://etherscan.io/address/0xf1423F5A97940349E105B0D1C860D3dCE87E56dB">https://etherscan.io/address/0xf1423F5A97940349E105B0D1C860D3dCE87E56dB</a>
+            <a href="https://etherscan.io/verifySig/259048">https://etherscan.io/verifySig/259048</a> | <a
               href="https://forum.makerdao.com/t/bonapublica-aligned-delegate-communication/20451/90">https://forum.makerdao.com/t/bonapublica-aligned-delegate-communication/20451/90</a>
             || PBG | <a
               href="https://etherscan.io/address/0x8D4df847dB7FfE0B46AF084fE031F7691C6478c2">https://etherscan.io/address/0x8D4df847dB7FfE0B46AF084fE031F7691C6478c2</a>
             <a href="https://etherscan.io/verifySig/16773">https://etherscan.io/verifySig/16773</a> | <a
-              href="https://etherscan.io/address/0xEb1764CC9577c52f430794E9044F64F1C49Dd395">https://etherscan.io/address/0xEb1764CC9577c52f430794E9044F64F1C49Dd395</a>
-            <a href="https://etherscan.io/verifySig/40131">https://etherscan.io/verifySig/40131</a> | <a
+              href="https://etherscan.io/address/0xCFE1c10B90dC49A063742b6eb29D1bDc7e722aa2">https://etherscan.io/address/0xCFE1c10B90dC49A063742b6eb29D1bDc7e722aa2</a>
+            <a href="https://etherscan.io/verifySig/259576">https://etherscan.io/verifySig/259576</a> | <a
               href="https://forum.makerdao.com/t/pbg-aligned-delegate-communication-platform/20471/69">https://forum.makerdao.com/t/pbg-aligned-delegate-communication-platform/20471/69</a>
             || Pf | <a
               href="https://etherscan.io/address/0x94A388BEC0769c3394A48dB4DaBE5F29994100B3">https://etherscan.io/address/0x94A388BEC0769c3394A48dB4DaBE5F29994100B3</a>
@@ -12215,8 +12201,8 @@
             || UPMaker | <a
               href="https://etherscan.io/address/0xbb819df169670dc71a16f58f55956fe642cc6bcd">https://etherscan.io/address/0xbb819df169670dc71a16f58f55956fe642cc6bcd</a>
             <a href="https://etherscan.io/verifySig/16997">https://etherscan.io/verifySig/16997</a> | <a
-              href="https://etherscan.io/address/0xc9C17EE58810172622b43B09C9C9FF31e50f5179">https://etherscan.io/address/0xc9C17EE58810172622b43B09C9C9FF31e50f5179</a>
-            <a href="https://etherscan.io/verifySig/38947">https://etherscan.io/verifySig/38947</a> | <a
+              href="https://etherscan.io/address/0xe0e9882012ecbcfec5e1fa04102b07185dfdeab7">https://etherscan.io/address/0xe0e9882012ecbcfec5e1fa04102b07185dfdeab7</a>
+            <a href="https://etherscan.io/verifySig/259652">https://etherscan.io/verifySig/259652</a> | <a
               href="https://forum.makerdao.com/t/upmaker-cd-recognition-submission/20577">https://forum.makerdao.com/t/upmaker-cd-recognition-submission/20577</a>
             || WBC | <a
               href="https://etherscan.io/address/0xeBcE83e491947aDB1396Ee7E55d3c81414fB0D47">https://etherscan.io/address/0xeBcE83e491947aDB1396Ee7E55d3c81414fB0D47</a>
@@ -12227,8 +12213,8 @@
             || BLUE | <a
               href="https://etherscan.io/address/0xb6c09680d822f162449cdfb8248a7d3fc26ec9bf">https://etherscan.io/address/0xb6c09680d822f162449cdfb8248a7d3fc26ec9bf</a>
             <a href="https://etherscan.io/verifySig/19057">https://etherscan.io/verifySig/19057</a> | <a
-              href="https://etherscan.io/address/0xb18680092734394295d0591bb42f2bd3c184517e">https://etherscan.io/address/0xb18680092734394295d0591bb42f2bd3c184517e</a>
-            <a href="https://etherscan.io/verifySig/25260">https://etherscan.io/verifySig/25260</a> | <a
+              href="https://etherscan.io/address/0xe1FF7ECf038900dd14A1E7E3a8CCF23f71f6A1c2">https://etherscan.io/address/0xe1FF7ECf038900dd14A1E7E3a8CCF23f71f6A1c2</a>
+            <a href="https://etherscan.io/verifySig/258998">https://etherscan.io/verifySig/258998</a> | <a
               href="https://forum.makerdao.com/t/blue-ad-recognition-submission/20915">https://forum.makerdao.com/t/blue-ad-recognition-submission/20915</a>
             || JAG | <a
               href="https://etherscan.io/address/0x58d1ec57e4294e4fe650d1cb12b96ae34349556f">https://etherscan.io/address/0x58d1ec57e4294e4fe650d1cb12b96ae34349556f</a>
@@ -12247,8 +12233,8 @@
             || Cloaky | <a
               href="https://etherscan.io/address/0x869b6d5d8FA7f4FFdaCA4D23FFE0735c5eD1F818">https://etherscan.io/address/0x869b6d5d8FA7f4FFdaCA4D23FFE0735c5eD1F818</a>
             <a href="https://etherscan.io/verifySig/19712">https://etherscan.io/verifySig/19712</a> | <a
-              href="https://etherscan.io/address/0x24419b100Bd4f5C581c0AA89A274fcfB5B3915a8">https://etherscan.io/address/0x24419b100Bd4f5C581c0AA89A274fcfB5B3915a8</a>
-            <a href="https://etherscan.io/verifySig/250883">https://etherscan.io/verifySig/250883</a> | <a
+              href="https://etherscan.io/address/0xB02e05c257291aCD65A527227aCA6b7662E047f4">https://etherscan.io/address/0xB02e05c257291aCD65A527227aCA6b7662E047f4</a>
+            <a href="https://etherscan.io/verifySig/258809">https://etherscan.io/verifySig/258809</a> | <a
               href="https://forum.makerdao.com/t/cloaky-ad-recognition-submission/21082">https://forum.makerdao.com/t/cloaky-ad-recognition-submission/21082</a>
             || Penguin Soldier | <a
               href="https://etherscan.io/address/0x41caF770eb0a9EeC0c9cC46F388ea5A76986E217">https://etherscan.io/address/0x41caF770eb0a9EeC0c9cC46F388ea5A76986E217</a>
@@ -12277,8 +12263,8 @@
             || Byteron | <a
               href="https://etherscan.io/address/0xc2982e72D060cab2387Dba96b846acb8c96EfF66">https://etherscan.io/address/0xc2982e72D060cab2387Dba96b846acb8c96EfF66</a>
             <a href="https://etherscan.io/verifySig/27074">https://etherscan.io/verifySig/27074</a> | <a
-              href="https://etherscan.io/address/0xa346C2EEa05bB32c986FF755b2F19d2f0ba8d14C">https://etherscan.io/address/0xa346C2EEa05bB32c986FF755b2F19d2f0ba8d14C</a>
-            <a href="https://etherscan.io/verifySig/27073">https://etherscan.io/verifySig/27073</a> | <a
+              href="https://etherscan.io/address/0x6276e3d47cce873400d4ba3664bfb4b9c8ece79c">https://etherscan.io/address/0x6276e3d47cce873400d4ba3664bfb4b9c8ece79c</a>
+            <a href="https://etherscan.io/verifySig/259643">https://etherscan.io/verifySig/259643</a> | <a
               href="https://forum.makerdao.com/t/byteron-ad-recognition-submission/22537">https://forum.makerdao.com/t/byteron-ad-recognition-submission/22537</a>
             || Shanah | <a
               href="https://etherscan.io/address/0xc9a0D0b89A74F7D9F229F9195c7fD7f7E09C127E">https://etherscan.io/address/0xc9a0D0b89A74F7D9F229F9195c7fD7f7E09C127E</a>
@@ -12299,8 +12285,8 @@
             || JuliaChang | <a
               href="https://etherscan.io/address/0x252abAEe2F4f4b8D39E5F12b163eDFb7fac7AED7">https://etherscan.io/address/0x252abAEe2F4f4b8D39E5F12b163eDFb7fac7AED7</a>
             <a href="https://etherscan.io/verifySig/34622">https://etherscan.io/verifySig/34622</a> | <a
-              href="https://etherscan.io/address/0x7938b304F1c28e85b6A021251C8CeefF20370f38">https://etherscan.io/address/0x7938b304F1c28e85b6A021251C8CeefF20370f38</a>
-            <a href="https://etherscan.io/verifySig/34620">https://etherscan.io/verifySig/34620</a> | <a
+              href="https://etherscan.io/address/0x5D4a96aFadb5505a8fF21ddeCa2Baf3A63301396">https://etherscan.io/address/0x5D4a96aFadb5505a8fF21ddeCa2Baf3A63301396</a>
+            <a href="hhttps://etherscan.io/verifySig/259101">https://etherscan.io/verifySig/259101</a> | <a
               href="https://forum.makerdao.com/t/juliachang-ad-recognition-submission/23507">https://forum.makerdao.com/t/juliachang-ad-recognition-submission/23507</a>
             || StoneWill | <a
               href="https://etherscan.io/address/0x72779c76bcC8DF6B7082f736f2C2BFba2db588f3">https://etherscan.io/address/0x72779c76bcC8DF6B7082f736f2C2BFba2db588f3</a>
@@ -12462,7 +12448,7 @@
           </td>
           <td>Launch Project - Budget - Current Remaining Amount</td>
           <td>Active Data</td>
-          <td>Remaining available one-time budget for the Launch Project:• 10,334,788.99 USDS• 73,752,000 SKY -
+          <td>Remaining available one-time budget for the Launch Project:• 20,474,140 USDS• 6,336,000 SKY -
             The SKY can at most be spent at the rate of 48,000,000 SKY per month.</td>
         </tr>
       </tbody>
