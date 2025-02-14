@@ -472,14 +472,6 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.8</dfn>
-          </td>
-          <td>Sealing USDS Generation Risk Parameters</td>
-          <td>Article</td>
-          <td>This Article manages Sealing USDS Generation and its parameters.</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>A.3.9</dfn>
           </td>
           <td>Measures For Endgame Transition</td>
@@ -2158,7 +2150,7 @@
           </td>
           <td>Aligned Delegates - Budget And Participation Requirements - Voting-Communication Metrics</td>
           <td>Section</td>
-          <td>TThe budget stream allocated to a Prime Delegate (PD) is modified based on their voting-communication
+          <td>The budget stream allocated to a Prime Delegate (PD) is modified based on their voting-communication
              metrics over the past six (6) months. An AD is required to provide an explanation for each vote they 
              participate in. This budget modification takes into account the Prime Delegate’s fulfillment of this 
              voting-communication requirement in all votes they are eligible to cast as an Aligned Delegate (AD).
@@ -3579,42 +3571,12 @@
         <tr>
           <td>
             <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Global Standby Spells</dfn>
-          </td>
-          <td>Sky Core Governance Security - Emergency Spells - Global Standby Spells</td>
-          <td>Core</td>
-          <td>The subdocuments herein define currently available global Standby Spells. Global Standby Spell contracts are spells in 
-            themselves and are thus reusable; beyond the initial deployment of the contract, no further deployment is needed. Global 
-            Standby Spells differ from multi-collateral Standby Spells in that the former operates on the Protocol globally and not 
-            on some set of collaterals.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - SplitterStopSpell</dfn>
-          </td>
-          <td>Sky Core Governance Security - Emergency Spells - SplitterStopSpell</td>
-          <td>Core</td>
-          <td>This Standby Spell can be used in an emergency to disable the Smart Burn Engine.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.1.9
               - Sky Core Governance Security - Emergency Spells - Single-Collateral Standby Spells</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Single-Collateral Standby Spells</td>
           <td>Core</td>
           <td>The subdocuments herein define currently available single-collateral Standby Spells. For each instance of use, 
             single-collateral Standby Spell contracts require a transaction to deploy the Standby Spell from a factory.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - SingleLitePsmHaltFactory</dfn>
-          </td>
-          <td>Sky Core Governance Security - Emergency Spells - SingleLitePsmHaltFactory</td>
-          <td>Core</td>
-          <td>This Standby Spell can be used in an emergency to halt a LitePSM completely.</td>
         </tr>
         <tr>
           <td>
@@ -3639,6 +3601,15 @@
               compromised protocol, the Emergency Spell can prevent additional exposure.</td>
         </tr>
         <tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Emergency Spells - SingleLitePsmHaltFactory</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - SingleLitePsmHaltFactory</td>
+          <td>Core</td>
+          <td>This Standby Spell can be used in an emergency to halt a LitePSM completely.</td>
+        </tr>
           <td>
             <dfn>A.1.9
               - Sky Core Governance Security - Emergency Spells - Grouped Standby Spells</dfn>
@@ -3709,6 +3680,27 @@
           <td>Core</td>
           <td>This Standby Spell will freeze all OSMs. If the oracle price provider fails for any reason, Governance can act before the 
               OSM registers the next price; this allows for the problem to be fixed with no impact on the system.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Emergency Spells - Global Standby Spells</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Global Standby Spells</td>
+          <td>Core</td>
+          <td>The subdocuments herein define currently available global Standby Spells. Global Standby Spell contracts are spells in 
+            themselves and are thus reusable; beyond the initial deployment of the contract, no further deployment is needed. Global 
+            Standby Spells differ from multi-collateral Standby Spells in that the former operates on the Protocol globally and not 
+            on some set of collaterals.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Emergency Spells - SplitterStopSpell</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - SplitterStopSpell</td>
+          <td>Core</td>
+          <td>This Standby Spell can be used in an emergency to disable the Smart Burn Engine.</td>
         </tr>
         <tr>
           <td>
@@ -12789,6 +12781,64 @@
         </tr>
         <tr>
           <td>
+            <dfn>Operational
+              Security Protocols - Research Track</dfn>
+          </td>
+          <td>Operational Security Protocols Research Track</td>
+          <td>Needed Research</td>
+          <td>
+            Governance Facilitators may not have the needed experience and skills to adjudicate matters
+            involving operational security best practices. See Endgame Edge Governance Facilitator team Forum
+            post (<a
+              href="https://forum.makerdao.com/t/ads-derecognition-due-to-operational-security-breach/22532#proposal-for-community-discussion-2">https://forum.makerdao.com/t/ads-derecognition-due-to-operational-security-breach/22532#proposal-for-community-discussion-2</a>)
+            on AD derecognition: "The DAO could hire a security advisor firm/consultant as a Scope Advisor.
+            (This could fall under the Governance Scope and its requirement for Governance Security processes.)
+            Their task would be to thoroughly analyze the security needs and risks of the Alignment Conservers
+            and develop ever-evolving Operational Security "Best Practices."With an explicit framework of
+            agreed-upon Best Practices, all anon Alignment Conservers have a known target to meet. Further, the
+            existence of an objective framework of Best Practices equips the Governance Facilitators to easily
+            determine when a breach of opsec best practice has occurred. The explicit framework removes the risk
+            of the Facilitators inappropriately inserting subjective bias into the decisionmaking process.The
+            Security Scope Advisor could also assist in reviewing an informant's evidence to evaluate its
+            validity/quality. The Security Scope Advisor could ensure that the methods used by the informant to
+            secure the evidence were ethical. (All communications, evidence and data shared with the Security
+            Scope Advisor would be under confidentiality protection). Finally, such an Advisor would have
+            specialized expertise in opsec and associated matters that Governance Facilitators lack."This Needed
+            Research is an extensive Research Track, given the wide-ranging implications and potential
+            mechanisms around opsec best practices, and also how these should map onto the Atlas.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Operational
+              Security Protocols - Research Track</dfn>
+          </td>
+          <td>Operational Security Protocols Research Track</td>
+          <td>Needed Research</td>
+          <td>
+            Governance Facilitators may not have the needed experience and skills to adjudicate matters
+            involving operational security best practices. See Endgame Edge Governance Facilitator team Forum
+            post (<a
+              href="https://forum.makerdao.com/t/ads-derecognition-due-to-operational-security-breach/22532#proposal-for-community-discussion-2">https://forum.makerdao.com/t/ads-derecognition-due-to-operational-security-breach/22532#proposal-for-community-discussion-2</a>)
+            on AD derecognition: "The DAO could hire a security advisor firm/consultant as a Scope Advisor.
+            (This could fall under the Governance Scope and its requirement for Governance Security processes.)
+            Their task would be to thoroughly analyze the security needs and risks of the Alignment Conservers
+            and develop ever-evolving Operational Security "Best Practices."With an explicit framework of
+            agreed-upon Best Practices, all anon Alignment Conservers have a known target to meet. Further, the
+            existence of an objective framework of Best Practices equips the Governance Facilitators to easily
+            determine when a breach of opsec best practice has occurred. The explicit framework removes the risk
+            of the Facilitators inappropriately inserting subjective bias into the decisionmaking process.The
+            Security Scope Advisor could also assist in reviewing an informant's evidence to evaluate its
+            validity/quality. The Security Scope Advisor could ensure that the methods used by the informant to
+            secure the evidence were ethical. (All communications, evidence and data shared with the Security
+            Scope Advisor would be under confidentiality protection). Finally, such an Advisor would have
+            specialized expertise in opsec and associated matters that Governance Facilitators lack."This Needed
+            Research is an extensive Research Track, given the wide-ranging implications and potential
+            mechanisms around opsec best practices, and also how these should map onto the Atlas.
+          </td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Should
               ban against occupying two ecosystem roles apply to all Sky stakeholder roles?</dfn>
           </td>
@@ -12817,82 +12867,6 @@
             such that contributors gain experience in multiple operational aspects - might arguably enhance
             ecosystem intelligence. Would it make a meaningful difference to require contributors who do wish to
             work multiple roles to be doxxed?</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Systematic
-              basis of adjudication, fact-finding and evidence</dfn>
-          </td>
-          <td>Systematic basis of adjudication, fact-finding and evidence</td>
-          <td>Needed Research</td>
-          <td>
-            This need is an extensive Research Track. The central research need that grows out of the
-            Facilitator role has to do with developing systematic principles and protocols to serve as the
-            foundation for adjudicating disputes and controversies, including processes for fact-finding,
-            evidence validation and evaluation, mechanisms for ensuring impartiality and objectivity, an appeals
-            process, etc. The Atlas has made a good start with establishing an adjudication framework. There is
-            some logic concerning procedures for how disputes and controversies (including Alignment Conserver
-            misalignment) are brought forward and how they are reviewed. But essential elements are missing,
-            such as protocols and standards for fact-finding and evidence. Needed Research here includes methods
-            for implementing a structured fact-finding process that gathers relevant information impartially and
-            comprehensively. Who has the authority to investigate, to request evidence, to handle evidence? What
-            types of evidence are permissible to consider? See <dfn>Responsibly
-              Provided - Whistleblower Evidence Of Misalignment Must Be Secured Ethically</dfn>. What are the
-            processes for collecting, preserving, and analyzing this evidence? When should evidence be shared
-            with the larger community and when should it be kept confidential? Then there is the matter of
-            assessing evidence in a way that is rigorous and impartial, without which, confidence in the Atlas
-            and the governance process may be undermined. What criteria should be used to validate and evaluate
-            evidence to ensure its reliability and relevance in decision-making? This involves determining the
-            credibility of sources, the reliability of evidence, and the relevance of information to the
-            specific case. The research should explore different approaches to evidence evaluation, such as the
-            application of the burden of proof, standards of proof (e.g., preponderance of evidence, beyond a
-            reasonable doubt), and the use of experts. How much discretion should Facilitators have in
-            interpreting and applying the element "the highest standard of Universal Alignment"? How to
-            safeguard against bias and ensure all Facilitator adjudications are made impartially? Investigate
-            mechanisms to maintain objectivity and impartiality throughout the adjudication, fact-finding, and
-            evidence evaluation processes. This could include the establishment of independent review panels
-            (which could operate post facto to avoid excessively delaying the deplatforming of misaligned ACs),
-            the use of conflict-of-interest policies, and training on cognitive biases for those involved in
-            decision-making.
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Systematic
-              basis of adjudication, fact-finding and evidence</dfn>
-          </td>
-          <td>Systematic basis of adjudication, fact-finding and evidence</td>
-          <td>Needed Research</td>
-          <td>
-            This need is an extensive Research Track. The central research need that grows out of the
-            Facilitator role has to do with developing systematic principles and protocols to serve as the
-            foundation for adjudicating disputes and controversies, including processes for fact-finding,
-            evidence validation and evaluation, mechanisms for ensuring impartiality and objectivity, an appeals
-            process, etc. The Atlas has made a good start with establishing an adjudication framework. There is
-            some logic concerning procedures for how disputes and controversies (including Alignment Conserver
-            misalignment) are brought forward and how they are reviewed. But essential elements are missing,
-            such as protocols and standards for fact-finding and evidence. Needed Research here includes methods
-            for implementing a structured fact-finding process that gathers relevant information impartially and
-            comprehensively. Who has the authority to investigate, to request evidence, to handle evidence? What
-            types of evidence are permissible to consider? See <dfn>Responsibly
-              Provided - Whistleblower Evidence Of Misalignment Must Be Secured Ethically</dfn>. What are the
-            processes for collecting, preserving, and analyzing this evidence? When should evidence be shared
-            with the larger community and when should it be kept confidential? Then there is the matter of
-            assessing evidence in a way that is rigorous and impartial, without which, confidence in the Atlas
-            and the governance process may be undermined. What criteria should be used to validate and evaluate
-            evidence to ensure its reliability and relevance in decision-making? This involves determining the
-            credibility of sources, the reliability of evidence, and the relevance of information to the
-            specific case. The research should explore different approaches to evidence evaluation, such as the
-            application of the burden of proof, standards of proof (e.g., preponderance of evidence, beyond a
-            reasonable doubt), and the use of experts. How much discretion should Facilitators have in
-            interpreting and applying the element "the highest standard of Universal Alignment"? How to
-            safeguard against bias and ensure all Facilitator adjudications are made impartially? Investigate
-            mechanisms to maintain objectivity and impartiality throughout the adjudication, fact-finding, and
-            evidence evaluation processes. This could include the establishment of independent review panels
-            (which could operate post facto to avoid excessively delaying the deplatforming of misaligned ACs),
-            the use of conflict-of-interest policies, and training on cognitive biases for those involved in
-            decision-making.
-          </td>
         </tr>
         <tr>
           <td>
