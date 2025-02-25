@@ -6,10 +6,11 @@
 AEP#: 1
 Author(s): Endgame Edge
 Contributors: Atlas Axis
-Status: RFC
+Status: Accepted
 Date Proposed: 2025-01-29
-Date Ratified: TBC
+Date Ratified: 2025-02-24
 Forum URL: https://forum.sky.money/t/aep1-atlas-edit-monthly-cycle-proposal-2025-01-29/25907
+Ratification Poll URL: https://vote.makerdao.com/polling/QmeTDMys
 ```
 
 ## Motivation
