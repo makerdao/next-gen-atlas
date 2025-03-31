@@ -14851,7 +14851,9 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain all data and specifications for Spark's Instance of the Distribution Requirement Primitive. See .</td>
+          <td>
+            The documents herein contain all data and specifications for Spark's Instance of the Distribution Requirement Primitive. See <dfn>A.2.4 - Distribution Requirement Primitive</dfn>.
+          </td>
         </tr>
         <tr>
           <td>
@@ -15655,7 +15657,9 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This Instance uses the Tracking Methodology specified in .</td>
+          <td>
+            This Instance uses the Tracking Methodology specified in <dfn>A.2.4 - Ethereum Mainnet General Tracking Methodology</dfn>.
+          </td>
         </tr>
         <tr>
           <td>
@@ -15679,7 +15683,9 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document defines the protocol for routine ongoing management of the SparkLend Instance. This Instance inherits the base class of operational logic defined in , subject to the qualifications specified in .Modifications to the base operational logic automatically propagate to this Instance. In future iterations of the Spark Artifact, a version of the full process definition customized to Spark will be included herein.</td>
+          <td>
+            This document defines the protocol for routine ongoing management of the SparkLend Instance. This Instance inherits the base class of operational logic defined in <dfn>A.2.4 - Routine Protocol</dfn>, subject to the qualifications specified in <dfn>A.2.4 - Near Term Process</dfn>. Modifications to the base operational logic automatically propagate to this Instance. In future iterations of the Spark Artifact, a version of the full process definition customized to Spark will be included herein.
+          </td>
         </tr>
         <tr>
           <td>
@@ -15961,7 +15967,9 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document defines the protocol for routine ongoing management of the Aave Instance. This Instance inherits the base class of operational logic defined in , subject to the qualifications specified in . Modifications to the base operational logic automatically propagate to this Instance. In future iterations of the Spark Artifact, a version of the full process definition customized to Spark will be included herein.</td>
+          <td>
+            This document defines the protocol for routine ongoing management of the Aave Instance. This Instance inherits the base class of operational logic defined in <dfn>A.2.4 - Instance Ongoing Management Protocol</dfn>, subject to the qualifications specified in <dfn>A.2.4 - Near Term Process</dfn>. Modifications to the base operational logic automatically propagate to this Instance. In future iterations of the Spark Artifact, a version of the full process definition customized to Spark will be included herein.
+          </td>
         </tr>
         <tr>
           <td>
@@ -16938,7 +16946,7 @@
           <td>Spark</td>
           <td>Core</td>
           <td>
-            This document defines the steps to mint USDS from the Sky Allocation Vault to the Spark ALM Proxy. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to mintUSDS. Also, ensure the contract isActive i.e. can process the request. function mintUSDS(uint256 usdsAmount) external onlyRole(RELAYER) isActive ◦ Ensure the <a href="https://etherscan.io/address/0x7A5FD5cf045e010e62147F065cEAe59e5344b188#readContract#F3">RateLimits</a> allow to mint the required amount. rateLimited(LIMIT_USDS_MINT, usdsAmount) ◦ Call the MainnetController contract to mint USDS into the Buffer. 1. Encode the mint function call, using abi.encodeCall with the address vault from which USDS will be drawn, and the amount of USDS to mint. 2. Send the encoded call using proxy.doCall() to the draw function of the vault contract. { // Mint USDS into the buffer proxy.doCall( address(vault), abi.encodeCall(vault.draw, (usdsAmount)) ); ◦ Call the MainnetController contract to transfer USDS from the Buffer to the ALM Proxy. 1. Encode the transfer function call, using abi.encodeCall with the buffer address USDS will be transferred from, the proxy address that will receive USDS (i.e. ALM Proxy), and the amount of USDS to transfer. 2. Send the encoded call using proxy.doCall() to the transferFrom function of the USDS contract. // Transfer USDS from the buffer to the proxy proxy.doCall( address(usds), abi.encodeCall(usds.transferFrom, (buffer, address(proxy), usdsAmount)) ); }• <strong>Burn</strong>
+            This document defines the steps to mint USDS from the Sky Allocation Vault to the Spark ALM Proxy. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to mintUSDS. Also, ensure the contract isActive i.e. can process the request. function mintUSDS(uint256 usdsAmount) external onlyRole(RELAYER) isActive ◦ Ensure the <a href="https://etherscan.io/address/0x7A5FD5cf045e010e62147F065cEAe59e5344b188#readContract#F3">RateLimits</a> allow to mint the required amount. rateLimited(LIMIT_USDS_MINT, usdsAmount) ◦ Call the MainnetController contract to mint USDS into the Buffer. 1. Encode the mint function call, using abi.encodeCall with the address vault from which USDS will be drawn, and the amount of USDS to mint. 2. Send the encoded call using proxy.doCall() to the draw function of the vault contract. { // Mint USDS into the buffer proxy.doCall( address(vault), abi.encodeCall(vault.draw, (usdsAmount)) ); ◦ Call the MainnetController contract to transfer USDS from the Buffer to the ALM Proxy. 1. Encode the transfer function call, using abi.encodeCall with the buffer address USDS will be transferred from, the proxy address that will receive USDS (i.e. ALM Proxy), and the amount of USDS to transfer. 2. Send the encoded call using proxy.doCall() to the transferFrom function of the USDS contract. // Transfer USDS from the buffer to the proxy proxy.doCall( address(usds), abi.encodeCall(usds.transferFrom, (buffer, address(proxy), usdsAmount)) ); }
           </td>
         </tr>
         <tr>
@@ -16948,7 +16956,7 @@
           <td>Spark</td>
           <td>Core</td>
           <td>
-            This document defines the steps to return and then burn Spark's USDS debt in the Sky Allocation Vault. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to burnUSDS. Also, ensure the contract isActive i.e. can process the request.function burnUSDS(uint256 usdsAmount) external onlyRole(RELAYER) isActive ◦ Ensure the <a href="https://etherscan.io/address/0x7A5FD5cf045e010e62147F065cEAe59e5344b188#readContract#F3">RateLimits</a> allow the required amount to mint.cancelRateLimit(LIMIT_USDS_MINT, usdsAmount) ◦ Call the MainnetController to transfer USDS from the AML Proxy to the Buffer. 1. Encode the transfer function call, using abi.encodeCall with the buffer address USDS will be transferred to, and the amount of USDS to transfer. 2. Send the encoded call using proxy.doCall() to the transfer function of the USDS contract. { // Transfer USDS from the proxy to the buffer proxy.doCall( address(usds), abi.encodeCall(usds.transfer, (buffer, usdsAmount)) ); ◦ Call the MainnetController contract to burn USDS. 1. Encode the wipe function call, using abi.encodeCall with the address vault from which USDS will be burned, and the amount of USDS to burn. 2. Send the encoded call using proxy.doCall() to the wipe function of the vault contract. // Burn USDS from the buffer proxy.doCall( address(vault), abi.encodeCall(vault.wipe, (usdsAmount)) ); }• <strong>ER</strong>
+            This document defines the steps to return and then burn Spark's USDS debt in the Sky Allocation Vault. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to burnUSDS. Also, ensure the contract isActive i.e. can process the request.function burnUSDS(uint256 usdsAmount) external onlyRole(RELAYER) isActive ◦ Ensure the <a href="https://etherscan.io/address/0x7A5FD5cf045e010e62147F065cEAe59e5344b188#readContract#F3">RateLimits</a> allow the required amount to mint.cancelRateLimit(LIMIT_USDS_MINT, usdsAmount) ◦ Call the MainnetController to transfer USDS from the AML Proxy to the Buffer. 1. Encode the transfer function call, using abi.encodeCall with the buffer address USDS will be transferred to, and the amount of USDS to transfer. 2. Send the encoded call using proxy.doCall() to the transfer function of the USDS contract. { // Transfer USDS from the proxy to the buffer proxy.doCall( address(usds), abi.encodeCall(usds.transfer, (buffer, usdsAmount)) ); ◦ Call the MainnetController contract to burn USDS. 1. Encode the wipe function call, using abi.encodeCall with the address vault from which USDS will be burned, and the amount of USDS to burn. 2. Send the encoded call using proxy.doCall() to the wipe function of the vault contract. // Burn USDS from the buffer proxy.doCall( address(vault), abi.encodeCall(vault.wipe, (usdsAmount)) ); }
           </td>
         </tr>
         <tr>
@@ -17013,7 +17021,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document defines the process to set a delegated signer to the Ethena Minter contract. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to setDelegatedSigner. Also, ensure the contract isActivei.e. can process the request. function setDelegatedSigner(address delegatedSigner) external onlyRole(RELAYER) isActive◦ Use proxy.doCall() to forward the call to the ethenaMinter contract and call setDelegatedSigner function to set the address that will be authorized as adelegatedSigner. To call on ethenaMinter contract, the function must be encoded using abi.encodeCall. { proxy.doCall( address(ethenaMinter), abi.encodeCall(ethenaMinter.setDelegatedSigner, (address(delegatedSigner))) );}• <strong>Remove</strong></td>
+          <td>This document defines the process to set a delegated signer to the Ethena Minter contract. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to setDelegatedSigner. Also, ensure the contract isActivei.e. can process the request. function setDelegatedSigner(address delegatedSigner) external onlyRole(RELAYER) isActive◦ Use proxy.doCall() to forward the call to the ethenaMinter contract and call setDelegatedSigner function to set the address that will be authorized as adelegatedSigner. To call on ethenaMinter contract, the function must be encoded using abi.encodeCall. { proxy.doCall( address(ethenaMinter), abi.encodeCall(ethenaMinter.setDelegatedSigner, (address(delegatedSigner))) );}</td>
         </tr>
         <tr>
           <td>
@@ -17885,19 +17893,19 @@
         </tr>
         <tr>
           <td>
-            <dfn>sUSDS Risk Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current sUSDS risk parameters are:• LTV: 79%• Liquidation Threshold: 80%• E-mode Category: N/A• Liquidation Bonus: 5%• Reserve Factor: 10%• Supply Cap: 50,000,000 sUSDS• Borrow Cap: 0 sUSDS• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>cbBTC Risk Parameters</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
           <td>The current cbBTC risk parameters are:• LTV: 74%• Liquidation Threshold: 75%• E-mode Category: N/A• Liquidation Bonus: 8%• Reserve Factor: 20%• Supply Cap: 500 cbBTC• Borrow Cap: 50 cbBTC• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 4%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>sUSDS Risk Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current sUSDS risk parameters are:• LTV: 79%• Liquidation Threshold: 80%• E-mode Category: N/A• Liquidation Bonus: 5%• Reserve Factor: 10%• Supply Cap: 50,000,000 sUSDS• Borrow Cap: 0 sUSDS• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No</td>
         </tr>
         <tr>
           <td>
@@ -19404,7 +19412,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            The documents herein define the process for using the Root Edit Primitive to update the Launch Agent 1 Agent Artifact. Information on Launch Agent 1 governance that is unrelated to the use of the Root Edit Primitive is located at <dfn>Governance Information Unrelated To Root Edit Primitive</dfn> .
+            The documents herein define the process for using the Root Edit Primitive to update the Launch Agent 1 Agent Artifact. Information on Launch Agent 1 governance that is unrelated to the use of the Root Edit Primitive is located at <dfn>Governance Information Unrelated To Root Edit Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -19594,7 +19602,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            This document contains a Directory of all prospective Instances of the Light Agent Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn> , whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
+            This document contains a Directory of all prospective Instances of the Light Agent Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
           </td>
         </tr>
         <tr>
@@ -21158,7 +21166,7 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            The documents herein specify Launch Agent 1 governance information that is unrelated to the use of the Root Edit Primitive. The governance process for updating the Launch Agent 1 Artifact is specified in the Root Edit Primitive above at <dfn>Root Edit Primitive</dfn> .
+            The documents herein specify Launch Agent 1 governance information that is unrelated to the use of the Root Edit Primitive. The governance process for updating the Launch Agent 1 Artifact is specified in the Root Edit Primitive above at <dfn>Root Edit Primitive</dfn>.
           </td>
         </tr>
         <tr>
@@ -21265,7 +21273,9 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The parameters of Andromeda are defined in .</td>
+          <td>
+            The parameters of Andromeda are defined in <dfn>A.3.4 - Andromeda</dfn>.
+          </td>
         </tr>
         <tr>
           <td>
