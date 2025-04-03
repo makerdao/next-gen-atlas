@@ -28,7 +28,6 @@ This Atlas Edit formalizes and refines the moderation policies of the Sky ecosys
         - **Unbanning**
         - **Intrinsic Limitations**
     - **List of Responsible Moderators**
-- Modify **A.5.4 - Accessibility Communication Channels - External Platforms (Core)**
 - Add **A.5.4 - Accessibility Communication Channels - Moderation**
 
 ## Pull Request of Edits
