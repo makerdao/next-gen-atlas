@@ -24,6 +24,8 @@ This Atlas Edit formalizes and refines the moderation policies of the Sky ecosys
     - **Moderation Policies**
       - **General Requirements**
         - **Public Communication Of Bans**
+          - **Sky Forum-Specific Requirements**
+          - **Requirements Applicable To All Other Channels**
         - **Use Of Automated Tools**
         - **Unbanning**
         - **Intrinsic Limitations**
@@ -32,4 +34,4 @@ This Atlas Edit formalizes and refines the moderation policies of the Sky ecosys
 
 ## Pull Request of Edits
 
-WIP
+[79](https://github.com/makerdao/next-gen-atlas/pull/79)
