@@ -10166,162 +10166,6 @@
           </td>
         </tr>
         <tr>
-          <td>
-            <dfn>A.5.3
-              - A1 - Integrator Program</dfn>
-          </td>
-          <td>Integrator Program</td>
-          <td>Section</td>
-          <td>This Section manages the Integrator Program, which includes the Accessibility Reward System and Integration Boost. 
-              Integrators are actors that offer access to the Sky Protocol via their frontends or infrastructure.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System</td>
-          <td>Core</td>
-          <td>The subdocuments of this document define the terms and conditions of the Reward System.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Accessibility Reward Codes</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Accessibility Reward Codes</td>
-          <td>Core</td>
-          <td>Eligible Integrators may receive an Accessibility Reward Code. With the Accessibility Reward Code, the Integrator can mark 
-              all USDS balances that access the Protocol through their frontends or infrastructure, and earn the Accessibility Reward on 
-              these balances.
-              The distribution of Accessibility Reward Codes is managed by Ecosystem Actors on behalf of Sky.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Accessibility Reward Marketing Fee</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Accessibility Reward Marketing Fee</td>
-          <td>Core</td>
-          <td>The Accessibility Reward applies to USDS earning the Savings Rate and Token Rewards, and also to Unrewarded USDS (USDS not 
-              earning the Savings Rate or Token Rewards), as long as the USDS balance is marked with the Accessibility Reward Code of an 
-              Integrator. The Marketing Fees paid through the Accessibility Reward are calculated and paid out monthly.
-              For Savings Rate or Token Reward balances, the Integrator earns a Marketing Fee of 0.4% of the balance per year.
-              For Unrewarded USDS balances, the Integrator earns a Marketing Fee of [Savings Rate - 0.2%] of the balance per year.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Onchain and Offchain Accessibility Reward Code Marking</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Onchain and Offchain Accessibility Reward Code Marking</td>
-          <td>Core</td>
-          <td>The Accessibility Reward Codes can be marked to a balance both through onchain and offchain processes.
-              • Onchain means they are directly included in the users’ transactions so they can be read on-chain, through a special 
-                signature on the token transfer method.
-              • Offchain means that various, continuously updated offchain monitoring mechanisms can be used to prove that an Integrator’s 
-                Accessibility Reward Code is connected to particular accounts and balances, such as their user balances or customer funds.
-            </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Accessibility Reward Code Management</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Accessibility Reward Code Management</td>
-          <td>Core</td>
-          <td>On an interim basis, two Ecosystem Actors have the ability to generate Accessibility Reward Codes for Integrators. Their 
-              Accessibility Reward Codes will work in two different ways, as specified below.
-              Phoenix Labs:
-                • Accessibility Reward Codes from Phoenix Labs provide the 0.4% or [Savings Rate - 0.2%] Marketing Fee as normal.
-                • Additionally, the Spark Star also earns a 0.1% Management Fee on balances marked by Phoenix Labs’ Accessibility Reward Codes.
-                • Phoenix Labs Forum account: PhoenixLabs
-              Viridian Advisors:
-                • Accessibility Reward Codes from Viridian Advisors provide the 0.4% or [Savings Rate - 0.2%] Marketing Fee as normal.
-                • Viridian Advisory Forum account: Viridian</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Interim Accessibility Reward Code Assignment Process</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Interim Accessibility Reward Code Assignment Process</td>
-          <td>Core</td>
-          <td>On an interim basis, Phoenix Labs and Viridian Advisors must each maintain a dedicated thread in the Governance Forum (under 
-              the Maker Core or Sky Core category). In these threads, they must maintain a list of the Integrators who have received 
-              Accessibility Reward Codes, including the specific code itself, and the Integrators’ Ethereum addresses to which the 
-              Accessibility Rewards are to be paid.
-              Phoenix Labs and Viridian Advisors can maintain a separate Forum thread, or use other means, to enable prospective 
-              Integrators to sign up for their Accessibility Reward Codes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Accessibility Reward System - Accessibility Reward Payment</dfn>
-          </td>
-          <td>Integrator Program - Accessibility Reward System - Accessibility Reward Payment</td>
-          <td>Core</td>
-          <td>Where feasible, Phoenix Labs and Viridian Advisors must calculate on a monthly basis the onchain and offchain Accessibility 
-            Rewards earned for the Codes they are responsible for. If there are calculations that cannot reasonably be done, they can be 
-            delayed and later calculated.
-            Every month, the Accessibility Facilitators must ensure that the calculated Accessibility Rewards are paid out to the 
-            corresponding addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Integration Boost</dfn>
-          </td>
-          <td>Integrator Program - Integration Boost</td>
-          <td>Core</td>
-          <td>The Accessibility Facilitator can work with Ecosystem Actors to set up mechanisms that provide
-            additional rewards to DeFi lending protocols that integrate USDS. The rewards must be calculated
-            offchain to be equivalent to the USDS Savings Rate on their unutilized USDS, and must be delivered
-            through the native liquidity mining mechanisms of the lending protocols, or similar systems.<br> The
-            Integration Boost can also be delivered to other forms of DeFi protocols than Lending Protocols, as
-            long as there is a reasonable equivalence in how the integration boost helps grow USDS adoption.<br>
-            The Integration Boost is delivered through a multisig that the Accessibility Facilitator can request
-            to have topped up to 3 million USDS through Executive Votes whenever necessary to ensure the
-            Integration Boost is delivered successfully.<br> Since the Integration Boost is delivered with a lag,
-            for strategic integrations, the Accessibility Facilitator may choose to provide an extra high
-            Integration Boost, to encourage rapid adoption and prevent the Integration Boost value from getting
-            low during the early growth phase.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Compliance With Local Laws And Regulations As A Condition Precedent To Integrators Receiving 
-              Accessibility Rewards</dfn>
-          </td>
-          <td>Integrator Program - Compliance With Local Laws And Regulations As A Condition Precedent To Integrators Receiving 
-              Accessibility Rewards</td>
-          <td>Core</td>
-          <td>This document and its subdocuments define the jurisdictional compliance rules applicable to Integrators that operate 
-              user-facing frontends that integrate with, and thus offer access to, the Sky Protocol and receive Accessibility Rewards.
-              Integrators are solely responsible for complying with all relevant legal and regulatory requirements related to their 
-              participation in the Accessibility Reward Program. Integrators represent and warrant that their participation and activities 
-              under the Integrator Program are and will remain in full compliance with all applicable laws and regulations.
-              In connection with integrating with, and thereby providing access to, the Sky Protocol, Integrators must operate their 
-              frontends and infrastructure in compliance with all relevant legal and regulatory requirements in the jurisdictions 
-              applicable to their services. This requires compliance with all relevant legal and regulatory requirements in relation to 
-              frontend operations, marketing, and promotions in the jurisdictions where the Integrator provides access to the Sky Protocol 
-              through the integration.
-              An Integrator’s right to participate in the Integrator Program is contingent upon its ongoing compliance with all applicable 
-              laws and regulations.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.3
-              - Integrator Program - Compliance With Local Laws And Regulations As A Condition Precedent To Integrators Receiving 
-              Accessibility Rewards - Consequence For Integrator Non-Compliance</dfn>
-          </td>
-          <td>Integrator Program - Compliance With Local Laws And Regulations As A Condition Precedent To Integrators Receiving 
-              Accessibility Rewards - Consequence For Integrator Non-Compliance</td>
-          <td>Core</td>
-          <td>Sky Ecosystem Governance, in its absolute and unilateral discretion, retains the right to withhold, revoke, or demand 
-              immediate repayment of any and all Accessibility Rewards from any Integrator that is determined, suspected, or alleged to be 
-              in violation of the Atlas or any legal, regulatory, or other obligations associated with its integration with, and provision 
-              of access to, the Sky Protocol.</td>
         </tr>
         <tr>
           <td>
@@ -10427,16 +10271,13 @@
                 the MerkleDistributor is 22,685,694.
           </td>
         </tr>
-        <tr>
-          <td>
-            <dfn>A.5.8
-              - A1 - Location Resilience</dfn>
-          </td>
-          <td>Location Resilience</td>
-          <td>Section</td>
-          <td>This Section defines requirements for Ecosystem Actors and Stars to implement limited filtering and
-            full blocking of IPs.</td>
-        </tr>
+        <td>
+          <dfn>A.5.8 - A1 - Location Resilience</dfn>
+        </td>
+        <td>Location Resilience</td>
+        <td>Section</td>
+        <td>This Section defines requirements for Ecosystem Actors and Agents to implement limited filtering and full blocking of IPs.</td>
+      </tr>
         <tr>
           <td>
             <dfn>A.5.8
@@ -10451,16 +10292,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.5.8
-              - Location Resilience - Consequence For Non-Compliance</dfn>
+            <dfn>A.5.8 - Location Resilience - Consequence For Non-Compliance</dfn>
           </td>
           <td>Location Resilience - Consequence For Non-Compliance</td>
           <td>Core</td>
           <td>
-            All frontends operated by Ecosystem Actors on behalf of Stars are required to follow the location-filtering
-            rules defined in <dfn>A.5.8
-              - A1 - Location Resilience</dfn> and its subdocuments. The failure to adhere to these rules will
-            result in penalties.
+            All frontends operated by Ecosystem Actors on behalf of Agents are required to follow the location-filtering rules defined in <dfn>A.5.8 - A1 - Location Resilience</dfn> and its subdocuments. The failure to adhere to these rules will result in penalties.
           </td>
         </tr>
         <tr>
@@ -10619,15 +10456,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.5.9
-              - Launch Project - Long Term Focus</dfn>
+            <dfn>A.5.9 - Launch Project - Long Term Focus</dfn>
           </td>
           <td>Launch Project - Long Term Focus</td>
           <td>Core</td>
-          <td>The Launch Project's long-term focus must be on coordinating effective marketing and launch
-            processes around the next launch phases; using communications and marketing to prepare the community
-            for the potential of increased governance participation; and driving growth to the Ecosystem, the
-            Stars, and Sky Governance.</td>
+          <td>The Launch Project's long-term focus must be on coordinating effective marketing and launch processes around the next launch phases; using communications and marketing to prepare the community for the potential of increased governance participation; and driving growth to the Ecosystem, Agents, and Sky Governance.</td>
         </tr>
         <tr>
           <td>
