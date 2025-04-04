@@ -798,16 +798,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.0.1
-              - Atlas Preamble - Definitions - Scope</dfn>
+            <dfn>A.0.1 - Atlas Preamble - Definitions - Scope</dfn>
           </td>
           <td>Atlas Preamble - Definitions - Scope</td>
           <td>Core</td>
-          <td>A Scope is a particular focus area of Sky or a Star. Sky Core has five Scopes:• Governance, focusing
-            on Alignment Artifact interpretation and balance of powers• Support, focusing on ecosystem support,
-            tools, and activities• Stability, focusing on financial stability and the core USDS Stablecoin
-            product• Protocol, focusing on technical development, maintenance, and security• Accessibility,
-            focusing on frontends and distribution.</td>
+          <td>A Scope is a particular focus area of Sky. There are six Scopes:• The Governance Scope focuses on Alignment Artifact interpretation and balance of powers.• The Support Scope focuses on ecosystem support, tools, and activities, including the Sky Primitives.• The Stability Scope focuses on financial stability and the core USDS Stablecoin product.• The Protocol Scope focuses on technical development, maintenance, and security.• The Accessibility Scope focuses on frontends and distribution.• The Agent Scope contains all Agent Artifacts.</td>
         </tr>
         <tr>
           <td>
@@ -893,20 +888,6 @@
         <tr>
           <td>
             <dfn>A.0.1
-              - Atlas Preamble - Definitions - Star</dfn>
-          </td>
-          <td>Atlas Preamble - Definitions - Star</td>
-          <td>Core</td>
-          <td>Formerly known as SubDAOs, Stars are smaller, specialized, decentralized ecosystems that exist
-            within the broader Sky Ecosystem and are tied to the Sky Protocol. Their core design enables a
-            derisked, second layer of the ecosystem to foster fast-moving, risk-adjusted innovation, growth and
-            experimentation. Stars also enable delegation of responsibility and risk within specific, highly
-            complex areas. In general, complexity, responsibility, decision-making authority and risk is
-            off-loaded from Sky Core and pushed to the Stars, except if the Sky Atlas specifies otherwise.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.0.1
               - Atlas Preamble - Definitions - Communication Channel</dfn>
           </td>
           <td>Atlas Preamble - Definitions - Communication Channel</td>
@@ -927,13 +908,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.0.1
-              - Atlas Preamble - Definitions - Support Scope (SUP)</dfn>
+            <dfn>A.0.1 - Atlas Preamble - Definitions - Support Scope (SUP)</dfn>
           </td>
           <td>Atlas Preamble - Definitions - Support Scope (SUP)</td>
           <td>Core</td>
-          <td>The Support Scope Alignment Artifact codifies rules that regulate various tasks of ecosystem
-            support, including governance process infrastructure and management and Star ecosystem support.</td>
+          <td>The Support Scope Alignment Artifact codifies rules that regulate various tasks of ecosystem support, including governance process infrastructure and management and Agent ecosystem support.</td>
         </tr>
         <tr>
           <td>
@@ -965,18 +944,6 @@
           <td>Core</td>
           <td>The Accessibility Scope defines rules related to accessibility and distribution efforts and
             regulates user-facing frontends.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.0.1
-              - Atlas Preamble - Definitions - Star Scope Bounded Mutable Alignment Artifacts</dfn>
-          </td>
-          <td>Atlas Preamble - Definitions - Star Scope Bounded Mutable Alignment Artifacts</td>
-          <td>Core</td>
-          <td>Star Scope Alignment Artifacts are internal Scope Alignment Artifacts for Stars. All Stars begin
-            with a standard genesis Scope Artifact that they can modify. They can also create additional Scope
-            Artifacts with new Scopes. Unlike Sky, Star Scope Artifacts have much fewer restrictions on how they
-            can be modified and what strategic opportunities they can cover.</td>
         </tr>
         <tr>
           <td>
@@ -1117,6 +1084,111 @@
             MKR holders retain control of their tokens.
           </td>
         </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Agent</dfn>
+          </td>
+          <td>Agent</td>
+          <td>Core</td>
+          <td>Agents are first-class economic citizens of Sky that autonomously pursue business opportunities. Each Agent has its own Agent Artifact and token. Initially, the creation of an Agent results in a Proto-Agent, which lacks any specialized role. To gain functionality within the Sky ecosystem, a Proto-Agent must deploy a special Transformation Primitive to transform into a specific Agent sub-type. The Agent sub-types currently defined in the Atlas include 1) Star Agent and 2) Executor Agent, with the Executor Agent sub-type further divided into Operational Executor Agents and Core Executor Agents.Although Executor Agents are not yet operational, the Atlas nonetheless defines the foundational rules, processes, and governance structures necessary for their eventual activation. In the medium to long term, these Executor Agents will become fully operative and perform an essential function in facilitating the activities of Star Agents across the Sky ecosystem.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Agent Artifact</dfn>
+          </td>
+          <td>Agent Artifact</td>
+          <td>Core</td>
+          <td>Agent Artifacts contain all rules, processes, parameters, and knowledge of the Agent. Agent Artifacts must be aligned with, and are fully subordinate to, the Sky Core Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Agent Scope</dfn>
+          </td>
+          <td>Agent Scope</td>
+          <td>Core</td>
+          <td>The Agent Scope codifies all Agent Artifacts.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Star Agent</dfn>
+          </td>
+          <td>Star Agent</td>
+          <td>Core</td>
+          <td>Star Agents maintain and automate Sky features in new markets, and innovate custom products. Star Agents are the only Agent type that can access all Sky Primitives; whereas Executor Agents are limited in the Primitives they can access.• Star Agents cannot directly operationalize those elements of their strategies that directly interface with the Sky Protocol or shared ecosystem infrastructure. For such protocol-level and ecosystem-critical operations, Star Agents must rely on Operational Executor Agents for implementation.• When a Star Agent formulates a new initiative, it encodes the relevant instructions and parameters into its Agent Artifact. Insofar as the Star Agent's Artifact requires protocol-level interactions, the Operational Executors use the Artifact as a detailed operational blueprint for implementing the Star Agent's directives-ensuring consistency with the Atlas and minimizing risk.• This ensures a robust division between Star Agents' strategic, externally facing activities and the specialized operational activities that directly interface with Sky's core systems.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Executor Agent</dfn>
+          </td>
+          <td>Executor Agent</td>
+          <td>Core</td>
+          <td>Executor Agents ("Executors") are specialized Agents that implement those elements of a Star Agent's activities that directly interface with the Sky Protocol or shared ecosystem resources, leaving Star Agents free to focus on strategic, business development, and marketing efforts. There are two Executor sub-types: Core Executor Agents ("Core Executors") and Operational Executor Agents ("Operational Executors").• Operational Executor Agents handle the day-to-day execution of those portions of a Star Agent's strategies that directly interface with the Sky Protocol, strictly following the instructions laid out in each Star Agent's Artifact. Star Agents cannot be active in the Sky Ecosystem unless they have an active "Operational Executor Accord" which codifies their relationship with an Operational Executor. Operational Executors take on the risk of Star Agents' outcomes by providing collateralized insurance against losses or liabilities. Operational Executor Agents' Operational Collateral can also cover losses from negligence or malicious behavior by the Operational Executor in carrying out the Star Agent's strategy.• Core Executors, on the other hand, oversee the activities of Operational Executors, ensuring that the implementation of Star Agent strategies aligns with the Atlas.• By separating strategy from operations, this division of labor empowers Star Agents to innovate rapidly and expand their ventures without needing to develop specialized operational expertise, as Operational Executors manage the day-to-day technical implementation under Core Executor oversight.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Operational Executor Agent</dfn>
+          </td>
+          <td>Operational Executor Agent</td>
+          <td>Core</td>
+          <td>Operational Executor Agents ("Operational Executors") are specialized Executor Agents tasked with implementing and verifying those elements of a Star Agent's strategy that directly interface with the Sky Protocol or shared ecosystem resources. While Star Agents autonomously set strategic direction, Operational Executors are responsible for operationalizing those activities that modify on-chain or protocol-level state, relying on the relevant Primitive Configuration Documents in the Agent Artifact.Each Operational Executor Agent must comprise at least one Facilitator and at least one GovOps actor. Facilitators are responsible for interpreting the Atlas and the Agent Artifact and instructing GovOps actors to carry out the corresponding actions. To ensure accountability and mitigate potential risks, Operational Executor Agents must maintain Operational Collateral, which serves as a guarantee to cover losses or damages resulting from negligence or malicious behavior by either Facilitators or GovOps actors.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Core Executor Agent</dfn>
+          </td>
+          <td>Core Executor Agent</td>
+          <td>Core</td>
+          <td>Core Executor Agents ("Core Executors") are Executor Agents that serve as checks on Operational Executor Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - GovOps</dfn>
+          </td>
+          <td>GovOps</td>
+          <td>Core</td>
+          <td>Governance Operations ("GovOps") actors are specialized Ecosystem Actors operating within Executor Agent entities. They manage the technical implementation of Star Agents' Instances of Sky Primitives by carrying out on-chain/off-chain tasks necessary for Star Agents' operational and governance processes. They work in tandem with Executor Facilitators, who interpret the Atlas and the Agent Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Operational Executor GovOps</dfn>
+          </td>
+          <td>Operational Executor GovOps</td>
+          <td>Core</td>
+          <td>Operational Executor GovOps ("Operational GovOps") actors are GovOps actors that operate within Operational Executor Agents. Operational GovOps play a crucial role in implementing Star Agent strategies, doing so by executing the technical specifications outlined in Primitive Configuration Documents of Agent Artifacts.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Core Executor GovOps</dfn>
+          </td>
+          <td>Core Executor GovOps</td>
+          <td>Core</td>
+          <td>Core Executor GovOps ("Core GovOps") actors are GovOps actors that operate within Core Executor Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Operational Executor Facilitator</dfn>
+          </td>
+          <td>Operational Executor Facilitator</td>
+          <td>Core</td>
+          <td>Operational Executor Facilitators are Facilitators that interpret Artifacts and the Atlas on behalf of Operational Executor Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Core Executor Facilitator</dfn>
+          </td>
+          <td>Core Executor Facilitator</td>
+          <td>Core</td>
+          <td>Core Executor Facilitators are Facilitators that interpret Artifacts and the Atlas on behalf of Core Executor Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.0.1 - Sky Primitives</dfn>
+          </td>
+          <td>Sky Primitives</td>
+          <td>Core</td>
+          <td>Sky Primitives are the core building blocks of the Sky ecosystem, serving as the primary interface between Agents and the Atlas. By providing a standardized set of tools and interfaces, Sky Primitives empower Star Agents to create, innovate, and evolve the Sky Protocol in a decentralized manner. The Sky Primitives are also used by Executor Agents, which serve as the robust and standardized intermediary layer between Star Agents and the Sky Protocol.</td>
+        </tr>
+        <tr>
         <tr>
           <td>
             <dfn>A.0.1
