@@ -7710,16 +7710,14 @@
         <tr>
           <td>
             <dfn>A.3.5
-              - A2 - Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</dfn>
+              - A2 - Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters - Modification</dfn>
           </td>
-          <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</td>
-          <td>Section</td>
-          <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 70m (Threshold of Surplus buffer for Splitter to activate)•
-              Estimated Net protocol Income: 100,765,523• 50% of estimated net protocol income is sent to Splitter: 50,382,762 (for SBE and 
-              Seal Module, remaining 50% is accumulated in Surplus Buffer). This value must be regularly updated through an executive vote to 
-              continue to target 50% of the estimated net protocol income.• vow.bump: 10,000 DAI• splitter.hop: 1,728 seconds• 100% of 
-              Splitter allocation is set to accumulate SKY• 0% of Splitter allocation is set to reward Seal users• burn (the percentage of 
-              the vow.bump to be moved to the underlying flapper): 100% (1 * WAD). Flapper must maintain its legacy values.</td>
+          <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters - Modification</td>
+          <td>Core</td>
+          <td> The parameters of the Surplus Buffer Splitter can be modified pursuant to the Operational Weekly Cycle. The Governance
+            Facilitators, in consultation with the Stability Facilitators and the Stability Scope Advisors, can propose changes to the bump
+            and hop parameters directly via an Executive Vote without requiring a Governance Poll. Changes to other parameters require a
+            Governance Poll followed by an Executive Vote.</td>
           </td>
         </tr>
         <tr>
@@ -9365,6 +9363,23 @@
           <td>Section</td>
           <td>The Token Rewards Mechanism provides SKY rewards to USDS users. Star tokens are also distributed
             through a Token Rewards Mechanism.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.3
+              - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism - SKY Token Rewards</dfn>
+          </td>
+          <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
+          <td>Core</td>
+          <td>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure
+            the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period.
+            The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).<br>
+            To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the
+            following calculation, performed for each normalization period:<br>1. Determine Target Reward Value: Calculate
+            the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).<br>2.
+            Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY
+            (determined at the time of the Executive Vote).
+          </td>
         </tr>
         <tr>
           <td>
