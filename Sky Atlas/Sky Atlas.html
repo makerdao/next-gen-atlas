@@ -547,7 +547,12 @@
           <td>Distribution Of Agent Tokens</td>
           <td>Article</td>
           <td>
-            To the extent Sky invests capital in Agents and receives tokens in exchange, it will distribute those tokens to the following stakeholders:• USDS Token Rewards users• SKY Activation users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Activation</dfn>)• SKY Seal users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Sealing</dfn>)The percentage of each token distributed to each of these stakeholders is determined by Sky Governance. In each case, to earn rewards users must opt to earn the token of a specific Agent, as opposed to either (1) the token of any other Agent, (2) the Sky Savings Rate in the case of USDS users, or (3) USDS Rewards in the case of SKY Activation or SKY Seal users.
+            To the extent Sky invests capital in Agents and receives tokens in exchange, it will distribute those tokens to the following stakeholders:
+            • USDS Token Rewards users
+            • SKY Activation users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Activation</dfn>)
+            • SKY Seal users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Sealing</dfn>)
+            
+            The percentage of each token distributed to each of these stakeholders is determined by Sky Governance. In each case, to earn rewards users must opt to earn the token of a specific Agent, as opposed to either (1) the token of any other Agent, (2) the Sky Savings Rate in the case of USDS users, or (3) USDS Rewards in the case of SKY Activation or SKY Seal users.
           </td>
         </tr>
           <td>
@@ -14024,7 +14029,8 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine</td>
           <td>Core</td>
-          <td>The Native Vault Engine will be upgraded to support Agent ownership and transferred to the first Agent incubated from the Incubator. It is temporarily controlled by Sky Core.While it is under the control of Sky Core, it will have a limited set of collateral types and risk parameters that the Stability Facilitators must implement according to the following subdocuments.</td>
+          <td>The Native Vault Engine will be upgraded to support Agent ownership and transferred to the first Agent incubated from the Incubator. It is temporarily controlled by Sky Core.
+              While it is under the control of Sky Core, it will have a limited set of collateral types and risk parameters that the Stability Facilitators must implement according to the following subdocuments.</td>
         </tr>
         <tr>
           <td>
@@ -14179,7 +14185,9 @@
           <td>Measures For Endgame Transition - Native Vault Engine - Stability Fee</td>
           <td>Core</td>
           <td>
-            The Stability Fee parameter is an annual percentage fee charged on the Dai generated on Vaults. It is expressed as an annual percentage yield but it is charged on a per-block basis in Dai. The Dai from this fee is minted, added to the Dai debt for the vault, and then transferred into the Surplus Buffer which is under the control of Sky Governance. Each vault type has its own Stability Fee that can be adjusted by the Stability Facilitators. The Stability Facilitators must regularly update Vault Types' Stability Fee according to requirements defined in the subdocuments below. The Stability Scope Advisors must develop a Rate System which can be used to set various interest rates, including the rates for Core Crypto vaults and the minimum lending rate for future Agents. The Rate System must be based on external benchmarks including the risk-free rate and the highest current sustainable rate in crypto financial markets. These rates should act as the lowest and highest base rates to which additional spreads can be added to better reflect the risks involved in specific lending activities.The Rate System must be dynamic, based on the state of Actively Stabilizing Collateral in the system, and naturally move the state towards the required level of Actively Stabilizing Collateral defined in <dfn>A.3.4</dfn>.
+            The Stability Fee parameter is an annual percentage fee charged on the Dai generated on Vaults. It is expressed as an annual percentage yield but it is charged on a per-block basis in Dai. The Dai from this fee is minted, added to the Dai debt for the vault, and then transferred into the Surplus Buffer which is under the control of Sky Governance. Each vault type has its own Stability Fee that can be adjusted by the Stability Facilitators. 
+            The Stability Facilitators must regularly update Vault Types' Stability Fee according to requirements defined in the subdocuments below. The Stability Scope Advisors must develop a Rate System which can be used to set various interest rates, including the rates for Core Crypto vaults and the minimum lending rate for future Agents. The Rate System must be based on external benchmarks including the risk-free rate and the highest current sustainable rate in crypto financial markets. These rates should act as the lowest and highest base rates to which additional spreads can be added to better reflect the risks involved in specific lending activities. 
+            The Rate System must be dynamic, based on the state of Actively Stabilizing Collateral in the system, and naturally move the state towards the required level of Actively Stabilizing Collateral defined in <dfn>A.3.4</dfn>.
           </td>
         </tr>
         <tr>
@@ -14793,7 +14801,8 @@
             </td>
             <td>Activation And Sealing Mechanisms - Sealing</td>
             <td>Section</td>
-            <td>Sealing is available both for SKY and MKR holders, with 1 MKR counting as 24,000 SKY. Sealing seals the principal tokens behind an Exit Fee. Sealing provides USDS Rewards or Agent Token Rewards.Sealing users can also generate USDS using the USDS content of the Smart Burn Engine as collateral. Users' ability to generate USDS is based on the equivalent quantity they hold of sealed SKY. The Sealing mechanism is governed by the Stability Scope.</td>
+            <td>Sealing is available both for SKY and MKR holders, with 1 MKR counting as 24,000 SKY. Sealing seals the principal tokens behind an Exit Fee. Sealing provides USDS Rewards or Agent Token Rewards. 
+              Sealing users can also generate USDS using the USDS content of the Smart Burn Engine as collateral. Users' ability to generate USDS is based on the equivalent quantity they hold of sealed SKY. The Sealing mechanism is governed by the Stability Scope.</td>
           </tr>
         <tr>
           <td>
@@ -22616,7 +22625,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document defines the process to unstake sUSDe and return it to the ALM Proxy. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to unstakeSUSDe. Also, ensure the contract isActivei.e. can process the request. function unstakeSUSDe() external onlyRole(RELAYER) isActive ◦ Use proxy.doCall() to make a call to the susde contract to invoke the unstake function, which unstakes sUSDe and sends the resulting tokens back to the proxy address (i.e. ALM Proxy). Encode the function using abi.encodeCall.</td>
+          <td>This document defines the process to unstake sUSDe and return it to the ALM Proxy. ◦ Ensure you're working as a Relayer. Only the RELAYER role is allowed to unstakeSUSDe. Also, ensure the contract isActivei.e. can process the request. function unstakeSUSDe() external onlyRole(RELAYER) isActive ◦ Use proxy.doCall() to make a call to the susde contract to invoke the unstake function, which unstakes sUSDe and sends the resulting tokens back to the proxy address (i.e. ALM Proxy). Encode the function using abi.encodeCall. { proxy.doCall(address(susde), abi.encodeCall(susde.unstake, (address(proxy))));}</td>
         </tr>
         <tr>
           <td>
