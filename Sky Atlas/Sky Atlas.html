@@ -347,6 +347,22 @@
           <td>
             <dfn>A.2.5</dfn>
           </td>
+          <td>Treasury Management</td>
+          <td>Article</td>
+          <td>The Sky Treasury Management Function defines how all Net Revenue of the Sky Protocol is distributed among various downstream functions or buffers. This ensures that all necessary functions are adequately funded, allowing all actors to focus on growing the ecosystem in a positive sum way.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle</td>
+          <td>Article</td>
+          <td>This Article governs the Sky Core Monthly Settlement Cycle (MSC), a recurring process that synchronizes core financial operations, governance functions, and risk management activities across the ecosystem.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5</dfn>
+          </td>
           <td>Star Incubation</td>
           <td>Article</td>
           <td>This Article governs the incubation of Stars. It defines the necessary infrastructure and processes
@@ -3381,6 +3397,42 @@
         <tr>
           <td>
             <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules</td>
+          <td>Core</td>
+          <td>Bounded External Access Modules (BEAMs) are contracts that allow whitelisted operators to manage parameters in the Sky Ecosystem without needing to use the standard Executive Vote process. Thus, parameter changes enacted via these modules are not subject to the GSM Pause Delay.<br>The actions of BEAMs are limited by risk parameters, which are set by Sky Core Governance and require an Executive Vote to change.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Bounded External Access Module Risk Disclosure</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Bounded External Access Module Risk Disclosure</td>
+          <td>Core</td>
+          <td>BEAMs allow whitelisted operators greater flexibility to respond to market movements when setting parameters in the Sky Ecosystem. This flexibility introduces additional risk since operators are able to bypass the Executive Vote process when changing the parameters relevant to the BEAM that they operate.<br>This risk can be mitigated by limiting the frequency and size of modifications that can be made by operators in parameters controlled by Sky Core. All BEAMs should also have a related MOM contract that can deactivate the relevant BEAM in the event of an operator acting in a misaligned manner.<br>Any operator that fails to follow the defined procedures for a BEAM they are operating should be considered misaligned.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Stability Parameter Bounded External Access Module</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Stability Parameter Bounded External Access Module</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) manages the rates applied to Sky Protocol’s native vaults as well as the savings rates. Whitelisted operators can use the SP-BEAM to modify rates without waiting for the GSM Pause Delay. The SP-BEAM modifies rates up or down within specified parameters. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.<br>This functionality allows the Sky Protocol to react to changes in market rates more quickly than waiting for the Governance and Spell Process execution and GSM Pause Delay.<br>The risk opened up by this functionality is malicious action by whitelisted operators setting rates to undesirable values. This risk can be mitigated through the SP-BEAM parameters and the SP_BEAM_MOM.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Stability Parameter Bounded External Access Module Breaker Exception</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Stability Parameter Bounded External Access Module Breaker Exception</td>
+          <td>Core</td>
+          <td>The SP_BEAM_MOM contract allows Sky Governance to bypass the GSM Pause Delay and disable the Stability Parameter Bounded External Access Module.<br>This functionality allows Sky Governance to react more quickly in an emergency, e.g., if an operator of the SP-BEAM is hacked or is a malicious actor. Once the SP_BEAM_MOM is activated, the SP-BEAM will not be able to change any rates in the system. If the SP_BEAM_MOM has been triggered, it will still be possible to modify rates through the usual Executive Vote process, subject to the GSM Pause Delay.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
               - A3 - Sky Core Governance Security - Governance Security Culture And Research</dfn>
           </td>
           <td>Sky Core Governance Security - Governance Security Culture And Research</td>
@@ -4297,6 +4349,18 @@
         <tr>
           <td>
             <dfn>A.1.12
+              - Monthly Governance Cycle - Atlas Edit Monthly Cycle - Triggering Requirement</dfn>
+          </td>
+          <td>Monthly Governance Cycle - Atlas Edit Monthly Cycle - Triggering Requirement
+          </td>
+          <td>Core</td>
+          <td>
+            An Atlas Edit Monthly Cycle Proposal can proceed to verification by the Governance Facilitators only if it is triggered by a Prime Delegate whose AD Buffer contains at least one (1) month’s worth of budget at the time of triggering the Proposal. The value of this threshold in USDS is currently specified in A.1.5 - Aligned Delegates - Budget And Participation Requirements - Budget Amount For Prime Delegate Slots. The Governance Facilitators are responsible for confirming that these requirements are met.<br>Aligned Delegates (including Prime Delegates) are prohibited from authoring an Atlas Edit Monthly Cycle Proposal. Prime Delegates are limited to triggering Proposals authored by others. To trigger a Proposal, the Prime Delegate must post a reply to the Author’s Monthly Cycle Proposal on the Forum. The Prime Delegate should indicate their intent to trigger the Monthly Cycle Proposal.<br>Where more than one Prime Delegate posts an intention to trigger a Monthly Cycle Proposal, the first Prime Delegate to post a reply to the Author’s Forum post shall be treated as the triggering Prime Delegate.<br>If the Proposal is edited subsequent to being triggered, the Proposal must be triggered again before proceeding further in the Atlas Edit Monthly Cycle process.<br>If the Monthly Cycle Proposal is voted down, the triggering Prime Delegate loses their entire AD Buffer.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.12
               - Monthly Governance Cycle - Atlas Edit Monthly Cycle - Governance Facilitators' Initial
               Verification</dfn>
           </td>
@@ -4304,10 +4368,10 @@
           </td>
           <td>Core</td>
           <td>
-            The Governance Facilitator must verify that the Atlas Edit Proposal follows the template specified
+            After the Atlas Edit Proposal is triggered, the Governance Facilitator must verify that the Atlas Edit Proposal follows the template specified
             in <dfn>A.1.12
               - Monthly Governance Cycle - Atlas Edit Monthly Cycle - Atlas Edit Proposal Template</dfn>.The
-            Governance Facilitator must also verify that the AEP has been submitted to the Atlas Github
+            Governance Facilitators must also verify that the AEP has been submitted to the Atlas Github
             repository with a Pull Request by the AEP Author. Alternatively, the AEP author can request the
             Governance Facilitators to create the Pull Request for them. If the AEP is successfully verified,
             the Governance Facilitator must◦ Approve the AEP and assign it a formal #◦ Update the Preamble to
@@ -4865,6 +4929,545 @@
               Role At A Time</dfn>, which generally prohibits ACs from simultaneously assuming multiple
             ecosystem roles.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - A1 - Treasury Management - Treasury Management</dfn>
+          </td>
+          <td>Treasury Management</td>
+          <td>Section</td>
+          <td>The documents herein define the Sky Treasury Management Function.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Integration With Monthly Settlement Cycle</dfn>
+          </td>
+          <td>Treasury Management - Integration With Monthly Settlement Cycle</td>
+          <td>Core</td>
+          <td>The Sky Treasury Management Function is synchronized with the Monthly Settlement Cycle. See A.2.6. At the conclusion of each MSC, the Net Revenue of the Sky Protocol for the preceding month is calculated and allocated according to the waterfall process defined in A.2.5 - Allocation Steps.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps</td>
+          <td>Core</td>
+          <td>The documents herein define the allocation steps of the Sky Treasury Management Function. The process is divided into steps beginning with Net Revenue. These steps form a “waterfall” with each previous step needing to be fully funded before any funds can be allocated to later steps.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue</td>
+          <td>Core</td>
+          <td>The sole function of Step 0 is to establish the Net Revenue of the Sky Protocol. It performs no allocations to downstream functions or buffers, unlike subsequent steps for which this Net Revenue serves as the input.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Net Revenue</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Net Revenue</td>
+          <td>Core</td>
+          <td>Net Revenue is equal to Income minus Expenses. Income is defined in A.2.5 - Income. Expenses are defined in A.2.5 - Expenses. Income and Expenses are defined such that Net Revenue must always be positive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income</td>
+          <td>Core</td>
+          <td>The documents herein define each of the components of the Income of the Sky Protocol. These components are added together to arrive at total Income.</td>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Stability Fees From Base Rate</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Stability Fees From Base Rate</td>
+          <td>Core</td>
+          <td>Stability Fees are the fees that Sky Core charges Star Agents to borrow from Sky. See A.3.2 - Core Stability Parameters - Parameters - Base Rate. Sky Core’s legacy ALM infrastructure is currently being transferred to Star Agents; during this transition period and until this transfer is fully complete, income generated from the Sky Core Collateral Portfolio contributes to net revenue. See A.3.4 - Application To Sky Core.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Internal Senior Risk Capital Income</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Internal Senior Risk Capital Income</td>
+          <td>Core</td>
+          <td>Internal Senior Risk Capital income is the revenue attributed to Sky from the total payments made by Stars for Originated Senior Risk Capital (OSRC). ISRC itself comprises surplus capital allocated from designated buffers funded by the Sky Treasury Management Function. While Stars pay a single clearing price for their OSRC based on the monthly Origination Process, the total revenue received by Sky is subsequently allocated proportionally, with the portion corresponding to ISRC’s share of the Total Senior Risk Capital (TSRC) pool designated as ISRC Income. See A.2.5 - Sourcing Of Internal Senior Risk Capital From Surplus Buffers.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - External Senior Risk Capital Fees</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - External Senior Risk Capital Fees</td>
+          <td>Core</td>
+          <td>External Senior Risk Capital Fees are levied by Sky and calculated as 5% of the net interest earnings generated by the External Senior Risk Capital (ESRC) pool each Monthly Settlement Cycle. These earnings represent the portion of the total revenue from Stars’ Originated Senior Risk Capital (OSRC) payments that is attributed proportionally to ESRC, based on its contribution to the Total Senior Risk Capital (TSRC) pool for that cycle. This 5% fee is deducted before the remaining ESRC earnings contribute to the srUSDS conversion rate. See A.3.3 - ESRC Earnings Fee.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Agent Upkeep Fees</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Agent Upkeep Fees</td>
+          <td>Core</td>
+          <td>Agent Upkeep Fees are fees paid by Agents to contribute to the long-term sustainability of the Sky Ecosystem. See A.2.4 - A6 - Ecosystem Upkeep Primitives.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Agent Creation Fees</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Agent Creation Fees</td>
+          <td>Core</td>
+          <td>Agent Creation Fees are one-time payments collected from founding teams when establishing new Star Agents. See A.2.4 - Creation Fee.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses</td>
+          <td>Core</td>
+          <td>The documents herein define each of the components of Expenses. These components are added together to arrive at total Expenses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Sky Savings Rate Paid to sUSDS Holders</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Sky Savings Rate Paid to sUSDS Holders</td>
+          <td>Core</td>
+          <td>The Sky Savings Rate is the interest expense paid to sUSDS holders on their balances. It also includes interest paid to sDai holders on their balances.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Sky Savings Rate Paid Through Integration Boost</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Sky Savings Rate Paid Through Integration Boost</td>
+          <td>Core</td>
+          <td>The Integration Boost provides the equivalent of the Sky Savings Rate to users of decentralized finance protocols who hold USDS balances. See A.2.4 - Integration Boost Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Accessibility Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Accessibility Rewards</td>
+          <td>Core</td>
+          <td>The Accessibility Reward is paid to Star Agents and third-party partners that drive adoption of USDS. See A.2.4 - Accessibility Reward Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Reimbursement Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Reimbursement Rewards</td>
+          <td>Core</td>
+          <td>Reimbursement Rewards are paid to Star Agents to reimburse them for the costs of building common infrastructure used by the entire Sky Ecosystem, such as Token SkyLink deployments.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Pioneer Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Expenses - Pioneer Rewards</td>
+          <td>Core</td>
+          <td>Pioneer Rewards are paid to Pioneer Stars as specified in A.2.4 - Pioneer Incentive Pool.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance</td>
+          <td>Core</td>
+          <td>All of the Net Revenue from Step 0 (A.2.5 - Step 0: Net Revenue) becomes Step 1 Capital. 10% of Step 1 Capital is allocated for security and stability maintenance as specified in the documents herein. The remaining 90% of Step 1 Capital becomes Step 2 Capital and is allocated as specified in A.2.5 - Step 2: High Activity Staking Rewards.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Budget</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Budget</td>
+          <td>Core</td>
+          <td>Up to 5% of Step 1 Capital is allocated to the Core Executor Budget. This budget funds active Core Executor Agents responsible for the continuous improvement of the Atlas, including the risk management framework and other critical components.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Budget - Voluntary Reduction By Core Executor Agents</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Budget - Voluntary Reduction By Core Executor Agents</td>
+          <td>Core</td>
+          <td>Core Executor Agents may agree to voluntarily reduce their budget below 5% when applying for a Core Executor Slot in order to increase their chances of being elected to a Core Executor Slot. To the extent that Core Executor Agents reduce their budget, Step 2 Capital is increased by a corresponding amount. The mechanism by which Core Executor Agents are elected will be specified in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Reward</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Core Executor Reward</td>
+          <td>Core</td>
+          <td>Up to 3% of Step 1 Capital is allocated to Core Executors whose terms have ended in the last four (4) years. This incentivizes Core Executors to increase the long term profitability of the Sky Ecosystem during their Core Executor Slot terms, as the Core Executor Reward is a percentage of future Net Revenue.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Aligned Delegates</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Aligned Delegates</td>
+          <td>Core</td>
+          <td>Up to 1% of Step 1 Capital is allocated to Aligned Delegates.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Aligned Delegates - Voluntary Reduction By Aligned Delegates</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Aligned Delegates - Voluntary Reduction By Aligned Delegates</td>
+          <td>Core</td>
+          <td>Aligned Delegates may agree to voluntarily reduce their compensation in order to incentivize SKY holders to delegate to them. To the extent that Aligned Delegates reduce their compensation, Step 2 Capital is increased by a corresponding amount. The mechanism by which Aligned Delegates may agree to reduce their compensation will be specified in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Integrators</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Integrators</td>
+          <td>Core</td>
+          <td>0.5% of Step 1 Capital is allocated to frontends and other Integrators that facilitate accessible governance, following security and information standards specified in the Atlas. These standards will be specified in a future iteration of the Atlas. See A.2.4 - Core Governance Reward Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Star Agents</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Star Agents</td>
+          <td>Core</td>
+          <td>0.5% of Step 1 Capital is allocated to Star Agents that manage the rewards for Governance Integrators, incentivizing the active participation of Star Agents. See A.2.5 - Governance Accessibility Rewards Paid To Integrators.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards</td>
+          <td>Core</td>
+          <td>5% of the Step 2 Capital is allocated to High Activity Staking Rewards (”HASR”) as specified in the documents herein. The remaining 95% of Step 2 Capital becomes Step 3 Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Purpose</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Purpose</td>
+          <td>Core</td>
+          <td>High Activity Staking Rewards provide a boosted staking reward to SKY stakers that delegate their SKY through compliant Governance Accessibility frontends and provide feedback to their delegates every three (3) months. This ensures that there is a minimum amount of SKY that is always actively following current events and governance to detect potential misalignment or buildup of hidden risks.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Funding Of High Activity Staking Rewards Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Funding Of High Activity Staking Rewards Buffer</td>
+          <td>Core</td>
+          <td>5% of the Step 2 Capital is allocated to funding the High Activity Staking Rewards Buffer (HASRB) linearly over the course of the month. Funds from the High Activity Staking Rewards Buffer are then paid out to Governance Accessibility Integrators as specified in A.2.5 - Payout From High Activity Staking Rewards Buffer. Governance Accessibility Integrators are in turn responsible for distributing those funds to High Activity Stakers as specified in A.2.5 - High Activity Staker Qualification.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Payout From High Activity Staking Rewards Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Payout From High Activity Staking Rewards Buffer</td>
+          <td>Core</td>
+          <td>The High Activity Staking Rewards distribution occurs linearly over the course of each month. The total amount distributed equals the lesser of 1) 5% of Step 2 Capital, or 2) 15% of the current High Activity Staking Rewards Buffer, with a minimum floor of 5% of HASRB.<br>In periods of high profitability, funds build up in the High Activity Staking Rewards Buffer. Then in periods of low profitability these funds are paid out from the High Activity Staking Rewards Buffer, ensuring that there is a continued incentive for active involvement in governance even in periods of low profitability to maintain security.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification</td>
+          <td>Core</td>
+          <td>To qualify as High Activity Stakers, SKY stakers must satisfy two criteria as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Stake Through Compliant Governance Accessibility Frontend</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Stake Through Compliant Governance Accessibility Frontend</td>
+          <td>Core</td>
+          <td>High Activity Stakers must stake through Governance Accessibility frontends that comply with security and information standards specified in the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Continuously Provide Input On Executor Agents</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Continuously Provide Input On Executor Agents</td>
+          <td>Core</td>
+          <td>High Activity Stakers must continuously provide input on the work of Executor Agents. In this way High Activity Stakers monitor the performance of Executor Agents just as Executor Agents monitor the performance of Star Agents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Continuously Provide Input On Executor Agents - Input Methods</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification - High Activity Stakers Must Continuously Provide Input On Executor Agents - Input Methods</td>
+          <td>Core</td>
+          <td>The methods for High Activity Stakers to provide their input will be specified in a future iteration of the Atlas, but may for instance include filling out AI generated questionnaires or other easily measurable and easy to complete tasks. The Core Executor Agents must continuously improve these input methods.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention</td>
+          <td>Core</td>
+          <td>A percentage of the Step 3 Capital equal to the Stability Capital Retention (”SCR”) is allocated to funding the Stability Capital Buffer. The remaining percentage becomes Step 4 Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Buffer</td>
+          <td>Core</td>
+          <td>The Stability Capital Buffer is the surplus of the Sky Protocol that is able to be the final absorber of losses in the case of unsuccessful liquidation of failed Star Agents. See A.3.6 - A1 - Surplus Buffer And Smart Burn Engine - Surplus Buffer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention</td>
+          <td>Core</td>
+          <td>The Stability Capital Retention (SCR) is calculated according to the following formula: SCR = (1 - ((SCB / TS) / TSCB)) * RF. Where: SCB = Current Stability Capital Buffer, TS = Total USDS supply,  TSCB = Target Stability Capital Buffer, RF = Retention Factor.<br>This formula dynamically adjusts capital retention based on the current buffer status: When SCB/TS equals TSCB (buffer at target), SCR equals zero. When SCB/TS is below TSCB, SCR increases proportionally to the shortfall. The maximum possible retention is capped by the Retention Factor (RF).<br>This ensures that capital retention automatically scales with urgency - the further the Stability Capital Buffer falls below its target percentage of total supply, the greater the portion of capital retained.<br>The parameters for calculating the SCR are further defined in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Current Stability Capital Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Current Stability Capital Buffer</td>
+          <td>Core</td>
+          <td>The Current Stability Capital Buffer (SCB) is the current level of the Stability Capital Buffer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Total USDS Supply</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Total USDS Supply</td>
+          <td>Core</td>
+          <td>The total USDS Supply (TS) is the total supply of USDS.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Target Stability Capital Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Target Stability Capital Buffer</td>
+          <td>Core</td>
+          <td>The Target Stability Capital Buffer (TSCB) is the Target level of the Stability Capital Buffer, expressed as a percentage of the total supply of USDS. It is calculated according to the following formula: TCSB = 0.75% + (TS * 1.4e-14). The TSCB cannot exceed 5%.<br>This formula begins with a Target Stability Capital Buffer of 0.75% and gradually increases this as the Total USDS Supply increases, reflecting the fact that a greater capital buffer is required as USDS becomes more systemically important.<br>For example, with USDS Supply of 8 billion, the Target Stability Capital Buffer would be approximately 0.76%.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Retention Factor</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 3: Stability Capital Retention - Stability Capital Retention - Retention Factor</td>
+          <td>Core</td>
+          <td>The Retention Factor is a factor representing how aggressively capital should be retained to fund the Stability Capital Buffer. It is calculated according to the following formula: RF = 25% + (TS * 1.6e-13). The RF cannot exceed 75%.<br>The Retention Factor starts at 25% and scales upward with Total USDS Supply, recognizing that capital accumulation becomes more critical as USDS gains in systemic importance.<br>For example, with USDS Supply of 8 billion, the Retention Factor would be approximately 26%.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards</td>
+          <td>Core</td>
+          <td>Any remaining funds in Step 4 Capital are allocated as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer</td>
+          <td>Core</td>
+          <td>80% of Step 4 Capital is allocated to the Smart Burn Buffer, as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Purpose</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Purpose</td>
+          <td>Core</td>
+          <td>The Smart Burn Engine uses the Smart Burn Buffer to buy and burn SKY using an intelligent algorithm, buying more when the price is low and retaining capital when the price is high to buy later at favorable prices.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer</td>
+          <td>Core</td>
+          <td>The Smart Burn Engine only buys and burns SKY when the Market Capitalization (MC) is below the Target Market Capitalization (TMC). The percentage of the Smart Burn Buffer (Burn Rate) that is used to buy and burn SKY each Monthly Settlement Cycle is calculated according to the following formula: Burn Rate = (1 - MC / TMC) * 50%. The parameters for calculating the Burn Rate are defined in the documents herein.<br>Conceptually, this formula buys more SKY the further the Market Capitalization is below the Target Market Capitalization.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Target Market Capitalization</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Target Market Capitalization</td>
+          <td>Core</td>
+          <td>The Target Market Capitalization (TMC) is calculated according to the following formula: TMC = 8.5 + (200 * growth_rate) * annual_profits. The growth_rate is the three (3) year moving average historical growth rate of Net Revenue, and annual_profits is the one (1) year moving average of Net Revenue.<br>Conceptually, this formula calculates a target price based on the current earnings of the Sky Protocol and a price to earnings ratio, where the price to earnings ratio is a function of how quickly the Sky Protocol is growing.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Target Market Capitalization - Continuous Improvement</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Target Market Capitalization - Continuous Improvement</td>
+          <td>Core</td>
+          <td>The Core Executor Agents must continuously improve the Target Market Capitalization formula so that the Smart Burn Engine becomes more efficient over time.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Market Capitalization</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer - Market Capitalization</td>
+          <td>Core</td>
+          <td>The Market Capitalization is the current market capitalization of Sky. It is calculated by multiplying the price of SKY by the total supply of SKY, treating each MKR on an as-converted basis based on the conversion ratio of 24,000 SKY to 1 MKR.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards</td>
+          <td>Core</td>
+          <td>20% of Step 4 Capital is allocated to the Standard Activity Staking Rewards Buffer, as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Purpose</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Purpose</td>
+          <td>Core</td>
+          <td>Standard Activity Staking Rewards (SASR) provide rewards to users who contribute to security by staking and delegating their SKY votes at least once.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Payout From Standard Activity Staking Rewards Buffer</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Payout From Standard Activity Staking Rewards Buffer</td>
+          <td>Core</td>
+          <td>The Standard Activity Staking Reward Distribution occurs linearly over the course of each month. The monthly payout from the Standard Activity Staking Rewards Buffer (SASRB) is equal to the lesser of (1) 20% of Step 4 Capital, or (2) 15% of the SASRB, with a minimum floor of 5% of the SASRB.<br>In periods of high profitability, funds build up in the Standard Activity Staking Rewards Buffer. Then in periods of low profitability these funds are paid out from the Standard Activity Staking Rewards Buffer, ensuring that there is a continued incentive for involvement in governance even in periods of low profitability to maintain security.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Standard Activity Staker Qualification</dfn>
+          </td>
+          <td>Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Standard Activity Staker Qualification</td>
+          <td>Core</td>
+          <td>SKY that is both staked and delegated to an Aligned Delegate will qualify for Standard Activity Staking Rewards.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers</td>
+          <td>Core</td>
+          <td>Internal Senior Risk Capital (ISRC) consists of a portion of the excess capital of the Sky Protocol that is reinvested in providing Senior Risk Capital to Star Agents. ISRC is sourced from the various Buffers defined in A.2.5 - Allocation Steps, according to the specifications of the subdocuments below.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In High Activity Staking Rewards Buffer</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In High Activity Staking Rewards Buffer</td>
+          <td>Core</td>
+          <td>All USDS in the High Activity Staking Rewards Buffer is used for Internal Senior Risk Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Standard Activity Staking Rewards Buffer</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Standard Activity Staking Rewards Buffer</td>
+          <td>Core</td>
+          <td>All USDS in the Standard Activity Staking Rewards Buffer is used for Internal Senior Risk Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Smart Burn Buffer</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Smart Burn Buffer</td>
+          <td>Core</td>
+          <td>All USDS in the Smart Burn Buffer is used for Internal Senior Risk Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Stability Capital Buffer Above Target</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Stability Capital Buffer Above Target</td>
+          <td>Core</td>
+          <td>All USDS in the Stability Capital Buffer above the Stability Capital Buffer Target is used for Internal Senior Risk Capital. Since this capital is already above the optimal target to absorb risk it can be redirected to a more efficient use.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Stability Capital Buffer Below Target</dfn>
+          </td>
+          <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers - USDS In Stability Capital Buffer Below Target</td>
+          <td>Core</td>
+          <td>One third of the USDS in the Stability Capital Buffer below the Stability Capital Buffer Target is also used for Internal Senior Risk Capital. This ensures that there is always some Internal Senior Risk Capital to drive the growth of the ecosystem.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.5
+              - Treasury Management - Short Term Transitionary Measures</dfn>
+          </td>
+          <td>Treasury Management - Short Term Transitionary Measures</td>
+          <td>Core</td>
+          <td>As a short-term transitionary measure, the net revenue of the Sky Protocol is currently allocated manually through Executive Votes rather than through the allocation steps defined above. This manual process will be removed in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6
+              - A1 - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview</td>
+          <td>Section</td>
+          <td>The documents herein define the Monthly Settlement Cycle (MSC), a standardized, system-wide process executed at the end of each calendar month.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.6
+              - Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Operational Processes</dfn>
+          </td>
+          <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Operational Processes</td>
+          <td>Core</td>
+          <td>The Monthly Settlement Cycle (MSC) synchronizes several key operational processes across the ecosystem, including: (1) Sky Protocol’s net revenue from the previous month is calculated and allocated through the steps of the Treasury Management Function. See A.2.5. (2) The monthly Senior Risk Capital (SRC) origination process is settled: the clearing price is established, costs are deducted from winning Star Agents’ accounts, and their accounts are credited with Originated SRC (OSRC) for the upcoming month. See 3.3 - Settlement Of Origination. (3) Queued conversions between USDS and srUSDS within the SRC system are processed. See A.3.3 - Deposit And Redemption Queues. (4) Pioneer Incentive Pools are funded with an amount equivalent to the Sky Savings Rate applied to unrewarded USDS. See A.2.4 - Pioneer Chain Primitive. (5) The Smart Burn Buffer’s burning operation occurs synchronously with each Monthly Settlement Cycle. At each cycle, the system calculates the appropriate Burn Rate based on current market conditions and executes the burn operation, if applicable, according to the formula specified in the Atlas. See A.2.5 - Usage Of Smart Burn Buffer. (6) Critical Core GovOps functions related to the operationalization of Sky Primitives are executed, including payment/reimbursement processing, compliance monitoring, and the calculation and application of retroactive penalties.</td>
         </tr>
         <tr>
           <td>
@@ -6792,21 +7395,20 @@
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Dai Savings Rate Formula</dfn>
+              - Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Dai Savings Rate Formula</td>
+          <td>Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification</td>
           <td>Core</td>
-          <td>The Dai Savings Rate is determined based on the Base Rate and DSR Spread parameter using the
-            following formula:Dai Savings Rate = Base Rate + DSR Spread</td>
+          <td>The Dai Savings Rate can be modified through either Executive Votes or the Stability Parameter Bounded External Access Module. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.<br>The Dai Savings Rate must gradually be reduced to 0% over time.</td>
         </tr>
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Dai Savings Rate Current Value</dfn>
+              - Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification - Dai Savings Rate Stability Parameter Bounded External Access Module Parameters</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Dai Savings Rate Current Value</td>
+          <td>Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification - Dai Savings Rate Stability Parameter Bounded External Access Module Parameters</td>
           <td>Core</td>
-          <td>The current value of the Dai Savings Rate is 3.50%.</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Dai Savings Rate are: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
         </tr>
         <tr>
           <td>
@@ -6821,21 +7423,20 @@
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Sky Savings Rate Formula</dfn>
+              - Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Sky Savings Rate Formula</td>
+          <td>Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification</td>
           <td>Core</td>
-          <td>The Sky Savings Rate is determined based on the Dai Savings Rate and the USDS Spread parameter using
-            the following formula:Sky Savings Rate = Dai Savings Rate + USDS Spread</td>
+          <td>The Sky Savings Rate can be modified through either Executive Votes or the Stability Parameter Bounded External Access Module. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.</td>
         </tr>
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - USDS Spread Current Value</dfn>
+              - Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification - Sky Savings Rate Stability Parameter Bounded External Access Module Parameters</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - USDS Spread Current Value</td>
+          <td>Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification - Sky Savings Rate Stability Parameter Bounded External Access Module Parameters</td>
           <td>Core</td>
-          <td>The current value of the USDS Spread is 1.00%.</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Sky Savings Rate are: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
         </tr>
         <tr>
           <td>
@@ -7837,10 +8438,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-A</td>
           <td>Core</td>
-          <td>Current ETH-A parameters are:• Stability Fee: 6.00%• Liquidation Ratio: 145%• DC-IAM line:
-            15,000,000,000 Dai• DC-IAM gap: 150,000,000 Dai• DC-IAM ttl: 21,600 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            40,000,000 Dai• dust: 7,500 Dai</td>
+          <td>Current ETH-A parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 145%, • DC-IAM line: 15,000,000,000 Dai, • DC-IAM gap: 150,000,000 Dai, • DC-IAM ttl: 21,600 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 40,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7849,10 +8447,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-B</td>
           <td>Core</td>
-          <td>Current ETH-B parameters are:• Stability Fee: 6.50%• Liquidation Ratio: 130%• DC-IAM line:
-            250,000,000 Dai• DC-IAM gap: 20,000,000 Dai• DC-IAM ttl: 21,600 seconds• cut: 99.00%• step: 60
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 4,800 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            15,000,000 Dai• dust: 25,000 Dai</td>
+          <td>Current ETH-B parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 130%, • DC-IAM line: 250,000,000 Dai, • DC-IAM gap: 20,000,000 Dai, • DC-IAM ttl: 21,600 seconds, • cut: 99.00%, • step: 60 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 4,800 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 15,000,000 Dai, • dust: 25,000 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7861,10 +8456,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-C</td>
           <td>Core</td>
-          <td>Current ETH-C parameters are:• Stability Fee: 5.75%• Liquidation Ratio: 170%• DC-IAM line:
-            2,000,000,000 Dai• DC-IAM gap: 100,000,000 Dai• DC-IAM ttl: 28,800 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            35,000,000 Dai• dust: 3,500 Dai</td>
+          <td>Current ETH-C parameters are: • SStability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 170%, • DC-IAM line: 2,000,000,000 Dai, • DC-IAM gap: 100,000,000 Dai, • DC-IAM ttl: 28,800 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 35,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7873,10 +8465,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WSTETH-A</td>
           <td>Core</td>
-          <td>Current WSTETH-A parameters are:• Stability Fee: 7.00%• Liquidation Ratio: 150%• DC-IAM line:
-            750,000,000 Dai• DC-IAM gap: 30,000,000 Dai• DC-IAM ttl: 43,200 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            30,000,000 Dai• dust: 7,500 Dai</td>
+          <td>Current WSTETH-A parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 750,000,000 Dai, • DC-IAM gap: 30,000,000 Dai, • DC-IAM ttl: 43,200 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 30,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7885,10 +8474,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WSTETH-B</td>
           <td>Core</td>
-          <td>Current WSTETH-B parameters are:• Stability Fee: 6.75%• Liquidation Ratio: 175%• DC-IAM line:
-            1,000,000,000 Dai• DC-IAM gap: 45,000,000 Dai• DC-IAM ttl: 43,200 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            20,000,000 Dai• dust: 3,500 Dai</td>
+          <td>Current WSTETH-B parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 175%, • DC-IAM line: 1,000,000,000 Dai, • DC-IAM gap: 45,000,000 Dai, • DC-IAM ttl: 43,200 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 20,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7897,10 +8483,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-A</td>
           <td>Core</td>
-          <td>Current WBTC-A parameters are:• Stability Fee: 11.00%• Liquidation Ratio: 150%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 4,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 90 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 0%• hole: 10,000,000 Dai• dust:
-            7,500 Dai</td>
+          <td>Current WBTC-A parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 0 Dai, • DC-IAM gap: 4,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 10,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7909,10 +8492,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-B</td>
           <td>Core</td>
-          <td>Current WBTC-B parameters are:• Stability Fee: 11.50%• Liquidation Ratio: 150%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 2,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 60 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 4,800 sec• chip: 0.10%• tip: 250• chop: 0%• hole: 5,000,000 Dai• dust: 25,000
-            Dai</td>
+          <td>Current WBTC-B parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 0 Dai, • DC-IAM gap: 2,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 60 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 4,800 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 5,000,000 Dai, • dust: 25,000 Dai</td>
         </tr>
         <tr>
           <td>
@@ -7921,10 +8501,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-C</td>
           <td>Core</td>
-          <td>Current WBTC-C parameters are:• Stability Fee: 10.75%• Liquidation Ratio: 175%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 8,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 90 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 0%• hole: 10,000,000 Dai• dust:
-            3,500 Dai</td>
+          <td>Current WBTC-C parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 175%, • DC-IAM line: 0 Dai, • DC-IAM gap: 8,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 10,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -8338,6 +8915,321 @@
             is pursuant to the Operational Weekly Cycle and can be effected directly via an Executive Vote, without requiring a Governance Poll. 
             Exceptions to this general rule must be clearly stated in the relevant Atlas document.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) enables designated, Governance-whitelisted operators to adjust the Stability Fees of supported vault types, the Dai Savings Rate (DSR), and the Sky Savings Rate (SSR). Adjustments are governed by the SP-BEAM smart contract logic and specific parameters set by Sky Governance. SP-BEAM holds four parameters that can be set for each vault type or savings rate: (i) min, (ii) max, (iii) step, and (iv) tau.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Stability Parameter Bounded External Access Module.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Min Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Min Definition</td>
+          <td>Core</td>
+          <td>The min parameter defines the minimum value for rates in basis points that can be set using the Stability Parameter Bounded External Access Module. Each rate parameter added to the SP-BEAM has a specific min.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition</td>
+          <td>Core</td>
+          <td>The max parameter defines the maximum value for rates in basis points that can be set using the Stability Parameter Bounded External Access Module. Each rate parameter added to the SP-BEAM has a specific max.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition - Max Technical Upper Limit</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition - Max Technical Upper Limit</td>
+          <td>Core</td>
+          <td>Although the max parameter can be set higher, the SP-BEAM cannot be used to set a rate higher than 50% (5,000 basis points) due to technical limitations. Attempts to use the SP-BEAM in this manner will revert. To avoid confusion, max should not be set to a value higher than 50% (5,000 basis points).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Step Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Step Definition</td>
+          <td>Core</td>
+          <td>The step parameter limits how much the rates can be increased or decreased in a single transaction in basis points, bound by the tau parameter. Each rate parameter added to the SP-BEAM has a specific step.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition</td>
+          <td>Core</td>
+          <td>The tau parameter defines the minimum time interval, in seconds, that must elapse between consecutive uses or operations of the Stability Parameter Bounded External Access Module.<br>An SP-BEAM operation may adjust one or more parameters. Once an SP-BEAM operation is executed, the tau duration must expire before any subsequent SP-BEAM operation can be performed.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition - Tau Current Value</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition - Tau Current Value</td>
+          <td>Core</td>
+          <td>The tau is currently set to 57,600 seconds (16 hours).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Native Vaults are defined in the subdocuments herein. When new vaults are added to the protocol, they must also be added to the SP-BEAM. Unless specified otherwise within the relevant subdocument herein, the SP-BEAM parameters for any newly added Native Vault type shall default to match the parameters defined herein for the ETH-A vault type.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-C Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-C Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-C Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WSTETH-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WSTETH-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-C Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-C Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-C Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Allocator Vaults are defined in the subdocuments herein. When new Allocator Vaults are added, they must also be added to the SP-BEAM. Unless specified otherwise within the relevant subdocument herein, the SP-BEAM parameters for any newly added Allocator Vault type shall default to match the parameters defined herein for the ALLOCATOR-SPARK-A vault type.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-SPARK-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-SPARK-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-SPARK-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-NOVA-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-NOVA-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-NOVA-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-BLOOM-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-BLOOM-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-BLOOM-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Parameter Adjustments</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Parameter Adjustments</td>
+          <td>Core</td>
+          <td>All Stability Parameter Bounded External Access Module parameters can be modified by the Stability Facilitators, in consultation with the Stability Scope Advisors. This process will be conducted through the Operational Weekly Governance Cycle or, if necessary, through out-of-schedule Executive Votes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) Operator is a whitelisted entity that can directly alter the current parameters of vault types or savings rates that have been added to the SP-BEAM. Changes to rates are limited by the max, min, step, and tau parameters. Operators can be added or removed by an Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig</td>
+          <td>Core</td>
+          <td>The Operator Multisig is the Operator of the Stability Parameter Bounded External Access Module and is controlled by Core Executor Agent Atlas Axis.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Address</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Address</td>
+          <td>Core</td>
+          <td>The address of the Operator Multisig on the Ethereum Mainnet is 0xe1c6f81D0c3CD570A77813b81AA064c5fff80309.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Required Number Of Signers</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Required Number Of Signers</td>
+          <td>Core</td>
+          <td>The Operator Multisig currently has a 2/3 signing requirement.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Signers</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Signers</td>
+          <td>Core</td>
+          <td>The signers of the Operator Multisig are three (3) addresses controlled by Core Executor Agent Atlas Axis.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Usage Standards</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Usage Standards</td>
+          <td>Core</td>
+          <td>The signers of the Operator Multisig must use the multisig to operate the Stability Parameter Bounded External Access Module in accordance with the instructions specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Modification</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Modification</td>
+          <td>Core</td>
+          <td>Core Executor Agent Atlas Axis can change the signers of the Operator Multisig at any time, so long as there are at least three (3) signers and at least a majority of signers are required to execute transactions.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Update Process</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Update Process</td>
+          <td>Core</td>
+          <td>Stability Parameter Bounded External Access Module Operators can be modified by the Stability Facilitators, in consultation with the Stability Scope Advisors. This process will be conducted through the Operational Weekly Governance Cycle or, if necessary, through out-of-schedule Executive Votes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process</td>
+          <td>Core</td>
+          <td>The rates set by the Stability Parameter Bounded External Access Module (SP-BEAM) are managed by the SP-BEAM Operators. The SP-BEAM Operators’ use of this authority must wholly adhere to instructions provided by the Stability Scope Advisors and approved by the Stability Facilitators.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Request By Stability Scope Advisors</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Request By Stability Scope Advisors</td>
+          <td>Core</td>
+          <td>Any requests to change rates set by the SP-BEAM must be posted to the Sky Forum by the Stability Scope Advisor that is recommending the change.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Approval By Stability Facilitators</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Approval By Stability Facilitators</td>
+          <td>Core</td>
+          <td>The Stability Facilitators must review each SP-BEAM rate-change request that is posted to the Sky Forum by the Stability Scope Advisors. If the Stability Facilitators approve the rate change request, they must reply to the Forum post indicating their approval.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Operator Execution</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Operator Execution</td>
+          <td>Core</td>
+          <td>Once a rate change request has been approved by the Stability Facilitators, the SP-BEAM Operators must prepare and execute the proposed changes in a timely manner. Preparation can include the creation of transaction simulations to verify inputs.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Public Communication</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Public Communication</td>
+          <td>Core</td>
+          <td>Once a change in rates set by the SP-BEAM has been executed, the execution must be publicly communicated to the Sky Ecosystem. This communication may take the form of either (1) a Forum post or (2) inclusion of the execution in an informational dashboard that allows community members to see each rate change executed by the SP-BEAM.</td>
         </tr>
         <tr>
           <td>
