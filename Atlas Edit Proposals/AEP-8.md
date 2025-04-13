@@ -31,4 +31,4 @@ The Integration Boost is provided to DeFi protocol partners **outside Ethereum a
 
 ## Pull Request of Edits
 
-Once RFC is over if the Governance Facilitator can please make this I'd appreciate it.
+_The targeted content is still in the process of being added to the Atlas. Therefore, a PR mirroring the edit will be created once the targeted content has been added._

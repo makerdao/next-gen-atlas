@@ -35,4 +35,6 @@ Alignment Conservers must always act to preserve the spirit of the Atlas Immutab
 
 ## Pull Request of Edits
 
-I apologize I got to the stage of editing the github but couldn't figure out how to make this a pull request. Somehow I did it last time.
+[86](https://github.com/makerdao/next-gen-atlas/pull/86)
+
+[_Note that the PR does not match the originally proposed edit exactly. This is explained in [this forum post](https://forum.sky.money/t/clarifications-regarding-aeps-3-and-8/26271)._]
