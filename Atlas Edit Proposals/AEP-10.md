@@ -3,9 +3,9 @@
 ```
 AEP#: 10
 Original Author: GFX Labs
-Edited and Modified by: misher
+Resubmitter (and modifier): misher
 Contributors:
-Status: RFC
+Status: Formal Submission
 Date Proposed: 2025-03-29
 Date Ratified: 
 Forum URL: https://forum.sky.money/t/aep-10-making-delegate-anonymity-optional/26205
@@ -34,4 +34,4 @@ The AD Buffer also serves as collateral for a whistleblower bounty. This bounty 
 
 ## Pull Request of Edits
 
-WIP
+https://github.com/makerdao/next-gen-atlas/pull/81

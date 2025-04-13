@@ -6,7 +6,7 @@
 AEP#: 03
 Author(s): misher
 Contributors:
-Status: RFC
+Status: Formal Submission
 Date Proposed: 2025-02-13
 Date Ratified: 
 Forum URL:https://forum.sky.money/t/aep-03-monthly-developer-ad-community-meetings/25991
@@ -35,4 +35,4 @@ Alignment Conservers must always act to preserve the spirit of the Atlas Immutab
 
 ## Pull Request of Edits
 
-I apologize I got to the stage of editing the github but couldn't figure out how to make this a pull request. Somehow I did it last time.
+https://github.com/makerdao/next-gen-atlas/pull/86
