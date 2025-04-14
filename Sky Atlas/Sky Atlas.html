@@ -2650,9 +2650,9 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.6 - Facilitators - Core Executive Facilitator</dfn>
+            <dfn>A.1.6 - Facilitators - Core Executor Facilitator</dfn>
           </td>
-          <td>Facilitators - Core Executive Facilitator</td>
+          <td>Facilitators - Core Executor Facilitator</td>
           <td>Section</td>
           <td>Every Core Executor Agent must have a Facilitator. The Core Executor Agent and Facilitator must enter into an agreement where the Facilitator agrees to interpret the Atlas and Artifacts on behalf of the Agent.</td>
         </tr>
@@ -6935,7 +6935,7 @@
           <td>Upkeep Rebate Primitive</td>
           <td>Core</td>
           <td>
-            The Upkeep Rebate Primitive allows a Star Agent ("Holding Agent") to claim a rebate on its Ecosystem Upkeep Fees when it holds any portion of the token supply of another Star Agent ("Issuing Agent"). Ecosystem Upkeep Fees are accounted on a monthly basis. The Upkeep Rebate is calculated on the same cadence per Holding Agent as follows: (1) The Holding Agent's share of the Issuing Agent's token supply at the time the Issuing Agent pays its Ecosystem Upkeep Fees, multiplied by (2) The total monthly Ecosystem Upkeep Fees paid by the Issuing Agent. For a Star Agent deploying the Distribution Requirement Primitive, the value of its total monthly Ecosystem Upkeep Fee is calculated pursuant to <dfn>A.2.4 - Calculation of Distributed Tokens</dfn>. For a Star Agent deploying the Market Cap Fee Primitive, the value of its total monthly Ecosystem Upkeep Fee is calculated pursuant to <dfn>A.2.4 - Calculation of Distributed Tokens</dfn>. This resulting rebate amount is applied against the Holding Agent's Ecosystem Upkeep Fees due in the calendar month immediately following the Issuing Agent's payment.
+           The Upkeep Rebate Primitive allows a Star Agent (”Holding Agent”) to claim a rebate on its Ecosystem Upkeep Fees when it holds any portion of the token supply of another Star Agent (”Issuing Agent”). Ecosystem Upkeep Fees are accounted on a monthly basis. The Upkeep Rebate is calculated on the same cadence per Holding Agent as follows: (1) The Holding Agent’s share of the Issuing Agent’s token supply at the time the Issuing Agent pays its Ecosystem Upkeep Fees, multiplied by (2) The total monthly Ecosystem Upkeep Fees paid by the Issuing Agent. For a Star Agent deploying the Distribution Requirement Primitive, the value of its total monthly Ecosystem Upkeep Fee is calculated pursuant to <dfn>A.2.4 - Calculation of Distributed Tokens</dfn>. For a Star Agent deploying the Market Cap Fee Primitive, the value of its total monthly Ecosystem Upkeep Fee is calculated pursuant to <dfn>A.2.4 - Valuation</dfn>. This resulting rebate amount is applied against the Holding Agent’s Ecosystem Upkeep Fees due in the calendar month immediately following the Issuing Agent’s payment.
           </td>
         </tr>
         <tr>
@@ -7166,6 +7166,22 @@
         </tr>
         <tr>
           <td>
+            <dfn>A.2.4 - Base Elements - Accessibility Reward Reimbursement</dfn>
+          </td>
+          <td>Base Elements - Accessibility Reward Reimbursement</td>
+          <td>Core</td>
+          <td>The documents herein specify the Accessibility Reward reimbursement.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Base Elements - Accessibility Reward Reimbursement - Sky Core Accessibility Reward Reimbursement</dfn>
+          </td>
+          <td>Base Elements - Accessibility Reward Reimbursement - Sky Core Accessibility Reward Reimbursement</td>
+          <td>Active Data Controller</td>
+          <td>The Accessibility Reward reimbursement payments are defined as Active Data in A.2.4 - Sky Core Accessibility Reward Reimbursement Amounts. The Active Data is updated as follows: • The Responsible Party is Core GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>A.2.4 - Integrator Program</dfn>
           </td>
           <td>Integrator Program</td>
@@ -7213,7 +7229,7 @@
           <td>Removal From Integrator Program</td>
           <td>Core</td>
           <td>
-            If Sky Ecosystem Governance removes an Integrator from the Integrator Program, Operational GovOps must remove the Integrator from the list of Current Integrators in <dfn>A.2.4 - Current Integrators</dfn> and deactivate the Instances of the Accessibility Reward and Integration Boost Primitive associated with them.
+            If Sky Governance removes an Integrator from the Integrator Program, Operational GovOps must remove the Integrator from the list of Current Integrators in <dfn>A.2.4 - Current Integrators</dfn> and deactivate the Instances of the Accessibility Reward and Integration Boost Primitive associated with them.
           </td>
         </tr>
         <tr>
@@ -7238,7 +7254,7 @@
           </td>
           <td>Integrator Program Applications</td>
           <td>Active Data Controller</td>
-          <td>The list of Integrator Program applicants is defined as Active Data. The Active Data is updated as follows:• The Responsible Party is Viridian Advisors.• The Update Process must follow the protocol for 'Direct Edit'.</td>
+          <td>The list of Integrator Program applicants is defined as Active Data in <dfn>A.2.4 - List of Integrator Applicants</dfn> . The Active Data is updated as follows:• The Responsible Party is Viridian Advisors.• The Update Process must follow the protocol for 'Direct Edit'.</td>
         </tr>
         <tr>
           <td>
@@ -7460,7 +7476,7 @@
           </td>
           <td>Current Integrators</td>
           <td>Active Data Controller</td>
-          <td>Current Integrators are Integrators who have a Reward Code specified in an Active Instance of the Accessibility Reward Primitive. The list of Current Integrators is defined as Active Data. The Active Data is updated as follows:• The Responsible Party is Operational GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td>
+          <td>Current Integrators are Integrators who have a Reward Code specified in an Active Instance of the Accessibility Reward Primitive. The list of Current Integrators is defined as Active Data in <dfn>A.2.4 - List of Current Integrators</dfn>. The Active Data is updated as follows:• The Responsible Party is Operational GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td>
         </tr>
         <tr>
           <td>
@@ -7468,7 +7484,7 @@
           </td>
           <td>Onboarding Integrators</td>
           <td>Active Data Controller</td>
-          <td>Onboarding Integrators are actors whose application to the Integrator Program has been approved, but are specified in an Instance of the Accessibility Reward Primitive or Integration Boost Primitive that is "Pending", or is not Active yet. The list of Onboarding Integrators is defined as Active Data. The Active Data is updated as follows:• The Responsible Party is Operational GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td>
+          <td>Onboarding Integrators are actors whose application to the Integrator Program has been approved, but are specified in an Instance of the Accessibility Reward Primitive or Integration Boost Primitive that is “Pending”, or is not Active yet. The list of Onboarding Integrators is defined as Active Data in <dfn>A.2.4 - List of Onboarding Integrators</dfn>. The Active Data is updated as follows:• The Responsible Party is Operational GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td>
         </tr>
         <tr>
           <td>
@@ -8467,7 +8483,7 @@
           <td>Sky Core Atlas Updates</td>
           <td>Core</td>
           <td>
-            The Sky Core Atlas documents specified herein are updated as the output of this process.• Payment Accuracy Previously Confirmed By Core GovOps ◦ <strong>Sky Core Accessibility Reward Reimbursement</strong> <strong>Active Data Document Update</strong> (Core) - The document in the Sky Core Atlas is updated as follows: • Updated Fields • Status ◦ New value: populate with Pending Payment • Confirmed Reimbursement Due ◦ New value: populate with total Reimbursement amount • Reward Period ◦ New Value: populate with reward period • Operational Executor Agent ◦ New value: Populate with name of Operational Executor Agent • Star Agent ◦ New value: Populate with name of Star Agent. • Responsible Party: Core GovOps • Triggers: <dfn>A.2.4 - Process Definition For Executive Vote Reimbursement</dfn> • Payment Inaccuracy Previously Found By Core GovOps ◦ TBD
+            The Sky Core Atlas documents specified herein are updated as the output of this process.• Payment Accuracy Previously Confirmed By Core GovOps ◦ The document A.2.4 - Sky Core Accessibility Reward Reimbursement Amounts is updated as follows: • Updated Fields • Status ◦ New value: populate with Pending Payment • Confirmed Reimbursement Due ◦ New value: populate with total Reimbursement amount • Reward Period ◦ New Value: populate with reward period • Operational Executor Agent ◦ New value: Populate with name of Operational Executor Agent • Star Agent ◦ New value: Populate with name of Star Agent. • Responsible Party: Core GovOps • Triggers: <dfn>A.2.4 - Process Definition For Executive Vote Reimbursement</dfn> • Payment Inaccuracy Previously Found By Core GovOps ◦ TBD
           </td>
         </tr>
         <tr>
@@ -8540,7 +8556,7 @@
           </td>
           <td>Required Primitive Inputs</td>
           <td>Core</td>
-          <td>The required Primitive Inputs to this process are specified herein and organized as sequential stages.• Core GovOps adds reimbursement to Executive Vote ◦ Edit Accessibility Reward Payments • Updated fields • Executive Vote Settlement/Executive Vote ◦ New value: links to proposal • Status ◦ New value: set to Added to Executive Vote• After Executive Vote passes, Core GovOps updates Powerhouse system ◦ Edit Accessibility Reward Payments • Updated fields • Executive Vote Settlement / Transaction Details/ Amount Paid ◦ New value: populate with amount paid to reimburse Operational Executor Agent Buffer • Executive Vote Settlement / Transaction Details / Tx Hash ◦ New value: Populate with transaction hash • Status ◦ New value: set to Completed</td>
+          <td>The required Primitive Inputs to this process are specified herein and organized as sequential stages.• Core GovOps adds reimbursement to Executive Vote ◦ Edit Sky Core Accessibility Reward Reimbursement Amounts • Updated fields • Executive Vote Settlement/Executive Vote ◦ New value: links to proposal • Status ◦ New value: set to Added to Executive Vote • After Executive Vote passes, Core GovOps updates Powerhouse system ◦ Edit Accessibility Reward Payments • Updated fields • Executive Vote Settlement / Transaction Details/ Amount Paid ◦ New value: populate with amount paid to reimburse Operational Executor Agent Buffer • Executive Vote Settlement / Transaction Details / Tx Hash ◦ New value: Populate with transaction hash • Status ◦ New value: set to Completed</td>
         </tr>
         <tr>
           <td>
@@ -8645,6 +8661,22 @@
           <td>Base Elements</td>
           <td>Core</td>
           <td>The documents herein define the base elements of the Integration Boost Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Base Elements - Integration Boost Reimbursement</dfn>
+          </td>
+          <td>Base Elements - Integration Boost Reimbursement</td>
+          <td>Core</td>
+          <td>The documents herein specify the Integration Boost reimbursement.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Base Elements - Integration Boost Reimbursement - Sky Core Integration Boost Reimbursement</dfn>
+          </td>
+          <td>Base Elements - Integration Boost Reimbursement - Sky Core Integration Boost Reimbursement</td>
+          <td>Active Data Controller</td>
+          <td>The Integration Boost reimbursement payments are defined as Active Data in A.2.4 - Sky Core Integration Boost Reimbursement Amounts. The Active Data is updated as follows: • The Responsible Party is Core GovOps.• The Update Process must follow the protocol for 'Direct Edit'.</td></td>
         </tr>
         <tr>
           <td>
@@ -9442,7 +9474,7 @@
           </td>
           <td>Required Primitive Inputs</td>
           <td>Core</td>
-          <td>The following inputs must be submitted into the Primitive using the Powerhouse interface.• Edit Instance Configuration Document to reflect ratified Primitive Instance. ◦ Updated fields • Parameters/Status - automatically inherits from Primitive Hub Document • Parameters/Integration Partner Name • New Value: set to Integration Partner Name value from approved Proposal • Parameters/Integration Partner Reward Address • New Value: set to Integration Partner Reward Address value from approved Proposal • Parameters/Integration Partner Chain • New Value: set to Integration Partner Chain value from approved Proposal • Parameters/Integration Boost Cadence • New Value: set to Integration Boost Cadence value from approved Proposal • Parameters/Integration Boost Data Submission Format • New Value: set to Integration Boost Data Submission Format at value from approved Proposal • Parameters/Integration Boost Data Submission Responsible Actor • New Value: set to Integration Boost Data Submission Responsible Actor value from approved Proposal • Parameters/Integration Boost Savings Rate Adjustment Strategy • New Value: set to Integration Boost Savings Rate Adjustment Strategy value from approved Proposal • Parameters/Custom Instance Parameters • New Value: set to Custom Instance Parameters value from approved Proposal • Responsible party: Operational GovOps [if not automated]</td>
+          <td>The following inputs must be submitted into the Primitive using the Powerhouse interface. • Edit Instance Configuration Document to reflect ratified Primitive Instance. ◦ Updated fields • Parameters/Status - automatically inherits from Primitive Hub Document • Parameters/Integration Partner Name • New Value: set to Integration Partner Name value from approved Proposal • Parameters/Integration Partner Reward Address • New Value: set to Integration Partner Reward Address value from approved Proposal • Parameters/Integration Partner Chain • New Value: set to Integration Partner Chain value from approved Proposal • Parameters/Integration Boost Cadence • New Value: set to Integration Boost Cadence value from approved Proposal • Parameters/Integration Boost Data Submission Format • New Value: set to Integration Boost Data Submission Format value from approved Proposal • Parameters/Integration Boost Data Submission Responsible Actor • New Value: set to Integration Boost Data Submission Responsible Actor value from approved Proposal • Parameters/Integration Boost Savings Rate Adjustment Strategy • New Value: set to Integration Boost Savings Rate Adjustment Strategy value from approved Proposal • Parameters/Custom Instance Parameters • New Value: set to Custom Instance Parameters value from approved Proposal • Responsible party: Operational GovOps [if not automated]</td>
         </tr>
         <tr>
           <td>
@@ -9858,7 +9890,7 @@
           </td>
           <td>Required Primitive Inputs</td>
           <td>Core</td>
-          <td>The required Primitive Inputs to this process are specified herein and organized as sequential stages.• Core GovOps adds reimbursement to Executive Vote ◦ Edit Integration Boost Payments Active Data Document • Updated fields • Executive Vote Settlement/Executive Vote ◦ New value: links to proposal • Status ◦ New value: set to Added to Executive Vote• After Executive Vote passes, Core GovOps updates Powerhouse system ◦ Edit Integration Boost Payments • Updated fields • Executive Vote Settlement / Transaction Details/ Amount Paid ◦ New value: populate with amount paid to reimburse Operational Executor Agent Buffer. • Executive Vote Settlement / Transaction Details / Tx Hash ◦ New value: Populate with transaction hash • Status ◦ New value: set to Completed</td>
+          <td>The required Primitive Inputs to this process are specified herein and organized as sequential stages.• Core GovOps adds reimbursement to Executive Vote ◦ Edit Sky Core Integration Boost Reimbursement Amounts • Updated fields • Executive Vote Settlement/Executive Vote ◦ New value: links to proposal • Status ◦ New value: set to Added to Executive Vote• After Executive Vote passes, Core GovOps updates Powerhouse system ◦ Edit Sky Core Integration Boost Reimbursement Amounts • Updated fields • Executive Vote Settlement / Transaction Details/ Amount Paid ◦ New value: populate with amount paid to reimburse Operational Executor Agent Buffer. • Executive Vote Settlement / Transaction Details / Tx Hash ◦ New value: Populate with transaction hash • Status ◦ New value: set to Completed</td>
         </tr>
         <tr>
           <td>
@@ -19437,6 +19469,22 @@
           <td>The current Onboarding Integrators are:</td>
           </tr>
         <tr>
+          <td>
+            <dfn>A.2.4 - Sky Core Accessibility Reward Reimbursement Amounts</dfn>
+          </td>
+          <td>Sky Core Accessibility Reward Reimbursement Amounts</td>
+          <td>Active Data</td>
+          <td>The current Sky Core Accessibility Reward Reimbursement Amounts are:</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Sky Core Accessibility Sky Core Integration Boost Reimbursement Amounts</dfn>
+          </td>
+          <td>Sky Core Accessibility Sky Core Integration Boost Reimbursement Amounts</td>
+          <td>Active Data</td>
+          <td>The current Sky Core Accessibility Sky Core Integration Boost Reimbursement Amounts are:</td>
+        </tr>
+        <tr>
           <tr>
             <td>
               <dfn>A.2.6 - Ecosystem Actor Incubation - Currently Incubating Ecosystem Actors - List</dfn>
@@ -23326,7 +23374,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The FREEZER_ROLE is the address of the emergency role that allows freezing all actions on the Controller contracts. Freeze function is invoked in the Controller contract by the Relayer Role.</td>
+          <td>The FREEZER_ROLE is the address of the emergency role that allows freezing all actions on the Controller contracts. Freeze function is invoked in the Controller contract by the Freezer Role.</td>
         </tr>
         <tr>
           <td>
