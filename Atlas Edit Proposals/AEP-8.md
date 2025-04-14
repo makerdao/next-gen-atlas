@@ -7,11 +7,11 @@ AEP#: 8
 Original Author(s): GFX Labs
 Resubmitter (and modifier): misher
 Contributors:
-Status: RFC
+Status: Formal Submission
 Date Originally Proposed: 2025-02-17
 Date Re-submitted: 2025-03-24
 Date Ratified:
-Forum URL:
+Forum URL: https://forum.sky.money/t/aep-8-focus-integration-boost-on-crosschain-adoption/26176/
 ```
 
 ## Motivation
@@ -31,4 +31,6 @@ The Integration Boost is provided to DeFi protocol partners **outside Ethereum a
 
 ## Pull Request of Edits
 
-Once RFC is over if the Governance Facilitator can please make this I'd appreciate it.
+[#90](https://github.com/makerdao/next-gen-atlas/pull/90)
+
+[_Note that the PR does not match the originally proposed edit exactly. This is explained in [this forum post](https://forum.sky.money/t/clarifications-regarding-aeps-3-and-8/26271)._]
