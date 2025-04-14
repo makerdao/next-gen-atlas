@@ -32,3 +32,5 @@ The Integration Boost is provided to DeFi protocol partners **outside Ethereum a
 ## Pull Request of Edits
 
 [#90](https://github.com/makerdao/next-gen-atlas/pull/90)
+
+[_Note that the PR does not match the originally proposed edit exactly. This is explained in [this forum post](https://forum.sky.money/t/clarifications-regarding-aeps-3-and-8/26271)._]
