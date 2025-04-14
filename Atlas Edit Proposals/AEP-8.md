@@ -11,7 +11,7 @@ Status: Formal Submission
 Date Originally Proposed: 2025-02-17
 Date Re-submitted: 2025-03-24
 Date Ratified:
-Forum URL:
+Forum URL: https://forum.sky.money/t/aep-8-focus-integration-boost-on-crosschain-adoption/26176/
 ```
 
 ## Motivation
