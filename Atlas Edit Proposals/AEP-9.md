@@ -6,7 +6,7 @@
 AEP#: 9
 Author(s): misher
 Contributors:
-Status: Formal Submission
+Status: RFC
 Date Proposed: 2025-03-24
 Date Ratified:
 Forum URL: https://forum.sky.money/t/aep-05-end-token-burning-and-begin-returning-income-to-sky-holders-via-staking/26177
