@@ -3441,6 +3441,42 @@
         <tr>
           <td>
             <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules</td>
+          <td>Core</td>
+          <td>Bounded External Access Modules (BEAMs) are contracts that allow whitelisted operators to manage parameters in the Sky Ecosystem without needing to use the standard Executive Vote process. Thus, parameter changes enacted via these modules are not subject to the GSM Pause Delay.<br>The actions of BEAMs are limited by risk parameters, which are set by Sky Core Governance and require an Executive Vote to change.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Bounded External Access Module Risk Disclosure</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Bounded External Access Module Risk Disclosure</td>
+          <td>Core</td>
+          <td>BEAMs allow whitelisted operators greater flexibility to respond to market movements when setting parameters in the Sky Ecosystem. This flexibility introduces additional risk since operators are able to bypass the Executive Vote process when changing the parameters relevant to the BEAM that they operate.<br>This risk can be mitigated by limiting the frequency and size of modifications that can be made by operators in parameters controlled by Sky Core. All BEAMs should also have a related MOM contract that can deactivate the relevant BEAM in the event of an operator acting in a misaligned manner.<br>Any operator that fails to follow the defined procedures for a BEAM they are operating should be considered misaligned.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Stability Parameter Bounded External Access Module</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Bounded External Access Modules - Stability Parameter Bounded External Access Module</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) manages the rates applied to Sky Protocol’s native vaults as well as the savings rates. Whitelisted operators can use the SP-BEAM to modify rates without waiting for the GSM Pause Delay. The SP-BEAM modifies rates up or down within specified parameters. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.<br>This functionality allows the Sky Protocol to react to changes in market rates more quickly than waiting for the Governance and Spell Process execution and GSM Pause Delay.<br>The risk opened up by this functionality is malicious action by whitelisted operators setting rates to undesirable values. This risk can be mitigated through the SP-BEAM parameters and the SP_BEAM_MOM.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
+              - Sky Core Governance Security - Governance Security Delay Requirements - Stability Parameter Bounded External Access Module Breaker Exception</dfn>
+          </td>
+          <td>Sky Core Governance Security - Governance Security Delay Requirements - Stability Parameter Bounded External Access Module Breaker Exception</td>
+          <td>Core</td>
+          <td>The SP_BEAM_MOM contract allows Sky Governance to bypass the GSM Pause Delay and disable the Stability Parameter Bounded External Access Module.<br>This functionality allows Sky Governance to react more quickly in an emergency, e.g., if an operator of the SP-BEAM is hacked or is a malicious actor. Once the SP_BEAM_MOM is activated, the SP-BEAM will not be able to change any rates in the system. If the SP_BEAM_MOM has been triggered, it will still be possible to modify rates through the usual Executive Vote process, subject to the GSM Pause Delay.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9
               - A3 - Sky Core Governance Security - Governance Security Culture And Research</dfn>
           </td>
           <td>Sky Core Governance Security - Governance Security Culture And Research</td>
@@ -12487,21 +12523,20 @@
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Dai Savings Rate Formula</dfn>
+              - Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Dai Savings Rate Formula</td>
+          <td>Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification</td>
           <td>Core</td>
-          <td>The Dai Savings Rate is determined based on the Base Rate and DSR Spread parameter using the
-            following formula:Dai Savings Rate = Base Rate + DSR Spread</td>
+          <td>The Dai Savings Rate can be modified through either Executive Votes or the Stability Parameter Bounded External Access Module. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.<br>The Dai Savings Rate must gradually be reduced to 0% over time.</td>
         </tr>
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Dai Savings Rate Current Value</dfn>
+              - Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification - Dai Savings Rate Stability Parameter Bounded External Access Module Parameters</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Dai Savings Rate Current Value</td>
+          <td>Core Stability Parameters - Parameters - Dai Savings Rate - Dai Savings Rate Modification - Dai Savings Rate Stability Parameter Bounded External Access Module Parameters</td>
           <td>Core</td>
-          <td>The current value of the Dai Savings Rate is 3.50%.</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Dai Savings Rate are: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
         </tr>
         <tr>
           <td>
@@ -12516,21 +12551,20 @@
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - Sky Savings Rate Formula</dfn>
+              - Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - Sky Savings Rate Formula</td>
+          <td>Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification</td>
           <td>Core</td>
-          <td>The Sky Savings Rate is determined based on the Dai Savings Rate and the USDS Spread parameter using
-            the following formula:Sky Savings Rate = Dai Savings Rate + USDS Spread</td>
+          <td>The Sky Savings Rate can be modified through either Executive Votes or the Stability Parameter Bounded External Access Module. See A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module.</td>
         </tr>
         <tr>
           <td>
             <dfn>A.3.2
-              - Core Stability Parameters - Parameters - USDS Spread Current Value</dfn>
+              - Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification - Sky Savings Rate Stability Parameter Bounded External Access Module Parameters</dfn>
           </td>
-          <td>Core Stability Parameters - Parameters - USDS Spread Current Value</td>
+          <td>Core Stability Parameters - Parameters - Sky Savings Rate - Sky Savings Rate Modification - Sky Savings Rate Stability Parameter Bounded External Access Module Parameters</td>
           <td>Core</td>
-          <td>The current value of the USDS Spread is 1.00%.</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Sky Savings Rate are: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
         </tr>
         <tr>
           <td>
@@ -14603,10 +14637,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-A</td>
           <td>Core</td>
-          <td>Current ETH-A parameters are:• Stability Fee: 6.00%• Liquidation Ratio: 145%• DC-IAM line:
-            15,000,000,000 Dai• DC-IAM gap: 150,000,000 Dai• DC-IAM ttl: 21,600 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            40,000,000 Dai• dust: 7,500 Dai</td>
+          <td>Current ETH-A parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 145%, • DC-IAM line: 15,000,000,000 Dai, • DC-IAM gap: 150,000,000 Dai, • DC-IAM ttl: 21,600 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 40,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14615,10 +14646,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-B</td>
           <td>Core</td>
-          <td>Current ETH-B parameters are:• Stability Fee: 6.50%• Liquidation Ratio: 130%• DC-IAM line:
-            250,000,000 Dai• DC-IAM gap: 20,000,000 Dai• DC-IAM ttl: 21,600 seconds• cut: 99.00%• step: 60
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 4,800 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            15,000,000 Dai• dust: 25,000 Dai</td>
+          <td>Current ETH-B parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 130%, • DC-IAM line: 250,000,000 Dai, • DC-IAM gap: 20,000,000 Dai, • DC-IAM ttl: 21,600 seconds, • cut: 99.00%, • step: 60 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 4,800 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 15,000,000 Dai, • dust: 25,000 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14627,10 +14655,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - ETH-C</td>
           <td>Core</td>
-          <td>Current ETH-C parameters are:• Stability Fee: 5.75%• Liquidation Ratio: 170%• DC-IAM line:
-            2,000,000,000 Dai• DC-IAM gap: 100,000,000 Dai• DC-IAM ttl: 28,800 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            35,000,000 Dai• dust: 3,500 Dai</td>
+          <td>Current ETH-C parameters are: • SStability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 170%, • DC-IAM line: 2,000,000,000 Dai, • DC-IAM gap: 100,000,000 Dai, • DC-IAM ttl: 28,800 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 35,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14639,10 +14664,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WSTETH-A</td>
           <td>Core</td>
-          <td>Current WSTETH-A parameters are:• Stability Fee: 7.00%• Liquidation Ratio: 150%• DC-IAM line:
-            750,000,000 Dai• DC-IAM gap: 30,000,000 Dai• DC-IAM ttl: 43,200 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            30,000,000 Dai• dust: 7,500 Dai</td>
+          <td>Current WSTETH-A parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 750,000,000 Dai, • DC-IAM gap: 30,000,000 Dai, • DC-IAM ttl: 43,200 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 30,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14651,10 +14673,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WSTETH-B</td>
           <td>Core</td>
-          <td>Current WSTETH-B parameters are:• Stability Fee: 6.75%• Liquidation Ratio: 175%• DC-IAM line:
-            1,000,000,000 Dai• DC-IAM gap: 45,000,000 Dai• DC-IAM ttl: 43,200 seconds• cut: 99.00%• step: 90
-            seconds• buf: 110.00%• cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 13%• hole:
-            20,000,000 Dai• dust: 3,500 Dai</td>
+          <td>Current WSTETH-B parameters are: • Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 175%, • DC-IAM line: 1,000,000,000 Dai, • DC-IAM gap: 45,000,000 Dai, • DC-IAM ttl: 43,200 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 13%, • hole: 20,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14663,10 +14682,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-A</td>
           <td>Core</td>
-          <td>Current WBTC-A parameters are:• Stability Fee: 11.00%• Liquidation Ratio: 150%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 4,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 90 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 0%• hole: 10,000,000 Dai• dust:
-            7,500 Dai</td>
+          <td>Current WBTC-A parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 0 Dai, • DC-IAM gap: 4,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 10,000,000 Dai, • dust: 7,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14675,10 +14691,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-B</td>
           <td>Core</td>
-          <td>Current WBTC-B parameters are:• Stability Fee: 11.50%• Liquidation Ratio: 150%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 2,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 60 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 4,800 sec• chip: 0.10%• tip: 250• chop: 0%• hole: 5,000,000 Dai• dust: 25,000
-            Dai</td>
+          <td>Current WBTC-B parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 150%, • DC-IAM line: 0 Dai, • DC-IAM gap: 2,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 60 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 4,800 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 5,000,000 Dai, • dust: 25,000 Dai</td>
         </tr>
         <tr>
           <td>
@@ -14687,10 +14700,7 @@
           </td>
           <td>Measures For Endgame Transition - Native Vault Engine - WBTC-C</td>
           <td>Core</td>
-          <td>Current WBTC-C parameters are:• Stability Fee: 10.75%• Liquidation Ratio: 175%• DC-IAM line: 0 Dai•
-            DC-IAM gap: 8,000,000 Dai• DC-IAM ttl: 86,400 seconds• cut: 99.00%• step: 90 seconds• buf: 110.00%•
-            cusp: 45.00%• tail: 7,200 seconds• chip: 0.10%• tip: 250• chop: 0%• hole: 10,000,000 Dai• dust:
-            3,500 Dai</td>
+          <td>Current WBTC-C parameters are:• Stability Fee: set by the SP-BEAM specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module, • Liquidation Ratio: 175%, • DC-IAM line: 0 Dai, • DC-IAM gap: 8,000,000 Dai, • DC-IAM ttl: 86,400 seconds, • cut: 99.00%, • step: 90 seconds, • buf: 110.00%, • cusp: 45.00%, • tail: 7,200 seconds, • chip: 0.10%, • tip: 250, • chop: 0%, • hole: 10,000,000 Dai, • dust: 3,500 Dai</td>
         </tr>
         <tr>
           <td>
@@ -15090,6 +15100,321 @@
             is pursuant to the Operational Weekly Cycle and can be effected directly via an Executive Vote, without requiring a Governance Poll. 
             Exceptions to this general rule must be clearly stated in the relevant Atlas document.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) enables designated, Governance-whitelisted operators to adjust the Stability Fees of supported vault types, the Dai Savings Rate (DSR), and the Sky Savings Rate (SSR). Adjustments are governed by the SP-BEAM smart contract logic and specific parameters set by Sky Governance. SP-BEAM holds four parameters that can be set for each vault type or savings rate: (i) min, (ii) max, (iii) step, and (iv) tau.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Stability Parameter Bounded External Access Module.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Min Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Min Definition</td>
+          <td>Core</td>
+          <td>The min parameter defines the minimum value for rates in basis points that can be set using the Stability Parameter Bounded External Access Module. Each rate parameter added to the SP-BEAM has a specific min.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition</td>
+          <td>Core</td>
+          <td>The max parameter defines the maximum value for rates in basis points that can be set using the Stability Parameter Bounded External Access Module. Each rate parameter added to the SP-BEAM has a specific max.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition - Max Technical Upper Limit</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Max Definition - Max Technical Upper Limit</td>
+          <td>Core</td>
+          <td>Although the max parameter can be set higher, the SP-BEAM cannot be used to set a rate higher than 50% (5,000 basis points) due to technical limitations. Attempts to use the SP-BEAM in this manner will revert. To avoid confusion, max should not be set to a value higher than 50% (5,000 basis points).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Step Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Step Definition</td>
+          <td>Core</td>
+          <td>The step parameter limits how much the rates can be increased or decreased in a single transaction in basis points, bound by the tau parameter. Each rate parameter added to the SP-BEAM has a specific step.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition</td>
+          <td>Core</td>
+          <td>The tau parameter defines the minimum time interval, in seconds, that must elapse between consecutive uses or operations of the Stability Parameter Bounded External Access Module.<br>An SP-BEAM operation may adjust one or more parameters. Once an SP-BEAM operation is executed, the tau duration must expire before any subsequent SP-BEAM operation can be performed.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition - Tau Current Value</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Definitions - Tau Definition - Tau Current Value</td>
+          <td>Core</td>
+          <td>The tau is currently set to 57,600 seconds (16 hours).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Native Vaults are defined in the subdocuments herein. When new vaults are added to the protocol, they must also be added to the SP-BEAM. Unless specified otherwise within the relevant subdocument herein, the SP-BEAM parameters for any newly added Native Vault type shall default to match the parameters defined herein for the ETH-A vault type.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-C Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - ETH-C Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ETH-C Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WSTETH-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WSTETH-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WSTETH-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-A Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-B Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-B Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-B Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-C Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Native Vault Parameters - WBTC-C Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the WBTC-C Vault are as follows: • max - 3,000 basis points, • min - 200 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the Allocator Vaults are defined in the subdocuments herein. When new Allocator Vaults are added, they must also be added to the SP-BEAM. Unless specified otherwise within the relevant subdocument herein, the SP-BEAM parameters for any newly added Allocator Vault type shall default to match the parameters defined herein for the ALLOCATOR-SPARK-A vault type.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-SPARK-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-SPARK-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-SPARK-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-NOVA-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-NOVA-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-NOVA-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-BLOOM-A Parameters</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Allocator Vault Parameters - ALLOCATOR-BLOOM-A Parameters</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module parameters for the ALLOCATOR-BLOOM-A Allocator Vault are as follows: • max - 3,000 basis points, • min - 0 basis points, • step - 400 basis points, • tau - Globally defined in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Tau Current Value.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Parameter Adjustments</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Parameter Adjustments</td>
+          <td>Core</td>
+          <td>All Stability Parameter Bounded External Access Module parameters can be modified by the Stability Facilitators, in consultation with the Stability Scope Advisors. This process will be conducted through the Operational Weekly Governance Cycle or, if necessary, through out-of-schedule Executive Votes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators</td>
+          <td>Core</td>
+          <td>The Stability Parameter Bounded External Access Module (SP-BEAM) Operator is a whitelisted entity that can directly alter the current parameters of vault types or savings rates that have been added to the SP-BEAM. Changes to rates are limited by the max, min, step, and tau parameters. Operators can be added or removed by an Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig</td>
+          <td>Core</td>
+          <td>The Operator Multisig is the Operator of the Stability Parameter Bounded External Access Module and is controlled by Core Executor Agent Atlas Axis.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Address</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Address</td>
+          <td>Core</td>
+          <td>The address of the Operator Multisig on the Ethereum Mainnet is 0xe1c6f81D0c3CD570A77813b81AA064c5fff80309.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Required Number Of Signers</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Required Number Of Signers</td>
+          <td>Core</td>
+          <td>The Operator Multisig currently has a 2/3 signing requirement.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Signers</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Signers</td>
+          <td>Core</td>
+          <td>The signers of the Operator Multisig are three (3) addresses controlled by Core Executor Agent Atlas Axis.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Usage Standards</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Usage Standards</td>
+          <td>Core</td>
+          <td>The signers of the Operator Multisig must use the multisig to operate the Stability Parameter Bounded External Access Module in accordance with the instructions specified in A.3.9 - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Modification</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Multisig - Operator Multisig Modification</td>
+          <td>Core</td>
+          <td>Core Executor Agent Atlas Axis can change the signers of the Operator Multisig at any time, so long as there are at least three (3) signers and at least a majority of signers are required to execute transactions.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Update Process</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Operators - Operator Update Process</td>
+          <td>Core</td>
+          <td>Stability Parameter Bounded External Access Module Operators can be modified by the Stability Facilitators, in consultation with the Stability Scope Advisors. This process will be conducted through the Operational Weekly Governance Cycle or, if necessary, through out-of-schedule Executive Votes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process</td>
+          <td>Core</td>
+          <td>The rates set by the Stability Parameter Bounded External Access Module (SP-BEAM) are managed by the SP-BEAM Operators. The SP-BEAM Operators’ use of this authority must wholly adhere to instructions provided by the Stability Scope Advisors and approved by the Stability Facilitators.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Request By Stability Scope Advisors</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Request By Stability Scope Advisors</td>
+          <td>Core</td>
+          <td>Any requests to change rates set by the SP-BEAM must be posted to the Sky Forum by the Stability Scope Advisor that is recommending the change.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Approval By Stability Facilitators</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Approval By Stability Facilitators</td>
+          <td>Core</td>
+          <td>The Stability Facilitators must review each SP-BEAM rate-change request that is posted to the Sky Forum by the Stability Scope Advisors. If the Stability Facilitators approve the rate change request, they must reply to the Forum post indicating their approval.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Operator Execution</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Operator Execution</td>
+          <td>Core</td>
+          <td>Once a rate change request has been approved by the Stability Facilitators, the SP-BEAM Operators must prepare and execute the proposed changes in a timely manner. Preparation can include the creation of transaction simulations to verify inputs.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.9
+              - Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Public Communication</dfn>
+          </td>
+          <td>Measures For Endgame Transition - Stability Parameter Bounded External Access Module - Update Process - Public Communication</td>
+          <td>Core</td>
+          <td>Once a change in rates set by the SP-BEAM has been executed, the execution must be publicly communicated to the Sky Ecosystem. This communication may take the form of either (1) a Forum post or (2) inclusion of the execution in an informational dashboard that allows community members to see each rate change executed by the SP-BEAM.</td>
         </tr>
         <tr>
           <td>
