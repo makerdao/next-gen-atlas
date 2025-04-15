@@ -44,6 +44,16 @@
       color: #470296
     }
 
+    pre,
+    pre code {
+      text-align: left;
+      white-space: pre-wrap;
+      word-break: break-word;
+      margin: 0;
+      padding: 1em;
+      display: block;
+    }
+
     #scopes,
     #articles,
     #sections,
@@ -63,6 +73,23 @@
       border-bottom: 5px solid #E8E8E8;
       background-color: #fff;
       box-sizing: border-box
+    }
+
+    #sections td:nth-child(1),
+    #sections td:nth-child(2),
+    #active-data td:nth-child(1),
+    #active-data td:nth-child(2),
+    #type-specifications td:nth-child(1),
+    #type-specifications td:nth-child(2) {
+      word-break: break-word;
+      overflow-wrap: anywhere;
+      white-space: normal;
+      max-width: 160px;
+    }
+
+    #sections td:nth-child(4),
+    #active-data td:nth-child(4) {
+      max-width: 880px;
     }
 
     #scopes td:nth-child(1),
