@@ -10270,7 +10270,7 @@
           </td>
           <td>Treasury Management - Integration With Monthly Settlement Cycle</td>
           <td>Core</td>
-          <td>The Sky Treasury Management Function is synchronized with the Monthly Settlement Cycle. See A.2.6. At the conclusion of each MSC, the Net Revenue of the Sky Protocol for the preceding month is calculated and allocated according to the waterfall process defined in A.2.5 - Treasury Management - Allocation Steps.</td>
+          <td>The Sky Treasury Management Function is synchronized with the Monthly Settlement Cycle. See A.2.6 - Sky Monthly Settlement Cycle. At the conclusion of each MSC, the Net Revenue of the Sky Protocol for the preceding month is calculated and allocated according to the waterfall process defined in A.2.5 - Treasury Management - Allocation Steps.</td>
         </tr>
         <tr>
           <td>
@@ -10323,7 +10323,7 @@
           </td>
           <td>Treasury Management - Allocation Steps - Step 0: Net Revenue - Income - Internal Senior Risk Capital Income</td>
           <td>Core</td>
-          <td>Internal Senior Risk Capital income is the revenue attributed to Sky from the total payments made by Stars for Originated Senior Risk Capital (OSRC). ISRC itself comprises surplus capital allocated from designated buffers funded by the Sky Treasury Management Function. While Stars pay a single clearing price for their OSRC based on the monthly Origination Process, the total revenue received by Sky is subsequently allocated proportionally, with the portion corresponding to ISRC’s share of the Total Senior Risk Capital (TSRC) pool designated as ISRC Income. See A.2.5 - Sourcing Of Internal Senior Risk Capital From Surplus Buffers.</td>
+          <td>Internal Senior Risk Capital income is the revenue attributed to Sky from the total payments made by Stars for Originated Senior Risk Capital (OSRC). ISRC itself comprises surplus capital allocated from designated buffers funded by the Sky Treasury Management Function. While Stars pay a single clearing price for their OSRC based on the monthly Origination Process, the total revenue received by Sky is subsequently allocated proportionally, with the portion corresponding to ISRC’s share of the Total Senior Risk Capital (TSRC) pool designated as ISRC Income. See A.2.5 - Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers.</td>
         </tr>
         <tr>
           <td>
@@ -10413,7 +10413,7 @@
           </td>
           <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance</td>
           <td>Core</td>
-          <td>All of the Net Revenue from Step 0 (A.2.5 - Step 0: Net Revenue) becomes Step 1 Capital. 10% of Step 1 Capital is allocated for security and stability maintenance as specified in the documents herein. The remaining 90% of Step 1 Capital becomes Step 2 Capital and is allocated as specified in A.2.5 - Step 2: High Activity Staking Rewards.</td>
+          <td>All of the Net Revenue from Step 0 (A.2.5 - Step 0: Net Revenue) becomes Step 1 Capital. 10% of Step 1 Capital is allocated for security and stability maintenance as specified in the documents herein. The remaining 90% of Step 1 Capital becomes Step 2 Capital and is allocated as specified in A.2.5 - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards.</td>
         </tr>
         <tr>
           <td>
@@ -10476,7 +10476,7 @@
           </td>
           <td>Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Star Agents</td>
           <td>Core</td>
-          <td>0.5% of Step 1 Capital is allocated to Star Agents that manage the rewards for Governance Integrators, incentivizing the active participation of Star Agents. See A.2.5 - Governance Accessibility Rewards Paid To Integrators.</td>
+          <td>0.5% of Step 1 Capital is allocated to Star Agents that manage the rewards for Governance Integrators, incentivizing the active participation of Star Agents. See A.2.5 - Treasury Management - Allocation Steps - Step 1: Security and Stability Maintenance - Governance Accessibility Rewards Paid To Integrators.</td>
         </tr>
         <tr>
           <td>
@@ -10503,7 +10503,7 @@
           </td>
           <td>Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Funding Of High Activity Staking Rewards Buffer</td>
           <td>Core</td>
-          <td>5% of the Step 2 Capital is allocated to funding the High Activity Staking Rewards Buffer (HASRB) linearly over the course of the month. Funds from the High Activity Staking Rewards Buffer are then paid out to Governance Accessibility Integrators as specified in A.2.5 - Payout From High Activity Staking Rewards Buffer. Governance Accessibility Integrators are in turn responsible for distributing those funds to High Activity Stakers as specified in A.2.5 - High Activity Staker Qualification.</td>
+          <td>5% of the Step 2 Capital is allocated to funding the High Activity Staking Rewards Buffer (HASRB) linearly over the course of the month. Funds from the High Activity Staking Rewards Buffer are then paid out to Governance Accessibility Integrators as specified in A.2.5 - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Payout From High Activity Staking Rewards Buffer. Governance Accessibility Integrators are in turn responsible for distributing those funds to High Activity Stakers as specified in A.2.5 - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification.</td>
         </tr>
         <tr>
           <td>
@@ -10719,7 +10719,7 @@
           </td>
           <td>Treasury Management - Sourcing Of Internal Senior Risk Capital From Surplus Buffers</td>
           <td>Core</td>
-          <td>Internal Senior Risk Capital (ISRC) consists of a portion of the excess capital of the Sky Protocol that is reinvested in providing Senior Risk Capital to Star Agents. ISRC is sourced from the various Buffers defined in A.2.5 - Allocation Steps, according to the specifications of the subdocuments below.</td>
+          <td>Internal Senior Risk Capital (ISRC) consists of a portion of the excess capital of the Sky Protocol that is reinvested in providing Senior Risk Capital to Star Agents. ISRC is sourced from the various Buffers defined in A.2.5 - Treasury Management - Allocation Steps, according to the specifications of the subdocuments below.</td>
         </tr>
         <tr>
           <td>
@@ -10791,7 +10791,7 @@
           </td>
           <td>Sky Core Monthly Settlement Cycle - Monthly Settlement Cycle Overview - Operational Processes</td>
           <td>Core</td>
-          <td>The Monthly Settlement Cycle (MSC) synchronizes several key operational processes across the ecosystem, including: (1) Sky Protocol’s net revenue from the previous month is calculated and allocated through the steps of the Treasury Management Function. See A.2.5. (2) The monthly Senior Risk Capital (SRC) origination process is settled: the clearing price is established, costs are deducted from winning Star Agents’ accounts, and their accounts are credited with Originated SRC (OSRC) for the upcoming month. See 3.3 - Settlement Of Origination. (3) Queued conversions between USDS and srUSDS within the SRC system are processed. See A.3.3 - Deposit And Redemption Queues. (4) Pioneer Incentive Pools are funded with an amount equivalent to the Sky Savings Rate applied to unrewarded USDS. See A.2.4 - Pioneer Chain Primitive. (5) The Smart Burn Buffer’s burning operation occurs synchronously with each Monthly Settlement Cycle. At each cycle, the system calculates the appropriate Burn Rate based on current market conditions and executes the burn operation, if applicable, according to the formula specified in the Atlas. See <dfn>A.2.5 - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer</dfn>. (6) Critical Core GovOps functions related to the operationalization of Sky Primitives are executed, including payment/reimbursement processing, compliance monitoring, and the calculation and application of retroactive penalties.</td>
+          <td>The Monthly Settlement Cycle (MSC) synchronizes several key operational processes across the ecosystem, including: (1) Sky Protocol’s net revenue from the previous month is calculated and allocated through the steps of the Treasury Management Function. See A.2.5 - Treasury Management. (2) The monthly Senior Risk Capital (SRC) origination process is settled: the clearing price is established, costs are deducted from winning Star Agents’ accounts, and their accounts are credited with Originated SRC (OSRC) for the upcoming month. See 3.3 - Settlement Of Origination. (3) Queued conversions between USDS and srUSDS within the SRC system are processed. See A.3.3 - Risk Capital - Implementation - Senior Risk Capital System Implementation - External Senior Risk Capital And srUSDS System - Deposit And Redemption Queues. (4) Pioneer Incentive Pools are funded with an amount equivalent to the Sky Savings Rate applied to unrewarded USDS. See A.2.4 - Pioneer Chain Primitive. (5) The Smart Burn Buffer’s burning operation occurs synchronously with each Monthly Settlement Cycle. At each cycle, the system calculates the appropriate Burn Rate based on current market conditions and executes the burn operation, if applicable, according to the formula specified in the Atlas. See A.2.5 - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer - Usage Of Smart Burn Buffer. (6) Critical Core GovOps functions related to the operationalization of Sky Primitives are executed, including payment/reimbursement processing, compliance monitoring, and the calculation and application of retroactive penalties.</td>
         </tr>
         <tr>
           <td>
@@ -12939,7 +12939,7 @@
             </td>
             <td>Risk Capital - Conceptual Framework - Eligible Assets - Types Of Risk Capital - First Loss Capital - First Loss Capital Types - Internal First Loss Capital (IFLC)</td>
             <td>Core</td>
-            <td>Internal First Loss Capital is capital owned by the Star Agent itself. It serves as the foundation for the Star’s risk capacity: the amount of IFLC directly dictates the maximum External FLC the Star can source (governed by the External Per Internal ratio) and provides the primary capacity for enabling Senior Risk Capital (via the Senior Per First Loss ratio), while also bearing the initial impact of any losses (the Tip FLC mechanism). IFLC must be eligible assets held in the Star Agent’s designated treasury account (e.g., SubProxy), controlled via its Operational Executor Agent. See A.3.3 - External Per Internal Ratio, A.3.3 - Senior Per First Loss Ratio, and A.3.3 - FLC Loss Allocation Rules.</td>
+            <td>Internal First Loss Capital is capital owned by the Star Agent itself. It serves as the foundation for the Star’s risk capacity: the amount of IFLC directly dictates the maximum External FLC the Star can source (governed by the External Per Internal ratio) and provides the primary capacity for enabling Senior Risk Capital (via the Senior Per First Loss ratio), while also bearing the initial impact of any losses (the Tip FLC mechanism). IFLC must be eligible assets held in the Star Agent’s designated treasury account (e.g., SubProxy), controlled via its Operational Executor Agent. See A.3.3 - Eisk Capital - Conceptual Framework - Eligible Assets - Risk Capital Sourcing Ratios - Definition Of Ratios - External Per Internal Ratio, A.3.3 - Risk Capital - Conceptual Framework - Eligible Assets - Risk Capital Sourcing Ratios - Definition Of Ratios - Senior Per First Loss Ratio, and A.3.3 - A.3.3 - Risk Capital - Conceptual Framework - Eligible Assets - Types Of Risk Capital - First Loss Capital - FLC Loss Allocation Rules.</td>
           </tr>
           <tr>
             <td>
@@ -13027,7 +13027,7 @@
             </td>
             <td>Risk Capital - Conceptual Framework - Eligible Assets - Types Of Risk Capital - First Loss Capital - FLC Loss Allocation Rules - Initial Loss Absorption by "Tip FLC"</td>
             <td>Core</td>
-            <td>The Tip FLC mechanism dictates that losses from a distinct risk event are first absorbed entirely by the Star Agent’s Internal First Loss Capital (IFLC), up to a specific threshold amount. This threshold amount is calculated as a percentage of Total FLC and is specified in A.3.3 - FLC Loss Allocation Parameters.<br>Only losses exceeding this threshold amount trigger absorption by other First Loss Capital components - specifically, the remaining IFLC and External First Loss Capital. This initial absorption solely by IFLC ensures that Star Agents are highly incentivized to prevent losses and avoids the need to resolve disputes regarding the allocation of small losses to EFLC providers.</td>
+            <td>The Tip FLC mechanism dictates that losses from a distinct risk event are first absorbed entirely by the Star Agent’s Internal First Loss Capital (IFLC), up to a specific threshold amount. This threshold amount is calculated as a percentage of Total FLC and is specified in A.3.3 - FRisk Capital - Implementation - Core Risk Capital Parameters - FLC Loss Allocation Parameters.<br>Only losses exceeding this threshold amount trigger absorption by other First Loss Capital components - specifically, the remaining IFLC and External First Loss Capital. This initial absorption solely by IFLC ensures that Star Agents are highly incentivized to prevent losses and avoids the need to resolve disputes regarding the allocation of small losses to EFLC providers.</td>
           </tr>
           <tr>
             <td>
@@ -13075,7 +13075,7 @@
             </td>
             <td>Risk Capital - Conceptual Framework - Eligible Assets - Types Of Risk Capital - Senior Risk Capital - Senior Risk Capital Types - External Senior Risk Capital</td>
             <td>Core</td>
-            <td>External Senior Risk Capital (ESRC) is capital provided from the srUSDS smart contract, which allow users to provide USDS to Sky Core to serve as senior risk capital in exchange for higher returns. The mechanics of this are specified in A.3.3 - External Senior Risk Capital And srUSDS System.</td>
+            <td>External Senior Risk Capital (ESRC) is capital provided from the srUSDS smart contract, which allow users to provide USDS to Sky Core to serve as senior risk capital in exchange for higher returns. The mechanics of this are specified in A.3.3 - Risk Capital - Implementation - Senior Risk Capital System Implementation - External Senior Risk Capital And srUSDS System.</td>
           </tr>
           <tr>
             <td>
@@ -13099,7 +13099,7 @@
             </td>
             <td>Risk Capital - Conceptual Framework - Eligible Assets - Risk Capital Sourcing Ratios - Definition Of Ratios - External Per Internal Ratio</td>
             <td>Core</td>
-            <td>The External Per Internal (EPI) ratio determines the maximum amount of External First Loss Capital (SEFLC and TEFLC combined) that a Star Agent can source directly based on its held Internal First Loss Capital (IFLC). This acts as the primary constraint ensuring a baseline level of the Star’s own capital backs its external FLC sourcing. The required External Per Internal ratio is specified in A.3.3 - External Per Internal (EPI) Ratio Value.</td>
+            <td>The External Per Internal (EPI) ratio determines the maximum amount of External First Loss Capital (SEFLC and TEFLC combined) that a Star Agent can source directly based on its held Internal First Loss Capital (IFLC). This acts as the primary constraint ensuring a baseline level of the Star’s own capital backs its external FLC sourcing. The required External Per Internal ratio is specified in A.3.3 - Risk Capital - Implementation - Core Risk Capital Parameters - Risk Capital Composition Structural Ratios - External Per Internal (EPI) Ratio Value.</td>
           </tr>
           <tr>
             <td>
@@ -13107,7 +13107,7 @@
             </td>
             <td>Risk Capital - Conceptual Framework - Eligible Assets - Risk Capital Sourcing Ratios - Definition Of Ratios - Senior Per First Loss Ratio</td>
             <td>Core</td>
-            <td>The Senior Per First Loss (SPFL) ratio defines the effectiveness of each type of First Loss Capital (IFLC, SEFLC, TEFLC) in supporting Senior Risk Capital (SRC). Specifically, it quantifies how many units of SRC (whether Originated or Rented) can be activated or “enabled” per unit of a given FLC type.<br>A Star Agent’s overall “SPFL capacity” is calculated by summing the potential enablement contributed by each type of FLC it holds (IFLC, SEFLC or TEFLC), where each contribution equals the amount of that FLC type multiplied by its specific SPFL ratio.<br>Since SRC only absorbs losses after FLC is depleted, the SPFL enablement mechanism validates that sufficient FLC backing exists, allowing enabled SRC to be counted as part of the Star Agent’s total eligible Risk Capital. Therefore, a Star Agent might hold a certain amount of OSRC or rented SRC, but only the portion that is successfully “enabled” by its FLC according to the SPFL ratios is accounted by the system as eligible capital contributing towards the Star’s satisfaction of its Required Risk Capital. The required ratio of Senior Per First Loss is specified in A.3.3 - Senior Per First Loss (SPFL) Ratio Values.</td>
+            <td>The Senior Per First Loss (SPFL) ratio defines the effectiveness of each type of First Loss Capital (IFLC, SEFLC, TEFLC) in supporting Senior Risk Capital (SRC). Specifically, it quantifies how many units of SRC (whether Originated or Rented) can be activated or “enabled” per unit of a given FLC type.<br>A Star Agent’s overall “SPFL capacity” is calculated by summing the potential enablement contributed by each type of FLC it holds (IFLC, SEFLC or TEFLC), where each contribution equals the amount of that FLC type multiplied by its specific SPFL ratio.<br>Since SRC only absorbs losses after FLC is depleted, the SPFL enablement mechanism validates that sufficient FLC backing exists, allowing enabled SRC to be counted as part of the Star Agent’s total eligible Risk Capital. Therefore, a Star Agent might hold a certain amount of OSRC or rented SRC, but only the portion that is successfully “enabled” by its FLC according to the SPFL ratios is accounted by the system as eligible capital contributing towards the Star’s satisfaction of its Required Risk Capital. The required ratio of Senior Per First Loss is specified in A.3.3 - Risk Capital - Implementation - Core Risk Capital Parameters - Risk Capital Composition Structural Ratios - Senior Per First Loss (SPFL) Ratio Values.</td>
           </tr>
           <tr>
             <td>
