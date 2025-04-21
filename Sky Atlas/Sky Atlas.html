@@ -44,8 +44,7 @@
       color: #470296
     }
 
-    pre,
-    pre code {
+    code.language-python {
       text-align: left;
       white-space: pre-wrap;
       word-break: break-word;
@@ -13542,7 +13541,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Effective Exposures - Python Implementation</td>
           <td>Core</td>
-          <td>An implementation of the calculation of effective exposures in Python is shown below:<br><pre><code class="Python">
+          <td>An implementation of the calculation of effective exposures in Python is shown below:<br><pre><code class="language-python">
 
           for underlying in all_underlyings:
             level1 = df[df['underlying_symbol'] == underlying].copy()
@@ -13639,7 +13638,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Other Effective Parameters - Effective Volatility - Effective Volatility Calculation</td>
           <td>Core</td>
-          <td>The Effective Volatility (effective_volatility) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the volatility for the non-rehypothecated portion of the collateral with the volatility from the rehypothecated portion of the collateral, based on the volatility of the collaterals that back the rehypothecated portion.<pre><code class="Python">
+          <td>The Effective Volatility (effective_volatility) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the volatility for the non-rehypothecated portion of the collateral with the volatility from the rehypothecated portion of the collateral, based on the volatility of the collaterals that back the rehypothecated portion.<pre><code class="language-python">
 
           def calc_effective_volatility(row, df):
           """
@@ -13688,7 +13687,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Other Effective Parameters - Effective Liquidation Ratio - Effective Liquidation Ratio Calculation</td>
           <td>Core</td>
-          <td>The Effective Liquidation Ratio (effective_liquidation_ratio) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the liquidation ratio for the non-rehypothecated portion of the collateral with the liquidation ratio for the rehypothecated portion of the collateral, based on the liquidation ratio of the collaterals that back the rehypothecated portion.<pre><code class="Python">
+          <td>The Effective Liquidation Ratio (effective_liquidation_ratio) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the liquidation ratio for the non-rehypothecated portion of the collateral with the liquidation ratio for the rehypothecated portion of the collateral, based on the liquidation ratio of the collaterals that back the rehypothecated portion.<pre><code class="language-python">
 
           def calc_effective_liquidation_ratio(row, df):
           """
@@ -13729,7 +13728,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Other Effective Parameters - Effective Liquidation Penalty - Effective Liquidation Penalty Calculation</td>
           <td>Core</td>
-          <td>The Effective Liquidation Penalty (effective_liquidation_penalty) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the liquidation penalty for the non-rehypothecated portion of the collateral with the liquidation penalty for the rehypothecated portion of the collateral, based on the liquidation penalty for the collaterals that back the rehypothecated portion.<pre><code class="Python">
+          <td>The Effective Liquidation Penalty (effective_liquidation_penalty) is calculated for each combination of underlying market and backing collateral using the Python function specified below, where row is one row from the output table from calculating effective exposures and df is the entire table. This combines the liquidation penalty for the non-rehypothecated portion of the collateral with the liquidation penalty for the rehypothecated portion of the collateral, based on the liquidation penalty for the collaterals that back the rehypothecated portion.<pre><code class="language-python">
 
           def calc_effective_liquidation_penalty(row, df):
           """
@@ -13776,7 +13775,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Probability Of Default - Calculation Of Probability Of Default</td>
           <td>Core</td>
-          <td>The probability of default (PD) is calculated based on the effective_liquidation_ratio, the effective_collateralization_ratio, the effective_volatility, and T using the Python code specified below, which assumes that returns for the collateral are normally distributed.<pre><code class="Python">
+          <td>The probability of default (PD) is calculated based on the effective_liquidation_ratio, the effective_collateralization_ratio, the effective_volatility, and T using the Python code specified below, which assumes that returns for the collateral are normally distributed.<pre><code class="language-python">
 
           PD = norm.cdf(ln(effective_liquidation_ratio / effective_collateralization_ratio) / (effective_volatility * sqrt(T)))</code></pre><br>Here norm.cdf is the cumulative distribution function of the standard normal distribution.</td>
         </tr>
@@ -13810,7 +13809,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Loss Given Default - Python Implementation</td>
           <td>Core</td>
-          <td>An implementation of the calculation of the Loss Given Default in Python is shown below:<pre><code class="Python">
+          <td>An implementation of the calculation of the Loss Given Default in Python is shown below:<pre><code class="language-python">
 
           LGD = max(
             1 - (
@@ -13839,7 +13838,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Asset Correlation Coefficient - Asset Correlation Coefficient Calculation</td>
           <td>Core</td>
-          <td>The Asset Correlation Coefficient (ACC) for each underlying market and collateral is calculated using the formula specified in the Python code below as a function of the Probability Of Default (PD).<pre><code class="Python">
+          <td>The Asset Correlation Coefficient (ACC) for each underlying market and collateral is calculated using the formula specified in the Python code below as a function of the Probability Of Default (PD).<pre><code class="language-python">
 
           X = (1 - exp(-50 * PD)) / (1 - exp(-50))
           ACC = 0.12 * X + 0.24 * (1 - X)
@@ -13860,7 +13859,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Credit Risk - Calculation Of Shifted Probability Of Default</td>
           <td>Core</td>
-          <td>The Shifted Probability Of Default (shifted_PD) for an underlying market and collateral is calculated as a function of the Probability Of Default (PD) and the Asset Correlation Coefficient (ACC) using the Python code below. This estimates the probability of default under a "stressed" scenario.<pre><code class="Python">
+          <td>The Shifted Probability Of Default (shifted_PD) for an underlying market and collateral is calculated as a function of the Probability Of Default (PD) and the Asset Correlation Coefficient (ACC) using the Python code below. This estimates the probability of default under a "stressed" scenario.<pre><code class="language-python">
 
           shifted_PD = norm.cdf(
             ( norm.ppf(PD) + sqrt(ACC) * norm.ppf(0.999) )
@@ -13875,7 +13874,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Credit Risk - Calculation Of Credit Risk</td>
           <td>Core</td>
-          <td>The Credit Risk (credit_risk) for an underlying market and collateral is calculated as the difference between the Shifted Probability Of Default (shifted_PD) and the Probability Of Default (PD), multiplied by the Loss Given Default (LGD). This is shown in the Python code below.<pre><code class="Python">
+          <td>The Credit Risk (credit_risk) for an underlying market and collateral is calculated as the difference between the Shifted Probability Of Default (shifted_PD) and the Probability Of Default (PD), multiplied by the Loss Given Default (LGD). This is shown in the Python code below.<pre><code class="language-python">
 
           credit_risk = (shifted_PD - PD) * LGD
 
@@ -13895,7 +13894,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Risk Weighted Assets - Calculation Of Weighted Credit Risk</td>
           <td>Core</td>
-          <td>The Weighted Credit Risk (weighted_credit_risk(u)) for each underlying market (u) is calculated as the sum of the product of the Relative Backing (relative_backing(i)) and the Credit Risk (credit_risk(i)) for each collateral (i) backing that market.<pre><code class="Python">
+          <td>The Weighted Credit Risk (weighted_credit_risk(u)) for each underlying market (u) is calculated as the sum of the product of the Relative Backing (relative_backing(i)) and the Credit Risk (credit_risk(i)) for each collateral (i) backing that market.<pre><code class="language-python">
 
           weighted_credit_risk(u) = sum(relative_backing(i) * credit_risk(i)) for all collaterals i backing u
 
@@ -13907,7 +13906,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Risk Weighted Assets - Total Debt Backed</td>
           <td>Core</td>
-          <td>The Total Debt Backed (total_debt_backed(u)) for each underlying market (u) is calculated as the sum of the Debt Backed (debt_backed(i)) for each collateral (i) backing that market.<pre><code class="Python">
+          <td>The Total Debt Backed (total_debt_backed(u)) for each underlying market (u) is calculated as the sum of the Debt Backed (debt_backed(i)) for each collateral (i) backing that market.<pre><code class="language-python">
 
           total_debt_backed(u) = sum(debt_backed(i)) for all collaterals i backing u
 
@@ -13931,7 +13930,7 @@
           </td>
           <td>Risk Capital - Implementation - Required Risk Capital Calculation Implementation - Financial Risk Implementation - Asset Class Specific Implementation - Lending Markets - Calculation - Calculating Risk Capital Required - Risk Capital Required</td>
           <td>Core</td>
-          <td>Finally, the Risk Capital (FLC(u)) required for each market u is the Risk Weighted Assets (RWA(u)) multiplied by three times 2.75%, reflecting that 100% weight is being placed on Credit Risk and 0% weight on Market Risk and Liquidity Risk.<pre><code class="Python">
+          <td>Finally, the Risk Capital (FLC(u)) required for each market u is the Risk Weighted Assets (RWA(u)) multiplied by three times 2.75%, reflecting that 100% weight is being placed on Credit Risk and 0% weight on Market Risk and Liquidity Risk.<pre><code class="language-python">
 
           FLC(u) = RWA(u) * (0.0275 * 3)
 
