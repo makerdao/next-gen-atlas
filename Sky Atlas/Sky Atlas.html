@@ -580,309 +580,9 @@
           <td>
             <dfn>A.4.4</dfn>
           </td>
-          <td>Activation And Sealing Mechanisms</td>
+          <td>Sky Staking Mechanism</td>
           <td>Article</td>
-          <td>This Article governs the SKY Staking Mechanism that grants voting rewards on staked SKY tokens and its
-            associated SKY-backed borrowing mechanism funded via the yUSDS token.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY Staking</td>
-          <td>Section</td>
-          <td>SKY holders can stake their tokens via the SKY Staking Mechanism available on Ethereum Mainnet and SkyLink
-            Deployments. SKY stakers earn voting rewards sourced from the Sky Treasury Management Function. In lieu of USDS
-            rewards, SKY stakers can choose to earn Agent Token Rewards, including SPK and the tokens of other Star Agents
-            incubated by the Launch Project. SKY stakers can also borrow USDS against their staked collateral using the
-            SKY-backed borrowing mechanism defined herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY Staking Voting Rewards</td>
-          <td>Core</td>
-          <td>The documents herein define the SKY Staking Voting Rewards. SKY stakers may choose between receiving USDS or
-            Agent Token rewards.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Sources of Voting Rewards</td>
-          <td>Core</td>
-          <td>SKY stakers are eligible to receive voting rewards sourced from the Sky Treasury Management Function (TMF) or
-            the Agent Token Distribution mechanism defined in <dfn>A.4.5</dfn></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Treasury Management Function-Derived Voting Rewards</td>
-          <td>Core</td>
-          <td>USDS rewards are distributed via two distinct mechanisms based on the staker’s activity level: the High
-            Activity Staking Reward (HASR) and the Standard Activity Staking Reward (SASR). SASR is the base reward when
-            funding from the Treasury Management Function is available; HASR is an additional boost reserved for
-            High-Activity wallets. See <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 2:
-              High Activity Staking Rewards - Payout From High Activity Staking Rewards Buffer</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Activity Levels</td>
-          <td>Core</td>
-          <td>At the Monthly Settlement Cycle, all SKY-staking wallets are tagged as High Activity or Standard Activity,
-            pursuant to the criteria defined in <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - 
-            Step 2: High Activity Staking Rewards - High Activity Staker Qualification</dfn> and <dfn>A.2.5 - Treasury
-              Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - 
-              Standard Activity Staking Rewards - Standard Activity Staker Qualification</dfn>. Only High Activity wallets
-              share HASR; both High and Standard Activity wallets share SASR.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>High Activity Staking Rewards</td>
-          <td>Core</td>
-          <td>The High Activity Staking Rewards (HASR) is a boosted reward provided to High Activity wallets. The HASR amount
-            is distributed each monthly cycle pro-rata to the SKY stake of all High Activity wallets. High Activity wallets
-            receive SASR (when funding is available) plus their separate HASR boost.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Standard Activity Staking Rewards</td>
-          <td>Core</td>
-          <td>The Standard Activity Staking Rewards (SASR) is the base reward shared by all wallets with Standard Activity
-            status or higher. When funding is available, the SASR amount is distributed each monthly cycle pro‑rata to the SKY
-            stake of every Standard or High Activity wallet.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Agent Token Distribution Voting Rewards</td>
-          <td>Core</td>
-          <td>SKY stakers are eligible to receive Agent Token rewards as specified in A.4.5. At the Monthly Settlement Cycle,
-            Agent Tokens are distributed pro‑rata, by staked SKY, among wallets that have opted to receive a specific Agent Token
-            for the cycle. To qualify for Agent Token payout a wallet must satisfy the Standard Activity criteria specified in
-            <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity
-              Staking Rewards - Standard Activity Staking Rewards - Payout From Standard Activity Staking Rewards Buffer</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY-Backed Borrowing</td>
-          <td>Core</td>
-          <td>SKY stakers can borrow USDS against their staked SKY collateral. This borrowing will be facilitated exclusively by
-            the yUSDS system which will provide protocol-independent, or segregated, risk capital. The yUSDS system is currently
-            in development; its elements are outlined in the subdocuments below. During the transition period to the yUSDS system,
-            the protocol-dependent SKY-backed borrowing system remains operational and is governed by <dfn>A.4.5 - Short Term
-              Transitionary Measures</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Function</td>
-          <td>Core</td>
-          <td>yUSDS is a yield-bearing token representing USDS deposited into the yUSDS contract. Its primary function is to provide
-            segregated risk capital for the SKY-backed borrowing mechanism. Users convert USDS to yUSDS to provide this capital and
-            earn the yUSDS Rate. See A.4.5 - yUSDS Rate. yUSDS can be converted back to USDS subject to available unutilized liquidity
-            in the yUSDS converter contract.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Rate</td>
-          <td>Core</td>
-          <td>The variable yield earned by yUSDS holders is calculated using the formula:<br>
-            yUSDS Rate = Utilization * (SKY Borrow Rate - yUSDS Accessibility Reward) + (1 - Utilization) * Sky Savings Rate<br>
-            Depositors earn a rate derived from the SKY Borrow Rate less the yUSDS Accessibility Reward on the utilized portion of
-            their capital and the Sky Savings Rate on the unutilized portion.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Parameters Definition</td>
-          <td>Core</td>
-          <td>The parameters of the yUSDS Rate formula are further defined in the documents herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Utilization Definition</td>
-          <td>Core</td>
-          <td>Utilization is the percent of funds in the yUSDS contract that are used to fund borrowing against staked SKY.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY Borrow Rate Definition</td>
-          <td>Core</td>
-          <td>SKY Borrow Rate is the SKY Borrow Rate defined in <dfn>A.4.5 - SKY Borrow Rate</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Sky Savings Rate Definition</td>
-          <td>Core</td>
-          <td>Sky Savings Rate is the Sky Savings Rate defined in <dfn>A.3.2 - Core Stability Parameters - Parameters - 
-            Sky Savings Rate.</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Accessibility Reward Definition</td>
-          <td>Core</td>
-          <td>yUSDS Accessibility Reward is defined in <dfn>A.4.5 - yUSDS Accessibility Reward</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Holders’ Risk Bearing</td>
-          <td>Core</td>
-          <td>yHolders of yUSDS accept the risk associated with providing capital for SKY-backed borrowing. In the event
-            that the liquidation of a borrower’s staked SKY collateral does not cover the outstanding debt, yUSDS balances
-            will be subject to a haircut proportional to the shortfall. This mechanism ensures that the Sky Protocol is
-            isolated from losses originating from the SKY-backed borrowing facility.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Debt Ceiling</td>
-          <td>Core</td>
-          <td>The maximum amount of USDS that can be borrowed against staked SKY is dynamically determined by, and equal to,
-            the total amount of USDS currently held within the yUSDS contract. This dynamic ceiling will replace the static
-            DC-IAM module and parameters associated with protocol-dependent, SKY-backed borrowing.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY Borrow Rate</td>
-          <td>Core</td>
-          <td>The interest rate charged to borrowers (SKY Borrow Rate) is dynamic and market-driven, based on the utilization
-            of funds within the yUSDS contract. This dynamic rate will replace the static Stability Fee parameter associated
-            with protocol-dependent, SKY-backed borrowing.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Rate Setting Mechanism</td>
-          <td>Core</td>
-          <td>The SKY Borrow Rate adjusts to target a 90% utilization rate of the USDS in the yUSDS contract. When yUSDS utilization
-            is below 90%, the rate gradually decreases; when above 90%, it gradually increases. The SKY Borrow Rate cannot fall
-            below the SKY Borrow Minimum Rate. See <dfn>A.4.5 - SKY Borrow Minimum Rate</dfn>.<br> The specific parameters and
-            formula governing the rate of adjustment will be specified in a future iteration of the Atlas.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>SKY Borrow Minimum Rate</td>
-          <td>Core</td>
-          <td>The SKY Borrow Minimum Rate is calculated according to the following formula:<br>
-            SKY Borrow Minimum Rate = Sky Savings Rate + yUSDS Accessibility Reward<br>
-            The formula ensures the SKY Borrow Minimum Rate covers the baseline cost of capital (Sky Savings Rate) plus the incentive
-            cost (yUSDS Accessibility Reward), preventing value-draining arbitrage where users could borrow below the Sky Savings
-            Rate.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Parameters Definition</td>
-          <td>Core</td>
-          <td>The parameters of the SKY Borrow Minimum Rate formula are further defined in the documents herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Sky Savings Rate Definition</td>
-          <td>Core</td>
-          <td>Sky Savings Rate is defined in <dfn>A.3.2 - Core Stability Parameters - Parameters - Sky Savings Rate</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Risk Parameters</td>
-          <td>Core</td>
-          <td>This document defines the liquidation parameters for SKY-backed loans funded via yUSDS. These parameters will be
-            specified in a future iteration of the Atlas.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>yUSDS Accessibility Reward</td>
-          <td>Core</td>
-          <td>The yUSDS Accessibility Reward is an incentive mechanism, similar to the USDS Accessibility Reward, designed to
-            encourage Star Agents and Integrators to promote yUSDS adoption. See <dfn>A.2.4 - Accessibility Reward Primitive</dfn>. It is
-            calculated as a percentage of the yUSDS balance associated with a Reward Code. The reward is initially set at 0.05%
-            for the Integrator portion and 0.05% for the Star Agent Management Fee, totaling 0.1%.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Short Term Transitionary Measures</td>
-          <td>Core</td>
-          <td>The documents herein define short term logic for staking rewards and SKY-backed borrowing pending the implementation
-            of the Sky Treasury Management Function and the yUSDS system.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Short Term Staking Rewards</td>
-          <td>Core</td>
-          <td>Until the Treasury Management Function (TMF) is live, USDS rewards for SKY stakers are temporarily funded by the
-            Smart Burn Engine; this interim mechanism will be discontinued once the TMF becomes operational.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Current Staking Rewards Parameters</td>
-          <td>Core</td>
-          <td>The short term staking rewards parameters are: • rewardsDistribution: Set to the Splitter• rewardsDuration: 15,649
-            seconds• farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm• fee (Exit fee): 0%</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Short Term SKY-Backed Borrowing</td>
-          <td>Core</td>
-          <td>In the short term pending the development of the yUSDS system, SKY-backed borrowing will be funded directly by Sky.
-            This funding must be replaced by the yUSDS system as soon as the yUSDS system is developed.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4</dfn>
-          </td>
-          <td>Current SKY-Backed Borrowing Parameters</td>
-          <td>Core</td>
-          <td>The current risk parameters for SKY-backed borrowing funded directly by Sky are: • Cut: 0.99• Step: 60 seconds• Buf: 1.20
-            • Cusp: 0.40• Tail: 6,000 seconds• Chip: 0.1%• Tip: 300 DAI• Calc: StairstepExponentialDecrease • Ilk.chop: 8%
-            • Tolerance: 0.5• Dust: 30,000 DAI• Ilk.hole: 3M DAI• Stability Fee: 20%• spotter[ilk].mat (Liquidation Ratio): 125%
-            • DC-IAM line: 45M• DC-IAM gap: 45M• DC-IAM ttl: 30 minutes</td>
+          <td>This Article governs the SKY Staking Mechanism that grants voting rewards on staked SKY tokens and its associated SKY-backed borrowing mechanism funded via the yUSDS token.</td>
         </tr>
         <tr>
           <td>
@@ -891,13 +591,10 @@
           <td>Distribution Of Agent Tokens</td>
           <td>Article</td>
           <td>
-            To the extent Sky invests capital in Agents and receives tokens in exchange, it will distribute those tokens to the following
-            stakeholders:
+            To the extent Sky invests capital in Agents and receives tokens in exchange, it will distribute those tokens to the following stakeholders:
             • USDS Token Rewards users
-            • SKY Staking users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Activation</dfn>)
-            The percentage of each token distributed to each of these stakeholders is determined by Sky Governance. In each case, to earn
-            rewards users must opt to earn the token of a specific Agent, as opposed to either (1) the token of any other Agent, (2) the Sky
-            Savings Rate in the case of USDS users, or (3) USDS Rewards in the case of SKY Staking users.
+            • SKY Staking users (see <dfn>A.0.1 - Atlas Preamble - Definitions - Staking</dfn>)
+            The percentage of each token distributed to each of these stakeholders is determined by Sky Governance. In each case, to earn rewards users must opt to earn the token of a specific Agent, as opposed to either (1) the token of any other Agent, (2) the Sky Savings Rate in the case of USDS users, or (3) USDS Rewards in the case of SKY Staking users.
           </td>
         </tr>
           <td>
@@ -1384,10 +1081,7 @@
           </td>
           <td>Atlas Preamble - Definitions - Skylink</td>
           <td>Core</td>
-          <td> Skylink is the Sky Ecosystem’s multichain solution, connecting USDS, SKY and other Sky Ecosystem
-            tokens from the Ethereum Mainnet to other chains and L2 protocols. Skylink will make all core Sky
-            features available on the chains and L2s it is deployed to, including Native USDS; Native Sky Savings
-            Rate; Native Token Rewards and Native 1:1 conversion between USDC and USDS.</td>
+          <td>Skylink is the Sky Ecosystem's multichain solution, connecting USDS, SKY and other Sky Ecosystem tokens from the Ethereum Mainnet to other chains and L2 protocols. Skylink will make all core Sky features available on the chains and L2s it is deployed to, including Native USDS; Native Sky Savings Rate; Native Token Rewards and Native 1:1 conversion between USDC and USDS.</td>
         </tr>
         <tr>
           <td>
@@ -1427,10 +1121,7 @@
           <td>Atlas Preamble - Definitions - yUSDS</td>
           <td>Core</td>
           <td>
-            The token used to provide the capital for SKY Staking leverage is called yUSDS. It ensures that all
-            SKY-backed borrowing is funded by segregated risk capital. Users can deposit USDS into a smart contract
-            and receive yUSDS, which can later be converted back to USDS as long as there is unutilized USDS in the
-            yUSDS converter smart contract.
+            The token used to provide the capital for SKY Staking leverage is called yUSDS. It ensures that all SKY-backed borrowing is funded by segregated risk capital. Users can deposit USDS into a smart contract and receive yUSDS, which can later be converted back to USDS as long as there is unutilized USDS in the yUSDS converter smart contract.
           </td>
         </tr>
         <tr>
@@ -16685,63 +16376,243 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4
-              - A1 - Activation And Sealing Mechanisms - SKY Activation</dfn>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - Sky Staking</dfn>
           </td>
-          <td>Activation And Sealing Mechanisms - SKY Activation</td>
+          <td>SKY Staking Mechanism</td>
           <td>Section</td>
-          <td>SKY Activation can be done by any SKY holder through the SKY Activation Mechanism available on Ethereum Mainnet and SkyLink Deployments. SKY Activation provides USDS Rewards or Agent Token Rewards.</td>
+          <td>SKY holders can stake their tokens via the SKY Staking Mechanism available on Ethereum Mainnet and SkyLink Deployments. SKY stakers earn voting rewards sourced from the Sky Treasury Management Function. In lieu of USDS rewards, SKY stakers can choose to earn Agent Token Rewards, including SPK and the tokens of other Star Agents incubated by the Launch Project. SKY stakers can also borrow USDS against their staked collateral using the SKY-backed borrowing mechanism defined herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4 - Activation And Sealing Mechanisms - SKY Activation - Availability</dfn>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards</dfn>
           </td>
-          <td>Activation And Sealing Mechanisms - SKY Activation - Availability</td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards</td>
           <td>Core</td>
-          <td>SKY Activation will be available at the launch of the Spark Agent.</td>
-        </tr>
-        <tr>
-          <tr>
-            <td>
-              <dfn>A.4.4 - A2 - Activation And Sealing Mechanisms - Sealing</dfn>
-            </td>
-            <td>Activation And Sealing Mechanisms - Sealing</td>
-            <td>Section</td>
-            <td>Sealing is available both for SKY and MKR holders, with 1 MKR counting as 24,000 SKY. Sealing seals the principal tokens behind an Exit Fee. Sealing provides USDS Rewards or Agent Token Rewards. Sealing users can also generate USDS using the USDS content of the Smart Burn Engine as collateral. Users' ability to generate USDS is based on the equivalent quantity they hold of sealed SKY. The Sealing mechanism is governed by the Stability Scope.</td>
-          </tr>
-        <tr>
-          <td>
-            <dfn>A.4.4
-              - Activation And Sealing Mechanisms - Sealing - Availability</dfn>
-          </td>
-          <td>Activation And Sealing Mechanisms - Sealing - Availability</td>
-          <td>Core</td>
-          <td>Sealing will be available shortly after the launch of USDS and SKY.</td>
+          <td>The documents herein define the SKY Staking Voting Rewards. SKY stakers may choose between receiving USDS or Agent Token rewards.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4
-              - Activation And Sealing Mechanisms - Sealing - Exit Fee</dfn>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards</dfn>
           </td>
-          <td>Activation And Sealing Mechanisms - Sealing - Exit Fee</td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards</td>
           <td>Core</td>
-          <td>The Sealing Exit Fee starts at 5%, and increases by 1% every six (6) months from launch, until it
-            reaches its permanent long-term value at 15%.</td>
+          <td>SKY stakers are eligible to receive voting rewards sourced from the Sky Treasury Management Function (TMF) or the Agent Token Distribution mechanism defined in <dfn>A.4.5</dfn></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4
-              - Activation And Sealing Mechanisms - Sealing - USDS generation Risk Parameters</dfn>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards</dfn>
           </td>
-          <td>Activation And Sealing Mechanisms - Sealing - USDS generation Risk Parameters</td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards</td>
           <td>Core</td>
-          <td>The current LSE-MKR-A & Liquidation parameters are:• Cut: 0.99• Step: 60 seconds• Buf: 1.20•
-           Cusp: 0.40• Tail: 6,000 seconds• Chip: 0.1%• Tip: 300 DAI• Calc: StairstepExponentialDecrease• 
-            Ilk.chop: 8%• Tolerance: 0.5• Dust: 30,000 DAI• Ilk.hole: 3M DAI• Stability Fee: 20%•
-            spotter[ilk].mat (Liquidation Ratio): 125%• DC-IAM line: 45M.• DC-IAM gap: 45M•
-            DC-IAM ttl: 30 minutes• Add Seal Module to LineMom GSM Exception<br>Other Seal Module Params:• farms (Whitelisted set 
-            of farms to choose from): LsMkrUsdsFarm• fee - (Exit Fee): 0%<br>StakingRewards:• rewardsDistribution: Set to the Splitter•
-            rewardsDuration: 15,649 seconds</td>
+          <td>USDS rewards are distributed via two distinct mechanisms based on the staker’s activity level: the HighActivity Staking Reward (HASR) and the Standard Activity Staking Reward (SASR). SASR is the base reward when funding from the Treasury Management Function is available; HASR is an additional boost reserved for High-Activity wallets. See <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - Payout From High Activity Staking Rewards Buffer</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - Activity Levels</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - Activity Levels</td>
+          <td>Core</td>
+          <td>At the Monthly Settlement Cycle, all SKY-staking wallets are tagged as High Activity or Standard Activity, pursuant to the criteria defined in <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 2: High Activity Staking Rewards - High Activity Staker Qualification</dfn> and <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Standard Activity Staker Qualification</dfn>. Only High Activity wallets share HASR; both High and Standard Activity wallets share SASR.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - High Activity Staking Rewards</dfn>
+          </td>
+          <td>A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - High Activity Staking Rewards</td>
+          <td>Core</td>
+          <td>The High Activity Staking Rewards (HASR) is a boosted reward provided to High Activity wallets. The HASR amount is distributed each monthly cycle pro-rata to the SKY stake of all High Activity wallets. High Activity wallets receive SASR (when funding is available) plus their separate HASR boost.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - Standard Activity Staking Rewards</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Treasury Management Function-Derived Voting Rewards - Standard Activity Staking Rewards</td>
+          <td>Core</td>
+          <td>The Standard Activity Staking Rewards (SASR) is the base reward shared by all wallets with Standard Activity status or higher. When funding is available, the SASR amount is distributed each monthly cycle pro‑rata to the SKY stake of every Standard or High Activity wallet.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Agent Token Distribution Voting Rewards</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY Staking Voting Rewards - Sources of Voting Rewards - Agent Token Distribution Voting Rewards</td>
+          <td>Core</td>
+          <td>SKY stakers are eligible to receive Agent Token rewards as specified in A.4.5. At the Monthly Settlement Cycle, Agent Tokens are distributed pro‑rata, by staked SKY, among wallets that have opted to receive a specific Agent Token for the cycle. To qualify for Agent Token payout a wallet must satisfy the Standard Activity criteria specified in <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Standard Activity Staking Rewards - Payout From Standard Activity Staking Rewards Buffer</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing</td>
+          <td>Core</td>
+          <td>SKY stakers can borrow USDS against their staked SKY collateral. This borrowing will be facilitated exclusively by the yUSDS system which will provide protocol-independent, or segregated, risk capital. The yUSDS system is currently in development; its elements are outlined in the subdocuments below. During the transition period to the yUSDS system, the protocol-dependent SKY-backed borrowing system remains operational and is governed by <dfn>A.4.5 - Short Term Transitionary Measures</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Function</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Function</td>
+          <td>Core</td>
+          <td>yUSDS is a yield-bearing token representing USDS deposited into the yUSDS contract. Its primary function is to provide segregated risk capital for the SKY-backed borrowing mechanism. Users convert USDS to yUSDS to provide this capital and earn the yUSDS Rate. See A.4.5 - yUSDS Rate. yUSDS can be converted back to USDS subject to available unutilized liquidity in the yUSDS converter contract.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate</td>
+          <td>Core</td>
+          <td>The variable yield earned by yUSDS holders is calculated using the formula:<br>yUSDS Rate = Utilization * (SKY Borrow Rate - yUSDS Accessibility Reward) + (1 - Utilization) * Sky Savings Rate<br> Depositors earn a rate derived from the SKY Borrow Rate less the yUSDS Accessibility Reward on the utilized portion of their capital and the Sky Savings Rate on the unutilized portion.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition</td>
+          <td>Core</td>
+          <td>The parameters of the yUSDS Rate formula are further defined in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - Utilization Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - Utilization Definition</td>
+          <td>Core</td>
+          <td>Utilization is the percent of funds in the yUSDS contract that are used to fund borrowing against staked SKY.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - SKY Borrow Rate Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - SKY Borrow Rate Definition</td>
+          <td>Core</td>
+          <td>SKY Borrow Rate is the SKY Borrow Rate defined in <dfn>A.4.5 - SKY Borrow Rate</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - Sky Savings Rate Definition</dfn>
+          </td>
+          <td>SSKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - Sky Savings Rate Definition</td>
+          <td>Core</td>
+          <td>Sky Savings Rate is the Sky Savings Rate defined in <dfn>A.3.2 - Core Stability Parameters - Parameters - Sky Savings Rate.</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - yUSDS Accessibility Reward Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Rate - Parameters Definition - yUSDS Accessibility Reward Definition</td>
+          <td>Core</td>
+          <td>yUSDS Accessibility Reward is defined in <dfn>A.4.5 - yUSDS Accessibility Reward</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Holders' Risk Bearing</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Holders' Risk Bearing</td>
+          <td>Core</td>
+          <td>Holders of yUSDS accept the risk associated with providing capital for SKY-backed borrowing. In the event that the liquidation of a borrower's staked SKY collateral does not cover the outstanding debt, yUSDS balances will be subject to a haircut proportional to the shortfall. This mechanism ensures that the Sky Protocol is isolated from losses originating from the SKY-backed borrowing facility.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Debt Ceiling</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Debt Ceiling</td>
+          <td>Core</td>
+          <td>The maximum amount of USDS that can be borrowed against staked SKY is dynamically determined by, and equal to, the total amount of USDS currently held within the yUSDS contract. This dynamic ceiling will replace the static DC-IAM module and parameters associated with protocol-dependent, SKY-backed borrowing.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - SKY Borrow Rate</td>
+          <td>Core</td>
+          <td>The interest rate charged to borrowers (SKY Borrow Rate) is dynamic and market-driven, based on the utilization of funds within the yUSDS contract. This dynamic rate will replace the static Stability Fee parameter associated with protocol-dependent, SKY-backed borrowing.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Rate Setting Mechanism</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Rate Setting Mechanism</td>
+          <td>Core</td>
+          <td>The SKY Borrow Rate adjusts to target a 90% utilization rate of the USDS in the yUSDS contract. When yUSDS utilization is below 90%, the rate gradually decreases; when above 90%, it gradually increases. The SKY Borrow Rate cannot fall below the SKY Borrow Minimum Rate. See <dfn>A.4.5 - SKY Borrow Minimum Rate</dfn>.<br> The specific parameters and formula governing the rate of adjustment will be specified in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate</td>
+          <td>Core</td>
+          <td>The SKY Borrow Minimum Rate is calculated according to the following formula:<br>SKY Borrow Minimum Rate = Sky Savings Rate + yUSDS Accessibility Reward<br>The formula ensures the SKY Borrow Minimum Rate covers the baseline cost of capital (Sky Savings Rate) plus the incentive cost (yUSDS Accessibility Reward), preventing value-draining arbitrage where users could borrow below the Sky Savings Rate.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition</td>
+          <td>Core</td>
+          <td>The parameters of the SKY Borrow Minimum Rate formula are further defined in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition - Sky Savings Rate Definition</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition - Sky Savings Rate Definition</td>
+          <td>Core</td>
+          <td>Sky Savings Rate is defined in <dfn>A.3.2 - Core Stability Parameters - Parameters - Sky Savings Rate</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition - yUSDS Accessibility Reward</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - Sky Borrow Rate - Sky Borrow Minimum Rate - Parameters Definition - yUSDS Accessibility Reward</td>
+          <td>Core</td>
+          <td>The yUSDS Accessibility Reward is an incentive mechanism, similar to the USDS Accessibility Reward, designed to encourage Star Agents and Integrators to promote yUSDS adoption. See <dfn>A.2.4 - Accessibility Reward Primitive</dfn>. It is calculated as a percentage of the yUSDS balance associated with a Reward Code. The reward is initially set at 0.05% for the Integrator portion and 0.05% for the Star Agent Management Fee, totaling 0.1%.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - SKY-Backed Borrowing - yUSDS Risk Parameters</dfn>
+          </td>
+          <td>yUSDS Risk Parameters</td>
+          <td>Core</td>
+          <td>This document defines the liquidation parameters for SKY-backed loans funded via yUSDS. These parameters will be specified in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures</td>
+          <td>Core</td>
+          <td>The documents herein define short term logic for staking rewards and SKY-backed borrowing pending the implementation of the Sky Treasury Management Function and the yUSDS system.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards</td>
+          <td>Core</td>
+          <td>Until the Treasury Management Function (TMF) is live, USDS rewards for SKY stakers are temporarily funded by the Smart Burn Engine; this interim mechanism will be discontinued once the TMF becomes operational.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - Current Staking Rewards Parameters</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - Current Staking Rewards Parameters</td>
+          <td>Core</td>
+          <td>The short term staking rewards parameters are: • rewardsDistribution: Set to the Splitter• rewardsDuration: 15,649 seconds• farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm• fee (Exit fee): 0%</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing</td>
+          <td>Core</td>
+          <td>In the short term pending the development of the yUSDS system, SKY-backed borrowing will be funded directly by Sky. This funding must be replaced by the yUSDS system as soon as the yUSDS system is developed.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - A1 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - Current SKY-Backed Borrowing Parameters</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - Current SKY-Backed Borrowing Parameters</td>
+          <td>Core</td>
+          <td>The current risk parameters for SKY-backed borrowing funded directly by Sky are: • Cut: 0.99• Step: 60 seconds• Buf: 1.20• Cusp: 0.40• Tail: 6,000 seconds• Chip: 0.1%• Tip: 300 DAI• Calc: StairstepExponentialDecrease• Ilk.chop: 8%• Tolerance: 0.5• Dust: 30,000 DAI• Ilk.hole: 3M DAI• Stability Fee: 20%• spotter[ilk].mat (Liquidation Ratio): 125%• DC-IAM line: 45M• DC-IAM gap: 45M• DC-IAM ttl: 30 minutes</td>
         </tr>
         <tr>
           <td>
@@ -18258,10 +18129,7 @@
           </td>
           <td>Delegated Voting Power - Element Annotation</td>
           <td>Annotation</td>
-          <td>The element “delegated voting power” refers to the ability of SKY holders and Staking users to
-            entrust their voting power to a Delegate Contract, allowing the Aligned Delegate controlling that
-            contract to cast votes in the Sky Governance process on their behalf. The SKY or Staking user always
-            maintains full ownership of their tokens.</td>
+          <td>The element “delegated voting power” refers to the ability of SKY holders and Staking users to entrust their voting power to a Delegate Contract, allowing the Aligned Delegate controlling that contract to cast votes in the Sky Governance process on their behalf. The SKY or Staking user always maintains full ownership of their tokens.</td>
         </tr>
         <tr>
           <td>
