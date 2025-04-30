@@ -6,7 +6,7 @@
 AEP#: 03
 Author(s): misher
 Contributors:
-Status: Formal Submission
+Status: Rejected
 Date Proposed: 2025-02-13
 Date Ratified: 
 Forum URL:https://forum.sky.money/t/aep-03-monthly-developer-ad-community-meetings/25991

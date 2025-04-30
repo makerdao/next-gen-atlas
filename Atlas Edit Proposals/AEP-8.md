@@ -7,7 +7,7 @@ AEP#: 8
 Original Author(s): GFX Labs
 Resubmitter (and modifier): misher
 Contributors:
-Status: Formal Submission
+Status: Rejected
 Date Originally Proposed: 2025-02-17
 Date Re-submitted: 2025-03-24
 Date Ratified:

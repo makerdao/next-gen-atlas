@@ -5,7 +5,7 @@ AEP#: 10
 Original Author: GFX Labs
 Resubmitter (and modifier): misher
 Contributors:
-Status: Formal Submission
+Status: Rejected
 Date Proposed: 2025-03-29
 Date Ratified: 
 Forum URL: https://forum.sky.money/t/aep-10-making-delegate-anonymity-optional/26205
