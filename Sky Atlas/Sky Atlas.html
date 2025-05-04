@@ -4020,8 +4020,14 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Permissionless Cancellation Of Single Planned Governance Action</td>
           <td>Core</td>
-          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell:<br><code>/// @notice Permissionlessly drop anything that has been planned on the pause.
-            drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)</code><br>The parameters of the drop function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
+          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell:
+            <pre>
+              <code>
+                /// @notice Permissionlessly drop anything that has been planned on the pause.
+                drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)
+              </code>
+            </pre>
+            The parameters of the drop function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -4030,8 +4036,14 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Permissionless Cancellation Of Multiple Planned Governance Actions</td>
           <td>Core</td>
-          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified set of Spells:<br><code>/// @notice Drop multiple plans in a single call.
-            drop(Plan[] calldata plans)</code><br>The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
+          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified set of Spells:
+            <pre>
+              <code>
+                /// @notice Drop multiple plans in a single call.
+                drop(Plan[] calldata plans)
+              </code>
+            </pre>
+            The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
         </tr>
         <tr>
           <td>
