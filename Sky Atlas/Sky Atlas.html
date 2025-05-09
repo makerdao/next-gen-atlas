@@ -3858,7 +3858,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</td>
           <td>Core</td>
-          <td>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Standby Spell.<br>This validation must be in the form of a written communication in the secure channel specified in A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group. Only the entities specified in A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell are authorized to provide the validation of authenticity.<br>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Standby Spells</dfn>, ADs are prohibited from voting for a Standby Spell without this validation of authenticity.</td>
+          <td><p>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Standby Spell.<br>This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn> are authorized to provide the validation of authenticity.</p><p>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Standby Spells</dfn>, ADs are prohibited from voting for a Standby Spell without this validation of authenticity.</p></td></td>
         </tr>
         <tr>
           <td>
@@ -3866,7 +3866,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</td>
           <td>Core</td>
-          <td>This document defines the term “Authorized Representative” as used in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>.<br>The entities listed below are authorized to validate the authenticity of a Standby Spell on behalf of the specified Governance Facilitators:
+          <td>This document defines the term “Authorized Representative” as used in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>. The entities listed below are authorized to validate the authenticity of a Standby Spell on behalf of the specified Governance Facilitators:
             <ul>
               <li>JanSky on behalf of Governance Facilitator team JanSky</li>
               <li>VoteWizard on behalf of Governance Facilitator team Endgame Edge</li>
@@ -3987,7 +3987,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</td>
           <td>Core</td>
-          <td>Any user can permissionlessly deploy an Emergency Drop Spell by invoking the deploy function on the Protego contract with parameters identifying the planned governance action to be canceled:<br><code>deploy(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)(address)</code><br>The parameters of the deploy function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
+          <td><p>Any user can permissionlessly deploy an Emergency Drop Spell by invoking the deploy function on the Protego contract with parameters identifying the planned governance action to be canceled:</p><p><code>deploy(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)(address)</code></p><p>The parameters of the deploy function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</p>.</td>
         </tr>
         <tr>
           <td>
@@ -4013,7 +4013,9 @@
           <td>Core</td>
           <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell: <pre>
               <code>
-                /// @notice Permissionlessly drop anything that has been planned on the pause. drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta) </code>
+                /// @notice Permissionlessly drop anything that has been planned on the pause.
+                drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)
+              </code>
             </pre>
             The parameters of the drop function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
         </tr>
@@ -4025,7 +4027,10 @@
           <td>Core</td>
           <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified set of Spells:
           <pre>
-              <code>/// @notice Drop multiple plans in a single call. drop(Plan[] calldata plans)</code>
+              <code>
+                /// @notice Drop multiple plans in a single call.
+                drop(Plan[] calldata plans)
+              </code>
           </pre>
           The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
         </tr>
@@ -4133,7 +4138,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</td>
           <td>Core</td>
-          <td>All Governance Facilitators must promptly acknowledge receipt of the Support Facilitators’ decision to use Protego. This acknowledgment must take place in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.<br>The Governance Facilitators are responsible for actioning the usage of Protego and liaising with the Prime Delegates (and other Aligned Delegates as needed) to gather the necessary support for it. </td>
+          <td><p>All Governance Facilitators must promptly acknowledge receipt of the Support Facilitators’ decision to use Protego. This acknowledgment must take place in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</p><p>The Governance Facilitators are responsible for actioning the usage of Protego and liaising with the Prime Delegates (and other Aligned Delegates as needed) to gather the necessary support for it.</p></td>
         </tr>
         <tr>
           <td>
@@ -4141,7 +4146,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</td>
           <td>Core</td>
-          <td>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Emergency Drop Spell, if applicable.<br>This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn> are authorized to provide the validation of authenticity.<br>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>, ADs are prohibited from voting for an Emergency Drop Spell without this validation of authenticity.</td>
+          <td><p>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Emergency Drop Spell, if applicable.</p><p>This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn> are authorized to provide the validation of authenticity.</p><p>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>, ADs are prohibited from voting for an Emergency Drop Spell without this validation of authenticity.</p></td>
         </tr>
         <tr>
           <td>
@@ -4171,7 +4176,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</td>
           <td>Core</td>
-          <td>The Governance Facilitators may use the Custom Spell Voting Page when it is beneficial to coordinate voting without having a visible Spell on the Voting Portal. The Governance Facilitators must not use this method unless domain expert Ecosystem Actors in the Emergency Response Group have recommended this approach; such a recommendation must be explicitly documented in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. </td>
+          <td>The Governance Facilitators may use the Custom Spell Voting Page when it is beneficial to coordinate voting without having a visible Spell on the Voting Portal. The Governance Facilitators must not use this method unless domain expert Ecosystem Actors in the Emergency Response Group have recommended this approach; such a recommendation must be explicitly documented in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -4185,7 +4190,8 @@
               <li>Receipt of the Support Facilitators’ announcement of the decision to use Protego or an Emergency Drop Spell in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and</li>
               <li>All Governance Facilitators have validated the authenticity of the Emergency Drop Spell, if applicable. This validation must fulfill two requirements: (1) the validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and (2) the validation must be provided by the authorized entities listed in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>.</li>
             </ol>
-            After ADs have confirmed all requirements are met, they must either (1) promptly vote to approve the usage of Protego or the Emergency Drop Spell, or (2) communicate any concerns to the Governance Facilitators and collaborate with the latter for a speedy resolution. </td>
+            After ADs have confirmed all requirements are met, they must either (1) promptly vote to approve the usage of Protego or the Emergency Drop Spell, or (2) communicate any concerns to the Governance Facilitators and collaborate with the latter for a speedy resolution.
+          </td>
         </tr>
         <tr>
           <td>
@@ -4193,7 +4199,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</td>
           <td>Core</td>
-          <td>There is an exception to the requirement that all Governance Facilitators must validate the authenticity of an Emergency Drop Spell. In situations where a Governance Facilitator has failed to respond to the emergency situation, the Support Facilitators may temporarily grant the responding Governance Facilitator(s) the sole authority to validate the authenticity of the Emergency Drop Spell pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. The Support Facilitators must communicate this in writing in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. </td>
+          <td>There is an exception to the requirement that all Governance Facilitators must validate the authenticity of an Emergency Drop Spell. In situations where a Governance Facilitator has failed to respond to the emergency situation, the Support Facilitators may temporarily grant the responding Governance Facilitator(s) the sole authority to validate the authenticity of the Emergency Drop Spell pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. The Support Facilitators must communicate this in writing in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -4201,7 +4207,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</td>
           <td>Core</td>
-          <td>It is severe misalignment for an Aligned Delegate to vote for an Emergency Drop Spell whose authenticity has not been validated pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. Aligned Delegates in breach of this requirement must be immediately derecognized and their full AD Buffer should be confiscated. </td>
+          <td>It is severe misalignment for an Aligned Delegate to vote for an Emergency Drop Spell whose authenticity has not been validated pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. Aligned Delegates in breach of this requirement must be immediately derecognized and their full AD Buffer should be confiscated.</td>
         </tr>
         <tr>
           <td>
@@ -4209,7 +4215,7 @@
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</td>
           <td>Core</td>
-          <td>Breach of any requirement concerning Emergency Spells - including usage of Protego - constitutes misalignment and must be addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response Preparedness</dfn>. </td>
+          <td>Breach of any requirement concerning Emergency Spells - including usage of Protego - constitutes misalignment and must be addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response Preparedness</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -16672,7 +16678,7 @@
           </td>
           <td>Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</td>
           <td>Core</td>
-          <td>A Spark Spell must be triggered to move the authority of the Spark Freezer MOM contract to the new Chief contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - SparkLend Freezer Mom Exception</dfn>. </td>
+          <td>A Spark Spell must be triggered to move the authority of the Spark Freezer MOM contract to the new Chief contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - SparkLend Freezer Mom Exception</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -16688,7 +16694,7 @@
           </td>
           <td>Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</td>
           <td>Core</td>
-          <td>The new SKY oracle must be added to the OSM_MOM contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Oracle Freeze Exception</dfn>. </td>
+          <td>The new SKY oracle must be added to the OSM_MOM contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Oracle Freeze Exception</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -16900,8 +16906,12 @@
           </td>
           <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
           <td>Core</td>
-          <td>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period. The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).<br>
-            To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the following calculation, performed for each normalization period:<br>1. Determine Target Reward Value: Calculate the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).<br>2. Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY (determined at the time of the Executive Vote). </td>
+          <td><p>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period. The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).</p><p>To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the following calculation, performed for each normalization period:</p>
+          <ol>
+            <li>Determine Target Reward Value: Calculate the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).</li>
+            <li>Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY (determined at the time of the Executive Vote).</li>
+          </ol>
+        </td>
         </tr>
         <tr>
           <td>
