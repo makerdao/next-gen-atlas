@@ -3854,8 +3854,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</td>
           <td>Core</td>
@@ -3863,8 +3862,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</td>
           <td>Core</td>
@@ -3977,8 +3975,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells</td>
           <td>Core</td>
@@ -3986,8 +3983,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</td>
           <td>Core</td>
@@ -3995,8 +3991,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Execution Of Emergency Drop Spells</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Execution Of Emergency Drop Spells</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Execution Of Emergency Drop Spells</td>
           <td>Core</td>
@@ -4004,8 +3999,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions</td>
           <td>Core</td>
@@ -4013,40 +4007,31 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Single Planned Governance Action</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Single Planned Governance Action</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Single Planned Governance Action</td>
           <td>Core</td>
-          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell:
-            <pre>
+          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell: <pre>
               <code>
-                /// @notice Permissionlessly drop anything that has been planned on the pause.
-                drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)
-              </code>
+                /// @notice Permissionlessly drop anything that has been planned on the pause. drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta) </code>
             </pre>
             The parameters of the drop function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Multiple Planned Governance Actions</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Multiple Planned Governance Actions</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Multiple Planned Governance Actions</td>
           <td>Core</td>
           <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified set of Spells:
-            <pre>
-              <code>
-                /// @notice Drop multiple plans in a single call.
-                drop(Plan[] calldata plans)
-              </code>
-            </pre>
-            The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
+          <pre>
+              <code>/// @notice Drop multiple plans in a single call. drop(Plan[] calldata plans)</code>
+          </pre>
+          The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters</td>
           <td>Core</td>
@@ -4054,8 +4039,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Usr Parameter Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Usr Parameter Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Usr Parameter Definition</td>
           <td>Core</td>
@@ -4063,8 +4047,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Tag Parameter Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Tag Parameter Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Tag Parameter Definition</td>
           <td>Core</td>
@@ -4072,8 +4055,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Fax Parameter Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Fax Parameter Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Fax Parameter Definition</td>
           <td>Core</td>
@@ -4081,8 +4063,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Eta Parameter Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Eta Parameter Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Eta Parameter Definition</td>
           <td>Core</td>
@@ -4090,13 +4071,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Plans Parameter Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Plans Parameter Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Plans Parameter Definition</td>
           <td>Core</td>
           <td>The plans parameter is an array of scheduled Spells to be canceled. Each scheduled Spell to be canceled is represented as a Plan struct:
-            <pre>
+          <pre>
               <code>
                 /**
                 * @notice A struct representing a plan.
@@ -4105,18 +4085,19 @@
                 * @param fax The encoded call to be made in `usr`.
                 * @param eta The expiration time.
                 */
-              struct Plan {
-                  address usr;
-                  bytes32 tag;
-                  bytes fax;
-                  uint256 eta;
+                struct Plan {
+                    address usr;
+                    bytes32 tag;
+                    bytes fax;
+                    uint256 eta;
+                }  
               </code>
-           }</pre>The parameters of the Plan struct are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters.</dfn></td>
+           </pre>
+           The parameters of the Plan struct are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters.</dfn></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Determining Protego Parameters</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Determining Protego Parameters</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Determining Protego Parameters</td>
           <td>Core</td>
@@ -4124,8 +4105,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition</td>
           <td>Core</td>
@@ -4133,8 +4113,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Support Facilitators’ Role In Protego Usage</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Support Facilitators’ Role In Protego Usage</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Support Facilitators’ Role In Protego Usage</td>
           <td>Core</td>
@@ -4150,18 +4129,15 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</td>
           <td>Core</td>
-          <td>All Governance Facilitators must promptly acknowledge receipt of the Support Facilitators’ decision to use Protego. This acknowledgment must take place in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.<br>The Governance Facilitators are responsible for actioning the usage of Protego and liaising with the Prime Delegates (and other Aligned Delegates as needed) to gather the necessary support for it.
-          </td>
+          <td>All Governance Facilitators must promptly acknowledge receipt of the Support Facilitators’ decision to use Protego. This acknowledgment must take place in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.<br>The Governance Facilitators are responsible for actioning the usage of Protego and liaising with the Prime Delegates (and other Aligned Delegates as needed) to gather the necessary support for it. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</td>
           <td>Core</td>
@@ -4169,8 +4145,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Requirement To Validate Authenticity Of Emergency Drop Spell - Governance Facilitators’ Role In Protego Usage - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Requirement To Validate Authenticity Of Emergency Drop Spell - Governance Facilitators’ Role In Protego Usage - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Requirement To Validate Authenticity Of Emergency Drop Spell - Governance Facilitators’ Role In Protego Usage - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</td>
           <td>Core</td>
@@ -4192,18 +4167,15 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</td>
           <td>Core</td>
-          <td>The Governance Facilitators may use the Custom Spell Voting Page when it is beneficial to coordinate voting without having a visible Spell on the Voting Portal. The Governance Facilitators must not use this method unless domain expert Ecosystem Actors in the Emergency Response Group have recommended this approach; such a recommendation must be explicitly documented in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.
-          </td>
+          <td>The Governance Facilitators may use the Custom Spell Voting Page when it is beneficial to coordinate voting without having a visible Spell on the Voting Portal. The Governance Facilitators must not use this method unless domain expert Ecosystem Actors in the Emergency Response Group have recommended this approach; such a recommendation must be explicitly documented in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage</td>
           <td>Core</td>
@@ -4213,38 +4185,31 @@
               <li>Receipt of the Support Facilitators’ announcement of the decision to use Protego or an Emergency Drop Spell in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and</li>
               <li>All Governance Facilitators have validated the authenticity of the Emergency Drop Spell, if applicable. This validation must fulfill two requirements: (1) the validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and (2) the validation must be provided by the authorized entities listed in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>.</li>
             </ol>
-            After ADs have confirmed all requirements are met, they must either (1) promptly vote to approve the usage of Protego or the Emergency Drop Spell, or (2) communicate any concerns to the Governance Facilitators and collaborate with the latter for a speedy resolution.
-          </td>
+            After ADs have confirmed all requirements are met, they must either (1) promptly vote to approve the usage of Protego or the Emergency Drop Spell, or (2) communicate any concerns to the Governance Facilitators and collaborate with the latter for a speedy resolution. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</td>
           <td>Core</td>
-          <td>There is an exception to the requirement that all Governance Facilitators must validate the authenticity of an Emergency Drop Spell. In situations where a Governance Facilitator has failed to respond to the emergency situation, the Support Facilitators may temporarily grant the responding Governance Facilitator(s) the sole authority to validate the authenticity of the Emergency Drop Spell pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. The Support Facilitators must communicate this in writing in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.
-          </td>
+          <td>There is an exception to the requirement that all Governance Facilitators must validate the authenticity of an Emergency Drop Spell. In situations where a Governance Facilitator has failed to respond to the emergency situation, the Support Facilitators may temporarily grant the responding Governance Facilitator(s) the sole authority to validate the authenticity of the Emergency Drop Spell pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. The Support Facilitators must communicate this in writing in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</td>
           <td>Core</td>
-          <td>It is severe misalignment for an Aligned Delegate to vote for an Emergency Drop Spell whose authenticity has not been validated pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. Aligned Delegates in breach of this requirement must be immediately derecognized and their full AD Buffer should be confiscated.
-          </td>
+          <td>It is severe misalignment for an Aligned Delegate to vote for an Emergency Drop Spell whose authenticity has not been validated pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. Aligned Delegates in breach of this requirement must be immediately derecognized and their full AD Buffer should be confiscated. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</td>
           <td>Core</td>
-          <td>Breach of any requirement concerning Emergency Spells - including usage of Protego - constitutes misalignment and must be addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response Preparedness</dfn>.
-          </td>
+          <td>Breach of any requirement concerning Emergency Spells - including usage of Protego - constitutes misalignment and must be addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response Preparedness</dfn>. </td>
         </tr>
         <tr>
           <td>
@@ -16624,8 +16589,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase One</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One</td>
           <td>Core</td>
@@ -16633,8 +16597,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase One Timing</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One Timing</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One Timing</td>
           <td>Core</td>
@@ -16642,8 +16605,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase One Actions</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One Actions</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One Actions</td>
           <td>Core</td>
@@ -16651,8 +16613,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Disable Conversion From SKY To MKR In Existing Conversion Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable Conversion From SKY To MKR In Existing Conversion Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Disable Conversion From SKY To MKR In Existing Conversion Contract</td>
           <td>Core</td>
@@ -16660,8 +16621,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Launch New MKR To SKY Conversion Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New MKR To SKY Conversion Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Launch New MKR To SKY Conversion Contract</td>
           <td>Core</td>
@@ -16676,8 +16636,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Disable MKR Flop Auctions</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable MKR Flop Auctions</dfn>
           </td>
           <td>Core Tokens - SKY - Disable MKR Flop Auctions</td>
           <td>Core</td>
@@ -16685,8 +16644,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Disable Emergency Shutdown Module</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable Emergency Shutdown Module</dfn>
           </td>
           <td>Core Tokens - SKY - Disable Emergency Shutdown Module</td>
           <td>Core</td>
@@ -16694,8 +16652,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Launch New Chief Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New Chief Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Launch New Chief Contract</td>
           <td>Core</td>
@@ -16711,18 +16668,15 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</td>
           <td>Core</td>
-          <td>A Spark Spell must be triggered to move the authority of the Spark Freezer MOM contract to the new Chief contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - SparkLend Freezer Mom Exception</dfn>.
-          </td>
+          <td>A Spark Spell must be triggered to move the authority of the Spark Freezer MOM contract to the new Chief contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - SparkLend Freezer Mom Exception</dfn>. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Launch New SKY Oracle</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New SKY Oracle</dfn>
           </td>
           <td>Core Tokens - SKY - Launch New SKY Oracle</td>
           <td>Core</td>
@@ -16730,18 +16684,15 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</td>
           <td>Core</td>
-          <td>The new SKY oracle must be added to the OSM_MOM contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Oracle Freeze Exception</dfn>.
-          </td>
+          <td>The new SKY oracle must be added to the OSM_MOM contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Oracle Freeze Exception</dfn>. </td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Update Smart Burn Engine Parameters</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Smart Burn Engine Parameters</dfn>
           </td>
           <td>Core Tokens - SKY - Update Smart Burn Engine Parameters</td>
           <td>Core</td>
@@ -16754,8 +16705,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Launch SKY Staking</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch SKY Staking</dfn>
           </td>
           <td>Core Tokens - SKY - Launch SKY Staking</td>
           <td>Core</td>
@@ -16794,8 +16744,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Two</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two</td>
           <td>Core</td>
@@ -16803,8 +16752,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Timing</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Timing</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Timing</td>
           <td>Core</td>
@@ -16812,8 +16760,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</td>
           <td>Core</td>
@@ -16821,8 +16768,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Update Parameters For Staked Sky</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Parameters For Staked Sky</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</td>
           <td>Core</td>
@@ -16838,8 +16784,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Adjust GSM Pause Delay</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Adjust GSM Pause Delay</dfn>
           </td>
           <td>Core Tokens - SKY - Adjust GSM Pause Delay</td>
           <td>Core</td>
@@ -16847,8 +16792,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Revoke Migrator Authority Over Vat Contract</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Revoke Migrator Authority Over Vat Contract</dfn>
           </td>
           <td>Core Tokens - SKY - Revoke Migrator Authority Over Vat Contract</td>
           <td>Core</td>
@@ -16856,8 +16800,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Three</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three</td>
           <td>Core</td>
@@ -16865,8 +16808,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Timing</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Timing</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three Timing</td>
           <td>Core</td>
@@ -16874,8 +16816,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Actions</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Actions</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three Actions</td>
           <td>Core</td>
@@ -16883,8 +16824,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Develop SKY Flop Auctions</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Develop SKY Flop Auctions</dfn>
           </td>
           <td>Core Tokens - SKY - Develop SKY Flop Auctions</td>
           <td>Core</td>
@@ -16892,8 +16832,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Offboard Borrowing Against Staked MKR</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Offboard Borrowing Against Staked MKR</dfn>
           </td>
           <td>Core Tokens - SKY - Offboard Borrowing Against Staked MKR</td>
           <td>Core</td>
@@ -16901,8 +16840,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Upgrade MKR In Pause Proxy To SKY</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Upgrade MKR In Pause Proxy To SKY</dfn>
           </td>
           <td>Core Tokens - SKY - Upgrade MKR In Pause Proxy To SKY</td>
           <td>Core</td>
@@ -16910,8 +16848,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>
           </td>
           <td>Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</td>
           <td>Core</td>
@@ -16919,8 +16856,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - Set Conversion Fee In MKR To SKY Conversion Contract To 1%</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - Set Conversion Fee In MKR To SKY Conversion Contract To 1%</dfn>
           </td>
           <td>Core Tokens - SKY - Set Conversion Fee In MKR To SKY Conversion Contract To 1%</td>
           <td>Core</td>
@@ -16928,8 +16864,7 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - MKR To SKY Upgrade Modification Of Phases</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Modification Of Phases</dfn>
           </td>
           <td>Core Tokens - SKY - MKR To SKY Upgrade Modification Of Phases</td>
           <td>Core</td>
@@ -16937,51 +16872,36 @@
         </tr>
         <tr>
         <td>
-          <dfn>A.4.2
-            - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
+          <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
         </td>
         <td>SkyLink - Multichain Support Native Mechanisms</td>
         <td>Section</td>
-        <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the
-          Token Rewards Mechanism and the SKY Staking Mechanism.</td>
+        <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - A1 - Savings Rate And Token Reward Mechanism - Savings Rates</dfn>
+            <dfn>A.4.3 - A1 - Savings Rate And Token Reward Mechanism - Savings Rates</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Savings Rates</td>
           <td>Section</td>
-          <td>The Savings Rate Mechanism includes both the legacy Dai Savings Rate Mechanism and the Sky Savings
-            Rate. The Sky Savings Rate includes a built-in sUSDS mechanism. The Savings Rate is governed by the
-            Stability Scope.</td>
+          <td>The Savings Rate Mechanism includes both the legacy Dai Savings Rate Mechanism and the Sky Savings Rate. The Sky Savings Rate includes a built-in sUSDS mechanism. The Savings Rate is governed by the Stability Scope.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>
+            <dfn>A.4.3 - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
           <td>Section</td>
-          <td>The Token Rewards Mechanism provides SKY rewards to USDS users. Agent tokens are also distributed
-            through a Token Rewards Mechanism.</td>
+          <td>The Token Rewards Mechanism provides SKY rewards to USDS users. Agent tokens are also distributed through a Token Rewards Mechanism.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - Savings Rate And Token Reward Mechanism - Token Reward Mechanism - SKY Token Rewards</dfn>
+            <dfn>A.4.3 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism - SKY Token Rewards</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
           <td>Core</td>
-          <td>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure
-            the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period.
-            The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).<br>
-            To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the
-            following calculation, performed for each normalization period:<br>1. Determine Target Reward Value: Calculate
-            the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).<br>2.
-            Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY
-            (determined at the time of the Executive Vote).
-          </td>
+          <td>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period. The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).<br>
+            To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the following calculation, performed for each normalization period:<br>1. Determine Target Reward Value: Calculate the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).<br>2. Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY (determined at the time of the Executive Vote). </td>
         </tr>
         <tr>
           <td>
@@ -17231,8 +17151,7 @@
           </td>
           <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - SKY-Backed Borrowing Parameters</td>
           <td>Core</td>
-          <td>The risk parameters for SKY-backed borrowing funded directly by Sky will be specified in a future iteration of the Atlas. <dfn>See A.4.1 - Core Tokens - SKY - Launch SKY Staking and A.4.1 - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>.
-          </td>
+          <td>The risk parameters for SKY-backed borrowing funded directly by Sky will be specified in a future iteration of the Atlas. <dfn>See A.4.1 - Core Tokens - SKY - Launch SKY Staking and A.4.1 - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -17250,10 +17169,10 @@
           <td>Core</td>
           <td>The short-term staking rewards parameters are:
             <ul>
-            <li>rewardsDistribution: Set to the Splitter</li>
-            <li>rewardsDuration: 15,649 seconds</li>
-            <li>farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm</li>
-            <li>fee (Exit fee): 0%</li>
+              <li>rewardsDistribution: Set to the Splitter</li>
+              <li>rewardsDuration: 15,649 seconds</li>
+              <li>farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm</li>
+              <li>fee (Exit fee): 0%</li>
             </ul>
           </td>
         </tr>
