@@ -3863,35 +3863,32 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</td>
           <td>Core</td>
-          <td>All Governance Facilitators, as defined in the subdocument below, are required to validate the authenticity of the Standby Spell.
-              This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency 
-              Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - 
-              Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby 
-              Spell</dfn> are authorized to provide the validation of authenticity.
-              Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Standby Spells</dfn>, ADs are 
-              prohibited from voting for a Standby Spell without this validation of authenticity.
-          </td>
+          <td><p>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Standby Spell.<br>This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn> are authorized to provide the validation of authenticity.</p><p>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Standby Spells</dfn>, ADs are prohibited from voting for a Standby Spell without this validation of authenticity.</p></td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.9
-              - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</dfn>
           </td>
           <td>Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Standby Spell</td>
           <td>Core</td>
-          <td>This document defines the term “Governance Facilitators” as used in <dfn>A.1.9 - Sky Core Governance Security - Emergency 
-              Spells - Requirement To Validate Authenticity of Standby Spell</dfn>.
-              The entities listed below are authorized to validate the authenticity of a Standby Spell:
-              • JanSky
-              • VoteWizard
-              The authorized entities are not to be interpreted as the collective identity of the Governance Facilitator teams. Rather, the authorized entities are synonymous with the Sky Forum account holders with the following handles:
-              • JanSky
-              • votewizard
+          <td>This document defines the term “Authorized Representative” as used in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Standby Spell</dfn>. The entities listed below are authorized to validate the authenticity of a Standby Spell on behalf of the specified Governance Facilitators:
+            <ul>
+              <li>JanSky on behalf of Governance Facilitator team JanSky</li>
+              <li>VoteWizard on behalf of Governance Facilitator team Endgame Edge</li>
+              <li>LDR on behalf of Governance Facilitator team JanSky</li>
+              <li>CivicSage on behalf of Governance Facilitator team Endgame Edge</li>
+            </ul>
+            The Authorized Representatives listed are synonymous with the Sky Forum account holders with the following handles:
+            <ul>
+              <li>JanSky</li>
+              <li>votewizard</li>
+              <li>ldr</li>
+              <li>CivicSage</li>
+            </ul>
           </td>
         </tr>
         <tr>
@@ -3968,6 +3965,266 @@
               addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response 
               Preparedness</dfn>.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego</td>
+          <td>Core</td>
+          <td>Protego is a contract that allows Sky Governance to cancel the execution of planned governance actions that are awaiting the expiration of the Governance Security Module Pause Delay (GSM Pause Delay). See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay</dfn>. The subdocuments herein specify the features of the Protego contract and its authorized use.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features</td>
+          <td>Core</td>
+          <td>The Protego contract allows canceling the execution of planned governance actions within the Sky Protocol. Technical updates and other protocol changes are implemented as Spells within the Sky Protocol, approved by Sky Governance via Executive Votes. These planned governance actions have a time delay before taking effect. In this period between approval and execution, the Protego contract allows for planned governance actions to be canceled. The documents herein specify the core features of the Protego contract.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells</td>
+          <td>Core</td>
+          <td>The Protego contract can be used to deploy an Emergency Drop Spell. Once authorized by Sky Governance, the Emergency Drop Spell can cancel any planned governance action that is awaiting GSM Pause Delay expiration.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Deployment Of Emergency Drop Spells</td>
+          <td>Core</td>
+          <td><p>Any user can permissionlessly deploy an Emergency Drop Spell by invoking the deploy function on the Protego contract with parameters identifying the planned governance action to be canceled:</p><p><code>deploy(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)(address)</code></p><p>The parameters of the deploy function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</p>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Execution Of Emergency Drop Spells</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Emergency Drop Spells - Execution Of Emergency Drop Spells</td>
+          <td>Core</td>
+          <td>Once an Emergency Drop Spell has been deployed, it can be used to cancel the execution of the planned governance action by invoking its drop function. This function can only be invoked if the Emergency Drop Spell has been granted authority by Sky Governance by giving the Emergency Drop Spell the hat in the Chief contract.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions</td>
+          <td>Core</td>
+          <td>The Protego contract can be granted authority by Sky Governance to allow any user to permissionlessly cancel any planned governance action. This is done by giving the Protego contract the hat in the Chief contract. Once the Protego contract has been granted authority, any user can cancel either a single planned governance action or a set of planned governance actions as specified herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Single Planned Governance Action</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Single Planned Governance Action</td>
+          <td>Core</td>
+          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified Spell: <pre>
+              <code>
+                /// @notice Permissionlessly drop anything that has been planned on the pause.
+                drop(address _usr, bytes32 _tag, bytes memory _fax, uint256 _eta)
+              </code>
+            </pre>
+            The parameters of the drop function are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Multiple Planned Governance Actions</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Features - Allowing Permissionless Cancellation Of Planned Governance Actions - Permissionless Cancellation Of Multiple Planned Governance Actions</td>
+          <td>Core</td>
+          <td>If the Protego contract has authority from Sky Governance, any user can permissionlessly invoke the drop function to cancel a specified set of Spells:
+          <pre>
+              <code>
+                /// @notice Drop multiple plans in a single call.
+                drop(Plan[] calldata plans)
+              </code>
+          </pre>
+          The parameter of the drop function is defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Plans Parameter Definition</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters</td>
+          <td>Core</td>
+          <td>The documents herein define parameters that are used in functions of the Protego contract and the process for determining them.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Usr Parameter Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Usr Parameter Definition</td>
+          <td>Core</td>
+          <td>The usr parameter is the address of the scheduled Spell to be canceled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Tag Parameter Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Tag Parameter Definition</td>
+          <td>Core</td>
+          <td>The tag parameter identifies the address of the scheduled Spell to be canceled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Fax Parameter Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Fax Parameter Definition</td>
+          <td>Core</td>
+          <td>The fax parameter is the encoded call to be made in the scheduled Spell to be canceled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Eta Parameter Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Protego Eta Parameter Definition</td>
+          <td>Core</td>
+          <td>The eta parameter is the expiration time of the scheduled Spell to be canceled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Plans Parameter Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Plans Parameter Definition</td>
+          <td>Core</td>
+          <td>The plans parameter is an array of scheduled Spells to be canceled. Each scheduled Spell to be canceled is represented as a Plan struct:
+          <pre>
+              <code>
+                /**
+                * @notice A struct representing a plan.
+                * @param usr The address of the scheduled spell.
+                * @param tag The tag identifying the address.
+                * @param fax The encoded call to be made in `usr`.
+                * @param eta The expiration time.
+                */
+                struct Plan {
+                    address usr;
+                    bytes32 tag;
+                    bytes fax;
+                    uint256 eta;
+                }  
+              </code>
+           </pre>
+           The parameters of the Plan struct are defined in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters.</dfn></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Determining Protego Parameters</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Parameters - Determining Protego Parameters</td>
+          <td>Core</td>
+          <td>The parameters for the scheduled Spell to be canceled, as specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego Parameters</dfn>, should always be determined by inspecting the logs emitted from the plot function of the Pause contract. The parameters should never be determined by calling functions on the Spell to be canceled, because these functions may not return the correct values in the case of a malicious Spell.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition</td>
+          <td>Core</td>
+          <td>The subdocuments herein define the governance process for using Protego.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Support Facilitators’ Role In Protego Usage</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Support Facilitators’ Role In Protego Usage</td>
+          <td>Core</td>
+          <td>The role of the Support Facilitators in the usage of Protego is as follows:
+            <ul>
+              <li>Protego can only be used in response to a properly validated and categorized emergency scenario, for which the Support Facilitators are responsible. See <dfn>A.1.8 - Emergency Response System - Emergency Response - Incident Validation</dfn> and <dfn>A.1.8 - Emergency Response System - Emergency Response - Incident Categorization</dfn>.</li>
+              <li>The decision to initiate the process to use Protego is reserved for the Support Facilitators; where possible, the Support Facilitators should consult with the responsible Facilitator of the impacted Scope(s) and any relevant Scope Advisor(s). See <dfn>A.1.8 - Emergency Response System - Emergency Response - Facilitators’ Roles And Responsibilities</dfn>.</li>
+              <li>The Support Facilitators must explicitly communicate the decision to use Protego in the secure, private communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn> or on a “war room” video call.</li>
+              <li>If the decision to use Protego is first reached on a video call, the Support Facilitators are required thereafter to promptly document their decision in the secure, private communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</li>
+              <li>After the Support Facilitators decide to use Protego, TechOps must promptly trigger an incident to the Emergency Response Group as specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency-Contact Mechanism Trigger</dfn>.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage</td>
+          <td>Core</td>
+          <td><p>All Governance Facilitators must promptly acknowledge receipt of the Support Facilitators’ decision to use Protego. This acknowledgment must take place in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</p><p>The Governance Facilitators are responsible for actioning the usage of Protego and liaising with the Prime Delegates (and other Aligned Delegates as needed) to gather the necessary support for it.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Governance Facilitators’ Role In Protego Usage - Requirement To Validate Authenticity Of Emergency Drop Spell</td>
+          <td>Core</td>
+          <td><p>One Authorized Representative, as defined in the subdocument below, from each Governance Facilitator must validate the authenticity of the Emergency Drop Spell, if applicable.</p><p>This validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>. Only the entities specified in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn> are authorized to provide the validation of authenticity.</p><p>Pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>, ADs are prohibited from voting for an Emergency Drop Spell without this validation of authenticity.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Requirement To Validate Authenticity Of Emergency Drop Spell - Governance Facilitators’ Role In Protego Usage - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Requirement To Validate Authenticity Of Emergency Drop Spell - Governance Facilitators’ Role In Protego Usage - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</td>
+          <td>Core</td>
+          <td>This document defines the term “Authorized Representative” as used in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Requirement To Validate Authenticity Of Emergency Drop Spell</dfn>.<br>The entities listed below are authorized to validate the authenticity of an Emergency Drop Spell on behalf of the specified Governance Facilitators:
+            <ul>
+              <li>JanSky on behalf of Governance Facilitator team JanSky</li>
+              <li>VoteWizard on behalf of Governance Facilitator team Endgame Edge</li>
+              <li>LDR on behalf of Governance Facilitator team JanSky</li>
+              <li>CivicSage on behalf of Governance Facilitator team Endgame Edge</li>
+            </ul>
+            The Authorized Representatives listed are synonymous with the Sky Forum account holders with the following handles:
+            <ul>
+              <li>JanSky</li>
+              <li>votewizard</li>
+              <li>ldr</li>
+              <li>CivicSage</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - Custom Spell Voting For Protego Usage</td>
+          <td>Core</td>
+          <td>The Governance Facilitators may use the Custom Spell Voting Page when it is beneficial to coordinate voting without having a visible Spell on the Voting Portal. The Governance Facilitators must not use this method unless domain expert Ecosystem Actors in the Emergency Response Group have recommended this approach; such a recommendation must be explicitly documented in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage</td>
+          <td>Core</td>
+          <td>ADs are strictly prohibited from voting to use an Emergency Drop Spell, or to give authority to the Protego contract, unless they have first confirmed all of the following requirements:
+            <ol start=1>
+              <li>Receipt of the Support Facilitator’s official notification of the emergency scenario in the Emergency Contact Mechanism specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency-Contact Mechanism Trigger</dfn>;</li>
+              <li>Receipt of the Support Facilitators’ announcement of the decision to use Protego or an Emergency Drop Spell in the communication channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and</li>
+              <li>All Governance Facilitators have validated the authenticity of the Emergency Drop Spell, if applicable. This validation must fulfill two requirements: (1) the validation must be in the form of a written communication in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>; and (2) the validation must be provided by the authorized entities listed in <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Current Entities Authorized To Validate Authenticity of Emergency Drop Spell</dfn>.</li>
+            </ol>
+            After ADs have confirmed all requirements are met, they must either (1) promptly vote to approve the usage of Protego or the Emergency Drop Spell, or (2) communicate any concerns to the Governance Facilitators and collaborate with the latter for a speedy resolution.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - AD Reliance On Governance Facilitators In Emergency Drop Spell Process Where Governance Facilitator Is Nonresponsive</td>
+          <td>Core</td>
+          <td>There is an exception to the requirement that all Governance Facilitators must validate the authenticity of an Emergency Drop Spell. In situations where a Governance Facilitator has failed to respond to the emergency situation, the Support Facilitators may temporarily grant the responding Governance Facilitator(s) the sole authority to validate the authenticity of the Emergency Drop Spell pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. The Support Facilitators must communicate this in writing in the secure channel specified in <dfn>A.1.8 - Emergency Response System - Emergency Response - Emergency Response Signal Group</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Process Definition - ADs’ Role In Protego Usage - Misalignment To Vote For Unvalidated Emergency Drop Spell</td>
+          <td>Core</td>
+          <td>It is severe misalignment for an Aligned Delegate to vote for an Emergency Drop Spell whose authenticity has not been validated pursuant to <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - ADs’ Role In Protego Usage</dfn>. Aligned Delegates in breach of this requirement must be immediately derecognized and their full AD Buffer should be confiscated.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.1.9 - Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</dfn>
+          </td>
+          <td>Sky Core Governance Security - Emergency Spells - Protego - Protego Usage Accountability</td>
+          <td>Core</td>
+          <td>Breach of any requirement concerning Emergency Spells - including usage of Protego - constitutes misalignment and must be addressed pursuant to <dfn>A.1.8 - Emergency Response System - Emergency Response - Accountability For Emergency Response Preparedness</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -6875,6 +7132,36 @@
           <td>Special Voting Processes</td>
           <td>Core</td>
           <td>The Root Edit Primitive must specify any exceptions to the general process, such as subject matter requiring supermajority approval.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Short-Term Limitations On Usage Of Root Edit Primitive</dfn>
+          </td>
+          <td>Short-Term Limitations On Usage Of Root Edit Primitive</td>
+          <td>Core</td>
+          <td>In the short term, usage of the Root Edit Primitive by Star Agents will be limited as specified in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Limitations On Usage Of Root Edit Primitive Prior To Tokens Being Publicly Held</dfn>
+          </td>
+          <td>Limitations On Usage Of Root Edit Primitive Prior To Tokens Being Publicly Held</td>
+          <td>Core</td>
+          <td>Until the tokens of a Star Agent are Publicly Held, as defined in <dfn>A.2.4 - Publicly Held Definition</dfn>, the Root Edit Primitive will not be operational. Instead, if a Star Agent wishes to edit its Agent Artifact, it must use the customary Atlas Edit Proposal processes specified in the Sky Core Atlas at <dfn>A.1.11 - A2 - Weekly Governance Cycle - Atlas Edit Weekly Cycle</dfn> or <dfn>A.1.12 - A2 - Monthly Governance Cycle - Atlas Edit Monthly Cycle</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Publicly Held Definition</dfn>
+          </td>
+          <td>Publicly Held Definition</td>
+          <td>Core</td>
+          <td>The tokens of a Star Agent shall be deemed Publicly Held if they are held by at least 2,000 Public Holders who collectively own 10% or more of the Star Agent’s portion of its genesis supply, as defined in <dfn>A.2.4 - Agent Token Genesis Supply</dfn>.<br>Public Holders are unique wallet addresses, excluding any address reasonably believed to be controlled by the Star Agent, its core contributors, or their affiliates. An entity is affiliated with another if it directly or indirectly controls, is controlled by, or is under common control with such other entity.<br>To qualify as a Public Holder, tokens owned by a wallet address must not be subject to any contractual, legal, or technical transfer restrictions, including:
+            <ul>
+              <li>(a) time-based vesting or lock-up schedules;</li>
+              <li>(b) contractual resale limitations (including any limitations imposed by token purchase agreements, SAFTs, or other similar instruments); or</li>
+              <li>(c) smart contract restrictions that prevent transfer without further governance action.</li>
+            </ul>
+            Tokens held in liquidity pools or staking contracts shall be attributed to the beneficial owners of the deposited tokens, rather than to the pool or contract itself, for purposes of determining both the number of Public Holders and their collective ownership.<br>The Core Executor Agent is responsible for determining whether the tokens of a Star Agent are Publicly Held. If the Core Executor Agent believes that a Star Agent’s tokens are sufficiently decentralized despite failing to meet the technical criteria specified herein they may propose a Governance Poll to deem that Star Agent’s tokens as Publicly Held.</td>
         </tr>
         <tr>
           <td>
@@ -16309,61 +16596,331 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.4.1
-              - Core Tokens - SKY - SKY Launch</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade</dfn>
           </td>
-          <td>Core Tokens - SKY - SKY Launch</td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade</td>
           <td>Core</td>
-          <td>In the Endgame Token Launch Phase, SKY is launched as an upgrade to MKR. MKR can be exchanged to and
-            from SKY at a rate of 1:24,000.</td>
+          <td>Historically, MKR was the governance token of the Sky Protocol. As part of the transition to the Endgame, the technical infrastructure of the Sky Protocol must be upgraded to use SKY as its governance token rather than MKR. The upgrade will take place over three phases, as defined in the documents herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.2
-              - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One</dfn>
           </td>
-          <td>SkyLink - Multichain Support Native Mechanisms</td>
-          <td>Section</td>
-          <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the
-            Token Rewards Mechanism and the SKY Staking Mechanism.</td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One</td>
+          <td>Core</td>
+          <td>The documents herein define Phase One of the upgrade from MKR to SKY as the governance token of the Protocol.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - A1 - Savings Rate And Token Reward Mechanism - Savings Rates</dfn>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One Timing</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One Timing</td>
+          <td>Core</td>
+          <td>Phase One is expected to occur in the May 15, 2025 Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase One Actions</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase One Actions</td>
+          <td>Core</td>
+          <td>The actions specified in the documents herein will be taken as part of Phase One. These actions are authorized to proceed directly to an Executive Vote without a prior Governance Poll.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable Conversion From SKY To MKR In Existing Conversion Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Disable Conversion From SKY To MKR In Existing Conversion Contract</td>
+          <td>Core</td>
+          <td>The functionality to convert SKY to MKR in the existing converter contract located at 0xBDcFCA946b6CDd965f99a839e4435Bcdc1bc470B on the Ethereum Mainnet must be disabled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New MKR To SKY Conversion Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Launch New MKR To SKY Conversion Contract</td>
+          <td>Core</td>
+          <td>A new contract that allows upgrading from MKR to SKY must be deployed. This contract must have the following features:
+            <ul>
+              <li>it must allow upgrading from MKR to SKY at a conversion rate of 1 MKR to 24,000 SKY, subject to the Delayed Upgrade Penalty specified below;</li>
+              <li>it must not allow conversion from SKY to MKR;</li>
+              <li>it must support charging a Delayed Upgrade Penalty set by Sky Governance, which applies to all upgrades of MKR to SKY; and</li>
+              <li>the Delayed Upgrade Penalty must initially be set to 0%.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable MKR Flop Auctions</dfn>
+          </td>
+          <td>Core Tokens - SKY - Disable MKR Flop Auctions</td>
+          <td>Core</td>
+          <td>MKR flop auctions must be disabled.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Disable Emergency Shutdown Module</dfn>
+          </td>
+          <td>Core Tokens - SKY - Disable Emergency Shutdown Module</td>
+          <td>Core</td>
+          <td>The Emergency Shutdown Module must be disabled by setting the amount of MKR required to trigger it to infinity.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New Chief Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Launch New Chief Contract</td>
+          <td>Core</td>
+          <td>A new Chief contract must be deployed to support voting with SKY instead of MKR. The following changes must be made to support upgrade to the new Chief contract:
+            <ul>
+              <li>the ds-pause contract must be set to be operated by the new Chief contract;</li>
+              <li>all MOM contracts must be set to be operated by the new Chief contract;</li>
+              <li>the maxYays parameter in the new Chief contract must be set to 5;</li>
+              <li>the launchThreshold in the new Chief contract must be set to 2,400,000,000 SKY (equivalent to 100,000 MKR); and</li>
+              <li>the liftCooldown must be set to 10 blocks.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Move Authority Of Spark Freezer MOM Contract To New Chief Contract</td>
+          <td>Core</td>
+          <td>A Spark Spell must be triggered to move the authority of the Spark Freezer MOM contract to the new Chief contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - SparkLend Freezer Mom Exception</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch New SKY Oracle</dfn>
+          </td>
+          <td>Core Tokens - SKY - Launch New SKY Oracle</td>
+          <td>Core</td>
+          <td>A new Oracle Security Module based on the Scribe SKY oracle must be deployed.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Add New SKY Oracle to Oracle Security Module MOM Contract</td>
+          <td>Core</td>
+          <td>The new SKY oracle must be added to the OSM_MOM contract. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Oracle Freeze Exception</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Smart Burn Engine Parameters</dfn>
+          </td>
+          <td>Core Tokens - SKY - Update Smart Burn Engine Parameters</td>
+          <td>Core</td>
+          <td>The parameters of the Smart Burn Engine must be updated as follows:
+            <ul>
+              <li>The oracle must be changed to the new SKY oracle; and</li>
+              <li>The rewardsDuration for the LSEV2-SKY-A USDS rewards contract must be set such that it is equal to the splitter.hop parameter.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Launch SKY Staking</dfn>
+          </td>
+          <td>Core Tokens - SKY - Launch SKY Staking</td>
+          <td>Core</td>
+          <td>SKY Staking must be launched with the following parameters for borrowing against staked SKY:
+            <ul>
+              <li>Ilk: LSEV2-SKY-A</li>
+              <li>Farms: LSSKY → USDS (Add address when deployed)</li>
+              <li>Fee: 0</li>
+              <li>DC-IAM line: Set at discretion of Stability Facilitators in consultation with Stability Scope Advisors</li>
+              <li>DC-IAM gap: Set at discretion of Stability Facilitators in consultation with Stability Scope Advisors</li>
+              <li>DC-IAM ttl: Set at discretion of Stability Facilitators in consultation with Stability Scope Advisors</li>
+              <li>Only existing LSE-MKR-A users with drawn debt are allowed to migrate debt to LSEV2-SKY-A initially</li>
+              <li>Dust: 30,000</li>
+              <li>Duty: 20%</li>
+              <li>Mat: 125%</li>
+              <li>Calc: StairstepExponentialDecrease</li>
+              <li>Buf: 120%</li>
+              <li>Tail: 6,000 seconds</li>
+              <li>Cusp: 40%</li>
+              <li>Chip: 0.1%</li>
+              <li>Tip: 300 USDS</li>
+              <li>Stopped: 3</li>
+              <li>Chop: 13%</li>
+              <li>Hole: 250,000</li>
+              <li>Tau: 0 days</li>
+              <li>Cut: 0.99</li>
+              <li>Step: 60 seconds</li>
+              <li>LineMom: Yes</li>
+              <li>Tolerance: 0.5</li>
+              <li>Name: LockstakeSky</li>
+              <li>Symbol: lsSKY</li>
+              <li>Use new SKY Chronicle Scribe oracle instance OSM</li>
+              <li>Deny the CLIPPER_MOM from the new lockstake clipper</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two</td>
+          <td>Core</td>
+          <td>The documents herein define Phase Two of the upgrade from MKR to SKY as the governance token of the Protocol.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Timing</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Timing</td>
+          <td>Core</td>
+          <td>Phase Two is expected to occur in the May 29, 2025 Executive Vote.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</td>
+          <td>Core</td>
+          <td>The actions specified in the documents herein will be taken as part of Phase Two. These actions are authorized to proceed directly to an Executive Vote without a prior Governance Poll.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Parameters For Staked Sky</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Two Actions</td>
+          <td>Core</td>
+          <td>The parameters for staked SKY must be updated as follows:
+            <ul>
+              <li>USDS rewards on the LSEV2-SKY-A contract must be activated by setting the splitter.burn parameter to 50%;</li>
+              <li>the maxLine parameter must be set to 50,000,000 USDS;</li>
+              <li>the gap parameter must be set to 25,000,000;</li>
+              <li>the ttl parameter must be set to 86,400 seconds; and</li>
+              <li>the autoline parameter must be enabled.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Adjust GSM Pause Delay</dfn>
+          </td>
+          <td>Core Tokens - SKY - Adjust GSM Pause Delay</td>
+          <td>Core</td>
+          <td>The GSM Pause Delay must be set to 24 hours. See <dfn>A.1.9 - Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay Current Value</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Revoke Migrator Authority Over Vat Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Revoke Migrator Authority Over Vat Contract</td>
+          <td>Core</td>
+          <td>The Migrator contract authority over the Vat contract must be revoked. This authority was necessary for existing users of LSE-MKR-A to migrate to LSEV2-SKY-A but is no longer required.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three</td>
+          <td>Core</td>
+          <td>The documents herein define Phase Three of the upgrade from MKR to SKY as the governance token of the Protocol.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Timing</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three Timing</td>
+          <td>Core</td>
+          <td>Phase Three will occur in Executive Votes subsequent to the May 29, 2025 Executive Vote. Unlike Phases One and Two, Phase Three will occur over multiple future Executive Votes.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Phase Three Actions</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Phase Three Actions</td>
+          <td>Core</td>
+          <td>The actions specified in the documents herein will be taken as part of Phase Three. These actions are authorized to proceed directly to an Executive Vote without a prior Governance Poll.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Develop SKY Flop Auctions</dfn>
+          </td>
+          <td>Core Tokens - SKY - Develop SKY Flop Auctions</td>
+          <td>Core</td>
+          <td>Functionality for SKY flop auctions must be developed.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Offboard Borrowing Against Staked MKR</dfn>
+          </td>
+          <td>Core Tokens - SKY - Offboard Borrowing Against Staked MKR</td>
+          <td>Core</td>
+          <td>Seal Engine (LSE-MKR-A) must be offboarded as a collateral type. This will require retiring the existing SKY wrapped oracle and removing it from the MegaPoker keeper as well as other actions that will be identified at a future date.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Upgrade MKR In Pause Proxy To SKY</dfn>
+          </td>
+          <td>Core Tokens - SKY - Upgrade MKR In Pause Proxy To SKY</td>
+          <td>Core</td>
+          <td>The MKR in the Pause Proxy contract must be upgraded to SKY.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>
+          </td>
+          <td>Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</td>
+          <td>Core</td>
+          <td>Once sufficient liquidity has been attained, liquidations must be enabled and parameters for LSEV2-SKY-A must be updated to normal levels.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Set Conversion Fee In MKR To SKY Conversion Contract To 1%</dfn>
+          </td>
+          <td>Core Tokens - SKY - Set Conversion Fee In MKR To SKY Conversion Contract To 1%</td>
+          <td>Core</td>
+          <td>In the September 18, 2025 Executive Vote, the Delayed Upgrade Penalty for the new MKR to SKY conversion contract (see A.4.1 - Core Tokens - SKY - Launch New MKR To SKY Conversion Contract) must be set to 1%. Thereafter, the Delayed Upgrade Penalty must be increased gradually at the rate of 1 percentage point per three months.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Modification Of Phases</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Upgrade Modification Of Phases</td>
+          <td>Core</td>
+          <td>The timing and contents of Phase One, Phase Two, and Phase Three may be adjusted by the Protocol Facilitators in consultation with relevant Ecosystem Actors.</td>
+        </tr>
+        <tr>
+        <td>
+          <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
+        </td>
+        <td>SkyLink - Multichain Support Native Mechanisms</td>
+        <td>Section</td>
+        <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.3 - A1 - Savings Rate And Token Reward Mechanism - Savings Rates</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Savings Rates</td>
           <td>Section</td>
-          <td>The Savings Rate Mechanism includes both the legacy Dai Savings Rate Mechanism and the Sky Savings
-            Rate. The Sky Savings Rate includes a built-in sUSDS mechanism. The Savings Rate is governed by the
-            Stability Scope.</td>
+          <td>The Savings Rate Mechanism includes both the legacy Dai Savings Rate Mechanism and the Sky Savings Rate. The Sky Savings Rate includes a built-in sUSDS mechanism. The Savings Rate is governed by the Stability Scope.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>
+            <dfn>A.4.3 - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
           <td>Section</td>
-          <td>The Token Rewards Mechanism provides SKY rewards to USDS users. Agent tokens are also distributed
-            through a Token Rewards Mechanism.</td>
+          <td>The Token Rewards Mechanism provides SKY rewards to USDS users. Agent tokens are also distributed through a Token Rewards Mechanism.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.3
-              - Savings Rate And Token Reward Mechanism - Token Reward Mechanism - SKY Token Rewards</dfn>
+            <dfn>A.4.3 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism - SKY Token Rewards</dfn>
           </td>
           <td>Savings Rate And Token Reward Mechanism - Token Reward Mechanism</td>
           <td>Core</td>
-          <td>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure
-            the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period.
-            The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).<br>
-            To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the
-            following calculation, performed for each normalization period:<br>1. Determine Target Reward Value: Calculate
-            the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).<br>2.
-            Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY
-            (determined at the time of the Executive Vote).
-          </td>
+          <td><p>With each Executive Vote, the distribution of SKY token rewards to USDS holders is normalized to ensure the effective yield provided by these rewards equals the Sky Savings Rate (SSR) for the upcoming period. The effective yield is defined as: (Total Market Value of Distributed SKY Tokens / Total Eligible USDS Balance).</p><p>To achieve this normalization, the quantity of SKY token rewards to be distributed is determined through the following calculation, performed for each normalization period:</p>
+          <ol>
+            <li>Determine Target Reward Value: Calculate the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).</li>
+            <li>Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY (determined at the time of the Executive Vote).</li>
+          </ol>
+        </td>
         </tr>
         <tr>
           <td>
@@ -16581,23 +17138,23 @@
           </td>
           <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures</td>
           <td>Core</td>
-          <td>The documents herein define short term logic for staking rewards and SKY-backed borrowing pending the implementation of the Sky Treasury Management Function and the yUSDS system.</td>
+          <td>The documents herein define short-term logic for SKY staking rewards and SKY-backed borrowing pending the implementation of the Sky Treasury Management Function and the yUSDS system. Short-term logic regarding MKR staking rewards and MKR-backed borrowing is also included herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards</dfn>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking SKY Rewards</dfn>
           </td>
-          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards</td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking SKY Rewards</td>
           <td>Core</td>
-          <td>Until the Treasury Management Function (TMF) is live, USDS rewards for SKY stakers are temporarily funded by the Smart Burn Engine; this interim mechanism will be discontinued once the TMF becomes operational.</td>
+          <td>USDS rewards for SKY stakers will be enabled as specified in <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade</dfn>. Until the Treasury Management Function (TMF) is live, USDS rewards for SKY stakers will be temporarily funded by the Smart Burn Engine; this interim mechanism will be discontinued once the TMF becomes operational.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - Current Staking Rewards Parameters</dfn>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - SKY Staking Rewards Parameters</dfn>
           </td>
-          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - Current Staking Rewards Parameters</td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term Staking Rewards - SKY Staking Rewards Parameters</td>
           <td>Core</td>
-          <td>The short term staking rewards parameters are: • rewardsDistribution: Set to the Splitter• rewardsDuration: 15,649 seconds• farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm• fee (Exit fee): 0%</td>
+          <td>The short-term staking rewards parameters will be specified in a future iteration of the Atlas. See <dfn>A.4.1 - Core Tokens - SKY - Update Smart Burn Engine Parameters</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -16605,15 +17162,54 @@
           </td>
           <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing</td>
           <td>Core</td>
-          <td>In the short term pending the development of the yUSDS system, SKY-backed borrowing will be funded directly by Sky. This funding must be replaced by the yUSDS system as soon as the yUSDS system is developed.</td>
+          <td>SKY-backed borrowing will be enabled as specified in A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade. In the short term, pending the development of the yUSDS system, SKY-backed borrowing will be funded directly by Sky. This funding must be replaced by the yUSDS system as soon as the yUSDS system is developed.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - Current SKY-Backed Borrowing Parameters</dfn>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - SKY-Backed Borrowing Parameters</dfn>
           </td>
-          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - Current SKY-Backed Borrowing Parameters</td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short Term SKY-Backed Borrowing - SKY-Backed Borrowing Parameters</td>
           <td>Core</td>
-          <td>The current risk parameters for SKY-backed borrowing funded directly by Sky are:
+          <td>The risk parameters for SKY-backed borrowing funded directly by Sky will be specified in a future iteration of the Atlas. <dfn>See A.4.1 - Core Tokens - SKY - Launch SKY Staking and A.4.1 - Core Tokens - SKY - Update Liquidation Parameters For Borrowing Against Staked SKY</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR Staking Rewards</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR Staking Rewards</td>
+          <td>Core</td>
+          <td>As the legacy governance token of the Sky Protocol, MKR stakers are currently eligible for USDS rewards. This functionality will be phased out as specified in <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade</dfn>. The documents herein define the parameters for USDS rewards to MKR stakers during this interim period</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR Staking Rewards - MKR Staking Rewards Parameters</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR Staking Rewards - MKR Staking Rewards Parameters</td>
+          <td>Core</td>
+          <td>The short-term staking rewards parameters are:
+            <ul>
+              <li>rewardsDistribution: Set to the Splitter</li>
+              <li>rewardsDuration: 15,649 seconds</li>
+              <li>farms (Whitelisted set of farms to choose from): LsMkrUsdsFarm</li>
+              <li>fee (Exit fee): 0%</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR-Backed Borrowing</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR-Backed Borrowing</td>
+          <td>Core</td>
+          <td>Borrowing against staked MKR is currently supported and funded directly by Sky. This functionality will be phased out as specified in <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade</dfn>. The documents herein define the risk parameters for MKR-backed borrowing during this interim period.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.4 - SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR-Backed Borrowing - MKR-Backed Borrowing Parameters</dfn>
+          </td>
+          <td>SKY Staking Mechanism - SKY Staking - Short Term Transitionary Measures - Short-Term MKR-Backed Borrowing - MKR-Backed Borrowing Parameters</td>
+          <td>Core</td>
+          <td>The current risk parameters for MKR-backed borrowing funded directly by Sky are:
             <ul>
               <li>Cut: 0.99</li>
               <li>Step: 60 seconds</li>
@@ -16663,67 +17259,6 @@
           <td>Core</td>
           <td>Dai and MKR must remain as valid tokens and products, with no actively maintained brand presence
             beyond community assets, educational material and their token names.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>A.5.2
-              - Brand Identity - Recentering Maker Brand Polls</dfn>
-          </td>
-          <td>Brand Identity - Recentering Maker Brand Polls</td>
-          <td>Core</td>
-          <td>The Accessibility Facilitator must run a one-off special governance poll to determine the long-term 
-            brand of the backend protocol, with 3 poll options. The poll must run from November 4 to November 7. 
-            The winning option will modify the state of the Atlas as described below. The modifications and provisions 
-            of this Atlas Document overrides and supersedes all other Documents in the Atlas, despite conflict in names, 
-            tokenomics or anything else.<br> The 3 poll options are as follows:<br> Option 1:<br> Keep the Sky brand as 
-            the backend protocol brand. If this option is chosen, no further changes happen and everything remains as today 
-            with the brand. The effort to transition MKR to SKY continues, and the Sky brand remains the core brand that 
-            both denotes the frontend Sky.money, and the backend Sky Ecosystem and Sky Protocol.<br> Option 2:<br> Recenter 
-            the Maker brand. If this option is chosen, Sky is kept as the brand for the Sky.money frontend, USDS is also kept 
-            as the brand for the new stablecoin - but the underlying backend protocol has its name changed to Maker, and MKR 
-            becomes the core asset of the protocol. SkyLink becomes MakerLink, SkyChain becomes MakerChain, Sky Token Rewards 
-            becomes Star Token Rewards, and Sky Savings Rate becomes USDS Savings Rate. The Maker brand is returned with its 
-            old assets, as currently seen on makerdao.com, with minimal change. SKY tokens initially continue to function 
-            exactly the same, and SKY Token Rewards would continue at the same rate. Once SPK launches, SKY Token Rewards would 
-            be turned off, and the ability to migrate from MKR to SKY would be turned off. However, SKY to MKR migration would 
-            remain permanently, with a technical modification to ensure that SKY is backed by a finite amount of MKR, rather 
-            than the ability to emit new MKR. The ratio of SKY to MKR will permanently remain 1:24,000. The governance forum 
-            would revert to forum.makerdao.com and other similar assets would also revert to Maker branding - with the 
-            exception of the main @skyecosystem X handle. What happens to the X handle would be decided in a later process when 
-            it is determined what’s going to happen with Sky.<br> Option 3:<br> Recenter the Maker brand, with a limited brand 
-            refresh. If this option is chosen, Sky is kept as the brand for the Sky.money frontend, USDS is also kept as the brand 
-            for the new stablecoin - but the underlying backend protocol has its name changed to Maker, and MKR becomes the core 
-            asset of the protocol. SkyLink becomes MakerLink, SkyChain becomes MakerChain, Sky Token Rewards becomes Star Token 
-            Rewards, and Sky Savings Rate becomes USDS Savings Rate. The Maker brand is slightly modified to better align with the 
-            USDS brand identity, and to align with its role as the maker of the StarDAOs. The logo font can be slightly refreshed 
-            and polished, and the colour scheme and general aesthetic should be inspired by the dark blue / navy “star theme” that 
-            can be seen on Sky.money in sections that describe Stars and governance. SKY tokens initially continue to function 
-            exactly the same, and SKY Token Rewards would continue at the same rate. Once SPK launches, SKY Token Rewards would be 
-            turned off, and the ability to migrate from MKR to SKY would be turned off. However, SKY to MKR migration would remain 
-            permanently, with a technical modification to ensure that SKY is backed by a finite amount of MKR, rather than the 
-            ability to emit new MKR. The ratio of SKY to MKR will permanently remain 1:24,000. The governance forum would revert 
-            to forum.makerdao.com and other similar assets would also revert to Maker branding - with the exception of the main 
-            @skyecosystem X handle. What happens to the X handle would be decided in a later process when it is determined what’s 
-            going to happen with Sky.<br> The Accessibility Facilitator may gather feedback and input to these 3 options during 
-            the week of voting on this Atlas Edit, and use that to modify the exact language of the 3 poll options before they are 
-            put out in their final state. Any edits made in this way to a poll option will become binding on the Atlas, if the poll 
-            ends up winning.<br> The option that gets a plurality becomes the final outcome effective immediately from the moment 
-            the poll ends.<br> If Option 1 has a plurality when counting individually, but Option 2 + Option 3 combined has a 
-            plurality, then the outcome is Option 2.<br> The Accessibility Facilitator must prepare for all 3 options being chosen, 
-            including preparing brand assets in advance. If recentering the Maker Brand is chosen, in either form, then this must 
-            be implemented at events and other accessibility campaigns from the moment the poll ends, to the extent this is reasonably 
-            possible.<br> Long term implications for SKY<br> If recentering the Maker brand is chosen (Option 2 or Option 3), then, 
-            depending on what outcome is chosen for the Sky brand, the current SKY token may be renamed (e.g. to OLD_SKY), and a new 
-            SKY token can be created and used for a different purpose, such as a StarDAO. In any case, holders of the current SKY 
-            token would be guaranteed the ability to migrate back to MKR for an unlimited amount of time, and holders would be able 
-            to hold their original SKY tokens forever if they desire.<br> USDS core Stablecoin and DAI ERC20 Wrapper<br> The core 
-            stablecoin and product of the protocol is called USDS. It has multiple ERC20 wrappers, including the ERC20 USDS wrapper, 
-            and the ERC20 DAI Wrapper and ERC20 sDAI Wrapper. The total supply of USDS is the total supply of internal stablecoins 
-            in the protocol that backs all wrappers. The total supply of Dai can also be calculated by summing the supply of all 
-            wrappers branded as Dai, including Dai, sDai and Chai.
-          </td>
-        </tr>
-        <tr>
         </tr>
         <tr>
           <td>
@@ -17974,6 +18509,15 @@
         </tr>
         <tr>
           <td>
+            <dfn>Chief Contract
+              - Element Annotation</dfn>
+          </td>
+          <td>Chief Contract - Element Annotation</td>
+          <td>Annotation</td>
+          <td>The element “Chief Contract” refers to the contract that implements the Sky Protocol’s on-chain voting mechanism. Under this mechanism, the hat, or current executive authority, is elected via token-weighted votes.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Circumvent
               - Element Annotation</dfn>
           </td>
@@ -18343,6 +18887,15 @@
         </tr>
         <tr>
           <td>
+            <dfn>MKR Flop Auctions
+              - Element Annotation</dfn>
+          </td>
+          <td>MKR Flop Auctions - Element Annotation</td>
+          <td>Annotation</td>
+          <td>The element “MKR flop auctions” refers to auctions in which the Sky Protocol issues and auctions off MKR in exchange for Dai. These auctions allow the Sky Protocol to recapitalize itself to offset net debt.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Monitoring
               And Ensuring - Element Annotation</dfn>
           </td>
@@ -18649,6 +19202,15 @@
               - Legal Resilience - Legal Defense Resources - Legal Defense Standard Operational Protocols</dfn>.
             The Resilience Technical Committee must assist in elaborating this ruleset.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>SKY Flop Auctions
+              - Element Annotation</dfn>
+          </td>
+          <td>SKY Flop Auctions - Element Annotation</td>
+          <td>Annotation</td>
+          <td>The element “SKY flop auctions” refers to auctions in which the Sky Protocol issues and auctions off SKY in exchange for USDS. These auctions allow the Sky Protocol to recapitalize itself to offset net debt.</td>
         </tr>
         <tr>
           <td>
