@@ -10298,7 +10298,7 @@
           </td>
           <td>Allocation System Primitive</td>
           <td>Core</td>
-          <td>The Allocation System Primitive is the base mechanism that enables Star Agents to put up First Loss Capital to deploy USDS collateral into different opportunities that provide risk-adjusted return, by borrowing at the Base Rate from Sky, and following Asset Liability Management restrictions on the liquidity of deployed assets.</td>
+          <td>The Allocation System Primitive is the base mechanism that enables Star Agents to put up Risk Capital to deploy USDS collateral into different opportunities that provide risk-adjusted return, by borrowing at the Base Rate from Sky, and following Asset Liability Management restrictions on the liquidity of deployed assets.</td>
         </tr>
         <tr>
           <td>
@@ -10306,7 +10306,7 @@
           </td>
           <td>Allocation System Process Definition</td>
           <td>Core</td>
-          <td>The documents herein define the process for initial setup and ongoing management of an Allocation Conduit as part of the Allocation System Primitive.</td>
+          <td>The documents herein define the process for initial setup and ongoing management of an Allocation Instance (alternatively referred to as "conduits") as part of the Allocation System Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -10314,7 +10314,7 @@
           </td>
           <td>Allocation Conduit Setup Process Definition</td>
           <td>Core</td>
-          <td>The documents herein define the process for setting up an Allocation Conduit as part of the Allocation System Primitive.</td>
+          <td>The documents herein define the process for setting up an Allocation Instance as part of the Allocation System Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -10322,7 +10322,7 @@
           </td>
           <td>Allocation Conduit Setup Real World Agreements And Planning</td>
           <td>Core</td>
-          <td>The documents herein define the preliminary, off-chain human coordination stage of setting up an Allocation Conduit.</td>
+          <td>The documents herein define the preliminary, off-chain human coordination stage of setting up an Allocation Instance.</td>
         </tr>
         <tr>
           <td>
@@ -10330,7 +10330,7 @@
           </td>
           <td>Allocation Conduit Setup Initial Concept And Feasibility Discussions</td>
           <td>Core</td>
-          <td>The Star Agent identifies a yield opportunity on a target chain that can exceed the Base Rate. The Star Agent estimates First Loss Capital and Asset Liability Management requirements associated with the the opportunity and evaluates options for fulfilling them. The Star Agent also considers exchange and bridging costs, if applicable. Based on this, the Star Agent develops a net yield target for the opportunity factoring in all of these costs. The output of this step is an internal meeting note summarizing the idea as well as estimates of First Loss Capital, Asset Liability Management, and exchange / bridging costs.</td>
+          <td>The Star Agent identifies a yield opportunity on a target chain that can exceed the Base Rate. The Star Agent estimates Required Risk Capital (RRC) and Asset Liability Management requirements associated with the opportunity and evaluates options for fulfilling them. The Star Agent also considers exchange and bridging costs, if applicable. Based on this, the Star Agent develops a net yield target for the opportunity factoring in all of these costs. The output of this step is an internal meeting note summarizing the idea as well as estimates of Required Risk Capital, Asset Liability Management, and exchange / bridging costs.</td>
         </tr>
         <tr>
           <td>
@@ -10338,7 +10338,43 @@
           </td>
           <td>Allocation Conduit Setup Preliminary First Loss Capital and Asset Liability Management Arrangement</td>
           <td>Core</td>
-          <td>If necessary, the Star Agent reaches out to other Star Agents that could provide First Loss Capital or assume Asset Liability Management obligations. The Star Agent negotiates with these other Star Agents and documents these potential deals. The output of this step is an informal confirmation of First Loss Capital and Asset Liability Management transfer details and draft references for the upcoming Star Agent Artifact update.</td>
+          <td>If necessary, the Star Agent reaches out to other Star Agents that could provide Junior Risk Capital (JRC) / Senior Risk Capital (SRC) or assume Asset Liability Management obligations. The Star Agent negotiates with these other Star Agents and documents these potential deals. The output of this step is an informal confirmation of JRC/SRC and Asset Liability Management transfer details.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Star Agent Preparation Of Capital And Operational Plan</dfn>
+          </td>
+          <td>Star Agent Preparation Of Capital And Operational Plan</td>
+          <td>Core</td>
+          <td>The Capital and Operational Plan ("C&amp;O Plan") articulates the Star Agent's strategy for a proposed new Allocation Instance or a modification to an existing Instance. In addition to articulating the Instance's strategic objectives and operational parameters, the C&amp;O Plan includes a pro-forma Required Risk Capital (RRC) estimate and a strategy for ensuring sufficient Total Risk Capital (TRC) coverage. The C&amp;O Plan is the major input into the Artifact Edit Proposal that codifies the new or modified Instance. Following the approval of such a proposal by Star governance, the details and commitments outlined in the C&amp;O Plan are formally integrated into the respective Instance Configuration Document of the Star Agent's Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Pro-Forma Instance RRC Estimate</dfn>
+          </td>
+          <td>Pro-Forma Instance RRC Estimate</td>
+          <td>Core</td>
+          <td>
+            As a critical component of the Capital & Operational Plan, the Star Agent must prepare an initial pro-forma Instance Required Risk Capital (RRC) estimate. This estimate serves as the basis for the Star's capital planning prior to the availability of official RRC figures from Sky Core. The estimate must strictly adhere to the implementation of RRC-models defined in <dfn>A.3.3</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Notional Total Risk Capital (TRC) Coverage Strategy</dfn>
+          </td>
+          <td>Notional Total Risk Capital (TRC) Coverage Strategy</td>
+          <td>Core</td>
+          <td>
+            As a critical component of the Capital & Operational Plan, the Star Agent must articulate its strategy for ensuring its Total Risk Capital (TRC) adequately covers the pro-forma Instance RRC of a new or modified Instance and the resulting impact on its Aggregate RRC.The Star's notional TRC coverage strategy must outline how this new Instance's RRC will be notionally accounted for or supported by the Star's overall TRC pool. If the Star's current TRC is not sufficient to cover its estimated increased Aggregate RRC, the strategy should outline the Star Agent's intended steps for acquiring additional JRC/SRC.For instance, this risk-capital acquisition strategy could involve: 1. Renting Junior Risk Capital (JRC) ◦ Sourcing Star-External Junior Risk Capital (SEJRC) by renting it from other Stars through Ecosystem Accords. ◦ Sourcing Tokenized External Junior Risk Capital (TEJRC) from external capital providers. 2. Sourcing Senior Risk Capital (SRC): ◦ Originating SRC through the Sky monthly auction. ◦ Renting OSRC from other Stars through Ecosystem Accords. 3. Increasing Internal Junior Risk Capital (IJRC): A Star might have plans to bolster its own IJRC through retained earnings or other internal means. 4. Decreasing exposure in an existing Instance(s) to lower Aggregate RRC.The Star's capital-acquisition strategy should indicate how the Star will remain in compliance with all relevant Atlas rules, such as sourcing ratios that constrain how much Senior Risk Capital can be "enabled" or counted toward a Star's Aggregate RRC. See <dfn>A.3.3 - Total Risk Capital Sourcing Ratios</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Additional Elements Of Capital And Operational Plan</dfn>
+          </td>
+          <td>Additional Elements Of Capital And Operational Plan</td>
+          <td>Core</td>
+          <td>The Capital & Operational Plan includes the following additional elements: ◦ Operational Parameters: defines the Instance's target chain(s), protocols, initial capital, maximum deposit sizes, and any other parameters that underpin the pro-forma RRC calculation. ◦ Data Submission Protocol: defines how yields, Required Risk Capital usage, ALM costs, exchange data, etc. will be reported and audited. ◦ Emergency Procedures: defines mechanisms to be triggered if security or risk capital thresholds are breached, such as a kill switch or partial freeze. ◦ Asset Liability Management (ALM) Strategy: details if the Star will meet its ALM requirements through its own direct asset management or by transferring its obligations to another Star Agent via the ASC Rental Primitive. If the latter, the C&amp;O Plan must reference the governing Ecosystem Accord and its key terms. ◦ Performance-based Adjustments: define the conditions or KPIs that allow adjustments to Instance deposit caps or yield expansions without requiring a formal Artifact edit.</td>
         </tr>
         <tr>
           <td>
@@ -10346,7 +10382,7 @@
           </td>
           <td>Allocation Conduit Setup Preliminary Informal Check With Operational GovOps</td>
           <td>Core</td>
-          <td>The Star Agent presents the plan for the Allocation Conduit to Operational GovOps, including any associated First Loss Capital and Asset Liability Management arrangements. Operational GovOps reviews and either provides an informal greenlight or requests modifications. The output of this step is approval to proceed with revision requests, if needed.</td>
+          <td>The Star Agent presents the Capital and Operational Plan for the Allocation Instance to Operational GovOps, including any associated JRC/SRC and Asset Liability Management arrangements. Operational GovOps reviews and either provides an informal greenlight or requests modifications to the Plan. The output of this step is Operational GovOps approval to proceed with a request to revise the C&amp;O Plan, as applicable.</td>
         </tr>
         <tr>
           <td>
@@ -10354,7 +10390,7 @@
           </td>
           <td>Allocation Conduit Setup Codification and Validation</td>
           <td>Core</td>
-          <td>The documents herein define how agreements to set up an Allocation Conduit are codified and validated in the Powerhouse system and how governance votes happen.</td>
+          <td>The documents herein define how agreements to set up an Allocation Instance are codified and validated in the Powerhouse system and how governance votes happen.</td>
         </tr>
         <tr>
           <td>
@@ -10363,7 +10399,7 @@
           <td>Agent Inputs</td>
           <td>Core</td>
           <td>
-            The Star Agent drafts an update to the Star Agent Artifact adding the Allocation Conduit to the list of active Allocation Conduits and including the information specified in <dfn>A.2.4 - List Of Allocation Conduits</dfn>. The Star Agent submits the draft to the Powerhouse system. The output of this step is a draft Star Agent Artifact update in the Powerhouse system.
+            The Star Agent drafts an update to the Star Agent Artifact adding the Allocation Instance to the list of active Allocation Instances and including the information specified in <dfn>A.2.4 - List Of Allocation Conduits</dfn>. The Star Agent submits the draft to the Powerhouse system. The output of this step is a draft Star Agent Artifact update in the Powerhouse system.
           </td>
         </tr>
         <tr>
@@ -10380,7 +10416,9 @@
           </td>
           <td>Official Update of Artifact</td>
           <td>Core</td>
-          <td>If the Allocation Conduit is successfully approved, the Operational Executor Facilitator finalizes and publishes the update to the Star Agent Artifact, making it effective in the Atlas. The output of this step is an updated Star Agent Artifact with the new Allocation Conduit.</td>
+          <td>
+            If the Allocation Instance is successfully approved, the Operational Executor Facilitator finalizes and publishes the update to the Star Agent Artifact, making it effective in the Atlas. The output of this step is an updated Star Agent Artifact with the new Allocation Instance. Once a new Instance is deployed, its data is integrated into risk-capital monitoring systems and its RRC will be officially determined and tracked via the Sky Core RRC Dashboard/API. See <dfn>A.2.4 - Sky Core Required Risk Capital (RRC) Dashboard And API</dfn>. This official RRC figure supersedes the Star-prepared pro-forma RRC.
+          </td>
         </tr>
         <tr>
           <td>
@@ -10388,7 +10426,7 @@
           </td>
           <td>Allocation Conduit Setup Deployment</td>
           <td>Core</td>
-          <td>The documents herein define how the deployment of an Allocation Conduit is executed on-chain.</td>
+          <td>The documents herein define how the deployment of an Allocation Instance is executed on-chain.</td>
         </tr>
         <tr>
           <td>
@@ -10396,7 +10434,7 @@
           </td>
           <td>Allocation Conduit Setup Conduit Development And Testing</td>
           <td>Core</td>
-          <td>Once formally validated, the Star Agent implements the new Allocation Conduit based on the specifications in the Star Agent Artifact. Operational GovOps must test the Allocation Conduit with minimal funds from the Star Agent's Central Allocation Buffer, verifying deposit / withdrawal logic, slippage constraints, and oracle checks. If this testing is successful Operational GovOps confirms that the Allocation Conduit satisfies all risk constraints specified in the Star Agent Artifact. The output of this step is validated contracts for the Allocation Conduit and a green light to proceed with a scaled deployment.</td>
+          <td>Once formally validated, the Star Agent implements the new Allocation Instance based on the specifications in the Star Agent Artifact. Operational GovOps must test the Allocation Instance with minimal funds from the Star Agent's Central Allocation Buffer, verifying deposit / withdrawal logic, slippage constraints, and oracle checks. If this testing is successful Operational GovOps confirms that the Allocation Instance satisfies all risk constraints specified in the Star Agent Artifact. The output of this step is validated contracts for the Allocation Instance and a green light to proceed with a scaled deployment.</td>
         </tr>
         <tr>
           <td>
@@ -10404,7 +10442,9 @@
           </td>
           <td>Allocation Conduit Setup Initial Deployment and First Loss Capital / Asset Liability Management Execution</td>
           <td>Core</td>
-          <td>The Star Agent finalizes First Loss Capital and Asset Liability Management Arrangements. Operational GovOps records these arrangements in the Powerhouse interface. Operational GovOps deploys funds from the Star Agent's Operational Buffer into the Allocation Conduit, performing any necessary DEX exchanges. In doing so, Operational GovOps follows instructions in the Agent Artifact regarding the amount of capital to deploy and slippage tolerances. The output of this step is a fully deployed Allocation Conduit conforming to First Loss Capital and Asset Liability Management requirements.</td>
+          <td>
+            The Star Agent finalizes JRC/SRC and Asset Liability Management Arrangements. Operational GovOps records these arrangements in the Powerhouse interface. If Operational GovOps is charged with operationalizing an Instance, it deploys funds from the Star Agent's Operational Buffer into the Allocation Instance, performing any necessary DEX exchanges. See <dfn>A.2.4 - Operationalization Of Allocation Instances</dfn>. In doing so, Operational GovOps follows instructions in the Agent Artifact regarding the amount of capital to deploy and slippage tolerances. The output of this step is a fully deployed Allocation Instance conforming to Risk Capital and Asset Liability Management requirements.
+          </td>
         </tr>
         <tr>
           <td>
@@ -10412,15 +10452,189 @@
           </td>
           <td>Allocation Conduit Ongoing Management</td>
           <td>Core</td>
-          <td>The documents herein define the process for managing an Allocation Conduit as part of the Allocation System Primitive</td>
+          <td>The documents herein define the process for managing an Allocation Instance as part of the Allocation System Primitive.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.2.4 - Allocation Conduit Management Periodic Data Submission And Validation</dfn>
+            <dfn>A.2.4 - Operationalization Of Allocation Instances</dfn>
           </td>
-          <td>Allocation Conduit Management Periodic Data Submission And Validation</td>
+          <td>Operationalization Of Allocation Instances</td>
           <td>Core</td>
-          <td>At specified intervals, data providers submit yield, exchange rate, First Loss Capital, and Asset Liability Management data as specified in the data submission protocol for the Allocation Conduit in the Star Agent Artifact. Operational GovOps cross-checks the data submitted against on-chain and off-chain for consistency. If the Allocation Conduit is significantly underperforming or there are violations of First Loss Capital or Asset Liability Management requirements, Operational GovOps must initiate escalation steps as defined in the Star Agent Artifact.</td>
+          <td>
+            Star Agent teams may choose to directly operationalize their Allocation System Primitive Instances ("Instances") using internal, proprietary strategies that are not defined in their Artifacts. Alternatively, Star Agents may elect to have the Instances operationalized by their Operational Executor Agent. This constitutes an exception to the general rule that Operational Executor Agents operationalize all Sky Primitives on behalf of Star Agents. See <dfn>A.1.14 - Agent Role Delineation</dfn>. For Star Agent teams that operationalize their Instances, they will be required to formulate KPIs for their proprietary strategies; should an Instance under-perform these KPIs, Operational GovOps is authorized to step in and operationalize the Instance(s) via a back-up strategy that is defined in the Agent Artifact. Additional logic on this point will be defined in a future iteration of the Atlas.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Requirements And Infrastructure For Risk Capital And Asset Liability Management</dfn>
+          </td>
+          <td>Requirements And Infrastructure For Risk Capital And Asset Liability Management</td>
+          <td>Core</td>
+          <td>The documents herein define Risk Capital and Asset Liability Management requirements and infrastructure.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Risk Capital Management</dfn>
+          </td>
+          <td>Risk Capital Management</td>
+          <td>Core</td>
+          <td>The documents herein detail the obligations, processes, standards and infrastructure related to risk-capital management.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Sky Core Required Risk Capital (RRC) Dashboard And API</dfn>
+          </td>
+          <td>Sky Core Required Risk Capital (RRC) Dashboard And API</td>
+          <td>Core</td>
+          <td>
+            The Sky Core Required Risk Capital (RRC) Dashboard and its associated API serve as the official system for determining and disseminating RRC figures for Star Agents and their Allocation System Primitive Instances.Prior to the full operational deployment of the Powerhouse system, Star Agents must utilize the Sky Core RRC Dashboard/API as the authoritative source for their official Instance Total RRCs and Aggregate RRC. Data from these sources is to be used for all internal TRC management, required reporting and compliance assessments.The Sky Core RRC Dashboard is located at <a href="https://sphere.blockanalitica.com/rrc">https://sphere.blockanalitica.com/rrc</a>. The Sky Core RRC API is located at <a href="https://sphere-api.blockanalitica.com/rrc/">https://sphere-api.blockanalitica.com/rrc/</a>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Role and Functionality of the RRC Dashboard and API</dfn>
+          </td>
+          <td>Role and Functionality of the RRC Dashboard and API</td>
+          <td>Core</td>
+          <td>
+            The RRC Dashboard provides a user interface for Star Agents to view their official RRC figures. The RRC API allows Star Agents to programmatically access this same data for integration into their internal TRC management systems. Both the Dashboard and API provide the following key information: ◦ Instance Total RRC: For each specific Allocation System Primitive Instance, the system displays its Instance Total RRC. This figure is the sum of all applicable risk-specific RRC calculations for that Instance, including: ◦ Instance Financial RRC (<dfn>A.3.3 - Instance Financial RRC</dfn>) ◦ Instance Smart Contract RRC (<dfn>A.3.3 - Instance Smart Contract RRC</dfn>) ◦ Instance Admin RRC (<dfn>A.3.3 - Instance Admin RRC</dfn>) The models for certain risk-factors are still currently under development. See <dfn>A.2.4 - Interim Notice Regarding RRC Dashboard/API Coverage</dfn>. ◦ Aggregate RRC: For each Star Agent, the system displays its Aggregate RRC, which is the sum of all its Instance Total RRCs. This is the figure against which a Star Agent's Total Risk Capital (TRC) adequacy is assessed.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Interim Notice Regarding RRC Dashboard/API Coverage</dfn>
+          </td>
+          <td>Interim Notice Regarding RRC Dashboard/API Coverage</td>
+          <td>Core</td>
+          <td>
+            Some Allocation System Instances displayed on the RRC Dashboard concern asset types whose risk models have not yet been fully developed. See <dfn>A.3.3 - Financial Risk Models</dfn>. An active Instance's respective Instance Configuration Document will specify its RRC Framework Full Implementation status as either Covered or Pending.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Stars' Total Risk Capital (TRC) Management</dfn>
+          </td>
+          <td>Stars' Total Risk Capital (TRC) Management</td>
+          <td>Core</td>
+          <td>
+            Star Agent teams are responsible for managing their Total Risk Capital (TRC) to continuously meet their Aggregate Required Risk Capital (RRC). The accounting of TRC considers all on-chain holdings and any off-chain agreements, encumbrances, or conditions that may affect the immediate availability or eligibility of capital for RRC coverage. For a definition of Total Risk Capital, see <dfn>A.3.3 - Total Risk Capital Definition</dfn>.The documents herein define requirements and standards for a Star Agent's internal TRC management systems.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Objective of Star TRC Management</dfn>
+          </td>
+          <td>Objective of Star TRC Management</td>
+          <td>Core</td>
+          <td>
+            To comply with Atlas risk capital requirements, Star Agent teams must establish, maintain, and operate an internal system for TRC management. A Star Agent's internal TRC management system should enable proactive operational risk management. This entails ongoing capital adequacy assessment and strategic capital allocation planning for current and future Allocation System Primitive Instances, including the ability to perform scenario analyses for potential deployments or market stresses.Star Agents' internal TRC management systems should enable them to maintain continuous sufficiency of the Star Agent's held TRC against its official Aggregate RRC. This requires real-time or near real-time comparison and internal alerting mechanisms to prevent and address potential shortfalls.Stars must ensure that their internal TRC management systems maintain comprehensive, verifiable internal records of all TRC components, related transactions, and compliance activities to support internal governance and external verification processes, such as the submission of TRC Reports to Core GovOps. See <dfn>A.2.4 - Stars' TRC Report</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Minimum Capabilities of Star TRC Management Systems</dfn>
+          </td>
+          <td>Minimum Capabilities of Star TRC Management Systems</td>
+          <td>Core</td>
+          <td>
+            A Star Agent's internal TRC management system should possess the following capabilities to meet the objectives outlined in <dfn>A.2.4 - Objective of Star TRC Management</dfn>. 1. Star Agents' internal TRC management systems should enable compliant sourcing and tracking of all TRC components, including Internal Junior Risk Capital (IJRC), Star-External Junior Risk Capital (SEJRC), Tokenized External Junior Risk Capital (TEJRC), and Originated Senior Risk Capital (OSRC). Compliance in this context includes strict adherence to eligibility criteria and capital-sourcing ratios (e.g., External Per Internal, Senior Per Junior) as defined in the Atlas. See <dfn>A.3.3 - Total Risk Capital Sourcing Ratios</dfn>. The system must provide real-time or near real-time tracking of all held Total Risk Capital (TRC) components. This includes, for each TRC component: ◦ Accurate valuation of the assets comprising each component. ◦ Clear identification of the source of each component (e.g., Star's own SubProxy for IJRC, specific Ecosystem Accord references for rented SEJRC or OSRC, TEJRC encumbrance details, OSRC origination details). ◦ Verification of each TRC component's eligibility status according to Atlas rules. This includes tracking whether capital is "enabled" or "active" for RRC coverage purposes (e.g., based on Ecosystem Accord status, compliance with sourcing ratios, etc.). ◦ Distinction between capital directly held by the Star Agent and capital that is encumbered (e.g., SEJRC where the lending Star retains custody but the capital is contractually committed). 2. Star Agents' internal TRC management systems should enable dynamic-state accounting. The system must account for TRC components that are in dynamic, pending, or off-chain states, as these can impact the true risk capital available to a Star Agent. This includes: ◦ Pending transactions such as SEJRC or OSRC rental Ecosystem Accords that have been committed to by the parties, but not yet codified in the Atlas. ◦ Capital in transit, e.g., assets that are committed to be IJRC, but currently moving between chains via bridges or locked in Cross-Chain Transfer Protocol (CCTP) messages awaiting finality. ◦ Operational expenditures funded by TRC components (typically IJRC), such as blockchain transaction fees, oracle service fees, audit costs, and other operational overhead that reduces available risk capital. The system should track these expenditures in real-time or near real-time. ◦ Any off-chain factors that could impair the immediate deployability or availability of TRC components. 3. Star Agents' internal TRC management systems should enable continuous capital adequacy monitoring. The system must enable the near real-time comparison of the Star Agent's internally tracked and calculated TRC against its official Aggregate RRC, as obtained from the Sky Core RRC Dashboard/API. See <dfn>A.2.4 - Sky Core Required Risk Capital (RRC) Dashboard And API</dfn>. This core functionality is essential for the Star Agent to proactively monitor its capital adequacy, identify potential or actual TRC shortfalls, and make timely operational and capital management decisions to maintain compliance. 4. Star Agents' internal TRC management systems should define a RRC-incident (e.g., TRC shortfall) response protocol. The system should enable internal alerting mechanisms that detect when a Star Agent's TRC approaches predefined internal buffer thresholds relative to its Aggregate RRC. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>. The system should also detect an actual shortfall where the Star Agent's held TRC falls below its Aggregate RRC.Furthermore, Star Agent teams should establish and document internal processes for responding to such alerts. Such internal processes should include: 1) internal escalation and assessment of the shortfall's cause and magnitude; 2) formulation of potential responses or corrective actions, which may include sourcing additional TRC, reducing risk-weighted exposures, or other measures; 3) internal decision-making framework for the evaluation of potential responses and selection of the most appropriate one; and 4) notifying any pertinent parties (Operational GovOps) as needed for the purpose of planning or implementing follow-up action.Star Agent teams' internal decision-making framework may consider the economic trade-offs of various actions, including the strategic acceptance of penalties for a TRC shortfall where such an approach is determined to be economically advantageous compared to immediate rebalancing (e.g., avoiding excessive transaction costs or market impact).
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Stars' TRC Report</dfn>
+          </td>
+          <td>Stars' TRC Report</td>
+          <td>Core</td>
+          <td>Star Agents are required to submit periodic Total Risk Capital (TRC) Reports to provide an accurate and verifiable attestation of their TRC composition and adherence to capital requirements.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Mandate and Rationale</dfn>
+          </td>
+          <td>Mandate and Rationale</td>
+          <td>Core</td>
+          <td>
+            Star Agents are required to periodically submit TRC Reports to Core GovOps. This report serves a dual purpose. It provides a verifiable snapshot of the Star Agent's TRC composition and key capital ratios as of the end of the reporting period; and second, it provides a formal attestation regarding the Star Agent's maintenance of TRC at or above its dynamically changing Aggregate Required Risk Capital (RRC) throughout the entire reporting period. See <dfn>A.3.3 - Aggregate RRC</dfn>. This comprehensive reporting, encompassing both an end-of-period statement and disclosures of any intra-period events affecting TRC, is essential. On-chain data alone (such as that captured by the planned OVRC system) cannot definitively prove the full eligibility and unimpaired availability of a Star Agent's capital position for continuous RRC coverage, nor can it capture all off-chain factors. These factors include, but are not limited to, whether assets are subject to Star-initiated off-chain contractual pledges, if the economic value or redeemability of its bridged assets is compromised by issues with their originating bridge, or if its assets are encumbered by derivative structures or other off-chain commitments that would impair their immediate use at any point during the period.The TRC Report serves as an important basis for Core GovOps' verification procedures. This entails: 1) reconciling reported end-of-period TRC components against the Sky Atlas, on-chain data, and other relevant sources to validate the period-end capital position and adherence to Atlas-defined capital requirements; and 2) reviewing Star Agents' attestations and disclosures regarding its TRC management and any material events throughout the reporting period to assess continuous compliance with its dynamically changing Aggregate RRC. The outcome of this validation is a critical input for the monthly settlement cycles, which latter includes the determination and retroactive application of penalties for any identified discrepancies or violations of capital requirements during the period.The long-term vision is for the Powerhouse system to enable the automation of TRC data aggregation and verification. The Powerhouse system will have capabilities such as directly querying Star Agent SubProxy accounts for IJRC assets, programmatically accessing and interpreting Ecosystem Accords recorded in the Atlas, interfacing with TEJRC and OSRC smart contract systems, and automatically applying Atlas-defined eligibility rules. See <dfn>A.2.4 - Continuous Monitoring Of On-chain Verifiable Risk Capital (OVRC)</dfn>. Even in this advanced state, the TRC Report, or a similar form of periodic attestation, may remain necessary to cover elements of TRC verification that are not fully able to be automated or require explicit Star Agent declaration.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - TRC Report Contents</dfn>
+          </td>
+          <td>TRC Report Contents</td>
+          <td>Core</td>
+          <td>The Total Risk Capital (TRC) Report submitted by a Star Agent must provide an accurate and verifiable breakdown of all TRC components held by the Star Agent as of the end of the specified reporting period. The TRC Report should include the following essential information: ◦ Aggregate TRC Value As of End of Period: The total declared value in USD of all eligible TRC components held by the Star Agent as of the end of the reporting period. ◦ Detailed Breakdown of TRC Components As of End of Period: For each category of TRC held, the report must detail the following values as of the end of the reporting period: ◦ Internal Junior Risk Capital (IJRC): The total amount of IJRC, a breakdown of its constituent asset types, and their respective values in USD. ◦ Star-External Junior Risk Capital (SEJRC): The total amount of SEJRC. For each portion of SEJRC sourced from another Star Agent, the report must include the amount in USD, the identifier of the counterparty Star Agent, the expiry date of the arrangement, and a direct reference to the Ecosystem Accord that governs the SEJRC arrangement. ◦ Tokenized External Junior Risk Capital (TEJRC): The total amount of TEJRC. For each TEJRC source, the report must include the amount in USD, the identifier of the TEJRC smart contract or facility and any relevant encumbrance identifier. ◦ Originated Senior Risk Capital (OSRC): The total amount of OSRC. The report must specify the amount originated directly by the Star Agent from the Total Senior Risk Capital (TSRC) pool and any amount of OSRC rented from other Star Agents. For any rented OSRC, the report must include the amount in USD, the identifier of the counterparty Star Agent, the expiry date, and a direct reference to the pertinent Ecosystem Accord. ◦ Key Ratio Inputs and Computed Totals (Star Internal Calculation) As Of End Of Period: Based on the component values reported above (as of the end of the reporting period), the report must include key figures used in and resulting from the Star Agent's internal capital adequacy calculations. These figures reflect the capital structure and ratios as of the end of the reporting period and include: • Internal Junior Risk Capital (IJRC) • External Junior Risk Capital (EJRC) generated via External Per Internal Ratio (Star External Junior Risk Capital + Tokenized External Junior Risk Capital sourced via the EPI ratio still carries Senior Per Junior or SPJ capacity) • EJRC-via-SPJ (sourced by spending SPJ capacity; zero-SPJ-capacity thereafter) • Enabled Senior Risk Capital (SRC) • Total Senior Per Junior capacity ◦ Allocation of SPJ capacity to 1) enable SRC; or to 2) source EJRC • Star-computed eligible Total Risk Capital (IJRC + EJRC-via-EPI + EJRC-via-SPJ + enabled SRC) • Official Aggregate RRC • Capital buffer = TRC - Aggregate RRC • Effective ratios ◦ EPI = EJRC-via-EPI ÷ IJRC ◦ SPJ utilisation: ◦ enabled SRC ÷ total SPJ capacity ◦ EJRC-via-SPJ ÷ total SPJ capacity ◦ Dynamic Period Attestation and Disclosures: In addition to the end-of-period snapshot figures, the TRC Report must include an Attestation from the Star Agent confirming it maintained TRC at or above its Aggregate RRC at all times throughout the entire reporting period. In addition, the TRC Report must include disclosure of any events, Star-initiated off-chain contractual obligations, impairments to the value or redeemability of held assets (such as RWA backing or bridged asset viability), encumbrances, or other conditions that occurred at any point during the reporting period which materially affected its TRC, even if such conditions were temporary or not continuously visible to on-chain monitoring systems. This disclosure must include the nature of the event/condition, its precise timing and duration, and its quantified impact on the Star Agent's TRC.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Sky Core TRC Monitoring And Verification Infrastructure</dfn>
+          </td>
+          <td>Sky Core TRC Monitoring And Verification Infrastructure</td>
+          <td>Core</td>
+          <td>The documents herein define infrastructure for TRC monitoring and verification.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Continuous Monitoring Of On-chain Verifiable Risk Capital (OVRC)</dfn>
+          </td>
+          <td>Continuous Monitoring Of On-chain Verifiable Risk Capital (OVRC)</td>
+          <td>Core</td>
+          <td>
+            An autonomous monitoring system must be designed and implemented to enable continuous tracking of Star Agents' on-chain verifiable risk-capital components in near real-time. The on-chain, verifiable risk-capital components that can be tracked by such a monitoring system in real time are termed "On-chain Verifiable Risk Capital" (OVRC).OVRC is not necessarily equivalent to Total Risk Capital (TRC). A Star Agent's actual TRC cannot be determined definitively without accounting for off-chain agreements, encumbrances or other relevant conditions affecting capital eligibility or availability, which conditions must be disclosed in the TRC Reports submitted by Star Agents. See <dfn>A.2.4 - Stars' TRC Report</dfn>. Where the OVRC of a Star Agent is less than its Aggregate RRC, the shortfall will be logged and penalty accrual will commence on a pro-rata, per-second basis for the duration and magnitude of the observed shortfall, according to the penalty schedule defined in the Atlas. Thus, this on-chain monitoring system serves as an interim penalty ledger.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Validation of TRC Report In General</dfn>
+          </td>
+          <td>Validation of TRC Report In General</td>
+          <td>Core</td>
+          <td>
+            Star Agents are required to submit periodic Total Risk Capital (TRC) Reports to Core GovOps. See <dfn>A.2.4 - Stars' TRC Report</dfn>. The protocol for validation of Stars' TRC reports is defined in the documents herein.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Core GovOps TRC Report Validation Process</dfn>
+          </td>
+          <td>Core GovOps TRC Report Validation Process</td>
+          <td>Core</td>
+          <td>
+            Core GovOps receives TRC Reports from Stars on a regular basis and must perform the following validation process.Core GovOps verifies against the Atlas any Ecosystem Accord referenced in the TRC Report for sourced Star-External Junior Risk Capital (SEJRC) or rented Originated Senior Risk Capital (OSRC). This includes confirming the existence, current validity, and terms of such Accords as formally recorded within the Atlas.Core GovOps validates the Star Agent's reported IJRC by reconciling the reported IJRC amount and its constituent asset composition against the actual on-chain state of the Star Agent's designated SubProxy account. This involves direct on-chain verification of asset balances. Core GovOps verifies that all assets reported as IJRC and held within the SubProxy account meet the definition of "eligible assets" for IJRC as defined by the Atlas. See <dfn>A.3.3 - Internal Junior Risk Capital (IJRC)</dfn>. For reported Tokenized External Junior Risk Capital (TEJRC) and Originated Senior Risk Capital directly originated by the Star, Core GovOps validates the reported amounts and statuses by cross-referencing data from the relevant smart contract systems. This may involve querying TEJRC pool contracts, OSRC auction records, and other on-chain infrastructure to confirm the existence, ownership, and eligibility of these capital components.Core GovOps reviews all attestations and disclosures made by the Star Agent in the TRC Report. This review focuses on understanding the Star Agent's TRC compliance with Aggregate RRC throughout the entire reporting period. This assessment is critical for identifying intra-period shortfalls that might not be visible to on-chain monitoring systems or reflected in the end-of-period snapshot alone. The assessment process may include requiring the Star Agent to provide supplementary documentation, verifiable evidence, or independent third-party confirmations for material off-chain claims or attestations concerning intra-period events; and/or cross-referencing disclosed off-chain information with relevant on-chain indicators or transactions that might corroborate or contradict the attestations.Core GovOps reviews all attestations and disclosures made by the Star Agent in the TRC Report concerning off-chain agreements, encumbrances, capital impairments, or other conditions that are not directly verifiable on-chain but which affect the Star's actual TRC. This assessment is critical for understanding the true availability and eligibility of capital beyond what on-chain data alone can reveal. The assessment process may include requiring the Star Agent to provide supplementary documentation, verifiable evidence, or independent third-party confirmations for material off-chain claims; and/or cross-referencing disclosed off-chain information with any relevant on-chain indicators or transactions that might corroborate or contradict the attestations.Finally, Core GovOps independently calculates and verifies the Star Agent's compliance with all Atlas-defined capital sourcing ratios (e.g., External Per Internal (EPI), Senior Per Junior (SPJ)).
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Finalized Determination Of TRC Position And Penalties</dfn>
+          </td>
+          <td>Finalized Determination Of TRC Position And Penalties</td>
+          <td>Core</td>
+          <td>After reaching a definitive accounting of Star Agents' capital position and TRC adequacy, penalties are finalized by Core GovOps. This involves reconciling the interim penalty ledger (derived from the OVRC system) with the definitive TRC history, which incorporates all validated information from the TRC Report including any intra-period shortfalls. 1. If the validated TRC Report indicates that the Star Agent's TRC was below its Aggregate RRC during the reporting period, and this actual shortfall was more severe than, or not detected by, the OVRC monitoring system, then penalties will be finalized as follows: if the OVRC system had already accrued penalties, these will be adjusted upwards to match the actual shortfall; if the OVRC system had not detected a shortfall, penalties will be assessed and applied retroactively based on the full duration and magnitude of the actual shortfall. 2. If the validated TRC Report confirms that TRC shortfalls were identical in duration and magnitude to those logged by the OVRC monitoring system throughout the reporting period: the penalties accrued in the interim penalty ledger will be confirmed and finalized. 3. If the validated TRC Report confirms that TRC was higher than a misleading OVRC reading during a specific portion of the reporting period which led to an erroneously logged penalty: Core GovOps will adjust or void the penalty accordingly.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Risk-Capital Incident Response</dfn>
+          </td>
+          <td>Risk-Capital Incident Response</td>
+          <td>Core</td>
+          <td>Where a Star Agent's Allocation System Instances are operationalized by its Operational Executor Agent, the management of and response to Required Risk Capital (RRC)-related incidents requires a defined framework within each Star Agent's Artifact (the Multi-Instance Coordinator Document for the Allocation System Primitive) and its associated Executor Accord.While the Star Agent's strategic team ("Star Team") determines the specific rectification strategy for an RRC incident-considering its holistic portfolio, prevailing market conditions, and the potential for strategic acceptance of penalties-this discretion is exercised subject to the authority of Sky Core to impose penalties and take corrective measures, up to and including the conservatorship of a Star Agent, to protect the ecosystem and make whole losses.This document will be developed further in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Instance Operational Conformance</dfn>
+          </td>
+          <td>Instance Operational Conformance</td>
+          <td>Core</td>
+          <td>Operational deviation from Artifact specifications can render an Instance's RRC, and thus the Star's Aggregate RRC, invalid. Star Agents must therefore ensure that each Allocation System Instance adheres to its respective Instance Configuration Document. Whether a Star self-operationalizes its Allocation System or contracts with an Operational Executor Agent, its Agent Artifact must define processes for monitoring for, and addressing deviations of, Instance operational conformance. This document will be developed further in a future iteration of the Atlas.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Asset Liability Management</dfn>
+          </td>
+          <td>Asset Liability Management</td>
+          <td>Core</td>
+          <td>Requirements and infrastructure related to Asset Liability Management shall be defined in a future iteration of the Atlas.</td>
         </tr>
         <tr>
           <td>
@@ -10428,7 +10642,49 @@
           </td>
           <td>Allocation Conduit Management Adjustments, Scaling, And Settlement</td>
           <td>Core</td>
-          <td>On an ongoing basis, Operational GovOps operates the Allocation Conduit, scaling exposure up and down in accordance with the strategy specified in the Star Agent Artifact. Any change to the Allocation Conduit outside of the limits specified in the Star Agent Artifact or requiring judgment on the part of Operational GovOps requires a new vote of Star Agent token holders. As part of monthly and quarterly settlement cycles, Core GovOps reviews yields and obligations, applying penalties retroactively for any previously undisclosed violations. In the event of any such violations, Operational GovOps may be required to take escalatory steps based on the fallback strategy in the Star Agent Artifact.</td>
+          <td>
+            On an ongoing basis, the Star Agent team or Operational GovOps operates the Allocation Instance, scaling exposure up and down. Any change to the Allocation Instance outside of the limits specified in the Star Agent Artifact or requiring judgment on the part of Operational GovOps (where the Allocation System Instance is operationalized by the Operational Executor Agent) requires a new vote of Star Agent token holders. See <dfn>A.2.4 - Modification Of Existing Instances</dfn>. As part of monthly and quarterly settlement cycles, Core GovOps reviews yields and obligations, applying penalties retroactively for any previously undisclosed violations. In the event of any such violations, Operational GovOps may be required to take escalatory steps based on the fallback strategy in the Star Agent Artifact.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Modification Of Existing Instances</dfn>
+          </td>
+          <td>Modification Of Existing Instances</td>
+          <td>Core</td>
+          <td>When a Star Agent wishes to modify an existing Allocation System Primitive Instance in a manner that cannot be accommodated by the existing operational parameters defined in its Agent Artifact, the Star Agent must initiate an Artifact Edit Proposal process as detailed herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Conditions Requiring Artifact Edit Proposal</dfn>
+          </td>
+          <td>Conditions Requiring Artifact Edit Proposal</td>
+          <td>Core</td>
+          <td>An Artifact Edit Proposal is mandatory for an Instance modification under the following conditions:1. a desired modification to the Instance's operational parameters falls outside the pre-defined operational ranges codified in the respective Instance Configuration Document or other applicable Artifact Documents; or2. a desired modification, even if notionally within defined ranges in the Artifact, is determined by Operational GovOps to materially alter the Instance's risk profile in a way that could invalidate the underlying Capital and Operational Plan and, consequently, the premises driving the current Required Risk Capital (RRC) for that Instance. Operational GovOps retains the discretion to require an Artifact Edit Proposal if a proposed change, regardless of its fit within existing operational ranges, is determined to pose a material change to the assessed risk.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Revision of Capital and Operational Plan for Instance Modification</dfn>
+          </td>
+          <td>Revision of Capital and Operational Plan for Instance Modification</td>
+          <td>Core</td>
+          <td>Prior to submitting an Artifact Edit Proposal for an Instance modification, the Star Agent must revise the Capital and Operational Plan (C&amp;O Plan) associated with that Instance to reflect the desired new state.The revised Capital and Operational Plan for an Instance modification must include the following information: 1. Updates to the Instance's strategy and operational parameters; 2. A new pro-forma Required Risk Capital (RRC) estimate specifically calculated to reflect the Instance's proposed modified state; and 3. A revised notional Total Risk Capital (TRC) coverage strategy, detailing how the Star Agent will manage any changes to the Instance RRC and the consequential impact on its Aggregate RRC, including plans for acquiring additional JRC or SRC if necessary.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Governance Process for Instance Modification</dfn>
+          </td>
+          <td>Governance Process for Instance Modification</td>
+          <td>Core</td>
+          <td>The Star Agent's revised Capital and Operational Plan forms the core of the Artifact Edit Proposal for the Instance modification. This proposal must be submitted to the Operational Executor Facilitator for review. The Facilitator assesses the proposal for completeness and general alignment. Following this review, the proposal is subjected to the Star Agent's governance process for approval to edit the Agent Artifact, typically involving a token holder vote as defined in the Star Agent's Root Edit Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Post-Approval Integration and RRC Update</dfn>
+          </td>
+          <td>Post-Approval Integration and RRC Update</td>
+          <td>Core</td>
+          <td>If the Artifact Edit Proposal for the Instance modification is approved through the Star Agent's governance process, the relevant content from the revised Capital and Operational Plan is formally integrated into the respective Instance Configuration Document within the Star Agent's Artifact. Once the modified Instance is operational under its new, approved parameters and its data is integrated into the ecosystem's monitoring systems, its adjusted Required Risk Capital (RRC) will be officially determined and tracked via the Sky Core RRC Dashboard/API. This official RRC figure then supersedes the Star-prepared pro-forma RRC that was part of the modification proposal.</td>
         </tr>
         <tr>
           <td>
@@ -10436,7 +10692,7 @@
           </td>
           <td>Allocation System Input Requirements</td>
           <td>Core</td>
-          <td>The documents herein define the required inputs for a valid Invocation of the Allocation System Primitive. If any input is noncompliant or omitted, the Primitive will be invalidated and the Allocation Conduit deployment will not move forward.</td>
+          <td>The documents herein define the required inputs for a valid Invocation of the Allocation System Primitive. If any input is noncompliant or omitted, the Primitive will be invalidated and the Allocation Instance deployment will not move forward.</td>
         </tr>
         <tr>
           <td>
@@ -10484,7 +10740,7 @@
           </td>
           <td>List Of Allocation Conduits</td>
           <td>Core</td>
-          <td>If the Allocation System Primitive is Activated, then the Star Agent Artifact must list each active Allocation Conduit, grouped by blockchain. For each blockchain, the Star Agent Artifact must specify: (1) the name of the blockchain, (2) the bridging mechanism for the blockchain, if any, (3) the allocation buffer on the blockchain, and (4) the Allocation Conduits on the blockchain. For each Allocation Conduit, the Star Agent Artifact must contain the information specified herein.</td>
+          <td>If the Allocation System Primitive is Activated, then the Star Agent Artifact must list each active Allocation Instance, grouped by blockchain. For each blockchain, the Star Agent Artifact must specify: (1) the name of the blockchain, (2) the bridging mechanism for the blockchain, if any, (3) the allocation buffer on the blockchain, and (4) the Allocation Instances on the blockchain. For each Allocation Instance, the Star Agent Artifact must contain the information specified herein.</td>
         </tr>
         <tr>
           <td>
@@ -10492,7 +10748,7 @@
           </td>
           <td>Required Allocation Conduit Parameters</td>
           <td>Core</td>
-          <td>For each Allocation Conduit, the Star Agent Artifact must specify: (1) the name of the Allocation Conduit, (2) the address of the Allocation Conduit, (3) the rate limit of the conduit for inflows and outflows, (4) any other technical parameters of the Allocation Conduit (e.g. maximum slippage, oracles used), (5) data submission protocols, and (6) specification of emergency measures that can be used by Operational GovOps if First Loss Capital or Asset Liability Management obligations are breached.</td>
+          <td>For each Allocation Instance, the Star Agent Artifact must specify: (1) the name of the Allocation Instance, (2) the address of the Allocation Instance, (3) the rate limit of the conduit for inflows and outflows, (4) any other technical parameters of the Allocation Instance (e.g. maximum slippage, oracles used), (5) data submission protocols, and (6) specification of emergency measures that can be used by Operational GovOps if Required Risk Capital or Asset Liability Management obligations are breached.</td>
         </tr>
         <tr>
           <td>
@@ -10500,7 +10756,7 @@
           </td>
           <td>Required Allocation Conduit Strategy</td>
           <td>Core</td>
-          <td>For each Allocation Conduit, the Star Agent Artifact must specify the strategy documents contained herein. These strategy documents must describe in detail how the Allocation Conduit should be operated so that the Operational Executor Agent that the Star Agent has contracted with can operate the Allocation Conduit without further input from the Star Agent or having to make "judgment calls". To the extent that the Star Agent's strategy cuts across different Allocation Conduits, the Star Agent may include a single set of strategy documents covering all Allocation Conduits.</td>
+          <td>For each Allocation Instance, the Star Agent Artifact must specify the strategy documents contained herein. These strategy documents must describe in detail how the Allocation Instance should be operated so that the Operational Executor Agent that the Star Agent has contracted with can operate the Allocation Instance without further input from the Star Agent or having to make "judgment calls". To the extent that the Star Agent's strategy cuts across different Allocation Instances, the Star Agent may include a single set of strategy documents covering all Allocation Instances.</td>
         </tr>
         <tr>
           <td>
@@ -10508,7 +10764,7 @@
           </td>
           <td>Required Allocation Conduit Allocation Strategy</td>
           <td>Core</td>
-          <td>The allocation strategy for each Allocation Conduit should specify how Operational GovOps should adjust the amount of funds allocated to the Conduit based on performance, market conditions, or other factors. It should also specify limits to the amount by which the allocation can be adjusted before a vote of Star Agent token holders is required.</td>
+          <td>The allocation strategy for each Allocation Instance should specify how Operational GovOps should adjust the amount of funds allocated to the Conduit based on performance, market conditions, or other factors. It should also specify limits to the amount by which the allocation can be adjusted before a vote of Star Agent token holders is required.</td>
         </tr>
         <tr>
           <td>
@@ -10516,7 +10772,7 @@
           </td>
           <td>Required Allocation Conduit Asset Liability Management Strategy</td>
           <td>Core</td>
-          <td>The asset liability management strategy for each Allocation Conduit must specify what steps Operational GovOps should take to ensure that the Star Agent continues to satisfy its Asset Liability Management obligations as the amount of funds allocated to the Conduit changes.</td>
+          <td>The asset liability management strategy for each Allocation Instance must specify what steps Operational GovOps should take to ensure that the Star Agent continues to satisfy its Asset Liability Management obligations as the amount of funds allocated to the Conduit changes.</td>
         </tr>
         <tr>
           <td>
@@ -10524,7 +10780,7 @@
           </td>
           <td>Required Allocation Conduit Fallback Strategy</td>
           <td>Core</td>
-          <td>The fallback strategy for each Allocation Conduit must specify how Operational GovOps should determine when an emergency situation is occurring regarding the Allocation Conduit and what actions it should take to protect the Star Agent from losses associated with the Allocation Conduit. The fallback strategy must include emergency measures for Operational GovOps to reduce exposure to, drain, and ultimately shut down the Allocation Conduit if First Loss Capital or Asset Liability Management obligations are breached.</td>
+          <td>The fallback strategy for each Allocation Instance must specify how Operational GovOps should determine when an emergency situation is occurring regarding the Allocation Instance and what actions it should take to protect the Star Agent from losses associated with the Allocation Instance. The fallback strategy must include emergency measures for Operational GovOps to reduce exposure to, drain, and ultimately shut down the Allocation Instance if Required Risk Capital or Asset Liability Management obligations are breached.</td>
         </tr>
         <tr>
           <td>
