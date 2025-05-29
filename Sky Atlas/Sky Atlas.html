@@ -3231,7 +3231,7 @@
           <td>Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay Current Value
           </td>
           <td>Core</td>
-          <td>The GSM Pause Delay is: 48 hours</td>
+          <td>The GSM Pause Delay is: 24 hours</td>
         </tr>
         <tr>
           <td>
@@ -15504,9 +15504,9 @@
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</td>
           <td>Section</td>
           <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 70 million USDS (Threshold of Surplus buffer for Splitter to activate)•
-              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 0% of Splitter 
+              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 50% of Splitter 
               allocation is set to reward SKY stakers• burn (the percentage of the vow.bump to be moved to the underlying flapper): 
-              100% (1 * WAD). Flapper must maintain its legacy values.
+              50% (WAD/2). Flapper must maintain its legacy values.
           </td>
         </tr>
         <tr>
@@ -20982,7 +20982,7 @@
           <td>Current Exposure Of Morpho SUSDe Or USDe DDM Vault
           </td>
           <td>Active Data</td>
-          <td>Current target exposure of Morpho sUSDe or USDe vault is: 375,000,000 USDS</td>
+          <td>Current target exposure of Morpho sUSDe or USDe vault is: 275,000,000 USDS</td>
         </tr>
         <tr>
           <td>
@@ -21019,7 +21019,7 @@
           </td>
           <td>Current Remaining Amount</td>
           <td>Active Data</td>
-          <td>Remaining available one-time budget for the Launch Project:• 5,000,001 USDS• 8,400,000 SKY -
+          <td>Remaining available one-time budget for the Launch Project:• 1 USDS• 8,400,000 SKY -
             The SKY can at most be spent at the rate of 48,000,000 SKY per month.</td>
         </tr>
         <tr>
@@ -24693,6 +24693,22 @@
         </tr>
         <tr>
           <td>
+            <dfn>Unichain</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document contains the ALM Contract Addresses for the Spark Liquidity Layer on Unichain.◦ ALM_CONTROLLER (ForeignController) 0x9B1BEB11CFE05117029a30eb799B6586125321FF ALM_FREEZER 0x90D8c80C028B4C09C0d8dcAab9bbB057F0513431 ◦ Currently active Freezer Role IDs: • 0x0ac42a08299cbc4428ec38ad4a8e7d7440779fbbb20ea90bd10c094a406cfa6f◦ ALM_RELAYER 0x8a25A24EDE9482C4Fc0738F99611BE58F1c839AB ◦ Currently active Relayer Role IDs • 0xab4f864e5201b0fde9b5ee3e4cf96384802b0ffdfcf7f9de4699ce21a30afc4f◦ ALM_PROXY 0x345E368fcCd62266B3f5F37C9a131FD1c39f5869 ALM_RATE_LIMITS 0x5A1a44D2192Dd1e21efB9caA50E32D0716b35535</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Optimism</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document contains the ALM Contract Addresses for the Spark Liquidity Layer on Optimism.◦ ALM_CONTROLLER (ForeignController) 0x1d54A093b8FDdFcc6fBB411d9Af31D96e034B3D5 ALM_FREEZER 0x90D8c80C028B4C09C0d8dcAab9bbB057F0513431 ◦ Currently active Freezer Role IDs: • 0x0ac42a08299cbc4428ec38ad4a8e7d7440779fbbb20ea90bd10c094a406cfa6f◦ ALM_RELAYER 0x8a25A24EDE9482C4Fc0738F99611BE58F1c839AB ◦ Currently active Relayer Role IDs • 0xab4f864e5201b0fde9b5ee3e4cf96384802b0ffdfcf7f9de4699ce21a30afc4f◦ ALM_PROXY 0x876664f0c9Ff24D1aa355Ce9f1680AE1A5bf36fB ALM_RATE_LIMITS 0x6B34A6B84444dC3Fc692821D5d077a1e4927342d</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Core Vault Security Parameters</dfn>
           </td>
           <td>Spark</td>
@@ -24705,7 +24721,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Ethereum Mainnet.◦ Maximum amount of USDS that can be minted within the Spark Liquidity Layer (LIMIT_USDS_MINT). ◦ maxAmount (USDS): 50,000,000 ◦ slope (USDS/ day): 50,000,000◦ Maximum amount of USDS that can be burned within the Spark Liquidity Layer (LIMIT_USDS_BURN). ◦ maxAmount (USDS): 0 ◦ slope (USDS/ day): 0◦ Maximum amount of USDS that can be swapped for USDC by the Spark Liquidity Layer in the Mainnet PSM (LIMIT_USDS_TO_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000◦ Maximum amount of USDC that can be sent to the Base ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Base domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Base ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_BASE). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of DAI that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (DAI): 100,000,000 ◦ slope (DAI/ day): 50,000,000◦ Maximum amount of DAI that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (DAI): unlimited◦ Maximum amount from the Curve sUSDS/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 25,000,000 ◦ slope (per day): 100,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 0◦ Maximum amount from the Curve USDC/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 0 ◦ Maximum amount of Aave Core USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of Aave Core USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited ◦ Maximum amount of SparkLend USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of SparkLend USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited</td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Ethereum Mainnet.◦ Maximum amount of USDS that can be minted within the Spark Liquidity Layer (LIMIT_USDS_MINT). ◦ maxAmount (USDS): 500,000,000 ◦ slope (USDS/ day): 500,000,000◦ Maximum amount of USDS that can be burned within the Spark Liquidity Layer (LIMIT_USDS_BURN). ◦ maxAmount (USDS): 0 ◦ slope (USDS/ day): 0◦ Maximum amount of USDS that can be swapped for USDC by the Spark Liquidity Layer in the Mainnet PSM (LIMIT_USDS_TO_USDC). ◦ maxAmount (USDC): 500,000,000 ◦ slope (USDC/ day): 300,000,000◦ Maximum amount of USDC that can be sent to the Base ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Base domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Base ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_BASE). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of DAI that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (DAI): 100,000,000 ◦ slope (DAI/ day): 50,000,000◦ Maximum amount of DAI that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (DAI): unlimited◦ Maximum amount from the Curve sUSDS/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 25,000,000 ◦ slope (per day): 100,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 0◦ Maximum amount from the Curve USDC/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 0 ◦ Maximum amount of Aave Core USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of Aave Core USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited ◦ Maximum amount of SparkLend USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of SparkLend USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited</td>
         </tr>
         <tr>
           <td>
@@ -24722,6 +24738,22 @@
           <td>Spark</td>
           <td>Core</td>
           <td>This document lists the current RateLimits for the Spark Liquidity Layer on Arbitrum.◦ Maximum amount of USDC that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDC). ◦ maxAmount (USDC): This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope (USDC/ day): This parameter will be specified in a future iteration of the Spark Artifact.◦ Maximum amount of USDC that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDC). ◦ maxAmount (USDC): This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope (USDC/ day): This parameter will be specified in a future iteration of the Spark Artifact.◦ Maximum amount of USDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDS). ◦ maxAmount (USDS): This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope (USDS/ day): This parameter will be specified in a future iteration of the Spark Artifact. ◦ Maximum amount of USDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDS). ◦ maxAmount (USDS): This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope (USDs/ day): This parameter will be specified in a future iteration of the Spark Artifact. ◦ Maximum amount of sUSDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_SUSDS). ◦ maxAmount (USDS worth of sUSDS): 10,000,000 ◦ slope (USDS worth of sUSDS): 5,000,000◦ Maximum amount of sUSDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_SUSDS). ◦ maxAmount (sUSDS): unlimited</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Unichain</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Unichain.◦ Maximum amount of USDC that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDC that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDC). ◦ maxAmount (USDC): 50,000,000. ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDS). ◦ maxAmount (USDS): Unlimited ◦ slope (USDS/ day): Unlimited ◦ Maximum amount of USDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDS). ◦ maxAmount (USDS): Unlimited. ◦ slope (USDs/ day): Unlimited. ◦ Maximum amount of sUSDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_SUSDS). ◦ maxAmount (USDS worth of sUSDS): unlimited ◦ slope (USDS worth of sUSDS): unlimited◦ Maximum amount of sUSDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_SUSDS). ◦ maxAmount (sUSDS): unlimited</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Optimism</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Optimism.◦ Maximum amount of USDC that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDC that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDC). ◦ maxAmount (USDC): 50,000,000. ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDS). ◦ maxAmount (USDS): Unlimited ◦ slope (USDS/ day): Unlimited ◦ Maximum amount of USDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDS). ◦ maxAmount (USDS): Unlimited. ◦ slope (USDs/ day): Unlimited. ◦ Maximum amount of sUSDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_SUSDS). ◦ maxAmount (USDS worth of sUSDS): unlimited ◦ slope (USDS worth of sUSDS): unlimited◦ Maximum amount of sUSDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_SUSDS). ◦ maxAmount (sUSDS): unlimited</td>
         </tr>
         <tr>
           <td>
@@ -25533,7 +25565,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain the specifications for the Tokens of the Ethena deployment on Ethereum Mainnet.◦ USDe ◦ Address 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact. ◦ Outflow Parameters • Outflow RateLimit IDThis parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact.◦ sUSDe ◦ Address 0x9d39a5de30e57443bff2a8307a4256c8797a3497 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact. ◦ Outflow Parameters • Outflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact.</td>
+          <td>The documents herein contain the specifications for the Tokens of the Ethena deployment on Ethereum Mainnet.◦ USDe ◦ Address 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: 250,000,000. ◦ slope: 100,000,000 per day. ◦ Outflow Parameters • Outflow RateLimit IDThis parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: 500,000,000. ◦ slope: 200,000,000 per day.◦ sUSDe ◦ Address 0x9d39a5de30e57443bff2a8307a4256c8797a3497 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: 250,000,000. ◦ slope: 100,000,000 per day. ◦ Outflow Parameters • Outflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: unlimited. ◦ slope: unlimited.</td>
         </tr>
         <tr>
           <td>
@@ -25871,7 +25903,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -25879,7 +25911,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -25903,7 +25935,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 45%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
+          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 40%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
         </tr>
         <tr>
           <td>
