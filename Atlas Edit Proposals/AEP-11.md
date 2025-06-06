@@ -34,4 +34,4 @@ This Atlas Edit formalizes and refines the moderation policies of the Sky ecosys
 
 ## Pull Request of Edits
 
-[79](https://github.com/makerdao/next-gen-atlas/pull/79)
+https://github.com/makerdao/next-gen-atlas/pull/7

@@ -3225,7 +3225,7 @@
           <td>Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay Current Value
           </td>
           <td>Core</td>
-          <td>The GSM Pause Delay is: 48 hours</td>
+          <td>The GSM Pause Delay is: 24 hours</td>
         </tr>
         <tr>
           <td>
@@ -17629,9 +17629,9 @@
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</td>
           <td>Section</td>
           <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 70 million USDS (Threshold of Surplus buffer for Splitter to activate)•
-              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 0% of Splitter 
+              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 50% of Splitter 
               allocation is set to reward SKY stakers• burn (the percentage of the vow.bump to be moved to the underlying flapper): 
-              100% (1 * WAD). Flapper must maintain its legacy values.
+              50% (WAD/2). Flapper must maintain its legacy values.
           </td>
         </tr>
         <tr>
@@ -19027,12 +19027,68 @@
           <td>The timing and contents of Phase One, Phase Two, and Phase Three may be adjusted by the Protocol Facilitators in consultation with relevant Ecosystem Actors.</td>
         </tr>
         <tr>
-        <td>
-          <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
-        </td>
-        <td>SkyLink - Multichain Support Native Mechanisms</td>
-        <td>Section</td>
-        <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Deflationary Tokenomics</dfn>
+          </td>
+          <td>Core Tokens - SKY - Deflationary Tokenomics</td>
+          <td>Core</td>
+          <td>The documents herein set forth the core deflationary tokenomics of the SKY token.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Initial Token Supply</dfn>
+          </td>
+          <td>Core Tokens - SKY - Initial Token Supply</td>
+          <td>Core</td>
+          <td>The initial token supply of SKY tokens is derived from the total number of legacy MKR tokens as of the launch of Sky, multiplied by the conversion ratio of 24,000. SKY is the exclusive governance token of the Sky Protocol and takes over all governance and economic rights previously held by MKR. See <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Approval</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - No New Token Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - No New Token Emissions</td>
+          <td>Core</td>
+          <td>No new SKY tokens may be emitted except for (1) emissions required to recapitalize the protocol if it is at risk of insolvency (see <dfn>A.3.7</dfn>) and (2) temporary emissions that are being deprecated and fully offset by corresponding burns, resulting in no net increase to the intended long-term token supply (see <dfn>A.4.1 - Core Tokens - SKY - Deprecated Emissions Mechanisms)</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Burning of Existing Tokens</dfn>
+          </td>
+          <td>Core Tokens - SKY - Burning of Existing Tokens</td>
+          <td>Core</td>
+          <td>At the same time that no new SKY tokens are issued, SKY tokens are bought back and burned on a regular basis, using a portion of the Net Revenue of the Protocol as dictated by the Treasury Management Function. See <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer</dfn>. As a result, the total supply of SKY tokens will continue to decrease over time.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Deprecated Emissions Mechanisms</dfn>
+          </td>
+          <td>Core Tokens - SKY - Deprecated Emissions Mechanisms</td>
+          <td>Core</td>
+          <td>The subdocuments herein define legacy mechanisms involving the issuance of new SKY tokens. Each of these mechanisms is being deprecated. While these mechanisms do not increase the net supply of SKY tokens, they must be replaced with solutions that do not involve any emissions of SKY tokens, as defined in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - SKY Token Rewards Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - SKY Token Rewards Emissions</td>
+          <td>Core</td>
+          <td><p>USDS users are able to earn SKY Rewards. See <dfn>A.4.3 - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>. These rewards are currently funded by emissions of new SKY tokens.</p><p>These ongoing emissions will be eliminated and replaced with a solution that funds these rewards using SKY held by the Sky Protocol.</p><p>At the same time that this new solution is implemented, SKY tokens equal to the total SKY emissions previously used to fund SKY Rewards, including the Early Bird Reward (see <dfn>A.5.5 - Accessibility Campaigns - Early Bird Reward - Token Distribution</dfn>), will be burned from SKY held by the Sky Protocol.</p><p>The combination of these actions will achieve a state where the number of total SKY tokens is exactly the same as if SKY Rewards had never been funded with protocol emissions.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Conversion Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Conversion Emissions</td>
+          <td>Core</td>
+          <td><p>The legacy MKR to SKY conversion contract (Legacy Conversion Contract) burns MKR and mints new SKY. The new MKR to SKY conversion contract (New Conversion Contract) instead burns MKR and issues SKY from the existing supply of preminted SKY.</p><p>The Legacy Conversion Contract will be disabled as soon as practicable. To offset SKY minted by the Legacy Conversion Contract after the deployment of the New Conversion Contract, an equivalent amount of preminted SKY will be burned. This action will ensure the total SKY token supply remains as if these specific emissions from the Legacy Conversion Contract had not occurred.</p></td>
+        </tr>      
+        <tr>
+          <td>
+            <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
+          </td>
+          <td>SkyLink - Multichain Support Native Mechanisms</td>
+          <td>Section</td>
+          <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
         </tr>
         <tr>
           <td>
@@ -22997,6 +23053,12 @@
               href="https://etherscan.io/address/0x4E4393f93ac7ba34648A82eA2248D9bDBb1Ff7e5">https://etherscan.io/address/0x4E4393f93ac7ba34648A82eA2248D9bDBb1Ff7e5</a>
             <a href="https://etherscan.io/verifySig/272367">https://etherscan.io/verifySig/272367</a> | <a
               href="https://forum.sky.money/t/tango-ad-recognition-submission/26310">https://forum.sky.money/t/tango-ad-recognition-submission/26310</a>
+            || Max Staking Yield | <a
+              href="https://etherscan.io/address/0x9746bDaB7ab2609247332324400cc1fbE887095C">https://etherscan.io/address/0x9746bDaB7ab2609247332324400cc1fbE887095C</a>
+            <a href="https://etherscan.io/verifySig/273846">https://etherscan.io/verifySig/273846</a> | <a
+              href="https://etherscan.io/address/0xFf7615E05EC1C8D5dED24AB50Bf74432666BEE2f">https://etherscan.io/address/0xFf7615E05EC1C8D5dED24AB50Bf74432666BEE2f</a>
+            <a href="https://etherscan.io/verifySig/273847">https://etherscan.io/verifySig/273847</a> | <a
+              href="https://forum.sky.money/t/max-staking-yield-ad-recognition-submission/26462">https://forum.sky.money/t/max-staking-yield-ad-recognition-submission/26462</a>
             |
           </td>
         </tr>
@@ -23107,7 +23169,7 @@
           <td>Current Exposure Of Morpho SUSDe Or USDe DDM Vault
           </td>
           <td>Active Data</td>
-          <td>Current target exposure of Morpho sUSDe or USDe vault is: 375,000,000 USDS</td>
+          <td>Current target exposure of Morpho sUSDe or USDe vault is: 275,000,000 USDS</td>
         </tr>
         <tr>
           <td>
@@ -23144,7 +23206,7 @@
           </td>
           <td>Current Remaining Amount</td>
           <td>Active Data</td>
-          <td>Remaining available one-time budget for the Launch Project:• 5,000,001 USDS• 8,400,000 SKY -
+          <td>Remaining available one-time budget for the Launch Project:• 1 USDS• 8,400,000 SKY -
             The SKY can at most be spent at the rate of 48,000,000 SKY per month.</td>
         </tr>
         <tr>
@@ -26932,6 +26994,22 @@
         </tr>
         <tr>
           <td>
+            <dfn>Unichain</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document contains the ALM Contract Addresses for the Spark Liquidity Layer on Unichain.◦ ALM_CONTROLLER (ForeignController) 0x9B1BEB11CFE05117029a30eb799B6586125321FF ALM_FREEZER 0x90D8c80C028B4C09C0d8dcAab9bbB057F0513431 ◦ Currently active Freezer Role IDs: • 0x0ac42a08299cbc4428ec38ad4a8e7d7440779fbbb20ea90bd10c094a406cfa6f◦ ALM_RELAYER 0x8a25A24EDE9482C4Fc0738F99611BE58F1c839AB ◦ Currently active Relayer Role IDs • 0xab4f864e5201b0fde9b5ee3e4cf96384802b0ffdfcf7f9de4699ce21a30afc4f◦ ALM_PROXY 0x345E368fcCd62266B3f5F37C9a131FD1c39f5869 ALM_RATE_LIMITS 0x5A1a44D2192Dd1e21efB9caA50E32D0716b35535</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Optimism</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document contains the ALM Contract Addresses for the Spark Liquidity Layer on Optimism.◦ ALM_CONTROLLER (ForeignController) 0x1d54A093b8FDdFcc6fBB411d9Af31D96e034B3D5 ALM_FREEZER 0x90D8c80C028B4C09C0d8dcAab9bbB057F0513431 ◦ Currently active Freezer Role IDs: • 0x0ac42a08299cbc4428ec38ad4a8e7d7440779fbbb20ea90bd10c094a406cfa6f◦ ALM_RELAYER 0x8a25A24EDE9482C4Fc0738F99611BE58F1c839AB ◦ Currently active Relayer Role IDs • 0xab4f864e5201b0fde9b5ee3e4cf96384802b0ffdfcf7f9de4699ce21a30afc4f◦ ALM_PROXY 0x876664f0c9Ff24D1aa355Ce9f1680AE1A5bf36fB ALM_RATE_LIMITS 0x6B34A6B84444dC3Fc692821D5d077a1e4927342d</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Minimum Operation Size Arbitrum</dfn>
           </td>
           <td>Spark</td>
@@ -26992,72 +27070,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein list the current RateLimits for the Spark Liquidity Layer on Ethereum Mainnet.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>USDS Mint Maximum</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The maximum amount of USDS that can be minted within the Spark Liquidity Layer (<code>LIMIT_USDS_MINT</code>) is specified in the document herein.
-            <ul>
-              <li><code>maxAmount</code> (USDS): 50,000,000</li>
-              <li><code>slope</code> (USDS/ day): 50,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>USDS Burn Maximum</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The maximum amount of USDS that can be burned within the Spark Liquidity Layer (<code>LIMIT_USDS_BURN</code>) is specified in the document herein.
-            <ul>
-              <li><code>maxAmount</code> (USDS): 0</li>
-              <li><code>slope</code> (USDS/ day): 0</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>USDS For USDC Swap Maximum</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The maximum amount of USDS that can be swapped for USDC by the Spark Liquidity Layer in the Mainnet PSM (<code>LIMIT_USDS_TO_USDC</code>) is specified in the document herein.
-            <ul>
-              <li><code>maxAmount</code> (USDC): 50,000,000</li>
-              <li><code>slope</code> (USDC/ day): 50,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>USDC Mainnet ALM Proxy Maximum</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (<code>LIMIT_USDC_TO_DOMAIN</code>, hashed with Ethereum domain) is specified in the document herein.
-            <ul>
-              <li><code>maxAmount</code> (USDC): 4,000,000</li>
-              <li><code>slope</code> (USDC/ day): 2,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>USDC Mainnet ALM Proxy Circle Cross-Chain Transfer Protocol Maximum</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (<code>LIMIT_USDC_TO_CCTP_ETH</code>) is specified in the document herein.
-            <ul>
-              <li><code>maxAmount</code> (USDC): max</li>
-              <li><code>slope</code> (USDC/ day): 0</li>
-            </ul>
-          </td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Ethereum Mainnet.◦ Maximum amount of USDS that can be minted within the Spark Liquidity Layer (LIMIT_USDS_MINT). ◦ maxAmount (USDS): 50,000,000 ◦ slope (USDS/ day): 50,000,000◦ Maximum amount of USDS that can be burned within the Spark Liquidity Layer (LIMIT_USDS_BURN). ◦ maxAmount (USDS): 0 ◦ slope (USDS/ day): 0◦ Maximum amount of USDS that can be swapped for USDC by the Spark Liquidity Layer in the Mainnet PSM (LIMIT_USDS_TO_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000◦ Maximum amount of USDC that can be sent to the Base ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Base domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Base ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_BASE). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (LIMIT_USDC_TO_DOMAIN, hashed with Ethereum domain). ◦ maxAmount (USDC): 4,000,000 ◦ slope (USDC/ day): 2,000,000 ◦ Maximum amount of USDC that can be bridged to Ethereum Mainnet ALM Proxy using the Circle Cross-Chain Transfer Protocol (LIMIT_USDC_TO_CCTP_ETH). • maxAmount (USDC): max • slope (USDC/ day): 0◦ Maximum amount of DAI that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (DAI): 100,000,000 ◦ slope (DAI/ day): 50,000,000◦ Maximum amount of DAI that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (DAI): unlimited◦ Maximum amount from the Curve sUSDS/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve sUSDS/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 25,000,000 ◦ slope (per day): 100,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be swapped within the Spark Liquidity Layer. ◦ maxAmount: 5,000,000 ◦ slope (per day): 20,000,000 ◦ Max slippage: 0.15%◦ Maximum amount from the Curve USDC/USDT pool that can be deposited within the Spark Liquidity Layer. ◦ maxAmount: 0◦ Maximum amount from the Curve USDC/USDT pool that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount: 0 ◦ Maximum amount of Aave Core USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of Aave Core USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited ◦ Maximum amount of SparkLend USDT that can be deposited within the Spark Liquidity Layer. ◦ maxAmount (USDT): 50,000,000 ◦ slope (USDT/ day): 25,000,000◦ Maximum amount of SparkLend USDT that can be withdrawn within the Spark Liquidity Layer. ◦ maxAmount (USDT): unlimited</td>
         </tr>
         <tr>
           <td>
@@ -27178,6 +27191,22 @@
           <td>Spark</td>
           <td>Core</td>
           <td>The documents herein list the current RateLimits for the Spark Liquidity Layer on Arbitrum.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Unichain</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Unichain.◦ Maximum amount of USDC that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDC that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDC). ◦ maxAmount (USDC): 50,000,000. ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDS). ◦ maxAmount (USDS): Unlimited ◦ slope (USDS/ day): Unlimited ◦ Maximum amount of USDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDS). ◦ maxAmount (USDS): Unlimited. ◦ slope (USDs/ day): Unlimited. ◦ Maximum amount of sUSDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_SUSDS). ◦ maxAmount (USDS worth of sUSDS): unlimited ◦ slope (USDS worth of sUSDS): unlimited◦ Maximum amount of sUSDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_SUSDS). ◦ maxAmount (sUSDS): unlimited</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Optimism</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This document lists the current RateLimits for the Spark Liquidity Layer on Optimism.◦ Maximum amount of USDC that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDC). ◦ maxAmount (USDC): 50,000,000 ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDC that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDC). ◦ maxAmount (USDC): 50,000,000. ◦ slope (USDC/ day): 50,000,000.◦ Maximum amount of USDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_USDS). ◦ maxAmount (USDS): Unlimited ◦ slope (USDS/ day): Unlimited ◦ Maximum amount of USDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_USDS). ◦ maxAmount (USDS): Unlimited. ◦ slope (USDs/ day): Unlimited. ◦ Maximum amount of sUSDS that can be deposited into the PSM (LIMIT_PSM_DEPOSIT_SUSDS). ◦ maxAmount (USDS worth of sUSDS): unlimited ◦ slope (USDS worth of sUSDS): unlimited◦ Maximum amount of sUSDS that can be withdrawn from the PSM (LIMIT_PSM_WITHDRAW_SUSDS). ◦ maxAmount (sUSDS): unlimited</td>
         </tr>
         <tr>
           <td>
@@ -29294,1091 +29323,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: 20,000,000</li>
-              <li><code>slope</code>: 10,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: Unlimited</li>
-              <li><code>slope</code>: Unlimited</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Off-chain Operational Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethereum Mainnet - SparkLend Dai Instance Configuration Document</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the SparkLend Dai Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>RRC Framework Full Implementation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><strong><code>Covered</code></strong></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the parameters of the SparkLend Dai Instance of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Network</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethereum Mainnet</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Target Protocol</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>SparkLend Protocol</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Asset Supplied By SLL</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Dai</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>spDai</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Contract Addresses</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance contract addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x4DEDf26112B3Ec8eC46e7E31EA5e123490B05B8B</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Underlying Asset Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x6b175474e89094c44da98b954eedeac495271d0f</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Inflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: 100,000,000</li>
-              <li><code>slope</code>: 50,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: Unlimited</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethereum Mainnet - SparkLend USDT Instance Configuration Document</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the SparkLend USDT Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>RRC Framework Full Implementation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><strong><code>Covered</code></strong></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the parameters of the SparkLend USDT Instance of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Network</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethereum Mainnet</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Target Protocol</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>SparkLend Protocol</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Asset Supplied By SLL</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>USDT</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>spUSDT</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Contract Addresses</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance contract addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0xe7dF13b8e3d6740fe17CBE928C7334243d86c92f</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Underlying Asset Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0xdac17f958d2ee523a2206206994597c13d831ec7</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limit IDs</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Inflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 25,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: Unlimited</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Off-chain Operational Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Aave</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The Ethereum Mainnet Instances of the Aave Protocol with <code>Active</code> Status are stored herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethereum Mainnet - Aave Prime USDS Instance Configuration Document</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the Aave Prime USDS Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>RRC Framework Full Implementation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><strong><code>Covered</code></strong></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the parameters of the Aave Prime USDS Instance of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Network</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethereum Mainnet</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Target Protocol</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Aave Prime</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Asset Supplied By SLL</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>USDS</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>aEthLidoUSDS</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Contract Addresses</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance contract addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x09AA30b182488f769a9824F15E6Ce58591Da4781</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Underlying Asset Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0xdc035d45d973e3ec169d2276ddab16f1e407384f</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Pool</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>This parameter will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limit IDs</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Inflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: 50,000,000</li>
-              <li><code>slope</code>: 50,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: Unlimited</li>
-              <li><code>slope</code>: Unlimited</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Off-chain Operational Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes. For the general operational procedures applicable to all Aave-type instances. See <dfn>Aave Functions</dfn> and <dfn>Aave AToken Withdrawal Action</dfn>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Process Definition For Depositing</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the steps to deposit assets from the ALM Proxy to the Aave pool to receive yield-bearing ATokens.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Relayer Role</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure they are working as a <code>RELAYER</code>. Only the <code>RELAYER</code> role is allowed to <code>depositAave</code>. Also, they must ensure the contract <code>isActive</code> i.e. can process the request.
-            <pre><code>
-              function depositAave(address aToken, uint256 amount)
-                external
-                onlyRole(RELAYER)
-                isActive
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Check ALM Proxy</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure ALM Proxy holds enough of the underlying asset to cover the instructed <code>deposit</code> amount.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Check RateLimits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure the <code>deposit</code> amount is allowed within the <code>RateLimits</code>.
-            <pre><code>
-              rateLimited(
-                RateLimitHelpers.makeAssetKey(LIMIT_AAVE_DEPOSIT, aToken),
-                amount
-              )
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Initialize ERC-20 Token Interface</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must initialize the <code>underlying</code> variable as an ERC-20 token interface.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Initialize Interface For Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must initialize the interface for the <code>address of the underlying asset</code> retrieved from the <code>aToken</code> contract (the contract that represents the deposited assets in Aave). The <code>IERC20</code> interface allows interaction with ERC-20 tokens, including performing actions like transferring, approving, and checking balances.
-            <pre><code>
-              {
-                IERC20 underlying = IERC20(IATokenWithPool(aToken).UNDERLYING_ASSET_ADDRESS());
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Initialize Pool Variable</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must initialize the <code>pool</code> variable as an interface for the Aave pool.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Retrieve Aave Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must retrieve the Aave pool contract address associated with the given <code>aToken</code>. This address represents the Aave lending pool where the assets are deposited. <code>IAavePool</code> interface allows interaction with the Aave pool's functions (like <code>supply</code>).
-            <pre><code>
-              IAavePool pool = IAavePool(IATokenWithPool(aToken).POOL());
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Call Approve Function</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must call the <code>approve</code> function to update the allowance of the <code>underlying</code> asset contract.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Encode Function Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must encode the <code>approve</code> function call, using <code>abi.encodeCall</code> allowing the Aave <code>pool</code> address to spend up to <code>amount</code> of the <code>underlying</code> token from the ALM Proxy's balance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Send Encoded Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must send the encoded call using <code>proxy.doCall()</code> specifying the <code>address</code> of the <code>asset</code> contract they want to deposit into.
-            <pre><code>
-              // Approve underlying to Aave pool from the proxy (assumes the proxy has enough underlying).
-              proxy.doCall(
-                address(underlying),
-                abi.encodeCall(underlying.approve, (address(pool), amount))
-              );
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Call Deposit Function</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must call the <code>deposit</code> function to transfer the <code>underlying</code> asset to the Aave lending pool and receive the <code>aTokens</code>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Encode Function Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must encode the <code>deposit</code> function call, using <code>abi.encodeCall</code> with the address of the <code>underlying</code> token, the <code>amount</code> of the <code>underlying</code> asset to <code>deposit</code> and the <code>address(proxy)</code> that will receive the resulting <code>aTokens</code> (i.e. ALM Proxy).</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Send Encoded Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the <code>supply</code> function on Aave (<code>pool</code>).
-            <pre><code>
-                // Deposit underlying into Aave pool, proxy receives aTokens
-                proxy.doCall(
-                  address(pool),
-                  abi.encodeCall(pool.supply, (address(underlying), amount, address(proxy), 0))
-                );
-              }
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Process Definition For Withdrawing</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the steps for an operator to withdraw a yield-earning balance from the Aave AToken vaults to the ALM Proxy.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Relayer Role</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure they are working as a <code>RELAYER</code>. Only the <code>RELAYER</code> role is allowed to <code>withdrawAave</code> tokens. Also, they ensure the contract <code>isActive</code> i.e. can process the request.
-            <pre><code>
-              function withdrawAave(address aToken, uint256 amount)
-                external
-                onlyRole(RELAYER)
-                isActive
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Check ALM Proxy</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure the ALM Proxy holds sufficient <code>aTokens</code> to cover the instructed <code>withdraw</code> amount.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Check RateLimits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must ensure the <code>withdraw</code> amount is allowed within the <code>RateLimits</code>.
-            <pre><code>
-              // Check withdrawal limits.
-                rateLimited(
-                  RateLimitHelpers.makeAssetKey(LIMIT_AAVE_WITHDRAW, aToken),
-                  amount
-                )
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Initialize Pool Variable</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must initialize the <code>pool</code> variable as an interface for the Aave pool.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Retrieve Aave Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must retrieve the Aave pool contract address associated with the given <code>aToken</code>. This address represents the Aave lending pool from which the assets are withdrawn.
-            <pre><code>
-              IAavePool pool = IAavePool(IATokenWithPool(aToken).POOL());
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Call Withdraw Function</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must call the <code>withdraw</code> function to withdraw a required amount of <code>underlying</code> asset from Aave <code>pool</code> address and receive the corresponding <code>aTokens</code>.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Encode Function Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must encode the <code>withdraw</code> function using <code>abi.encodeCall</code> with the underlying asset address from the <code>aToken</code> contract, specifying which token is being withdrawn, the <code>amount</code> of the underlying asset to <code>withdraw</code>, and the <code>address(proxy)</code> of the recipient of the withdrawn assets (i.e. ALM Proxy).</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Send Encoded Call</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the <code>withdraw</code> function of the Aave <code>pool</code> contract.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Decode For Underlying Assets</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must decode the raw bytes data returned from the <code>doCall()</code> function into <code>uint256</code> value, representing the amount of underlying assets that were successfully withdrawn from the Aave pool (<code>amountWithdrawn</code>).
-            <pre><code>
-              // Withdraw underlying from Aave pool, decode resulting amount withdrawn.
-              // Assumes proxy has adequate aTokens.
-              amountWithdrawn = abi.decode(
-                proxy.doCall(
-                  address(pool),
-                  abi.encodeCall(
-                    pool.withdraw,(
-                      IATokenWithPool(aToken).UNDERLYING_ASSET_ADDRESS(), amount, address(proxy))
-                  )
-                ),
-                (uint256)
-              );
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Decrease RateLimit</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The operator must decrease the <code>RateLimit</code> based on the assets redeemed.
-            <pre><code>
-                rateLimits.triggerRateLimitDecrease(
-                  RateLimitHelpers.makeAssetKey(LIMIT_AAVE_WITHDRAW, aToken),
-                  amountWithdrawn
-                );
-              }
-            </code></pre>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Maple</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The Ethereum Mainnet Instances of the Maple Protocol with <code>Active</code> Status are stored herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethereum Mainnet - Maple USDC Instance Configuration Document</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the Maple USDC Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>RRC Framework Full Implementation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><strong><code>Covered</code></strong></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the parameters of the Maple USDC Instance of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Network</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethereum Mainnet</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Target Protocol</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Maple</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Asset Supplied By SLL</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>USDC</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>syrupUSDC</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Contract Addresses</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance contract addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Underlying Asset Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Pool</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x80ac24aA929eaF5013f6436cdA2a7ba190f5Cc0b</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limit IDs</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Inflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: 25,000,000</li>
-              <li><code>slope</code>: 5,000,000</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: Unlimited</li>
-              <li><code>slope</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Off-chain Operational Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethena</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The Ethereum Mainnet Instances of the Ethena Protocol with <code>Active</code> Status are stored herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Ethereum Mainnet - Ethena USDe Instance Configuration Document</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the Ethena USDe Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>RRC Framework Full Implementation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><strong><code>Pending</code></strong></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the parameters of the Ethena USDe Instance of the Allocation System Primitive.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance Identifiers</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Network</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethereum Mainnet</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Target Protocol</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>Ethena Protocol</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Asset Supplied By SLL</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>USDC</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>USDe</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Contract Addresses</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein define the Instance contract addresses.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Token Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0x4c9edd5852cd905f086c759e8383e09bff1e68b3</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Underlying Asset Address</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>This parameter will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>EthenaMinter</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><code>0xe3490297a08d6fC8Da46Edb7B6142E4F461b62D3</code></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limit IDs</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Inflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The inflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
-              <li><code>slope</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Outflow Rate Limits</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The outflow rate limits are:
-            <ul>
-              <li><code>maxAmount</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
-              <li><code>slope</code>: This parameter will be specified in a future iteration of the Spark Artifact.</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Off-chain Operational Parameters</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Instance-specific Operational Processes</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>The documents herein defines the operations performed to manage the Ethena Instance, including rate limiting, role-based access control, and cooldown functionality.</td>
+          <td>The documents herein contain the specifications for the Tokens of the Ethena deployment on Ethereum Mainnet.◦ USDe ◦ Address 0x4c9edd5852cd905f086c759e8383e09bff1e68b3 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact. ◦ Outflow Parameters • Outflow RateLimit IDThis parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact.◦ sUSDe ◦ Address 0x9d39a5de30e57443bff2a8307a4256c8797a3497 ◦ Inflow Parameters • Inflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Inflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact. ◦ Outflow Parameters • Outflow RateLimitID This parameter will be specified in a future iteration of the Spark Artifact. • Outflow RateLimits ◦ maxAmount: This parameter will be specified in a future iteration of the Spark Artifact. ◦ slope: This parameter will be specified in a future iteration of the Spark Artifact.</td>
         </tr>
         <tr>
           <td>
@@ -33459,7 +32404,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -33467,7 +32412,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -33491,7 +32436,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 45%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
+          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 40%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
         </tr>
         <tr>
           <td>
