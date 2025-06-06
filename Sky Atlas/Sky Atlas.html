@@ -3225,7 +3225,7 @@
           <td>Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay Current Value
           </td>
           <td>Core</td>
-          <td>The GSM Pause Delay is: 48 hours</td>
+          <td>The GSM Pause Delay is: 24 hours</td>
         </tr>
         <tr>
           <td>
@@ -17629,9 +17629,9 @@
           <td>Surplus Buffer And Smart Burn Engine - Surplus Buffer Splitter Parameters</td>
           <td>Section</td>
           <td>The current Surplus Buffer Splitter parameters are:• vow.hump: 70 million USDS (Threshold of Surplus buffer for Splitter to activate)•
-              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 0% of Splitter 
+              vow.bump: 10,000 USDS• splitter.hop: 1,728 seconds• 100% of Splitter allocation is set to accumulate SKY• 50% of Splitter 
               allocation is set to reward SKY stakers• burn (the percentage of the vow.bump to be moved to the underlying flapper): 
-              100% (1 * WAD). Flapper must maintain its legacy values.
+              50% (WAD/2). Flapper must maintain its legacy values.
           </td>
         </tr>
         <tr>
@@ -19027,12 +19027,68 @@
           <td>The timing and contents of Phase One, Phase Two, and Phase Three may be adjusted by the Protocol Facilitators in consultation with relevant Ecosystem Actors.</td>
         </tr>
         <tr>
-        <td>
-          <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
-        </td>
-        <td>SkyLink - Multichain Support Native Mechanisms</td>
-        <td>Section</td>
-        <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Deflationary Tokenomics</dfn>
+          </td>
+          <td>Core Tokens - SKY - Deflationary Tokenomics</td>
+          <td>Core</td>
+          <td>The documents herein set forth the core deflationary tokenomics of the SKY token.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Initial Token Supply</dfn>
+          </td>
+          <td>Core Tokens - SKY - Initial Token Supply</td>
+          <td>Core</td>
+          <td>The initial token supply of SKY tokens is derived from the total number of legacy MKR tokens as of the launch of Sky, multiplied by the conversion ratio of 24,000. SKY is the exclusive governance token of the Sky Protocol and takes over all governance and economic rights previously held by MKR. See <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Upgrade Approval</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - No New Token Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - No New Token Emissions</td>
+          <td>Core</td>
+          <td>No new SKY tokens may be emitted except for (1) emissions required to recapitalize the protocol if it is at risk of insolvency (see <dfn>A.3.7</dfn>) and (2) temporary emissions that are being deprecated and fully offset by corresponding burns, resulting in no net increase to the intended long-term token supply (see <dfn>A.4.1 - Core Tokens - SKY - Deprecated Emissions Mechanisms)</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Burning of Existing Tokens</dfn>
+          </td>
+          <td>Core Tokens - SKY - Burning of Existing Tokens</td>
+          <td>Core</td>
+          <td>At the same time that no new SKY tokens are issued, SKY tokens are bought back and burned on a regular basis, using a portion of the Net Revenue of the Protocol as dictated by the Treasury Management Function. See <dfn>A.2.5 - Treasury Management - Treasury Management - Allocation Steps - Step 4: Smart Burn And Standard Activity Staking Rewards - Smart Burn Buffer</dfn>. As a result, the total supply of SKY tokens will continue to decrease over time.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Deprecated Emissions Mechanisms</dfn>
+          </td>
+          <td>Core Tokens - SKY - Deprecated Emissions Mechanisms</td>
+          <td>Core</td>
+          <td>The subdocuments herein define legacy mechanisms involving the issuance of new SKY tokens. Each of these mechanisms is being deprecated. While these mechanisms do not increase the net supply of SKY tokens, they must be replaced with solutions that do not involve any emissions of SKY tokens, as defined in the documents herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - SKY Token Rewards Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - SKY Token Rewards Emissions</td>
+          <td>Core</td>
+          <td><p>USDS users are able to earn SKY Rewards. See <dfn>A.4.3 - A2 - Savings Rate And Token Reward Mechanism - Token Reward Mechanism</dfn>. These rewards are currently funded by emissions of new SKY tokens.</p><p>These ongoing emissions will be eliminated and replaced with a solution that funds these rewards using SKY held by the Sky Protocol.</p><p>At the same time that this new solution is implemented, SKY tokens equal to the total SKY emissions previously used to fund SKY Rewards, including the Early Bird Reward (see <dfn>A.5.5 - Accessibility Campaigns - Early Bird Reward - Token Distribution</dfn>), will be burned from SKY held by the Sky Protocol.</p><p>The combination of these actions will achieve a state where the number of total SKY tokens is exactly the same as if SKY Rewards had never been funded with protocol emissions.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - MKR To SKY Conversion Emissions</dfn>
+          </td>
+          <td>Core Tokens - SKY - MKR To SKY Conversion Emissions</td>
+          <td>Core</td>
+          <td><p>The legacy MKR to SKY conversion contract (Legacy Conversion Contract) burns MKR and mints new SKY. The new MKR to SKY conversion contract (New Conversion Contract) instead burns MKR and issues SKY from the existing supply of preminted SKY.</p><p>The Legacy Conversion Contract will be disabled as soon as practicable. To offset SKY minted by the Legacy Conversion Contract after the deployment of the New Conversion Contract, an equivalent amount of preminted SKY will be burned. This action will ensure the total SKY token supply remains as if these specific emissions from the Legacy Conversion Contract had not occurred.</p></td>
+        </tr>      
+        <tr>
+          <td>
+            <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
+          </td>
+          <td>SkyLink - Multichain Support Native Mechanisms</td>
+          <td>Section</td>
+          <td>SkyLink deployments support features including the Savings Rate Mechanism (including sUSDS), the Token Rewards Mechanism and the SKY Staking Mechanism.</td>
         </tr>
         <tr>
           <td>
@@ -22997,6 +23053,12 @@
               href="https://etherscan.io/address/0x4E4393f93ac7ba34648A82eA2248D9bDBb1Ff7e5">https://etherscan.io/address/0x4E4393f93ac7ba34648A82eA2248D9bDBb1Ff7e5</a>
             <a href="https://etherscan.io/verifySig/272367">https://etherscan.io/verifySig/272367</a> | <a
               href="https://forum.sky.money/t/tango-ad-recognition-submission/26310">https://forum.sky.money/t/tango-ad-recognition-submission/26310</a>
+            || Max Staking Yield | <a
+              href="https://etherscan.io/address/0x9746bDaB7ab2609247332324400cc1fbE887095C">https://etherscan.io/address/0x9746bDaB7ab2609247332324400cc1fbE887095C</a>
+            <a href="https://etherscan.io/verifySig/273846">https://etherscan.io/verifySig/273846</a> | <a
+              href="https://etherscan.io/address/0xFf7615E05EC1C8D5dED24AB50Bf74432666BEE2f">https://etherscan.io/address/0xFf7615E05EC1C8D5dED24AB50Bf74432666BEE2f</a>
+            <a href="https://etherscan.io/verifySig/273847">https://etherscan.io/verifySig/273847</a> | <a
+              href="https://forum.sky.money/t/max-staking-yield-ad-recognition-submission/26462">https://forum.sky.money/t/max-staking-yield-ad-recognition-submission/26462</a>
             |
           </td>
         </tr>
@@ -23107,7 +23169,7 @@
           <td>Current Exposure Of Morpho SUSDe Or USDe DDM Vault
           </td>
           <td>Active Data</td>
-          <td>Current target exposure of Morpho sUSDe or USDe vault is: 375,000,000 USDS</td>
+          <td>Current target exposure of Morpho sUSDe or USDe vault is: 275,000,000 USDS</td>
         </tr>
         <tr>
           <td>
@@ -23144,7 +23206,7 @@
           </td>
           <td>Current Remaining Amount</td>
           <td>Active Data</td>
-          <td>Remaining available one-time budget for the Launch Project:• 5,000,001 USDS• 8,400,000 SKY -
+          <td>Remaining available one-time budget for the Launch Project:• 1 USDS• 8,400,000 SKY -
             The SKY can at most be spent at the rate of 48,000,000 SKY per month.</td>
         </tr>
         <tr>
@@ -33459,7 +33521,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current Dai risk parameters are:• LTV: 0%• Liquidation Threshold: 0.01%• E-mode Category: N/A• Liquidation Bonus: 4.5%• Reserve Factor: 0%• Supply Cap: N/A• Borrow Cap: N/A• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: Yes.<br>The Dai Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -33467,7 +33529,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: SSR value• Slope 1: 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
+          <td>The current USDS risk parameters are:• LTV: 0%• Liquidation Threshold: 0%• E-mode Category: N/A• Liquidation Bonus: 10%• Reserve Factor: 0%• Supply Cap: Unlimited• Borrow Cap: Unlimited• Optimal Utilization: 80%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: SSR + 0.75%• Slope 2: 15%• Reserve State: Active• Collateral: Yes• Borrowing: Yes• Isolated Collateral: No• Isolated Borrowing: Yes• Siloed Borrowing: No• Flash Loan Enabled: No.<br>The USDS Borrow Rate is set through the Interest Rate Model as a spread over the Sky Savings Rate. The spread is set directly by the Stability Facilitators in consultation with the Stability Scope Advisors.</td>
         </tr>
         <tr>
           <td>
@@ -33491,7 +33553,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 45%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
+          <td>The current WBTC risk parameters are:• LTV: 0%• Liquidation Threshold: 40%• E-mode Category: N/A• Liquidation Bonus: 7%• Reserve Factor: 20%• Supply Cap: Set by cap automator• Borrow Cap: Set by cap automator• Optimal Utilization: 60%• Isolated Debt Ceiling: N/A• Base Rate: 0%• Slope 1: 2%• Slope 2: 300%• Reserve State: Active• Collateral: Yes• Borrowing: No• Isolated Collateral: No• Isolated Borrowing: No• Siloed Borrowing: No• Flash Loan Enabled: No</td>
         </tr>
         <tr>
           <td>
