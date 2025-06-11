@@ -19673,733 +19673,370 @@
       <tbody>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Type Specification
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Type Specification Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Type Specification Type
           </td>
           <td>Type Specification</td>
-          <td>The Type Specification Type is used for Type Specification Documents that specify the
-            characteristics of each of the different Document Types. It ensures that all Type Specifications
-            contain all necessary information to make it easy to reason about whether a document follows the
-            requirements for its type.</td>
-          <td>"Type Name": The Type Name Component must contain the name of the Document Type"Type Overview": The
-            Type Overview Component must contain high level information as human-readable text about the type,
-            such as what it is used for and why it is necessary."Type Components": If the Type has Components,
-            they must be specified in this Component as a nested object."Type Category": This Component must
-            specify whether the Type is an Immutable Document, a Primary Document, a Supporting Document, or a
-            Translation Document."Document Identifier Rules": This Component must specify as human-readable text
-            rules related to the Document Identifier for Atlas Documents of this Type, and their locations in
-            the Document Trees."Additional Logic": This Component can contain additional logic that applies to
-            all Documents of the Type.</td>
+          <td>The Type Specification Type is used for Type Specification Documents that specify the characteristics of each of the different Document Types. It ensures that all Type Specifications contain all necessary information to make it easy to reason about whether a document follows the requirements for its type.</td>
+          <td>"Type Name": The Type Name Component must contain the name of the Document Type"Type Overview": The Type Overview Component must contain high level information as human-readable text about the type, such as what it is used for and why it is necessary."Type Components": If the Type has Components, they must be specified in this Component as a nested object."Type Category": This Component must specify whether the Type is an Immutable Document, a Primary Document, a Supporting Document, or a Translation Document."Document Identifier Rules": This Component must specify as human-readable text rules related to the Document Identifier for Atlas Documents of this Type, and their locations in the Document Trees."Additional Logic": This Component can contain additional logic that applies to all Documents of the Type.</td>
           <td>Primary Document</td>
           <td>Type Specification Documents must follow the Document Identifier rules for Primary Documents.</td>
           <td>The rules specified in Type Specification Documents must be followed for all Atlas Documents.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Atlas Preamble
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Atlas Preamble Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Atlas Preamble Type</td>
           <td>Type Specification</td>
-          <td>The Atlas Preamble Type is used for the Atlas Preamble Document Tree which starts at the 0th
-            position of the first layer of the Atlas. The Atlas Preamble details the Spirit of the Atlas in
-            human-readable language, and specifies important definitions for understanding the Spirit of the
-            Atlas, that must be used as context when interpreting all other parts of the Atlas.</td>
-          <td>"Content": The content Component is very flexible and defines in broad human-readable language the
-            Spirit of the Atlas.</td>
+          <td>The Atlas Preamble Type is used for the Atlas Preamble Document Tree which starts at the 0th position of the first layer of the Atlas. The Atlas Preamble details the Spirit of the Atlas in human-readable language, and specifies important definitions for understanding the Spirit of the Atlas, that must be used as context when interpreting all other parts of the Atlas.</td>
+          <td>"Content": The content Component is very flexible and defines in broad human-readable language the Spirit of the Atlas.</td>
           <td>Immutable Document</td>
           <td>Atlas Preamble Documents are located at A.0 or as nested Documents one layer below A.0.</td>
-          <td>Atlas Preamble Documents are immutable, foundational parts of the Atlas and their content must be
-            considered when interpreting all other Atlas Documents.</td>
+          <td>Atlas Preamble Documents are immutable, foundational parts of the Atlas and their content must be considered when interpreting all other Atlas Documents.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Scope Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Scope Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Scope Type</td>
           <td>Type Specification</td>
-          <td>The Scope Type is used for the six nonzero Immutable Documents of the first layer of the Atlas that
-            directly describe focus areas, principles, rules and processes of Sky Governance. Scope Documents
-            define the broad boundaries, requirements and objectives of each of the six Atlas Scopes, so that they
-            together can fully cover all activities that are needed for Sky to function while maintaining its
-            resilient equilibrium.</td>
-          <td>"Content": The content Component is very flexible and defines in broad human-readable language core
-            principles, rules and processes.</td>
+          <td>The Scope Type is used for the six nonzero Immutable Documents of the first layer of the Atlas that directly describe focus areas, principles, rules and processes of Sky Governance. Scope Documents define the broad boundaries, requirements and objectives of each of the six Atlas Scopes, so that they together can fully cover all activities that are needed for Sky to function while maintaining its resilient equilibrium.</td>
+          <td>"Content": The content Component is very flexible and defines in broad human-readable language core principles, rules and processes.</td>
           <td>Immutable Document</td>
           <td>Scope Documents have the Document Identifiers from A.1 to A.6.</td>
-          <td>Scope Documents are immutable, foundational parts of the Atlas and their content must be considered
-            when interpreting all principles, rules and processes of Atlas Documents nested below them</td>
+          <td>Scope Documents are immutable, foundational parts of the Atlas and their content must be considered when interpreting all principles, rules and processes of Atlas Documents nested below them</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Article Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Article Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Article Type</td>
           <td>Type Specification</td>
-          <td>The Article Type is used for the second layer documents nested below the six Scope documents of the
-            Atlas. They directly describe individual focus areas that together fully cover everything needed for
-            the purpose of the Scope to be fulfilled.</td>
-          <td>"Content": The content Component is very flexible and defines in broad human-readable language core
-            principles, rules and processes of the specific focus area of the Scope that the Article covers, and
-            provides the starting point, requirements, boundaries, and in some cases immutable specifications,
-            needed to develop the Adaptive Documents that are nested at lower layers of the Document Trees to
-            maximally fulfill their practical purpose without violating the Spirit of the Atlas.</td>
+          <td>The Article Type is used for the second layer documents nested below the six Scope documents of the Atlas. They directly describe individual focus areas that together fully cover everything needed for the purpose of the Scope to be fulfilled.</td>
+          <td>"Content": The content Component is very flexible and defines in broad human-readable language core principles, rules and processes of the specific focus area of the Scope that the Article covers, and provides the starting point, requirements, boundaries, and in some cases immutable specifications, needed to develop the Adaptive Documents that are nested at lower layers of the Document Trees to maximally fulfill their practical purpose without violating the Spirit of the Atlas.</td>
           <td>Immutable Document</td>
           <td>Article Documents have Document Identifiers one layer below the Scope Documents.</td>
-          <td>Article Documents are immutable, foundational parts of the Atlas and their content must be
-            considered when interpreting all principles, rules and processes of Atlas Documents nested below
-            them.</td>
+          <td>Article Documents are immutable, foundational parts of the Atlas and their content must be considered when interpreting all principles, rules and processes of Atlas Documents nested below them.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Section Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Section Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Section Type</td>
           <td>Type Specification</td>
-          <td>The Section Type is used for the third layer of Immutable Documents nested under the Articles of
-            each Scope in the Atlas. Section Documents provide additional structure and specification to the
-            principles, rules and processes within the focus area of the Article. The Section Type acts as a
-            foundation and boundary against misalignment of the Adaptive Documents that are nested below it.
-            Generally, Section Documents should be "atomized", or restricted to specifying only a single
-            discrete unit of logic.</td>
-          <td>"Content": The content Component is very flexible and provides in-depth human-readable language to
-            elaborate on the specific principles, rules, and processes that operationalize the Section's parent
-            Article.</td>
+          <td>The Section Type is used for the third layer of Immutable Documents nested under the Articles of each Scope in the Atlas. Section Documents provide additional structure and specification to the principles, rules and processes within the focus area of the Article. The Section Type acts as a foundation and boundary against misalignment of the Adaptive Documents that are nested below it. Generally, Section Documents should be "atomized", or restricted to specifying only a single discrete unit of logic.</td>
+          <td>"Content": The content Component is very flexible and provides in-depth human-readable language to elaborate on the specific principles, rules, and processes that operationalize the Section's parent Article.</td>
           <td>Immutable Document</td>
           <td>Section Documents have Document Identifiers one layer below the Article Documents.</td>
-          <td>Section Documents are immutable parts of the Atlas and their content must be considered when
-            interpreting all principles, rules and processes of Adaptive Documents nested below them.</td>
+          <td>Section Documents are immutable parts of the Atlas and their content must be considered when interpreting all principles, rules and processes of Adaptive Documents nested below them.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Core Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Core Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Core Type</td>
           <td>Type Specification</td>
-          <td>The Core Type is the basic building block of the Primary Documents. Core Documents flexibly specify
-            the core principles, rules and processes required to fulfil the specifications made by the Immutable
-            Documents with a focus on clarity, practicality and applicability.</td>
-          <td>"Content": The content Component is very flexible and defines in human-readable language core
-            principles, rules or processes, or subcomponents thereof.</td>
+          <td>The Core Type is the basic building block of the Primary Documents. Core Documents flexibly specify the core principles, rules and processes required to fulfil the specifications made by the Immutable Documents with a focus on clarity, practicality and applicability.</td>
+          <td>"Content": The content Component is very flexible and defines in human-readable language core principles, rules or processes, or subcomponents thereof.</td>
           <td>Primary Document</td>
-          <td>Core Documents follow the Document Identifier Rules of Primary Documents. Core Documents have
-            Document Identifiers that are 4 layers or deeper in the Document Tree, and cannot contain 0's
-            [zeros]. Within these constraints, Core Documents can have whatever Document Identifier that is
-            useful for their purpose.</td>
+          <td>Core Documents follow the Document Identifier Rules of Primary Documents. Core Documents have Document Identifiers that are 4 layers or deeper in the Document Tree, and cannot contain 0's [zeros]. Within these constraints, Core Documents can have whatever Document Identifier that is useful for their purpose.</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Supporting Root
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Supporting Root Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Supporting Root Type
           </td>
           <td>Type Specification</td>
-          <td>The Supporting Root Type is used to mark the beginning of the Supporting Document subtree of an
-            Immutable or Primary Document. All Immutable and Primary Documents must have a Supporting Root.</td>
+          <td>The Supporting Root Type is used to mark the beginning of the Supporting Document subtree of an Immutable or Primary Document. All Immutable and Primary Documents must have a Supporting Root.</td>
           <td></td>
           <td>Supporting Document</td>
           <td>Supporting Root Documents must always be located at the .0 position of its Target Document.</td>
-          <td>The Supporting Root Documents have no function other than structurally acting as a directory for
-            nested Supporting Documents in a standardized format. All Immutable Documents and Primary Documents
-            must have a Supporting Root Document attached.</td>
+          <td>The Supporting Root Documents have no function other than structurally acting as a directory for nested Supporting Documents in a standardized format. All Immutable Documents and Primary Documents must have a Supporting Root Document attached.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Original Context
-              Data Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Original Context Data Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Original Context Data
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Original Context Data Type</td>
           <td>Type Specification</td>
-          <td>Original Context Data Documents explain the intention and reasoning behind the content of its Target
-            Document, to make interpretation and extrapolation of its contents easier, and provide additional
-            information to other forms of analysis. Original Context Data helps anchor the fundamental purpose
-            and meaning of the target document to its original context, and should help mitigate cultural drift
-            over time. Original Context Data can contain unstructured data used for genesis data integration of
-            early Atlas Documents. Original Context Data Documents can form nested subtrees to organize their
-            data if relevant.</td>
-          <td>"Content": The Content Component should contain all relevant information to understand the intention
-            and reasoning behind the wording and elements of the main Document.</td>
+          <td>Original Context Data Documents explain the intention and reasoning behind the content of its Target Document, to make interpretation and extrapolation of its contents easier, and provide additional information to other forms of analysis. Original Context Data helps anchor the fundamental purpose and meaning of the target document to its original context, and should help mitigate cultural drift over time. Original Context Data can contain unstructured data used for genesis data integration of early Atlas Documents. Original Context Data Documents can form nested subtrees to organize their data if relevant.</td>
+          <td>"Content": The Content Component should contain all relevant information to understand the intention and reasoning behind the wording and elements of the main Document.</td>
           <td>Supporting Document</td>
-          <td>Original Context Data Documents must always be located at the .0.1 position of their Target
-            Document, or nested in a subtree of Original Context Data Documents below the .0.1 position.</td>
-          <td>The Original Context Data Document should be in a finished form alongside the creation or
-            modification of its Target Document, as it aims to capture the original context and intention of the
-            contents of the Target Document. However, it can and should be modified if new evidence and data
-            comes to light that helps to better describe the original context and intention of the Target
-            Document, or if new perspectives or new external events makes it possible and useful to modify the
-            Original Context Data Document in a way that doesn't contradict its earlier language.</td>
+          <td>Original Context Data Documents must always be located at the .0.1 position of their Target Document, or nested in a subtree of Original Context Data Documents below the .0.1 position.</td>
+          <td>The Original Context Data Document should be in a finished form alongside the creation or modification of its Target Document, as it aims to capture the original context and intention of the contents of the Target Document. However, it can and should be modified if new evidence and data comes to light that helps to better describe the original context and intention of the Target Document, or if new perspectives or new external events makes it possible and useful to modify the Original Context Data Document in a way that doesn't contradict its earlier language.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation
-              Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation
-            Directory Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation Directory Type</td>
           <td>Type Specification</td>
-          <td>The Element Annotation Directory Type is a directory used to list all of the Element Annotation
-            Documents pertaining to a Target Document.</td>
-          <td>"Directory index": This Component should contain a list of the Element Annotation Documents
-            contained within, with keys being the document identifiers and values being their document names.
-          </td>
+          <td>The Element Annotation Directory Type is a directory used to list all of the Element Annotation Documents pertaining to a Target Document.</td>
+          <td>"Directory index": This Component should contain a list of the Element Annotation Documents contained within, with keys being the document identifiers and values being their document names.</td>
           <td>Supporting Document</td>
-          <td>Element Annotation Directory Documents must always be located at the .0.3 position of their Target
-            Document.</td>
+          <td>Element Annotation Directory Documents must always be located at the .0.3 position of their Target Document.</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Element Annotation Type
           </td>
           <td>Type Specification</td>
-          <td>Element Annotation Documents provide further specification of the semantic meaning of vague or
-            ambiguous terms in the Target Document. Element Annotation Documents can also briefly define
-            technical jargon that is unique to the Target Document. Element Annotation Documents can be thought
-            of as serving a function similar to that of a footnote: they can provide useful context or
-            commentary. Element Annotations should be as concise as possible.</td>
-          <td>"Element": The Element Component should contain the unique word or phrase from the Target Document
-            that is being annotated."Annotation": The Annotation Component should concisely disambiguate and
-            bound the semantic meaning of problematic terms in the Target Document. Such terms can be vague,
-            ambiguous or technical jargon specific to the Target Document.</td>
+          <td>Element Annotation Documents provide further specification of the semantic meaning of vague or ambiguous terms in the Target Document. Element Annotation Documents can also briefly define technical jargon that is unique to the Target Document. Element Annotation Documents can be thought of as serving a function similar to that of a footnote: they can provide useful context or commentary. Element Annotations should be as concise as possible.</td>
+          <td>"Element": The Element Component should contain the unique word or phrase from the Target Document that is being annotated."Annotation": The Annotation Component should concisely disambiguate and bound the semantic meaning of problematic terms in the Target Document. Such terms can be vague, ambiguous or technical jargon specific to the Target Document.</td>
           <td>Supporting Document</td>
-          <td>Element Annotation Documents must always be located as subdocuments to the Element Annotation
-            Directory Document of their Target Document. Element Annotation documents are located at the .0.3.X
-            position, with X being the incremented number.</td>
-          <td>Element Annotation Documents should be updated as necessary to reflect changes in the understanding
-            or interpretation of the Element and/or any related Atlas document, while maintaining consistency
-            with the Target Document. The Element Annotation should not contradict its Target Document or other
-            context data of the Target Document.The "Name" property of each Element Annotation Document instance
-            must follow a standardized template: the annotated Element is listed first, followed by a hyphen,
-            and the phrase "Element Annotation".</td>
+          <td>Element Annotation Documents must always be located as subdocuments to the Element Annotation Directory Document of their Target Document. Element Annotation documents are located at the .0.3.X position, with X being the incremented number.</td>
+          <td>Element Annotation Documents should be updated as necessary to reflect changes in the understanding or interpretation of the Element and/or any related Atlas document, while maintaining consistency with the Target Document. The Element Annotation should not contradict its Target Document or other context data of the Target Document.The "Name" property of each Element Annotation Document instance must follow a standardized template: the annotated Element is listed first, followed by a hyphen, and the phrase "Element Annotation".</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-              Tenet Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet
-            Directory Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet Directory Type</td>
           <td>Type Specification</td>
-          <td>The Facilitator Action Tenet Directory Type is a directory Type used to list all of the Facilitator
-            Action Tenet Documents that pertain to a Target Document. Facilitator Action Tenet Documents specify
-            adjudication principles and guidelines that are directly derived from the Target Document. When a
-            controversy concerns the Target Document, the Facilitators must consult and apply the pertinent
-            Action Tenet(s) in their decision-making.</td>
-          <td>"Directory index": This Component should contain a list of the Facilitator Action Tenets contained
-            within, with keys being the document identifiers and values being their document names.</td>
+          <td>The Facilitator Action Tenet Directory Type is a directory Type used to list all of the Facilitator Action Tenet Documents that pertain to a Target Document. Facilitator Action Tenet Documents specify adjudication principles and guidelines that are directly derived from the Target Document. When a controversy concerns the Target Document, the Facilitators must consult and apply the pertinent Action Tenet(s) in their decision-making.</td>
+          <td>"Directory index": This Component should contain a list of the Facilitator Action Tenets contained within, with keys being the document identifiers and values being their document names.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Action Tenet Directory Documents must always be located at the .0.4 position of their
-            Target Document.</td>
+          <td>Facilitator Action Tenet Directory Documents must always be located at the .0.4 position of their Target Document.</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-              Tenet Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Tenet Type</td>
           <td>Type Specification</td>
-          <td>The Facilitator Action Tenet Type is used to provide concrete adjudication principles derived from
-            its Target Document. It distills the governance logic of the Target Document into a concise
-            principle to guide Facilitators in resolving disputes related to the Target Document. The practical
-            application of the Tenet is demonstrated by its "Scenario" Subdocuments.</td>
-          <td>"Content": The Tenet Component specifies the adjudication logic, principle or doctrine that is
-            directly derived from the Target Document. This Component can include policy statements underpinning
-            the adjudication principle. Such policy statements can highlight the values that are served by, or
-            the benefits gained from, adhering to the Tenet. When facing edge cases, these policy statements can
-            help Facilitators to extrapolate from the Tenet's logic to achieve the most suitable outcome.</td>
+          <td>The Facilitator Action Tenet Type is used to provide concrete adjudication principles derived from its Target Document. It distills the governance logic of the Target Document into a concise principle to guide Facilitators in resolving disputes related to the Target Document. The practical application of the Tenet is demonstrated by its "Scenario" Subdocuments.</td>
+          <td>"Content": The Tenet Component specifies the adjudication logic, principle or doctrine that is directly derived from the Target Document. This Component can include policy statements underpinning the adjudication principle. Such policy statements can highlight the values that are served by, or the benefits gained from, adhering to the Tenet. When facing edge cases, these policy statements can help Facilitators to extrapolate from the Tenet's logic to achieve the most suitable outcome.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Action Tenet Documents must always be located as subdocuments of the Facilitator Action
-            Tenet Directory Document (which latter is located at position .0.4) of their Target Document. Action
-            Tenet documents are located at the .0.4.X position, with X being the incremented number.</td>
-          <td>Facilitator Action Tenet Documents are likely to be necessary supplements for interpreting the
-            Immutable Document types, as these tend to have generalized, broad language. The Core Document type
-            has the function of operationalizing the Immutable Documents, and thus its language will tend to be
-            far more specific and concrete. For that reason, Action Tenet Supporting Documents may not be
-            necessary for a particular Core Document. This is not a hard-coded rule, however. The determination
-            of whether an Action Tenet Document is needed for any given Atlas document should always be
-            tailor-made.Action Tenet Documents should be created and updated as necessary to reflect changes in
-            governance practices, provide clarity on decision-making processes, and enhance understanding of
-            governance principles and rules. The examples should not contradict their Target Document or other
-            Supporting Documents of the Target Document.If the Action Tenet can be anchored to a specific term
-            from the Target Document, that term is listed first; followed by a hyphen; and then, an abstract of
-            the Action Tenet logic, e.g.: "Organizational Drift - ACs' Mandate When Instigating Action Can Be
-            Traced Back to a Discrete Entity". If the Action Tenet cannot be anchored to a specific term from
-            the Target Document, the "Name" property should simply summarize the Action Tenet logic, e.g.:
-            "Evaluating AC breach of role-specific requirement vs. general requirement".</td>
+          <td>Facilitator Action Tenet Documents must always be located as subdocuments of the Facilitator Action Tenet Directory Document (which latter is located at position .0.4) of their Target Document. Action Tenet documents are located at the .0.4.X position, with X being the incremented number.</td>
+          <td>Facilitator Action Tenet Documents are likely to be necessary supplements for interpreting the Immutable Document types, as these tend to have generalized, broad language. The Core Document type has the function of operationalizing the Immutable Documents, and thus its language will tend to be far more specific and concrete. For that reason, Action Tenet Supporting Documents may not be necessary for a particular Core Document. This is not a hard-coded rule, however. The determination of whether an Action Tenet Document is needed for any given Atlas document should always be tailor-made.Action Tenet Documents should be created and updated as necessary to reflect changes in governance practices, provide clarity on decision-making processes, and enhance understanding of governance principles and rules. The examples should not contradict their Target Document or other Supporting Documents of the Target Document.If the Action Tenet can be anchored to a specific term from the Target Document, that term is listed first; followed by a hyphen; and then, an abstract of the Action Tenet logic, e.g.: "Organizational Drift - ACs' Mandate When Instigating Action Can Be Traced Back to a Discrete Entity". If the Action Tenet cannot be anchored to a specific term from the Target Document, the "Name" property should simply summarize the Action Tenet logic, e.g.: "Evaluating AC breach of role-specific requirement vs. general requirement".</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-              Precedent Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Precedent Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-            Precedent Directory Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Precedent Directory Type</td>
           <td>Type Specification</td>
-          <td>Facilitator Action Precedent Directory Documents list all of the Facilitator Action Precedent
-            Documents that pertain to a Target Document. Facilitator Action Precedent Documents record data
-            about Facilitator Actions, including ongoing actions, that are primarily based on interpretation of
-            content of the Target Document.</td>
-          <td>"Directory index": This Component should contain a list of the Facilitator Action Precedents
-            contained within, with keys being the document identifiers and values being their document names.
-          </td>
+          <td>Facilitator Action Precedent Directory Documents list all of the Facilitator Action Precedent Documents that pertain to a Target Document. Facilitator Action Precedent Documents record data about Facilitator Actions, including ongoing actions, that are primarily based on interpretation of content of the Target Document.</td>
+          <td>"Directory index": This Component should contain a list of the Facilitator Action Precedents contained within, with keys being the document identifiers and values being their document names.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Action Precedent Directory Documents must always be located at the .0.5 position below
-            their Target Document.</td>
-          <td>A Facilitator Action Precedent Directory Document must be updated whenever a new Facilitator Action
-            Precedent Document is added that meaningfully changes what should be contained in the Directory
-            overview Component.</td>
+          <td>Facilitator Action Precedent Directory Documents must always be located at the .0.5 position below their Target Document.</td>
+          <td>A Facilitator Action Precedent Directory Document must be updated whenever a new Facilitator Action Precedent Document is added that meaningfully changes what should be contained in the Directory overview Component.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-              Precedent Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Precedent Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action
-            Precedent Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Action Precedent Type</td>
           <td>Type Specification</td>
-          <td>The Facilitator Action Precedent Type is used to record all the relevant data related to a
-            Facilitator Action, to serve as precedent for future Facilitator Actions and decision-making
-            processes. It is also used for ongoing Facilitator Actions, and the creation of a Facilitator Action
-            Precedent is the formal method that Facilitators use to record Atlas Interpretations, take action
-            against misalignment, or explicitly approve ecosystem activity.</td>
-          <td>"Input": The Input Component must contain a description of the situation or context in which the
-            Facilitator Action takes place. This could include any relevant information, such as the state of
-            governance or the specific issue at hand."Output": The Output Component must contain a description
-            of the Facilitator's action and the outcome or decision that resulted from it. This should provide a
-            clear illustration of how the Facilitator responded to the situation."Label": The Label Component
-            indicates whether the Facilitator's action is considered aligned or misaligned according to the
-            principles and rules of governance. This judgment is intended to guide future actions and decisions.
-            If the label is misaligned, it must also specify the penalty that is applied to the Facilitator for
-            misalignment. The Label must always be marked as Aligned when it is created by the Facilitator, and
-            further action by Sky Governance can directly modify this later according to the specifications
-            of the Atlas Documents relevant to appealing Facilitator Actions.</td>
+          <td>The Facilitator Action Precedent Type is used to record all the relevant data related to a Facilitator Action, to serve as precedent for future Facilitator Actions and decision-making processes. It is also used for ongoing Facilitator Actions, and the creation of a Facilitator Action Precedent is the formal method that Facilitators use to record Atlas Interpretations, take action against misalignment, or explicitly approve ecosystem activity.</td>
+          <td>"Input": The Input Component must contain a description of the situation or context in which the Facilitator Action takes place. This could include any relevant information, such as the state of governance or the specific issue at hand."Output": The Output Component must contain a description of the Facilitator's action and the outcome or decision that resulted from it. This should provide a clear illustration of how the Facilitator responded to the situation."Label": The Label Component indicates whether the Facilitator's action is considered aligned or misaligned according to the principles and rules of governance. This judgment is intended to guide future actions and decisions. If the label is misaligned, it must also specify the penalty that is applied to the Facilitator for misalignment. The Label must always be marked as Aligned when it is created by the Facilitator, and further action by Sky Governance can directly modify this later according to the specifications of the Atlas Documents relevant to appealing Facilitator Actions.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Action Precedent Documents must always be located as subdocuments of the Facilitator
-            Action Precedent Directory Document of their Target Document.</td>
-          <td>Facilitator Action Precedent Documents should be created and updated as necessary to reflect changes
-            in governance practices, provide clarity on decision-making processes, and enhance understanding of
-            governance principles and rules. The Precedents should not contradict their Target Document or other
-            Supporting Documents of the Target Document.</td>
+          <td>Facilitator Action Precedent Documents must always be located as subdocuments of the Facilitator Action Precedent Directory Document of their Target Document.</td>
+          <td>Facilitator Action Precedent Documents should be created and updated as necessary to reflect changes in governance practices, provide clarity on decision-making processes, and enhance understanding of governance principles and rules. The Precedents should not contradict their Target Document or other Supporting Documents of the Target Document.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data
-              Controller Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Controller Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Controller
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Controller Type</td>
           <td>Type Specification</td>
-          <td>Active Data Controller Documents are Primary Documents that can have Active Data Documents attached
-            to them as Supporting Documents; these latter contain variable state that can be directly modified
-            by Facilitators and other processes external to the standard Weekly Governance Cycle or Monthly
-            Governance Cycle (i.e., the Atlas Edit Proposal process). Active Data can be lists of authorized
-            actors, parameters, or externally collected data being prepared for data integration with the Atlas.
-          </td>
-          <td>"Content": The Content Component of Active Data Controller Documents is used to define: 1) the
-            entities who are authorized to modify the child Active Data Documents and 2) the authorized process
-            by which said Active Data Documents are modified. If applicable, the Custom Components format and
-            requirements of the Active Data Documents must be defined as well.</td>
+          <td>Active Data Controller Documents are Primary Documents that can have Active Data Documents attached to them as Supporting Documents; these latter contain variable state that can be directly modified by Facilitators and other processes external to the standard Weekly Governance Cycle or Monthly Governance Cycle (i.e., the Atlas Edit Proposal process). Active Data can be lists of authorized actors, parameters, or externally collected data being prepared for data integration with the Atlas.</td>
+          <td>"Content": The Content Component of Active Data Controller Documents is used to define: 1) the entities who are authorized to modify the child Active Data Documents and 2) the authorized process by which said Active Data Documents are modified. If applicable, the Custom Components format and requirements of the Active Data Documents must be defined as well.</td>
           <td>Primary Document</td>
-          <td>Active Data Controller Documents follow the Document Identifier Rules of Primary Documents. Active
-            Data Controller Documents have Document Identifiers that are 4 layers or deeper in the Document
-            Tree, and cannot contain 0's [zeros]. Within these constraints, Active Data Controller Documents can
-            have whatever Document Identifier that is useful for their purpose.</td>
-          <td>Active Data Controller Documents must have an Active Data Directory Document located below it at the
-            .0.6 position. The Active Data Controller Document can reference its Active Data subdocuments for
-            its own logic. This allows Active Data Documents to be self-improving and adaptive at high speeds.
-          </td>
+          <td>Active Data Controller Documents follow the Document Identifier Rules of Primary Documents. Active Data Controller Documents have Document Identifiers that are 4 layers or deeper in the Document Tree, and cannot contain 0's [zeros]. Within these constraints, Active Data Controller Documents can have whatever Document Identifier that is useful for their purpose.</td>
+          <td>Active Data Controller Documents must have an Active Data Directory Document located below it at the .0.6 position. The Active Data Controller Document can reference its Active Data subdocuments for its own logic. This allows Active Data Documents to be self-improving and adaptive at high speeds.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data
-              Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Directory
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Directory Type</td>
           <td>Type Specification</td>
-          <td>The Active Data Directory Type is a directory Type used to list all of the Active Data Documents
-            that pertain to an Active Data Controller Document. Active Data Documents contain variable state
-            that can be directly modified by Facilitators and other processes external to the standard Atlas
-            Edit Weekly Cycle or Atlas Edit Monthly Cycle (i.e., the Atlas Edit Proposal process).</td>
-          <td>"Directory overview": This Component should contain a brief explanation of overall patterns and
-            themes of the Active Data Documents contained within.</td>
+          <td>The Active Data Directory Type is a directory Type used to list all of the Active Data Documents that pertain to an Active Data Controller Document. Active Data Documents contain variable state that can be directly modified by Facilitators and other processes external to the standard Atlas Edit Weekly Cycle or Atlas Edit Monthly Cycle (i.e., the Atlas Edit Proposal process).</td>
+          <td>"Directory overview": This Component should contain a brief explanation of overall patterns and themes of the Active Data Documents contained within.</td>
           <td>Supporting Document</td>
-          <td>Active Data Directory Documents must always be located at the .0.6 position of their Active Data
-            Controller Document or Budget Controller Document.</td>
-          <td>An Active Data Directory Document should be updated whenever a new Active Data Document is added
-            that meaningfully changes what should be contained in the Directory overview Component.</td>
+          <td>Active Data Directory Documents must always be located at the .0.6 position of their Active Data Controller Document or Budget Controller Document.</td>
+          <td>An Active Data Directory Document should be updated whenever a new Active Data Document is added that meaningfully changes what should be contained in the Directory overview Component.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Active Data Type</td>
           <td>Type Specification</td>
-          <td>The Active Data Type is used for Supporting Documents that contain variable state that can be
-            directly modified by Facilitators and other processes external to the standard Weekly Governance
-            Cycle or the Monthly Governance Cycle (i.e., the Atlas Edit Proposal process). Active Data can be
-            lists of authorized actors, parameters, or externally collected data being prepared for data
-            integration with the Atlas.</td>
-          <td>"Content": This component is very flexible and represents in human-readable language the mutable
-            data that is modifiable pursuant to the logic of the parent Active Data Controller."Custom
-            Components": If present, the Custom Components of Active Data Documents are defined by their parent
-            Active Data Controller Document. They can contain the variable state that is directly modifiable by
-            processes external to the standard Weekly Governance Cycle or the Monthly Governance Cycle.</td>
+          <td>The Active Data Type is used for Supporting Documents that contain variable state that can be directly modified by Facilitators and other processes external to the standard Weekly Governance Cycle or the Monthly Governance Cycle (i.e., the Atlas Edit Proposal process). Active Data can be lists of authorized actors, parameters, or externally collected data being prepared for data integration with the Atlas.</td>
+          <td>"Content": This component is very flexible and represents in human-readable language the mutable data that is modifiable pursuant to the logic of the parent Active Data Controller."Custom Components": If present, the Custom Components of Active Data Documents are defined by their parent Active Data Controller Document. They can contain the variable state that is directly modifiable by processes external to the standard Weekly Governance Cycle or the Monthly Governance Cycle.</td>
           <td>Supporting Document</td>
-          <td>Active Data Documents must always be located as subdocuments of the Active Data Directory Document
-            of their Active Data Controller Document.</td>
-          <td>Active Data Documents can contain arbitrary types of data, including large amounts of data or code.
-            The function and purpose of the contained data depends on the logic specified in the Active Data
-            Controller Document.</td>
+          <td>Active Data Documents must always be located as subdocuments of the Active Data Directory Document of their Active Data Controller Document.</td>
+          <td>Active Data Documents can contain arbitrary types of data, including large amounts of data or code. The function and purpose of the contained data depends on the logic specified in the Active Data Controller Document.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Controller
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Controller Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Controller Type
           </td>
           <td>Type Specification</td>
-          <td>The Budget Controller Type is used to manage the budgets used by Sky to operationalize the Scopes
-            to achieve the purpose and goals of the Spirit of the Atlas. It controls variable state that
-            specifically authorizes executive votes to disburse payments from the Sky Surplus Buffer, or
-            authorize smart contracts to disburse such payments. The Budget Controller Document determines the
-            rules and processes for modifying and using the budgets contained in the Budget Documents that are
-            attached to it. Budget Controllers also have Active Data Documents attached that are used to report
-            on the status and results of projects funded through the Budget Documents.</td>
-          <td>"Content": The Content Component of Budget Controller Documents is used to describe flexible rules
-            of how the Active Data Documents and Budget Documents must behave, and how they can be modified. The
-            Custom Components format and requirements of the Active Data Documents and the Budget Documents must
-            be defined as well.</td>
+          <td>The Budget Controller Type is used to manage the budgets used by Sky to operationalize the Scopes to achieve the purpose and goals of the Spirit of the Atlas. It controls variable state that specifically authorizes executive votes to disburse payments from the Sky Surplus Buffer, or authorize smart contracts to disburse such payments. The Budget Controller Document determines the rules and processes for modifying and using the budgets contained in the Budget Documents that are attached to it. Budget Controllers also have Active Data Documents attached that are used to report on the status and results of projects funded through the Budget Documents.</td>
+          <td>"Content": The Content Component of Budget Controller Documents is used to describe flexible rules of how the Active Data Documents and Budget Documents must behave, and how they can be modified. The Custom Components format and requirements of the Active Data Documents and the Budget Documents must be defined as well.</td>
           <td>Primary Document</td>
           <td>Budget Controller Documents follow the Document Identifier Rules of Primary Documents.</td>
-          <td>Budget Controller Documents must have an Active Data Directory Document located below it at the .0.6
-            position, and a Budget Directory Document located below it at the .0.7 position.</td>
+          <td>Budget Controller Documents must have an Active Data Directory Document located below it at the .0.6 position, and a Budget Directory Document located below it at the .0.7 position.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Directory
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Directory Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Directory Type
           </td>
           <td>Type Specification</td>
-          <td>The Budget Directory Type is a directory Type used to list all of the Budget Documents that pertain
-            to a Budget Controller Document.</td>
-          <td>"Directory overview": This Component should contain a brief explanation of overall patterns and
-            themes of the Budget Documents contained within.</td>
+          <td>The Budget Directory Type is a directory Type used to list all of the Budget Documents that pertain to a Budget Controller Document.</td>
+          <td>"Directory overview": This Component should contain a brief explanation of overall patterns and themes of the Budget Documents contained within.</td>
           <td>Supporting Document</td>
-          <td>Budget Directory Documents must always be located at the .0.7 position of their Budget Controller
-            Document.</td>
-          <td>A Budget Directory Document should be updated whenever a new Budget Document is added that
-            meaningfully changes what should be contained in the Directory overview Component.</td>
+          <td>Budget Directory Documents must always be located at the .0.7 position of their Budget Controller Document.</td>
+          <td>A Budget Directory Document should be updated whenever a new Budget Document is added that meaningfully changes what should be contained in the Directory overview Component.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Document
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Document Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Budget Document Type
           </td>
           <td>Type Specification</td>
-          <td>Budget Documents contain state that can authorize executive votes to disburse payments from the
-            Sky Surplus Buffer, or authorize smart contracts to disburse such payments.</td>
-          <td>"Custom Components": The Custom Components of Budget Documents are defined by the Budget Controller
-            Document. They contain the variable state that can be directly modified.</td>
+          <td>Budget Documents contain state that can authorize executive votes to disburse payments from the Sky Surplus Buffer, or authorize smart contracts to disburse such payments.</td>
+          <td>"Custom Components": The Custom Components of Budget Documents are defined by the Budget Controller Document. They contain the variable state that can be directly modified.</td>
           <td>Supporting Document</td>
-          <td>Budget Documents must always be located as subdocuments of the Budget Directory Document of their
-            Budget Controller Document.</td>
-          <td>Budget Documents specify a budget rate expressed as SKY or USDS per unit of time.
-            Additionally, they can contain large amounts of data, or code, and their function and purpose
-            depends on their Budget Controller Document. Budget Documents can be modified directly through
-            processes external to the standard Atlas Edit Proposal process as specified by their Budget
-            Controller Document.</td>
+          <td>Budget Documents must always be located as subdocuments of the Budget Directory Document of their Budget Controller Document.</td>
+          <td>Budget Documents specify a budget rate expressed as SKY or USDS per unit of time. Additionally, they can contain large amounts of data, or code, and their function and purpose depends on their Budget Controller Document. Budget Documents can be modified directly through processes external to the standard Atlas Edit Proposal process as specified by their Budget Controller Document.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition
-              Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition Directory
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition Directory Type</td>
           <td>Type Specification</td>
-          <td>The Definition Directory Type is used for Target Documents with many complex subdocuments, and acts
-            as a directory for definitions of unique terms that are only referenced in its subdocuments.</td>
+          <td>The Definition Directory Type is used for Target Documents with many complex subdocuments, and acts as a directory for definitions of unique terms that are only referenced in its subdocuments.</td>
           <td></td>
           <td>Supporting Document</td>
           <td>Definition Directory Documents must always be located at the .0.0 position of their Target Document.
           </td>
-          <td>Definition Directory Documents only need to be present in Atlas Documents that require definitions
-            for unique terms in their Subdocuments.</td>
+          <td>Definition Directory Documents only need to be present in Atlas Documents that require definitions for unique terms in their Subdocuments.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Definition Type</td>
           <td>Type Specification</td>
-          <td>The Definition Type is used for documents that define unique concepts contained in subdocuments to
-            the Target Document of the Definition Document</td>
-          <td>"Term": The Term Component contains the name of the term that is being defined."Definition": The
-            Definition Component contains the detailed definition of the term.</td>
+          <td>The Definition Type is used for documents that define unique concepts contained in subdocuments to the Target Document of the Definition Document</td>
+          <td>"Term": The Term Component contains the name of the term that is being defined."Definition": The Definition Component contains the detailed definition of the term.</td>
           <td>Supporting Document</td>
-          <td>Definition Documents must always be located as subdocuments of the Definition Directory Document of
-            their Target Document.</td>
-          <td>To the extent possible it should be avoided to have the same term defined multiple times in the
-            Atlas, and instead always put a single definition at a location in the Atlas that covers all of its
-            use. The main exception to this principle should be when relatively niche terms are present in two
-            different Scopes.</td>
+          <td>Definition Documents must always be located as subdocuments of the Definition Directory Document of their Target Document.</td>
+          <td>To the extent possible it should be avoided to have the same term defined multiple times in the Atlas, and instead always put a single definition at a location in the Atlas that covers all of its use. The main exception to this principle should be when relatively niche terms are present in two different Scopes.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Translation
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Translation Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Translation Type</td>
           <td>Type Specification</td>
-          <td>The Translation Type is used for creating translated versions of Atlas Documents to make the Atlas
-            accessible to non-English speakers. Translation Documents are Accessory Documents and they do not
-            have any impact on the governance or operation of Sky, but they are important for accessibility
-            and inclusivity.</td>
-          <td>"Original Document Type": The Type of the original document that is being translated must be
-            specified in this component."Language": The Language Component specifies the language in which the
-            Atlas Document is translated."Translated Name": The Translated Name component contains the name of
-            the translated Atlas Document in the new language. "Custom": Translation Documents contain Custom
-            Components that mirror the components of the original Document with component name and component
-            data translated to the new language.</td>
+          <td>The Translation Type is used for creating translated versions of Atlas Documents to make the Atlas accessible to non-English speakers. Translation Documents are Accessory Documents and they do not have any impact on the governance or operation of Sky, but they are important for accessibility and inclusivity.</td>
+          <td>"Original Document Type": The Type of the original document that is being translated must be specified in this component."Language": The Language Component specifies the language in which the Atlas Document is translated."Translated Name": The Translated Name component contains the name of the translated Atlas Document in the new language. "Custom": Translation Documents contain Custom Components that mirror the components of the original Document with component name and component data translated to the new language.</td>
           <td>Accessory Document</td>
-          <td>
-            Translation Documents are located as subdocuments to the Atlas Document they are translating. Their
-            Document Identifier is the same as the Atlas Document they are translating, with an additional
-            suffix that represents the language of the translation. For example, a Spanish translation of <dfn>A.1</dfn>
-            would have the
-            Document Identifier A.1.es.
-          </td>
-          <td>Translation Documents should be updated whenever the Atlas Document they are translating is updated
-            to ensure that the translation remains accurate. However, in case of any discrepancies or
-            contradictions, the original English version of the Atlas Document always takes precedence.</td>
+          <td>Translation Documents are located as subdocuments to the Atlas Document they are translating. Their Document Identifier is the same as the Atlas Document they are translating, with an additional suffix that represents the language of the translation. For example, a Spanish translation of <dfn>A.1</dfn> would have the Document Identifier A.1.es.</td>
+          <td>Translation Documents should be updated whenever the Atlas Document they are translating is updated to ensure that the translation remains accurate. However, in case of any discrepancies or contradictions, the original English version of the Atlas Document always takes precedence.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Archive Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Archive Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Archive Type</td>
           <td>Type Specification</td>
-          <td>The Archive Type is used for storing historical versions of Atlas Documents. Archive Documents are
-            Accessory Documents and they do not have any impact on the governance or operation of Sky, but
-            they are important for maintaining a record of changes and evolution of the Atlas over time.</td>
-          <td>"Original Document Type": The Type of the original document that is being archived must be specified
-            in this component."Custom": Archive Documents contain Custom Components that mirror the components
-            of the original Document at the time of the version being archived.</td>
+          <td>The Archive Type is used for storing historical versions of Atlas Documents. Archive Documents are Accessory Documents and they do not have any impact on the governance or operation of Sky, but they are important for maintaining a record of changes and evolution of the Atlas over time.</td>
+          <td>"Original Document Type": The Type of the original document that is being archived must be specified in this component."Custom": Archive Documents contain Custom Components that mirror the components of the original Document at the time of the version being archived.</td>
           <td>Accessory Document</td>
-          <td>
-            Archive Documents are located as subdocuments to the Atlas Document they are archiving. Their
-            Document Identifier is the same as the Atlas Document they are archiving, with an additional suffix
-            'v' followed by the version number of the document being archived. For example, the third version of
-            <dfn>A.1</dfn> would have the
-            Document Identifier A.1.v3.
-          </td>
-          <td>Archive Documents should be created whenever an Atlas Document is updated to ensure that a record of
-            all previous versions is maintained. They are not meant to be modified or deleted once created.</td>
+          <td>Archive Documents are located as subdocuments to the Atlas Document they are archiving. Their Document Identifier is the same as the Atlas Document they are archiving, with an additional suffix 'v' followed by the version number of the document being archived. For example, the third version of <dfn>A.1</dfn> would have the Document Identifier A.1.v3.</td>
+          <td>Archive Documents should be created whenever an Atlas Document is updated to ensure that a record of all previous versions is maintained. They are not meant to be modified or deleted once created.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Navigation Hub
-              Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Navigation Hub Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Navigation Hub Type</td>
           <td>Type Specification</td>
-          <td>The Navigation Hub Type is used for Navigation Hubs that provide summarized content and links to
-            child documents or Focus Hubs that dive deeper or provide supporting data for a specific action. It
-            acts as an entry point and guide for navigating the content of an Immutable or Primary Document.
-          </td>
-          <td>"Content": The Content Component must contain summarized information and links to the child
-            documents of the associated Immutable or Primary Document. It must also link to the nearest
-            navigation hubs below its position if its Child Documents do not have Navigation Hubs.</td>
+          <td>The Navigation Hub Type is used for Navigation Hubs that provide summarized content and links to child documents or Focus Hubs that dive deeper or provide supporting data for a specific action. It acts as an entry point and guide for navigating the content of an Immutable or Primary Document.</td>
+          <td>"Content": The Content Component must contain summarized information and links to the child documents of the associated Immutable or Primary Document. It must also link to the nearest navigation hubs below its position if its Child Documents do not have Navigation Hubs.</td>
           <td>Supporting Document</td>
-          <td>Navigation Hub Documents must be located at the .0.0 position of an Immutable or Primary Document.
-          </td>
-          <td>Navigation Hubs serve as a guide for users to understand and navigate the main content of the
-            associated Immutable or Primary Document.</td>
+          <td>Navigation Hub Documents must be located at the .0.0 position of an Immutable or Primary Document.</td>
+          <td>Navigation Hubs serve as a guide for users to understand and navigate the main content of the associated Immutable or Primary Document.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Focus Hub Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Focus Hub Type</dfn>
           </td>
           <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Focus Hub Type</td>
           <td>Type Specification</td>
-          <td>The Focus Hub Type is used for Focus Hubs that delve deeper into specific topics or sections from
-            the Navigation Hub. It can be used to slice up a lot of child documents or a lot of hubs into
-            independent groups, so only the relevant group needs to be read. It can also be used to provide
-            relevant data for a specific type of action or workflow related to the Focus Hubs Immutable or
-            Primary Document or its subtree.</td>
-          <td>"Content": The Content Component must contain detailed information about the specific topic or
-            section from the Navigation Hub."links_to": This Component can provide links to related documents or
-            sections, with keys being the document names and values being their respective identifiers.</td>
+          <td>The Focus Hub Type is used for Focus Hubs that delve deeper into specific topics or sections from the Navigation Hub. It can be used to slice up a lot of child documents or a lot of hubs into independent groups, so only the relevant group needs to be read. It can also be used to provide relevant data for a specific type of action or workflow related to the Focus Hubs Immutable or Primary Document or its subtree.</td>
+          <td>"Content": The Content Component must contain detailed information about the specific topic or section from the Navigation Hub."links_to": This Component can provide links to related documents or sections, with keys being the document names and values being their respective identifiers.</td>
           <td>Supporting Document</td>
-          <td>Focus Hub Documents must be located at the nonzero numerical positions below Navigation Hubs, e.g.:
-            x.0.0.1, x.0.0.2, etc.</td>
-          <td>Focus Hubs serve as a detailed guide on specific topics, giving users an in-depth understanding of
-            the subject matter.</td>
+          <td>Focus Hub Documents must be located at the nonzero numerical positions below Navigation Hubs, e.g.: x.0.0.1, x.0.0.2, etc.</td>
+          <td>Focus Hubs serve as a detailed guide on specific topics, giving users an in-depth understanding of the subject matter.</td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator
-              Scenario Directory Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario Directory Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario
-            Directory Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario Directory Type</td>
           <td>Type Specification</td>
-          <td>The Facilitator Scenario Directory Type is a directory used to list all of the Scenarios that
-            pertain to a Facilitator Action Tenet. Scenarios are hypothetical fact patterns that are designed to
-            illustrate the practical application of a single Facilitator Action Tenet, i.e., its parent
-            Facilitator Action Tenet Document. Scenarios are classified as either Aligned or Misaligned. Aligned
-            Scenarios conform to the logic of the Target Document. Misaligned Scenarios have breached the Target
-            Document logic and are thus in violation of the Atlas.</td>
-          <td>"Directory index": This Component should contain a list of the Facilitator Scenarios contained
-            within, with keys being the document identifiers and values being their document names.</td>
+          <td>The Facilitator Scenario Directory Type is a directory used to list all of the Scenarios that pertain to a Facilitator Action Tenet. Scenarios are hypothetical fact patterns that are designed to illustrate the practical application of a single Facilitator Action Tenet, i.e., its parent Facilitator Action Tenet Document. Scenarios are classified as either Aligned or Misaligned. Aligned Scenarios conform to the logic of the Target Document. Misaligned Scenarios have breached the Target Document logic and are thus in violation of the Atlas.</td>
+          <td>"Directory index": This Component should contain a list of the Facilitator Scenarios contained within, with keys being the document identifiers and values being their document names.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Scenario Directory Documents must always be located at the .1 position below their
-            parent Facilitator Action Tenet Document.</td>
+          <td>Facilitator Scenario Directory Documents must always be located at the .1 position below their parent Facilitator Action Tenet Document.</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator
-              Scenario Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario
-            Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - The Facilitator Scenario Type</td>
           <td>Type Specification</td>
-          <td>Facilitator Scenario Documents contain hypothetical fact patterns that are designed to illustrate
-            the practical application of a single Facilitator Action Tenet, i.e., its parent Facilitator Action
-            Tenet Document. Scenarios are classified as either Aligned or Misaligned. Aligned Scenarios conform
-            to the logic of the Target Document. Misaligned Scenarios have breached the Target Document logic
-            and are thus in violation of the Atlas.</td>
-          <td>"Name": This Component should be an abstract or very brief description of the Scenario, e.g.,
-            "Crafter approves pull request authored by Star Team." A Scenario's Name should never be followed by
-            a number unless there are multiple Scenarios with the same Name."Description": This Component
-            contains the hypothetical fact pattern that illustrates the application of its parent Facilitator
-            Action Tenet. The fact pattern should be as concrete in its details as possible, so as to be helpful
-            to the Facilitators' decision-making."Finding": This Component indicates whether, in this Scenario,
-            the Target Document logic was or was not breached. If the Target Document was not breached, the
-            Finding is "Aligned". If the Target Document was breached, the Finding is "Misaligned"."Additional
-            Guidance": This Component provides additional context on the specific aspects of the Scenario that
-            were salient to the Aligned or Misaligned finding. It can also provide guidance in terms of how the
-            Facilitators should respond to such a Scenario, i.e.: follow-up actions or means of investigation.
-          </td>
+          <td>Facilitator Scenario Documents contain hypothetical fact patterns that are designed to illustrate the practical application of a single Facilitator Action Tenet, i.e., its parent Facilitator Action Tenet Document. Scenarios are classified as either Aligned or Misaligned. Aligned Scenarios conform to the logic of the Target Document. Misaligned Scenarios have breached the Target Document logic and are thus in violation of the Atlas.</td>
+          <td>"Name": This Component should be an abstract or very brief description of the Scenario, e.g., "Crafter approves pull request authored by Star Team." A Scenario's Name should never be followed by a number unless there are multiple Scenarios with the same Name."Description": This Component contains the hypothetical fact pattern that illustrates the application of its parent Facilitator Action Tenet. The fact pattern should be as concrete in its details as possible, so as to be helpful to the Facilitators' decision-making."Finding": This Component indicates whether, in this Scenario, the Target Document logic was or was not breached. If the Target Document was not breached, the Finding is "Aligned". If the Target Document was breached, the Finding is "Misaligned"."Additional Guidance": This Component provides additional context on the specific aspects of the Scenario that were salient to the Aligned or Misaligned finding. It can also provide guidance in terms of how the Facilitators should respond to such a Scenario, i.e.: follow-up actions or means of investigation.</td>
           <td>Supporting Document</td>
-          <td>Facilitator Scenario Documents must always be located as subdocuments of the Facilitator Scenario
-            Directory Document, which in turn is nested under its parent Facilitator Action Tenet Document,
-            e.g.: A.1.1-1.0.4.1.1.1.A Scenario's Name should never be followed by a number unless there are
-            multiple Scenarios with the same Name.</td>
+          <td>Facilitator Scenario Documents must always be located as subdocuments of the Facilitator Scenario Directory Document, which in turn is nested under its parent Facilitator Action Tenet Document, e.g.: A.1.1-1.0.4.1.1.1.A Scenario's Name should never be followed by a number unless there are multiple Scenarios with the same Name.</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types
-              And Their Specifications - The Scenario Variation Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And Their Specifications - The Scenario Variation Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And
-            Their Specifications - The Scenario Variation Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And Their Specifications - The Scenario Variation Type</td>
           <td>Type Specification</td>
-          <td>Facilitator Scenario Variation Documents are variations on the hypothetical fact patterns presented
-            in their parent Scenario document ("original Scenario"). Each Variation substitutes elements of its
-            original Scenario to demonstrate whether and why the finding of Aligned/Misaligned would change.
-            Like the Scenario Type, Scenario Variations are also designed to illustrate the practical
-            application of a single Facilitator Action Tenet, i.e., the Scenario's parent Facilitator Action
-            Tenet Document. Scenario Variations are classified as either Aligned or Misaligned. Aligned
-            Scenarios conform to the logic of the Target Document. Misaligned Scenarios have breached the Target
-            Document logic and are thus in violation of the Atlas.</td>
-          <td>"Description": This Component contains the hypothetical fact pattern that illustrates the
-            application of its parent Facilitator Action Tenet. The fact pattern should be as concrete in its
-            details as possible, so as to be helpful to the Facilitators' decision-making."Finding": This
-            Component indicates whether, in this Scenario Variation, the Target Document logic was or was not
-            breached. If the Target Document was not breached, the Finding is "Aligned". If the Target Document
-            was breached, the Finding is "Misaligned"."Additional Guidance": This Component provides additional
-            context on the specific aspects of the Scenario Variation that were salient to the Aligned or
-            Misaligned finding. It can also provide guidance in terms of how the Facilitators should respond to
-            such a Scenario, i.e.: follow-up actions or means of investigation.</td>
+          <td>Facilitator Scenario Variation Documents are variations on the hypothetical fact patterns presented in their parent Scenario document ("original Scenario"). Each Variation substitutes elements of its original Scenario to demonstrate whether and why the finding of Aligned/Misaligned would change. Like the Scenario Type, Scenario Variations are also designed to illustrate the practical application of a single Facilitator Action Tenet, i.e., the Scenario's parent Facilitator Action Tenet Document. Scenario Variations are classified as either Aligned or Misaligned. Aligned Scenarios conform to the logic of the Target Document. Misaligned Scenarios have breached the Target Document logic and are thus in violation of the Atlas.</td>
+          <td>"Description": This Component contains the hypothetical fact pattern that illustrates the application of its parent Facilitator Action Tenet. The fact pattern should be as concrete in its details as possible, so as to be helpful to the Facilitators' decision-making."Finding": This Component indicates whether, in this Scenario Variation, the Target Document logic was or was not breached. If the Target Document was not breached, the Finding is "Aligned". If the Target Document was breached, the Finding is "Misaligned"."Additional Guidance": This Component provides additional context on the specific aspects of the Scenario Variation that were salient to the Aligned or Misaligned finding. It can also provide guidance in terms of how the Facilitators should respond to such a Scenario, i.e.: follow-up actions or means of investigation.</td>
           <td>Supporting Document</td>
-          <td>Scenario Variation Documents are located as subdocuments to the Scenario Document of which they are
-            a variation. Their Document Identifier is the same as their parent Scenario, with an additional
-            suffix 'var' followed by the variation number of the original Scenario document. For example, the
-            second Scenario Variation of the original Scenario document A.1.1.0.4.1.1.1. would have the
-            following identifier: A.1.1.0.4.1.1.1.var2 .</td>
+          <td>Scenario Variation Documents are located as subdocuments to the Scenario Document of which they are a variation. Their Document Identifier is the same as their parent Scenario, with an additional suffix 'var' followed by the variation number of the original Scenario document. For example, the second Scenario Variation of the original Scenario document A.1.1.0.4.1.1.1. would have the following identifier: A.1.1.0.4.1.1.1.var2 .</td>
           <td></td>
         </tr>
         <tr>
           <td>
-            <dfn>A.1.2
-              - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types
-              And Their Specifications - The Needed Research Type</dfn>
+            <dfn>A.1.2 - Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And Their Specifications - The Needed Research Type</dfn>
           </td>
-          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And
-            Their Specifications - The Needed Research Type</td>
+          <td>Atlas Documents - Structure, Categories, And Types Of Atlas Documents - List Of Document Types And Their Specifications - The Needed Research Type</td>
           <td>Type Specification</td>
-          <td>Needed Research Documents specify potential problems associated with their Target Document. Such
-            problems can include potential gaps or conflicts in logic; questions regarding the operation of the
-            Target Document to which there are currently no answers; etc.As such, Needed Research documents
-            formalize continuing research into Universal Alignment and enable the adaptive intelligence of the
-            ecosystem to drive the evolution of Sky. Scope Facilitators, Atlas workstream contributors or
-            other ecosystem participants are able to submit Needed Research inputs, which are then progressively
-            processed through the standardized Atlas data integration protocol.The gradual processing of Needed
-            Research inputs can lead to modifications to the organization or content of Atlas documents, as well
-            as concrete process improvements and new initiatives.</td>
-          <td>"Research Prompt": This component contains descriptions of potential problems, unanswered questions
-            or other concerns associated with the Target Document.</td>
+          <td>Needed Research Documents specify potential problems associated with their Target Document. Such problems can include potential gaps or conflicts in logic; questions regarding the operation of the Target Document to which there are currently no answers; etc.As such, Needed Research documents formalize continuing research into Universal Alignment and enable the adaptive intelligence of the ecosystem to drive the evolution of Sky. Scope Facilitators, Atlas workstream contributors or other ecosystem participants are able to submit Needed Research inputs, which are then progressively processed through the standardized Atlas data integration protocol.The gradual processing of Needed Research inputs can lead to modifications to the organization or content of Atlas documents, as well as concrete process improvements and new initiatives.</td>
+          <td>"Research Prompt": This component contains descriptions of potential problems, unanswered questions or other concerns associated with the Target Document.</td>
           <td>Supporting Document</td>
-          <td>Unlike other Supporting Documents, the document identifier of Needed Research documents is not
-            derived from the Supporting Root of their Target Document. The "standalone" numbering scheme of
-            Needed Research documents enables them to be linked to more than one Atlas Document, no matter the
-            latter's location in the Atlas document tree. Needed Research Document Identifiers begin with the
-            prefix "NR-", followed by an incremented number.</td>
-          <td>Generally, Needed Research Documents are most effective when linked to Primary Documents or
-            Supporting Documents. These Document types have the objective of extrapolating from the abstract
-            logic of their Parent documents to formulate rules and processes that are more concrete and
-            actionable. Therefore, inputs for Needed Research are more appropriately sourced at this deeper
-            level in the Atlas Document tree.</td>
+          <td>Unlike other Supporting Documents, the document identifier of Needed Research documents is not derived from the Supporting Root of their Target Document. The "standalone" numbering scheme of Needed Research documents enables them to be linked to more than one Atlas Document, no matter the latter's location in the Atlas document tree. Needed Research Document Identifiers begin with the prefix "NR-", followed by an incremented number.</td>
+          <td>Generally, Needed Research Documents are most effective when linked to Primary Documents or Supporting Documents. These Document types have the objective of extrapolating from the abstract logic of their Parent documents to formulate rules and processes that are more concrete and actionable. Therefore, inputs for Needed Research are more appropriately sourced at this deeper level in the Atlas Document tree.</td>
         </tr>
       </tbody>
     </table>
