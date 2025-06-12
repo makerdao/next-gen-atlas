@@ -11577,14 +11577,6 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.2.10 - Liquidity For Market Makers Stipulation</dfn>
-          </td>
-          <td>Liquidity For Market Makers Stipulation</td>
-          <td>Core</td>
-          <td>The Star Treasury allocations are not intended for direct compensation of market makers. Any incentives for market makers would need to be structured separately, potentially utilizing a portion of the Star Treasury allocation or through other mechanisms.</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>A.2.10 - Sky Retained Tokens And Reward Pools</dfn>
           </td>
           <td>Sky Retained Tokens And Reward Pools</td>
@@ -11821,7 +11813,7 @@
           </td>
           <td>Initial Allocation Mechanism</td>
           <td>Core</td>
-          <td>Prior to the Agent Token launch, an Atlas Edit Proposal submitted to Sky Governance will allow the respective founding teams of Spark and Launch Agent 1, to propose an initial cash grant to their respective Star Foundation. Sky Governance must consent to this initial cash grant via approving the Sky Atlas modification.</td>
+          <td>Shortly after the Agent Token launch, an Atlas Edit Proposal submitted to Sky Governance will allow the respective founding teams of Spark and Launch Agent 1 to propose an initial cash grant to their respective Star Foundation. Sky Governance must consent to this initial cash grant via approving the Sky Atlas modification.</td>
         </tr>
         <tr>
           <td>
@@ -18861,8 +18853,16 @@
           </td>
           <td>Core Tokens - SKY - MKR To SKY Conversion Emissions</td>
           <td>Core</td>
-          <td><p>The legacy MKR to SKY conversion contract (Legacy Conversion Contract) burns MKR and mints new SKY. The new MKR to SKY conversion contract (New Conversion Contract) instead burns MKR and issues SKY from the existing supply of preminted SKY.</p><p>The Legacy Conversion Contract will be disabled as soon as practicable. To offset SKY minted by the Legacy Conversion Contract after the deployment of the New Conversion Contract, an equivalent amount of preminted SKY will be burned. This action will ensure the total SKY token supply remains as if these specific emissions from the Legacy Conversion Contract had not occurred.</p></td>
-        </tr>      
+          <td><p>The legacy MKR to SKY conversion contract (Legacy Conversion Contract) burns MKR and mints new SKY. The new MKR to SKY conversion contract (New Conversion Contract) instead burns MKR and issues SKY from the existing supply of preminted SKY.</p><p>The Legacy Conversion Contract will be disabled as specified in <dfn>4.1 - Core Tokens - SKY - Disabling Legacy Conversion Contract.</dfn> To offset SKY minted by the Legacy Conversion Contract after the deployment of the New Conversion Contract, an equivalent amount of preminted SKY will be burned. This action will ensure the total SKY token supply remains as if these specific emissions from the Legacy Conversion Contract had not occurred.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.4.1 - Core Tokens - SKY - Disabling Legacy Conversion Contract</dfn>
+          </td>
+          <td>Core Tokens - SKY - Disabling Legacy Conversion Contract</td>
+          <td>Core</td>
+          <td>The disabling of the Legacy Conversion Contract will be executed in the June 26, 2025 Executive Vote. This action is authorized to proceed directly to an Executive Vote without a prior Governance Poll.</td>
+        </tr>
         <tr>
           <td>
             <dfn>A.4.2 - A1 - SkyLink - Multichain Support Native Mechanisms</dfn>
@@ -18898,6 +18898,13 @@
             <li>Determine Target Reward Value: Calculate the total US dollar value required to meet the SSR for the period: (Total Eligible USDS Balance * SSR).</li>
             <li>Determine SKY Token Quantity: Divide the Target Reward Value (from step 1) by the Current Market Price of SKY (determined at the time of the Executive Vote).</li>
           </ol>
+          The Governance Facilitators, on the recommendation of the Stability Scope Advisors, may maintain the quantity of SKY token rewards to be distributed for a normalization period at its current level if they conclude that:
+          <ul>
+            <li>the difference between the effective yield provided by SKY Tokens Rewards and the SSR is not material;</li>
+            <li>the difference between the effective yield provided by SKY Token Rewards and the SSR is unlikely to persist due to other factors; or</li>
+            <li>adjusting the quantity of SKY Token Rewards is otherwise inadvisable.</li>
+          </ul>
+          The recommendation of the Stability Scope Advisors must be posted to the Sky Forum and approved by the Stability Facilitators.
         </td>
         </tr>
         <tr>
@@ -23559,6 +23566,22 @@
         </tr>
         <tr>
           <td>
+            <dfn>Spark Foundation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The Spark Foundation is the Star Foundation associated with Spark. Its mandate is to support the development, growth, and adoption of Spark.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Phoenix Labs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Phoenix Labs is a development company that provides services to the Spark Foundation. Phoenix Labs is a “Nested Contributor”, i.e., a core contributor to both Spark and Sky.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Operational Process Definition</dfn>
           </td>
           <td>Spark</td>
@@ -24073,6 +24096,14 @@
         </tr>
         <tr>
           <td>
+            <dfn>Staking</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>SPK token holders can stake their tokens. The rewards for staking will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Operational Process Definition</dfn>
           </td>
           <td>Spark</td>
@@ -24085,7 +24116,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Genesis Supply will be minted to an account owned by SPK Company Ltd and operationally controlled by Operational GovOps on behalf of SPK Company Ltd.</td>
+          <td>The Genesis Supply was minted to an account owned by SPK Company Ltd. The address of the account on the Ethereum Mainnet is <code>0x6FE588FDCC6A34207485cc6e47673F59cCEDF92B</code>.</td>
         </tr>
         <tr>
           <td>
@@ -24093,7 +24124,15 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Operational GovOps, on behalf of SPK Company Ltd, will transfer 6.5 billion SPK tokens from SPK Company Ltd account to an account specified by Sky.</td>
+          <td>SPK Company Ltd transferred 6.5 billion SPK tokens from the SPK Company Ltd account to the Sky Pause Proxy. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Transfer Of Tokens To Spark SubProxy Account</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><p>SPK Company Ltd transferred 918,760,451 SPK tokens from the SPK Company Ltd account to the Spark SubProxy Account. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The Spark SubProxy Account is specified in <dfn>SubProxy Account</dfn>.</p></td>
         </tr>
         <tr>
           <td>
@@ -24101,7 +24140,15 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Operational GovOps, on behalf of SPK Company Ltd, will transfer 3.5 billion SPK tokens from the SPK Company Ltd account to the Spark Foundation. The address of the Spark Foundation on the Ethereum Mainnet will be specified in a future iteration of the Spark Artifact.</td>
+          <td><p>SPK Company Ltd will transfer 1 billion SPK tokens from the SPK Company Ltd account to the Spark Foundation. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The address of the Spark Foundation on the Ethereum Mainnet will be specified in a future iteration of the Spark Artifact.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Tokens Retained By SPK Company Ltd</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><p>1,581,239,549 SPK tokens will be retained by SPK Company Ltd. The use of these tokens will be specified in a future iteration of the Spark Artifact.</p></td>
         </tr>
         <tr>
           <td>
@@ -24495,15 +24542,31 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Root Edit process begins with a SPK token holder submitting a proposal through the Powerhouse system containing a draft Artifact Edit Proposal. A SPK token holder must hold at least 1% of the circulating token supply to submit a proposal. The proposal must also be posted on the Sky Forum under the "Spark" tag.</td>
+          <td>The Root Edit process begins with a SPK token holder submitting a proposal through the Powerhouse system containing a draft Artifact Edit Proposal. A SPK token holder must hold at least 1% of the total token supply to submit a proposal. The proposal must also be posted on the Sky Forum under the "Spark" tag.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Root Edit Proposal Submission Requirements Exception</dfn>
+            <dfn>Root Edit Proposal Submission Requirements Exception For Nested Contributors</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>For proposals that solely entail a buyback or a grant of SPK tokens, the requirement that SPK token holders must hold at least 1% of the circulating token supply to submit a proposal is waived. However, all other procedural requirements within the Root Edit process continue to apply.</td>
+          <td><p>Nested Contributors are always authorized to submit Artifact Edit Proposals and do not have to fulfill the token-holding requirements defined in Root Edit Proposal Submission. However, all other procedural requirements within the Root Edit process continue to apply.</p><p>To see the Agent’s Nested Contributors, see <dfn>Phoenix Labs</dfn>.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Root Edit Proposal Submission Requirements Exception For Spark Foundation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>While it is a core service provider to Spark, the Spark Foundation is authorized to submit Artifact Edit Proposals and does not have to fulfill the token-holding requirements defined in Root Edit Proposal Submission. However, all other procedural requirements within the Root Edit process continue to apply.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Short-Term Transitionary Measures</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Until the Powerhouse system supports submitting Artifact Edit Proposals, SPK token holders may submit Artifact Edit Proposals by posting them to the Sky Forum under the "Spark" category. The title of the post must include the text "Spark Artifact Edit Proposal". The post must include cryptographic proof that the author controls an account holding the required percentage of the total SPK token supply specified in Root Edit Proposal Submission.</td>
         </tr>
         <tr>
           <td>
@@ -24519,7 +24582,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Within seven (7) days of the proposal being submitted, the Operational Facilitator must review the Root Edit Proposal for alignment. If the proposal is aligned, the Operational Facilitator must respond to the Forum post to announce their finding. In this Forum post, the Operational Facilitator must also confirm that the proposal is feasible for Operational GovOps to operationalize. If the proposal is misaligned, the Operational Facilitator must respond to the Forum post to announce their finding and provide the reasoning for it.</td>
+          <td><p>Within seven (7) days of the proposal being submitted, the Operational Facilitator must review the Root Edit Proposal for alignment.</p><p>If the proposal is aligned, the Operational Facilitator must respond to the Forum post to announce their finding. In this Forum post, the Operational Facilitator must also confirm that the proposal is feasible for Operational GovOps to operationalize.</p><p>If the proposal is misaligned, the Operational Facilitator must respond to the Forum post to announce their finding and provide the reasoning for it.</p></td>
         </tr>
         <tr>
           <td>
@@ -24531,11 +24594,33 @@
         </tr>
         <tr>
           <td>
+            <dfn>Circulating Supply Definition</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>For purposes of Root Edit Token Holder Vote, the circulating supply of SPK tokens is equal to the total supply of SPK tokens minus the sum of:
+            <ol>
+              <li>Tokens retained by SKY and not yet distributed as token rewards (see <dfn>A.2.10 - Sky Retained Tokens And Reward Pools</dfn>); and</li>
+              <li>Tokens retained in vesting agreements for Spark contributors and not yet distributed; and</li>
+              <li>Tokens in the Spark SubProxy Account (see SubProxy Account).</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Root Edit Artifact Update</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
           <td>At the conclusion of the poll, if the proposal is approved, the Operational Facilitator submits the edit to Powerhouse to formally update the Agent Artifact. Regardless of the outcome, the Operational Facilitator updates the Powerhouse System to include the result of the vote, including any pertinent documents.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Short Term Transitionary Measures</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Until the Powerhouse system supports updating Agent Artifacts, the Operational Facilitator works with the Governance Facilitators to update the Atlas GitHub repository located at <a href="https://github.com/makerdao/next-gen-atlas/pulls">Pull requests · makerdao/next-gen-atlas · GitHub</a> to reflect proposals approved by Star Governance.</td>
         </tr>
         <tr>
           <td>
@@ -24547,11 +24632,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Time-Limited Root Edit Restrictions</dfn>
+            <dfn>Time-Limited Root Edit Restrictions On Removal Of Nested Contributors</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>For a period of three years after the Genesis Supply emissions of SPK tokens take place, no Artifact Edit is permitted that:- Would have the effect of removing Phoenix Labs or the Spark Foundation from their roles as core service providers to Spark; or- Is designed to remove or elect a Board Member of the Spark Foundation; or otherwise alter the composition of the Board of the Spark Foundation.</td>
+          <td>For a period of three years after June 4, 2025, any Artifact Edit that would have the effect of removing a Nested Contributor must be approved by a vote of SKY holders in addition to a vote of SPK holders to be effective.</td>
         </tr>
         <tr>
           <td>
@@ -24578,6 +24663,14 @@
           <td>
             In an Urgent or Emergency Situation, as defined by the Sky Core Atlas in <dfn>A.1.8 - Emergency Voting System - Definition Of Emergency Situations</dfn>, the Operational Facilitator may allow a Root Edit to occur more quickly than the timeline specified above. Where feasible, the Operational Facilitator should announce the decision to deploy the emergency Root Edit protocol and provide their reasoning via a public Sky Forum post (under the "Spark" tag), unless doing so would endanger Spark or its users.
           </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Short Term Transitionary Measures</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>In the short term, the parameters of the Spark Liquidity Layer, SparkLend, and Spark Savings are controlled by Sky Core, but will be transitioned to Spark in a future iteration of the Spark Artifact. See <dfn>SparkLend Risk Parameters Modification</dfn>.</td>
         </tr>
         <tr>
           <td>
