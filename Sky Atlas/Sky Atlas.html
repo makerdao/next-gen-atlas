@@ -905,7 +905,7 @@
           </td>
           <td>Atlas Preamble - Definitions - Voting Power</td>
           <td>Core</td>
-          <td>“Voting Power” denotes the ability of Aligned Delegates to vote on Sky governance decisions on behalf of a SKY or MKR holder. SKY and MKR holders can delegate their Voting Power to an Aligned Delegate through Delegate Contracts, allowing the Aligned Delegate to vote on their behalf while the SKY or MKR holders retain control of their tokens.</td>
+          <td>"Voting Power" denotes the ability of Aligned Delegates to vote on Sky governance decisions on behalf of a SKY holder. SKY holders can delegate their Voting Power to an Aligned Delegate through Delegate Contracts, allowing the Aligned Delegate to vote on their behalf while the SKY holders retain control of their tokens.</td>
         </tr>
         <tr>
           <td>
@@ -2285,7 +2285,7 @@
           </td>
           <td>Sky Core Governance Security - Governance Security Delay Requirements - Pause Delay Adjustment</td>
           <td>Core</td>
-          <td><p>Adjusting the GSM Pause Delay parameter is a manual process that requires an Executive Vote. Changes to the GSM Pause Delay are subject to the pre-change GSM Pause Delay.</p><p>An increase to the GSM Pause Delay parameter should be considered if the risk of governance attack is considered especially high for whatever reason. In the past, the GSM Pause Delay has been increased due to the risk from flash loans combined with increasing liquidity of the MKR token on the open market.</p><p>A decrease should be considered if time-critical governance actions are projected to be needed in the near future. For example, if extreme market volatility is expected, it may be beneficial to reduce the GSM Pause Delay temporarily to allow Governance to better react to the changing conditions.</p></td>
+          <td><p>Adjusting the GSM Pause Delay parameter is a manual process that requires an Executive Vote. Changes to the GSM Pause Delay are subject to the pre-change GSM Pause Delay.</p><p>An increase to the GSM Pause Delay parameter should be considered if the risk of governance attack is considered especially high for whatever reason. In the past, the GSM Pause Delay has been increased due to the risk from flash loans combined with increased liquidity of the SKY token on the open market.</p><p>A decrease should be considered if time-critical governance actions are projected to be needed in the near future. For example, if extreme market volatility is expected, it may be beneficial to reduce the GSM Pause Delay temporarily to allow Governance to better react to changing conditions.</p></td>
         </tr>
         <tr>
           <td>
@@ -3380,7 +3380,7 @@
           </td>
           <td>Monthly Governance Cycle - Atlas Edit Monthly Cycle - Submitting To Formal Submission</td>
           <td>Core</td>
-          <td>When the Atlas Edit Proposal is ready for Formal Submission, the AEP Author submits their AEP to the Monthly Governance Cycle by posting a Forum comment that states "Formal Submission". This can only be done within the Formal Submission window of a Monthly Governance Cycle.</td>
+          <td>When the Atlas Edit Proposal is ready for Formal Submission, the AEP Author submits their AEP to the Monthly Governance Cycle by posting a Forum comment that states "Formal Submission". This can only be done within the Formal Submission Window of a Monthly Governance Cycle. The Formal Submission Window is a two-day window that starts at 00:00 UTC on the first Monday of the Monthly Governance Cycle and lasts until 23:59 UTC on Tuesday the next day.</td>
         </tr>
         <tr>
           <td>
@@ -5152,7 +5152,7 @@
           </td>
           <td>Agent SubProxy Account</td>
           <td>Core</td>
-          <td>The Agent Creation Primitive must specify the SubProxy address of the Agent. This field is populated by Core GovOps. The SubProxy is an account that serves as the Agent's treasury. The SubProxy Account of a Star Agent is operationally controlled by the Operational Executor Agent specified in the Executor Accord Primitive. The SubProxy Account of an Operational Executor Agent will be operationally controlled according to a process specified in a future iteration of the Agent Creation Primitive.</td>
+          <td>The Agent Creation Primitive must specify the SubProxy address of the Agent. This field is populated by Core GovOps. The SubProxy is an account that serves as the Agent's treasury. The SubProxy Account is controlled by Sky Governance.</td>
         </tr>
         <tr>
           <td>
@@ -8830,7 +8830,15 @@
           </td>
           <td>Pioneer Star Benefits</td>
           <td>Core</td>
-          <td>Pioneer Stars gain benefits and responsibilities related to the general adoption of USDS on the Pioneer Chain, and this benefit comes in two forms. First, during the Pioneer Phase, the Pioneer Star counts as having tagged, for the purposes of calculating the Accessibility Reward, all USDS accounts and balances on the Pioneer Chain that have not been tagged by another Star. At the end of the Pioneer Phase, all untagged USDS accounts and balances are one-time tagged by the Pioneer Star, and this tag will remain normally for the following ten (10) years unless tagged by a different Star, or retagged. Second, during the Pioneer Phase, all USDS that is bridged to the Pioneer Chain, and is not getting the Sky Savings Rate, either through sUSDS, Integration Boost, or by being held by an Agent, counts as unrewarded USDS.</td>
+          <td><p>Pioneer Stars gain benefits and responsibilities related to the general adoption of USDS on the Pioneer Chain, and this benefit comes in two forms.</p><p>First, during the Pioneer Phase, the Pioneer Star counts as having tagged, for the purposes of calculating the Accessibility Reward, all USDS and sUSDS accounts and balances on the Pioneer Chain that have not been tagged by another Star. At the end of the Pioneer Phase, all untagged USDS accounts and balances are one-time tagged by the Pioneer Star, and this tag will remain normally for the following ten (10) years unless tagged by a different Star, or retagged.</p><p>Second, during the Pioneer Phase, all USDS that is bridged to the Pioneer Chain, and is not getting the Sky Savings Rate, either through sUSDS, Integration Boost, or by being held by an Agent, counts as unrewarded USDS.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.4 - Pioneer Phase</dfn>
+          </td>
+          <td>Pioneer Phase</td>
+          <td>Core</td>
+          <td>For purposes of <dfn>A.2.4 - Pioneer Star Benefits</dfn>, the Pioneer Phase is a period beginning on the date that a Star Agent satisfies the Pioneer Star Requirements specified in <dfn>A.2.4 - Pioneer Star Requirements</dfn> and ending three (3) years thereafter.</td>
         </tr>
         <tr>
           <td>
@@ -10660,7 +10668,7 @@
           </td>
           <td>Role Of Operational Executor Agent</td>
           <td>Core</td>
-          <td>The relevant Operational Executor Agent, which is already engaged to the Star in question and bound root access to the SubProxy, will conduct a principled compatibility analysis to ensure the strategy aligns with the Sky Atlas and the relevant Star Artifact. Once validated, the Operational Executor Agent executes the capital allocation in question.</td>
+          <td>The relevant Operational Executor Agent, which is already engaged to the Star in question, will conduct a principled compatibility analysis to ensure the strategy aligns with the Sky Atlas and the relevant Star Artifact. Once validated, the Operational Executor Agent executes the capital allocation in question.</td>
         </tr>
         <tr>
           <td>
@@ -10668,7 +10676,7 @@
           </td>
           <td>Star Tokenholder Governance Rights</td>
           <td>Core</td>
-          <td>To ensure accountability, Star token holders will retain governance rights, including the ability to revoke the Operational Executor Agent's root access through a vote if necessary.</td>
+          <td>To ensure accountability, Star token holders will retain governance rights, including the ability to revoke the Operational Executor Agent's Executor Accord through a vote if necessary.</td>
         </tr>
         <tr>
           <td>
@@ -10832,6 +10840,22 @@
         </tr>
         <tr>
           <td>
+            <dfn>A.2.10 - Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Market Makers</dfn>
+          </td>
+          <td>Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Market Makers</td>
+          <td>Core</td>
+          <td>Sky has transferred 2 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to market makers (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and refunded by the Spark Foundation to the Sky Ecosystem Liquidity Bootstrapping Budget at the time of the Genesis Capital Allocation.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.10 - Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Exchanges</dfn>
+          </td>
+          <td>Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Exchanges</td>
+          <td>Core</td>
+          <td>Sky will transfer 2.4 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to exchanges (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and refunded by the Spark Foundation to the Sky Ecosystem Liquidity Bootstrapping Budget at the time of the Genesis Capital Allocation.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>A.2.10 - Income Generation And Pre-TGE Credit</dfn>
           </td>
           <td>Income Generation And Pre-TGE Credit</td>
@@ -10845,6 +10869,14 @@
           <td>Income Definition</td>
           <td>Core</td>
           <td>"Income" means all revenues or fees received or accrued by the applicable Star following finalization of its Risk Framework, including: (i) Accessibility Rewards (0.2%), (ii) Accessibility Reward Bonus for 2025 (0.4%), (iii) any Platform Fees charged to users, and (iv) Real World Asset fees charged to users, including any origination, servicing, or related charges, and (v) the blended cost of allocation spread between Junior and Senior Risk Capital.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.10 - Spark Senior Risk Capital</dfn>
+          </td>
+          <td>Spark Senior Risk Capital</td>
+          <td>Core</td>
+          <td>In the short term before the implementation of the Senior Risk Capital system, Sky will provide Spark with 15 million USDS of Senior Risk Capital. See <dfn>A.3.3 - Short Term Transitionary Measures</dfn>. This Senior Risk Capital will not be transferred by Sky to Spark's SubProxy Account; instead, it will be credited towards Spark’s Total Risk Capital. See <dfn>A.3.3 - Total Risk Capital</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -12802,7 +12834,7 @@
           <td>Core</td>
           <td>In the near term pending development of the implementation of the model for perpetual positions, the following Instance Financial RRC Ratios will apply:
             <ul>
-              <li>Direct Ethena exposure - 5% Instance Financial RRC Ratio</li>
+              <li>Direct Ethena exposure - 3% Instance Financial RRC Ratio</li>
               <li>Indirect Ethena exposure through Morpho - 3% Instance Financial RRC Ratio</li>
               <li>All other protocols - 4% Instance Financial RRC Ratio</li>
             </ul>
@@ -15198,7 +15230,7 @@
           </td>
           <td>Low Severity Breach Definition</td>
           <td>Core</td>
-          <td>A Low Severity Breach is one in which the Risk Tolerance Ratio is greater than or equal to 97% but less than 100%.</td>
+          <td>A Low Severity Breach is one in which the Risk Tolerance Ratio is greater than or equal to 100% but less than 103%.</td>
         </tr>
         <tr>
           <td>
@@ -15206,7 +15238,7 @@
           </td>
           <td>High Severity Breach Definition</td>
           <td>Core</td>
-          <td>A High Severity Breach is one in which the Risk Tolerance Ratio is less than 97%.</td>
+          <td>A High Severity Breach is one in which the Risk Tolerance Ratio is greater than 103%.</td>
         </tr>
         <tr>
           <td>
@@ -15294,7 +15326,7 @@
           </td>
           <td>Collection Of Penalties</td>
           <td>Core</td>
-          <td>Penalties are calculated by the Core Executor Agent as part of the Monthly Settlement Cycle. See <dfn>A.2.6</dfn>. Once calculated, penalties are transferred from the Star Agent's SubProxy Account to Sky by the Star Agent's Operational Executor Agent.</td>
+          <td>Penalties are calculated by the Core Executor Agent as part of the Monthly Settlement Cycle. See <dfn>A.2.6</dfn>. Once calculated, penalties are transferred from the Star Agent's SubProxy Account to Sky by Sky Governance.</td>
         </tr>
         <tr>
           <td>
@@ -15306,13 +15338,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Short Term Exemption</dfn>
+            <dfn>A.3.3 - Short-Term Exemption</dfn>
           </td>
-          <td>Short Term Exemption</td>
+          <td>Short-Term Exemption</td>
           <td>Core</td>
-          <td>
-            While the risk framework undergoes refinement, penalties for any Star Agent breaches of Required Risk Capital will be calculated by Core GovOps once the infrastructure is in place to do so. This calculation serves the purposes of system monitoring, data gathering, and framework calibration. However, throughout this interim phase, such calculated penalties will not be formally assessed against Star Agents, and consequently, Star Agents will not be required to make payment for these penalties. Notwithstanding this temporary exemption from penalty payment, Star Agents are expected to maintain a Risk Tolerance Ratio of at least 90%. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>.
-          </td>
+          <td>While the risk framework undergoes refinement, penalties for any Star Agent breaches of Required Risk Capital will be calculated by Core GovOps once the infrastructure is in place to do so. This calculation serves the purposes of system monitoring, data gathering, and framework calibration. However, throughout this interim phase, such calculated penalties will not be formally assessed against Star Agents, and consequently, Star Agents will not be required to make payment for these penalties. Notwithstanding this temporary exemption from penalty payment, Star Agents are expected to maintain a Risk Tolerance Ratio of less than or equal to 90%. See <dfn>A.3.3 - Risk Tolerance Ratio.</dfn></td>
         </tr>
         <tr>
           <td>
@@ -19000,7 +19030,7 @@
           </td>
           <td>Deploying A Delegate Contract - Element Annotation</td>
           <td>Annotation</td>
-          <td>A prospective Aligned Delegate must deploy a new Delegate Contract(s) through the associated smart contract, using their chosen Ethereum address. To create a new Delegate Contract, an applicant should visit this page and connect an Ethereum wallet: <a href="https://vote.makerdao.com/account">https://vote.makerdao.com/account</a>. An Aligned Delegate should deploy the new Delegate Contract(s) prior to posting a Submission Message on the Sky Forum pursuant to <dfn>A.1.5 - Aligned Delegates - Governance Facilitator Responsibilities - AD Recognition Process - Submission Message</dfn>.</td>
+          <td>A prospective Aligned Delegate must deploy a new Delegate Contract(s) through the associated smart contract, using their chosen Ethereum address. To create a new Delegate Contract, an applicant should visit this page and connect an Ethereum wallet: <a href="https://vote.sky.money/account">https://vote.sky.money/account</a>. An Aligned Delegate should deploy the new Delegate Contract(s) prior to posting a Submission Message on the Sky Forum pursuant to <dfn>A.1.5 - Aligned Delegates - Governance Facilitator Responsibilities - AD Recognition Process - Submission Message</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -19371,7 +19401,7 @@
           </td>
           <td>Total Voting Power Delegated - Element Annotation</td>
           <td>Annotation</td>
-          <td>The element “total Voting Power delegated” refers to the cumulative SKY/MKR that has been delegated to a Delegate Contract by SKY/MKR holders and Staking users.</td>
+          <td>The element "total Voting Power delegated" refers to the cumulative SKY that has been delegated to a Delegate Contract by SKY holders and Staking users.</td>
         </tr>
         <tr>
           <td>
@@ -21514,19 +21544,19 @@
         </tr>
         <tr>
           <td>
+            <dfn>Transfer Of Tokens To For Token Launch</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><p>The SPK Company Ltd account will transfer SPK tokens in connection with the token launch. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The amount and nature of these distributions will be specified in a future iteration of the Spark Artifact.</p></td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Transfer Of Tokens To Spark Foundation</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><p>SPK Company Ltd will transfer 1 billion SPK tokens from the SPK Company Ltd account to the Spark Foundation. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The address of the Spark Foundation on the Ethereum Mainnet will be specified in a future iteration of the Spark Artifact.</p></td>
-        </tr>
-        <tr>
-          <td>
-            <dfn>Tokens Retained By SPK Company Ltd</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td><p>1,581,239,549 SPK tokens will be retained by SPK Company Ltd. The use of these tokens will be specified in a future iteration of the Spark Artifact.</p></td>
+          <td><p>The SPK Company Ltd account will transfer all of the SPK tokens held by it, other than the tokens specified in Transfer Of Tokens For Token Launch, to the Spark Foundation. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The address of the Spark Foundation on the Ethereum Mainnet will be specified in a future iteration of the Spark Artifact.</p></td>
         </tr>
         <tr>
           <td>
@@ -21622,12 +21652,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document Location</dfn>
+            <dfn>DAOcraft Instance Configuration Document Location</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOCraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -21690,11 +21720,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document</dfn>
+            <dfn>DAOcraft Instance Configuration Document</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOCraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -21702,7 +21732,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -21710,7 +21740,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>In the near term DAOCraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -21718,7 +21748,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOCraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -21726,7 +21756,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -21734,7 +21764,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -21932,14 +21962,6 @@
         </tr>
         <tr>
           <td>
-            <dfn>Root Edit Proposal Submission Requirements Exception For Spark Foundation</dfn>
-          </td>
-          <td>Spark</td>
-          <td>Core</td>
-          <td>While it is a core service provider to Spark, the Spark Foundation is authorized to submit Artifact Edit Proposals and does not have to fulfill the token-holding requirements defined in Root Edit Proposal Submission. However, all other procedural requirements within the Root Edit process continue to apply.</td>
-        </tr>
-        <tr>
-          <td>
             <dfn>Short-Term Transitionary Measures</dfn>
           </td>
           <td>Spark</td>
@@ -21978,9 +22000,9 @@
           <td>Core</td>
           <td>For purposes of Root Edit Token Holder Vote, the circulating supply of SPK tokens is equal to the total supply of SPK tokens minus the sum of:
             <ol>
-              <li>Tokens retained by SKY and not yet distributed as token rewards (see <dfn>A.2.10 - Sky Retained Tokens And Reward Pools</dfn>); and</li>
+              <li>Tokens retained by Sky and not yet distributed as token rewards (see <dfn>A.2.10 - Sky Retained Tokens And Reward Pools</dfn>); and</li>
               <li>Tokens retained in vesting agreements for Spark contributors and not yet distributed; and</li>
-              <li>Tokens in the Spark SubProxy Account (see SubProxy Account).</li>
+              <li>Tokens in the Spark SubProxy Account (see <dfn>SubProxy Account</dfn>).</li>
             </ol>
           </td>
         </tr>
@@ -31625,7 +31647,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Launch Agent 1 is an Agent initially focused on providing credit to crypto native and tokenized off-chain (RWA) opportunities in order to facilitate credit creation in the digital economy.</td>
+          <td>Launch Agent 1 is an Agent focused on unlocking the full potential of USDS through higher savings rates and new products and opportunities. Its main focus will be building an institutional-grade credit platform designed to facilitate credit creation and seamlessly move yield in and out of the onchain economy.</td>
         </tr>
         <tr>
           <td>
@@ -31785,7 +31807,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The address of Launch Agent 1's SubProxy Account will be specified in a future iteration of the Launch Agent 1 Artifact.</td>
+          <td>The address of Launch Agent 1's SubProxy Account on the Ethereum Mainnet is <code>0x1369f7b2b38c76B6478c0f0E66D94923421891Ba</code>.</td>
         </tr>
         <tr>
           <td>
@@ -31802,6 +31824,22 @@
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>The documents herein define the custom parameters of the Single Instance of the Agent Creation Primitive, if any.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Foundation</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Launch Agent 1 Foundation is the Star Foundation associated with Launch Agent 1. Its mandate is to support the development, growth, and adoption of Launch Agent 1.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Development Company</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Launch Agent 1 Development Company is a development company that provides services to the Launch Agent 1 Foundation. Launch Agent 1 Development Company is a "Nested Contributor", i.e., a core contributor to both Launch Agent 1 and Sky.</td>
         </tr>
         <tr>
           <td>
@@ -32419,12 +32457,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document Location</dfn>
+            <dfn>DAOcraft Instance Configuration Document Location</dfn>
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOCraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -32487,11 +32525,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document</dfn>
+            <dfn>DAOcraft Instance Configuration Document</dfn>
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOCraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -32499,7 +32537,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -32507,7 +32545,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>In the near term DAOCraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -32515,7 +32553,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOCraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -32523,7 +32561,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -32531,7 +32569,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -32717,15 +32755,23 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The Root Edit process begins with an AGENT1 token holder submitting a proposal through the Powerhouse system containing a draft Artifact Edit Proposal. An AGENT1 token holder must hold at least 1% of the circulating token supply to submit a proposal. The proposal must also be posted on the Sky Forum under the "Launch Agent 1" tag.</td>
+          <td>The Root Edit process begins with a AGENT1 token holder submitting a proposal through the Powerhouse system containing a draft Artifact Edit Proposal. A AGENT1 token holder must hold at least 1% of the total token supply to submit a proposal. The proposal must also be posted on the Sky Forum under the "Launch Agent 1" category.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Root Edit Proposal Submission Requirements Exception</dfn>
+            <dfn>Root Edit Proposal Submission Requirements Exception For Nested Contributors</dfn>
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>For proposals that solely entail a buyback or a grant of AGENT1 tokens, the requirement that AGENT1 token holders must hold at least 1% of the circulating token supply to submit a proposal is waived. However, all other procedural requirements within the Root Edit process continue to apply.</td>
+          <td><p>Nested Contributors are always authorized to submit Artifact Edit Proposals and do not have to fulfill the token-holding requirements defined in Root Edit Proposal Submission. However, all other procedural requirements within the Root Edit process continue to apply.</p><p>To see the Agent's Nested Contributors, see Launch Agent 1 Development Company.</p></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Short-Term Transitionary Measures</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Until the Powerhouse system supports submitting Artifact Edit Proposals, AGENT1 token holders may submit Artifact Edit Proposals by posting them to the Sky Forum under the "Launch Agent 1" category. The title of the post must include the text "Launch Agent 1 Artifact Edit Proposal". The post must include cryptographic proof that the author controls an account holding the required percentage of the total AGENT1 token supply specified in Root Edit Proposal Submission.</td>
         </tr>
         <tr>
           <td>
@@ -32741,7 +32787,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Within seven (7) days of the proposal being submitted, the Operational Facilitator must review the Root Edit Proposal for alignment. If the proposal is aligned, the Operational Facilitator must respond to the Forum post to announce their finding. In this Forum post, the Operational Facilitator must also confirm that the proposal is feasible for Operational GovOps to operationalize. If the proposal is misaligned, the Operational Facilitator must respond to the Forum post to announce their finding and provide the reasoning for it.</td>
+          <td><p>Within seven (7) days of the proposal being submitted, the Operational Facilitator must review the Root Edit Proposal for alignment.</p><p>If the proposal is aligned, the Operational Facilitator must respond to the Forum post to announce their finding. In this Forum post, the Operational Facilitator must also confirm that the proposal is feasible for Operational GovOps to operationalize.</p><p>If the proposal is misaligned, the Operational Facilitator must respond to the Forum post to announce their finding and provide the reasoning for it.</p></td>
         </tr>
         <tr>
           <td>
@@ -32753,6 +32799,20 @@
         </tr>
         <tr>
           <td>
+            <dfn>Circulating Supply Definition</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>For purposes of Root Edit Token Holder Vote, the circulating supply of AGENT1 tokens is equal to the total supply of AGENT1 tokens minus the sum of:
+            <ol>
+              <li>Tokens retained by Sky and not yet distributed as token rewards (see <dfn>Sky Retained Tokens And Reward Pools</dfn>); and</li>
+              <li>Tokens retained in vesting agreements for Launch Agent 1 contributors and not yet distributed; and</li>
+              <li>Tokens in the Launch Agent 1 SubProxy Account (see <dfn>SubProxy Account</dfn>).</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Root Edit Artifact Update</dfn>
           </td>
           <td>Launch Agent 1</td>
@@ -32761,11 +32821,27 @@
         </tr>
         <tr>
           <td>
+            <dfn>Short-Term Transitionary Measures</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Until the Powerhouse system supports updating Agent Artifacts, the Operational Facilitator works with the Governance Facilitators to update the Atlas GitHub repository located at <a href="https://github.com/sky-ecosystem/next-gen-atlas/pulls">https:github.com/sky-ecosystem/next-gen-atlas/pulls"</a> to reflect proposals approved by Star Governance.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Artifact Edit Restrictions</dfn>
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
           <td>The Launch Agent 1 Artifact cannot be edited in any way that violates the Sky Core Atlas or its specifications of the Sky Primitives, or in any way that is otherwise misaligned. The Operational Facilitator must enforce this rule through their review of Artifact Edit Proposals.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Time-Limited Root Edit Restrictions On Removal Of Nested Contributors</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>For a period of three years after the Genesis Supply emissions of AGENT1 tokens take place, any Artifact Edit that would have the effect of removing a Nested Contributor must be approved by a vote of SKY holders in addition to a vote of AGENT1 holders to be effective.</td>
         </tr>
         <tr>
           <td>
@@ -33987,9 +34063,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>
-            The documents herein contain all data and specifications for Launch Agent 1's Instances of the Allocation System Primitive. See <dfn>A.2.4 - Allocation System Primitive</dfn>.
-          </td>
+          <td>The documents herein contain all data and specifications for Launch Agent 1's Allocation System Primitive Instances.</td>
         </tr>
         <tr>
           <td>
@@ -33997,7 +34071,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein organize all base information relevant to Launch Agent 1's usage of the Allocation System Primitive.</td>
+          <td>The documents herein organize all base information relevant to Launch Agent 1's usage of the Launch Agent 1 Liquidity Layer.</td>
         </tr>
         <tr>
           <td>
@@ -34005,7 +34079,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Active</td>
+          <td><code>Active</code></td>
         </tr>
         <tr>
           <td>
@@ -34013,7 +34087,31 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the Allocation System Primitive with Instance status of Active.</td>
+          <td>This document contains a Directory of all Instances of the Allocation System Primitive with Instance status of <code>Active</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain a Directory of all Instances on the Ethereum Mainnet of the Allocation System Primitive with Instance status of <code>Active</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Centrifuge</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Ethereum Mainnet Instances Directory of the Centrifuge Protocol with <code>Active</code> Status are stored herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Centrifuge USDC Instance Configuration Document Location</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at Centrifuge.</td>
         </tr>
         <tr>
           <td>
@@ -34021,7 +34119,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>This document contains a Directory of all Instances of the Allocation System Primitive with Instance status of Completed.</td>
+          <td>This document contains a Directory of all Instances of the Allocation System Primitive with Instance status of <code>Completed</code>.</td>
         </tr>
         <tr>
           <td>
@@ -34029,9 +34127,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>
-            This document contains a Directory of all prospective Instances of the Allocation System Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.
-          </td>
+          <td>This document contains a Directory of all prospective Instances of the Allocation System Primitive whose Invocation is currently in progress. Invocations that are completed successfully are moved to <dfn>Active Instances Directory</dfn>, whereas failed Invocations are Archived in <dfn>Hub Data Repository</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -34063,7 +34159,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The subtrees for Instances of the Allocation System Primitive with Suspended Status are stored here.</td>
+          <td>The subtrees for Instances of the Allocation System Primitive with <code>Suspended</code> Status are stored here.</td>
         </tr>
         <tr>
           <td>
@@ -34071,7 +34167,1257 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The documents herein specify the logic for coordinating multiple Instances of the Allocation System Primitive. In the future, additional logic will be added herein regarding how capital is allocated between different Instances of the Allocation System Primitive.</td>
+          <td>The documents herein provide general specifications of the Launch Agent 1 Liquidity Layer and define Launch Agent 1's overarching strategy and operational framework for managing across all Instances.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>General Specifications</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain general specifications for the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Liquidity Layer Architecture</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein describe the high-level design of the Launch Agent 1 Liquidity Layer, including its key smart contracts and their functionality.</td>
+        </tr>     
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Liquidity Layer Addresses</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The subdocuments herein provide the addresses of the Launch Agent 1 Liquidity Layer's constituent contracts.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Contract Addresses</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain global key addresses for the Allocator Contracts.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Buffer Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALLOCATOR_BUFFER contract is: <code>0x629aD4D779F46B8A1491D3f76f7E97Cb04D8b1Cd</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Oracle Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALLOCATOR_ORACLE contract is: <code>0xc7B91C401C02B73CBdF424dFaaa60950d5040dB7</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Registry Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALLOCATOR_REGISTRY contract is: <code>0xCdCFA95343DA7821fdD01dc4d0AeDA958051bB3B</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Roles Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALLOCATOR_ROLES contract is: <code>0x9A865A710399cea85dbD9144b7a09C889e94E803</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocator Vault (Launch Agent 1) Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALLOCATOR_VAULT (ALLOCATOR Launch Agent 1) contract is: <code>0x26512A41C8406800f21094a7a7A0f980f6e25d43</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Contracts</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain addresses for the ALM Contracts for the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain the ALM Contract Addresses for the Launch Agent 1 Liquidity Layer on the Ethereum Mainnet.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Controller (MainnetController) Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALM_CONTROLLER (MainnetController) contract is: <code>0x3048386E09c72C20FB268a37d2B630D7f2Ee9138</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Freezer Multisig (Mainnet) Address</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the Multisig that has the Freezer Role is: <code>0xB0113804960345fd0a245788b3423319c86940e5</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Relayer Multisig (Mainnet) Address</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the Multisig that has the Relayer Role is: <code>0x0eEC86649E756a23CBc68d9EFEd756f16aD5F85f</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Proxy (Mainnet) Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALM_PROXY contract is: <code>0x491EDFB0B8b608044e227225C715981a30F3A44E</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Rate Limits (Mainnet) Contract</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The address of the ALM_RATE_LIMITS contract is: <code>0x5F5cfCB8a463868E37Ab27B5eFF3ba02112dF19a</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein list the off-chain operational parameters for the Launch Agent 1 Liquidity Layer. These operational parameters are protocol settings managed outside of smart contracts (off-chain), used by operators and off-chain systems to guide the functioning of the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters For Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The document herein lists the current off-chain operational parameters for the Launch Agent 1 Liquidity Layer on Ethereum Mainnet.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Minimum Operation Size Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The minimum transaction size for operations on Ethereum Mainnet is (<code>MAINNET_MIN_OPERATION_SIZE</code>):
+            <ul>
+              <li>This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Debt Ceiling Buffer Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The buffer amount below the maximum debt ceiling is (<code>DEBT_CEILING_BUFFER</code>):
+            <ul>
+              <li>This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RateLimits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein list the Ratelimits for the Launch Agent 1 Liquidity Layer on each blockchain.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein list the current <code>RateLimits</code> for the Launch Agent 1 Liquidity Layer on Ethereum Mainnet.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDS Mint Maximum</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The maximum amount of USDS that can be minted within the Launch Agent 1 Liquidity Layer (<code>LIMIT_USDS_MINT</code>) is specified in the document herein.
+            <ul>
+              <li><code>maxAmount</code> (USDS): 100,000,000</li>
+              <li><code>slope</code> (USDS/ day): 50,000,000</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDS Burn Maximum</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The maximum amount of USDS that can be burned within the Launch Agent 1 Liquidity Layer (<code>LIMIT_USDS_BURN</code>) is specified in the document herein.
+            <ul>
+              <li><code>maxAmount</code> (USDS): This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+              <li><code>slope</code> (USDS/ day): This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDS For USDC Swap Maximum</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The maximum amount of USDS that can be swapped for USDC by the Launch Agent 1 Liquidity Layer in the Mainnet PSM (<code>LIMIT_USDS_TO_USDC</code>) is specified in the document herein.
+            <ul>
+              <li><code>maxAmount</code> (USDS): 100,000,000</li>
+              <li><code>slope</code> (USDS/ day): 50,000,000</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDS Mainnet ALM Proxy Maximum</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The maximum amount of USDC that can be sent to the Ethereum Mainnet ALM Proxy (<code>LIMIT_USDC_TO_DOMAIN</code>, hashed with Ethereum domain) is specified in the document herein.
+            <ul>
+              <li><code>maxAmount</code> (USDS): This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+              <li><code>slope</code> (USDS/ day): This parameter will be specified in a future iteration of the Launch Agent 1 Artifact.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Governance Processes</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein describe the specific governance processes for the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Invoking New Instances</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The governance process to invoke a new Instance of the Allocation System Primitive follows the Root Edit process see <dfn>Operational Process Definition</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Multisigs</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define multisigs that have privileged access to manage the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Multisig</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Core Operator Relayer Multisig has the <code>RELAYER_ROLE</code> as defined in <dfn>Relayer Role</dfn>. In a future iteration of the Launch Agent 1 Artifact, additional logic will be added herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Freezer Multisig</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Freezer Multisig has the <code>FREEZER_ROLE</code> as defined in <dfn>Freezer Role</dfn>. In a future iteration of the Launch Agent 1 Artifact, additional logic will be added herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Total Risk Capital (TRC) Management</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein specify requirements related to Launch Agent 1's Total Risk Capital (TRC) management.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Development Company's Operation Of Launch Agent 1 Liquidity Layer And Agreement Regarding Risk Tolerance Ratio</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Launch Agent 1 Development Company will operate the Launch Agent 1 Liquidity Layer and agrees to stay at or below a 90% Risk Tolerance Ratio. See <dfn>A.3.3 - Risk Tolerance Ratio</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Development Company's Total Risk Capital (TRC) Management Processes</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>As operators of the Launch Agent 1 Liquidity Layer, Launch Agent 1 Development Company automatically inherits, and is subject to, the base class of operational requirements related to Total Risk Capital management defined in <dfn>A.2.4 - Stars' Total Risk Capital (TRC) Management</dfn>. Modifications to the base operational logic automatically propagate to the Launch Agent 1 Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Launch Agent 1 Liquidity Layer Operational Processes</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein describe common operational procedures for the Launch Agent 1 Liquidity Layer applicable across multiple Instances.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Routine Protocol</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the protocol for routine ongoing management of the Launch Agent 1 Liquidity Layer and its active Instances. </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Role Hierarchy And Permissions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein defines roles (Admin, Relayer, Freezer) and their responsibilities/permissions for managing the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Default Admin Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The admin role (<code>DEFAULT_ADMIN_ROLE</code>) is the role that can grant and revoke any role, including itself and all other roles defined in the contract. The admin role is also used for general admin functions in all contracts. This role is fully controlled by Sky Governance via the Launch Agent 1 Proxy.
+            <pre><code>
+            constructor(address admin) {
+              _grantRole(DEFAULT_ADMIN_ROLE, admin);
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The <code>RELAYER_ROLE</code> is the address for the Launch Agent 1 Liquidity Layer ALM Planner off-chain system that calls functions on <code>Controller</code> contracts to perform actions on behalf of the <code>ALMProxy</code> contract. The Relayer Role may be granted to an address by any address holding the <code>DEFAULT_ADMIN_ROLE</code>. The Relayer Role may be removed from an address by any address holding the <code>DEFAULT_ADMIN_ROLE</code> or the <code>FREEZER_ROLE</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ALM Controller Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The <code>ALM_CONTROLLER_ROLE</code> is the address of the role that can call the <code>call</code> functions on the <code>ALMProxy</code> contract and update <code>RateLimits</code> contract. It includes the <code>MainnetController</code> and <code>ForeignController</code> contracts. ALM Controller contracts are accessed and modified via the Relayer Role.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Freezer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The <code>FREEZER_ROLE</code> is the address of the emergency role that can remove a compromised Relayer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Controller Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein describe the purpose and operational use of key functions within Launch Agent 1 Liquidity Layer <code>MainnetController</code> and <code>ForeignController</code> contracts: USDS management (mint/burn USDS), Asset Transfer Management (direct transfers, protocol deposits/withdrawals), Cross-chain Operations (CCTP bridging).</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Mainnet Controller Contract Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the functions controlled by the Controller contract for Launch Agent 1 Liquidity Layer operations on Ethereum Mainnet.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Admin Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the operations performed by the <code>DEFAULT_ADMIN_ROLE</code> within the <code>MainnetController</code> contract.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Set The Mint Recipient</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the process to set the <code>mintRecipient</code> for a specific <code>destinationDomain</code>. This is used in cross-chain transfers to specify the address that will receive minted tokens on the target chain.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Admin Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure they are working as an Admin. Only the <code>DEFAULT_ADMIN_ROLE</code> is allowed to <code>setMintRecipient</code>.
+            <pre><code>
+              function setMintRecipient(uint32 destinationDomain, bytes32 mintRecipient)
+              external
+              onlyRole(DEFAULT_ADMIN_ROLE)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Associate Mint Recipient With Domain</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must associate the <code>mintRecipient</code> with the <code>destinationDomain</code> such that any tokens minted on this domain will go to this recipient.
+            <pre><code>
+              {
+                mintRecipients[destinationDomain] = mintRecipient;
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Emit Event To Logs</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must emit the event to the blockchain logs.
+            <pre><code>
+              emit MintRecipientSet(destinationDomain, mintRecipient);
+                }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the operations performed by the <code>RELAYER_ROLE</code> within the <code>MainnetController</code> contract.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Core Vault Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the operations that are performed to maintain the desired level of liquidity and debt balance of the Launch Agent 1 Liquidity Layer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Mint USDS</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the steps for an operator to <code>mint</code> USDS from the Sky Allocation Vault to the Launch Agent 1 ALM Proxy.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure they are working as a <code>Relayer</code>. Only the <code>RELAYER</code> role is allowed to <code>mintUSDS</code>. Also, they must ensure the contract <code>isActive</code> i.e. can process the request.
+            <pre><code>
+              function mintUSDS(uint256 usdsAmount)
+                external
+                onlyRole(RELAYER)
+                isActive
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check RateLimits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure the <code>RateLimits</code> allow for minting the required amount.
+            <pre><code>
+              rateLimited(LIMIT_USDS_MINT, usdsAmount)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Mint USDS To Buffer</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must call the <code>MainnetController</code> contract to <code>mint</code> USDS into the Buffer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Encode Mint Function Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must encode the <code>mint</code> function call, using <code>abi.encodeCall</code> with the address <code>vault</code> from which USDS will be <code>drawn</code>, and the <code>amount</code> of USDS to <code>mint</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Send Encoded Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the draw function of the <code>vault</code> contract.
+            <pre><code>
+              {
+                // Mint USDS into the buffer
+                proxy.doCall(
+                  address(vault),
+                  abi.encodeCall(vault.draw, (usdsAmount))
+                );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Transfer USDS To ALM Proxy</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must call the <code>MainnetController</code> contract to <code>transfer</code> USDS from the Buffer to the ALM Proxy.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Encode Transfer Function</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must encode the <code>transfer</code> function call, using <code>abi.encodeCall</code> with the <code>buffer</code> address USDS will be transferred from, the <code>proxy</code> address that will receive USDS (i.e. ALM Proxy), and the <code>amount</code> of USDS to <code>transfer</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Send Encoded Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the <code>transferFrom</code> function of the USDS contract.
+            <pre><code>
+                // Transfer USDS from the buffer to the proxy
+                proxy.doCall(
+                  address(usds),
+                  abi.encodeCall(usds.transferFrom, (buffer, address(proxy), usdsAmount))
+                );
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Burn USDS</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the steps for an operator to return and then <code>burn</code> Launch Agent 1's USDS debt in the Sky Allocation Vault.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure they are working as a <code>RELAYER</code>. Only the <code>RELAYER</code> role is allowed to <code>burnUSDS</code>. They must also ensure the contract <code>isActive</code> i.e. can process the request.
+            <pre><code>
+              function burnUSDS(uint256 usdsAmount)
+                external
+                onlyRole(RELAYER)
+                isActive
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check RateLimits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure the <code>RateLimits</code> allow for minting the required amount.
+            <pre><code>
+              cancelRateLimit(LIMIT_USDS_MINT, usdsAmount)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Transfer USDS To Buffer</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must call the <code>MainnetController</code> to <code>transfer</code> USDS from the ALM Proxy to the Buffer.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Encode Transfer Function Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must encode the <code>transfer</code> function call, using <code>abi.encodeCall</code> with the <code>buffer</code> address USDS will be transferred to, and the <code>amount</code> of USDS to <code>transfer</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Send Encoded Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the <code>transfer</code> function of the USDS contract.
+            <pre><code>
+              {
+                // Transfer USDS from the proxy to the buffer
+                proxy.doCall(
+                  address(usds),
+                  abi.encodeCall(usds.transfer, (buffer, usdsAmount))
+                );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Burn USDS</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must call the <code>MainnetController</code> contract to <code>burn</code> USDS.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Encode Wipe Function Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must encode the <code>wipe</code> function call, using <code>abi.encodeCall</code> with the address <code>vault</code> from which USDS will be <code>burned</code>, and the <code>amount</code> of USDS to <code>burn</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Send Encoded Call</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must send the encoded call using <code>proxy.doCall()</code> to the <code>wipe</code> function of the vault contract.
+            <pre><code>
+              // Burn USDS from the buffer
+                proxy.doCall(
+                  address(vault),
+                  abi.encodeCall(vault.wipe, (usdsAmount))
+                );
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ERC-4626 Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the general Launch Agent 1 Liquidity Layer operational procedures for interacting with ERC4626-compliant tokenized vaults. ERC4626 is a standard interface for vaults representing shares of an underlying ERC20 token. Launch Agent 1 Liquidity Layer can integrate with various ERC4626 vaults.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>General Deposit to ERC-4626 Tokens Procedure</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This document defines the steps for an operator to deposit assets from the ALM Proxy to the ERC-4626 vault to receive yield-bearing shares.
+            <ul>
+              <li>The Launch Agent 1 Liquidity Layer Operator, acting as <code>RELAYER</code>, initiates a deposit.</li>
+              <li>Pre-conditions are checked: Launch Agent 1 Liquidity Layer contract <code>isActive</code>, ALM Proxy has sufficient underlying asset, and the deposit amount is within instance-specific <code>RateLimits</code> (defined in the relevant Instance Configuration Document).</li>
+              <li>The Launch Agent 1 Liquidity Layer Operator approves the target ERC4626 vault (identified by its <code>token</code> address in the Instance Configuration Document) to spend the underlying <code>asset</code> from the ALM Proxy.</li>
+              <li>The Launch Agent 1 Liquidity Layer Operator calls the <code>deposit(uint256 amount, address receiver)</code> function on the target ERC4626 vault, specifying the <code>amount</code> of underlying asset and the ALM <code>proxy</code> as the receiver of vault shares.</li>
+              <li>The number of shares received is recorded.</li>
+              <li>For detailed call structures, instance-specific parameters (vault address, asset address, rate limits), and operational examples, refer to the specific ERC4626 Instance Configuration Document (ICD).</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>General Withdraw from ERC-4626 Tokens Procedure</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This document defines the steps for an operator to withdraw a yield-earning balance from the ERC-4626 vault to the ALM Proxy.
+            <ul>
+              <li>The Launch Agent 1 Liquidity Layer Operator, acting as <code>RELAYER</code>, initiates a withdrawal.</li>
+              <li>Pre-conditions are checked: Launch Agent 1 Liquidity Layer contract <code>isActive</code>, ALM Proxy has sufficient shares of the ERC4626 vault token, and the withdrawal amount is within instance-specific <code>RateLimits</code> (defined in the relevant ICD).</li>
+              <li>Launch Agent 1 Liquidity Layer calls the <code>withdraw(uint256 assets, address receiver, address owner)</code> function on the target ERC4626 vault, specifying the <code>amount</code> of underlying assets to withdraw, with the ALM proxy as both <code>receiver</code> (of assets) and <code>owner</code> (of shares being burned).</li>
+              <li>The number of shares burned is recorded.</li>
+              <li>For detailed call structures, instance-specific parameters, and operational examples, refer to the specific ERC4626 Instance Configuration Document.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>General Redeem from ERC-4626 Tokens Procedure</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This document defines the steps for an operator to redeem yield-bearing shares from the ERC-4626 vault, receiving the corresponding amount of underlying assets into the ALM Proxy.
+            <ul>
+              <li>The Launch Agent 1 Liquidity Layer Operator, acting as <code>RELAYER</code>, initiates a redemption of shares.</li>
+              <li>Pre-conditions are checked: Launch Agent 1 Liquidity Layer contract <code>isActive</code>, ALM Proxy has sufficient shares of the ERC4626 vault token.</li>
+              <li>Launch Agent 1 Liquidity Layer calls the <code>redeem(uint256 shares, address receiver, address owner)</code> function on the target ERC4626 vault, specifying the number of shares to redeem, with the ALM <code>proxy</code> as both <code>receiver</code> (of assets) and <code>owner</code> (of shares being redeemed).</li>
+              <li>The amount of underlying assets received is recorded, and relevant <code>RateLimits</code> (for withdrawal) are updated.</li>
+              <li>For detailed call structures, instance-specific parameters, and operational examples, refer to the specific ERC4626 Instance Configuration Document.</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>PSM Functions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the swap operations performed by the Launch Agent 1 Liquidity Layer in the PSM.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap USDS to USDC</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define a series of operations for an operator to <code>swap</code> USDS to USDC through the PSM.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure they are working as a <code>RELAYER</code>. Only the <code>RELAYER</code> role is allowed to <code>swapUSDSToUSDC</code>. Also, they must ensure the contract <code>isActive</code> i.e. can process the request.
+            <pre><code>
+              function swapUSDSToUSDC(uint256 usdcAmount)
+                external
+                onlyRole(RELAYER)
+                isActive
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check RateLimits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure that <code>RateLimits</code> allows for swapping the required USDS amount to USDC.
+            <pre><code>
+              rateLimited(LIMIT_USDS_TO_USDC, usdcAmount)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Convert To 18 Token Format</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must convert USDC amounts to an 18 token decimal format using <code>psmTo18ConversionFactor</code>.
+            <pre><code>
+              {
+                uint256 usdsAmount = usdcAmount * psmTo18ConversionFactor;
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check ALM Proxy</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure that the ALM Proxy has enough USDS balance to <code>swap</code> for the required USDC amount.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Approve Contract Spend</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must approve the <code>daiUsds</code> contract to spend the <code>usdsAmount</code> on behalf of the <code>proxy</code>. <code>daiUsds</code> is a contract that facilitates a 1:1 swap between USDS and DAI.
+            <pre><code>
+              proxy.doCall(
+                address(usds),
+                abi.encodeCall(usds.approve, (address(daiUsds), usdsAmount))
+              );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap USDS To DAI</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must swap USDS to DAI. USDS is swapped to DAI in a 1:1 ratio through the <code>daiUsds</code> contract and sent back to the <code>proxy</code>.
+            <pre><code>
+              proxy.doCall(
+                address(daiUsds),
+                abi.encodeCall(daiUsds.usdsToDai, (address(proxy), usdsAmount))
+              );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Approve PSM Spend</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must approve the PSM to spend the newly acquired DAI. The approval is needed for the PSM to be able to <code>swap</code> DAI for USDC.
+            <pre><code>
+              proxy.doCall(
+                address(dai),
+                abi.encodeCall(dai.approve, (address(psm), usdsAmount))
+              );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap DAI To USDC</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must swap DAI to USDC. DAI is swapped to USDC in the PSM at a 1:1 ratio with no fee, using the <code>buyGemNoFee</code> function and return USDC to the <code>proxy</code>.
+            <pre><code>
+              proxy.doCall(
+                address(psm),
+                abi.encodeCall(psm.buyGemNoFee, (address(proxy), usdcAmount))
+              ); 
+            }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap USDC to USDS</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define a series of operations for an operator to <code>swap</code> USDC to USDS through the PSM.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Relayer Role</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure they are working as a <code>RELAYER</code>. Only the <code>RELAYER</code> role is allowed to <code>swapUSDCToUSDS</code>. Also, they must ensure the contract <code>isActive</code> i.e. can process the request.
+            <pre><code>
+              function swapUSDCToUSDS(uint256 usdcAmount)
+                external
+                onlyRole(RELAYER)
+                isActive
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check RateLimits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure that <code>RateLimits</code> allows for swapping the required USDC amount to USDS.
+            <pre><code>
+              cancelRateLimit(LIMIT_USDS_TO_USDC, usdcAmount)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Check ALM Proxy</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must ensure ALM Proxy has enough USDC balance to <code>swap</code> for the required USDS amount.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Approve Contract Spend</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must approve the PSM to spend USDC. The approval is needed for the PSM to be able to execute a <code>swap</code> of USDC.
+            <pre><code>
+              proxy.doCall(
+                address(usdc),
+                abi.encodeCall(usdc.approve, (address(psm), usdcAmount))
+              );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Calculate Swap Limit</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must calculate the <code>swap limit</code> per transaction. The maximum amount of USDC that can be swapped to DAI in one transaction is calculated based on the DAI balance held by the PSM. <code>psmTo18ConversionFactor</code> converts DAI's 18 token decimals to USDC's 6 token decimals.
+            <pre><code>
+              uint256 limit = dai.balanceOf(address(psm)) / psmTo18ConversionFactor;
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap USDC To DAI Directly If Possible</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must perform a <code>direct swap</code> feasibility check and <code>swap</code> USDC to DAI, if possible. If the <code>usdcAmount</code> is less than or equal to the <code>limit</code>, a direct swap should be performed. <code>_swapUSDCToDAI</code> is called to execute the swap from <code>USDC</code> to <code>DAI</code>.
+            <pre><code>
+              if (usdcAmount &lt;= limit) {
+                _swapUSDCToDAI(usdcAmount);
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap USDC To DAI Iteratively If Needed</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>If <code>direct swap</code> is not possible, the operator must perform an <code>iterative swap</code> of USDC to DAI with DAI <code>refilling</code>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Split Into Multiple Swaps If Limit Exceeded</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>If the <code>usdcAmount</code> exceeds the limit, the operator must split the swap into multiple smaller swaps as follows.
+            <ol>
+              <li>The operator must refill the PSM with DAI by calling <code>psm.fill()</code>.</li>
+              <li>The operator must recalculate the limit to see how much USDC can be swapped after the refill.</li>
+              <li>The operator must swap the maximum possible USDC amount that doesn't exceed the limit.</li>
+              <li>The operator must update <code>remainingUsdcToSwap</code> by subtracting the amount just swapped.</li>
+              <li>The operator must repeat the process until the full <code>usdcAmount</code> is swapped.</li>
+            </ol>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Split Into Multiple Swaps If Limit Exceeded</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>If the PSM can't be filled, the transaction reverts with <code>DssLitePsm/nothing-to-fill.</code>
+            <pre><code>
+              else {
+                uint256 remainingUsdcToSwap = usdcAmount;
+
+                while (remainingUsdcToSwap > 0) {
+                  psm.fill();
+
+                  limit = dai.balanceOf(address(psm)) / psmTo18ConversionFactor;
+
+                  uint256 swapAmount = remainingUsdcToSwap < limit ? remainingUsdcToSwap : limit;
+
+                  _swapUSDCToDAI(swapAmount);
+
+                  remainingUsdcToSwap -= swapAmount;
+                }
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Convert USDC Amount To DAI Amount</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must convert the USDC amount to the DAI amount, accounting for the token decimal difference.
+            <pre><code>
+              {
+                uint256 daiAmount = usdcAmount * psmTo18ConversionFactor;
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Approve Contract Spend</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must approve the <code>daiUsds</code> contract to spend the <code>daiAmount</code> on behalf of the <code>proxy</code>.
+            <pre><code>
+              proxy.doCall(
+                address(dai),
+                abi.encodeCall(dai.approve, (address(daiUsds), daiAmount))
+              );
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Swap DAI to USDS</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The operator must swap DAI to USDS. DAI is swapped to USDS at a 1:1 ratio through the <code>daiUsds</code> contract and sent back to the <code>proxy</code>.
+            <pre><code>
+              proxy.doCall(
+                address(daiUsds),
+                abi.encodeCall(daiUsds.daiToUsds, (address(proxy), daiAmount))
+                );
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit Management</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the protocol for querying, setting, and adjusting <code>RateLimits</code> for Instances using their <code>RateLimitID</code>s. The ratelimits must be maintained in line with Launch Agent 1's strategy, market conditions, and security considerations.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RateLimits Query</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The following code sets out instructions for the operator to query the current <code>RateLimits</code> for a specific key:
+            <pre><code>
+              Function getRateLimitData(bytes32 key) external override view returns (RateLimitData memory) {
+                return _data[key];
+                }
+
+                function getCurrentRateLimit(bytes32 key) public override view returns (uint256) {
+                  RateLimitData memory d = _data[key];
+
+                  // Unlimited rate limit case
+                  if (d.maxAmount == type(uint256).max) {
+                    return type(uint256).max;
+                  }
+
+                  return _min(
+                    d.slope * (block.timestamp - d.lastUpdated) + d.lastAmount,
+                    d.maxAmount
+                  );
+                }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Set RateLimit</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The following code sets out instructions for the operator to set the <code>RateLimit</code> for a specific key:
+            <pre><code>
+              function setRateLimitData(
+                bytes32 key,
+                uint256 maxAmount,
+                uint256 slope,
+                uint256 lastAmount,
+                uint256 lastUpdated
+              )
+                public override onlyRole(DEFAULT_ADMIN_ROLE)
+              {
+                require(lastAmount <= maxAmount, "RateLimits/invalid-lastAmount");
+                require(lastUpdated <= block.timestamp, "RateLimits/invalid-lastUpdated");
+
+                _data[key] = RateLimitData({
+                  maxAmount: maxAmount,
+                  slope: slope,
+                  lastAmount: lastAmount,
+                  lastUpdated: lastUpdated
+                });
+
+                emit RateLimitDataSet(key, maxAmount, slope, lastAmount, lastUpdated);
+              }
+
+              function setRateLimitData(bytes32 key, uint256 maxAmount, uint256 slope) external override {
+                setRateLimitData(key, maxAmount, slope, maxAmount, block.timestamp);
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Set Unlimited RateLimit</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The following code sets out instructions for the operator to set an unlimited <code>RateLimit</code> for a specific key:
+            <pre><code>
+              function setUnlimitedRateLimitData(bytes32 key) external override {
+                setRateLimitData(key, type(uint256).max, 0, type(uint256).max, block.timestamp);
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Set Trigger For RateLimit Decrease</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The following code sets out instructions for the operator to trigger a decrease of a <code>RateLimit</code> for a specific key:
+            <pre><code>
+              function triggerRateLimitDecrease(bytes32 key, uint256 amountToDecrease)
+                external override onlyRole(CONTROLLER) returns (uint256 newLimit)
+              {
+                RateLimitData storage d = _data[key];
+                uint256 maxAmount = d.maxAmount;
+
+                require(maxAmount > 0, "RateLimits/zero-maxAmount");
+                if (maxAmount == type(uint256).max) return type(uint256).max; // Special case unlimited
+
+                uint256 currentRateLimit = getCurrentRateLimit(key);
+
+                require(amountToDecrease <= currentRateLimit, "RateLimits/rate-limit-exceeded");
+
+                d.lastAmount = newLimit = currentRateLimit - amountToDecrease;
+                d.lastUpdated = block.timestamp;
+
+                emit RateLimitDecreaseTriggered(key, amountToDecrease, currentRateLimit, newLimit);
+              }
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Set Trigger For RateLimit Increase</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The following code sets out instructions for the operator to trigger an increase of a <code>RateLimit</code> for a specific key:
+            <pre><code>
+              function triggerRateLimitIncrease(bytes32 key, uint256 amountToIncrease)
+                external override onlyRole(CONTROLLER) returns (uint256 newLimit) 
+              {
+                RateLimitData storage d = _data[key];
+                uint256 maxAmount = d.maxAmount;
+
+                require(maxAmount &gt; 0, "RateLimits/zero-maxAmount");
+                if (maxAmount == type(uint256).max) return type(uint256).max; // Special case unlimited
+
+                uint256 currentRateLimit = getCurrentRateLimit(key);
+
+                d.lastAmount = newLimit = _min(currentRateLimit + amountToIncrease, maxAmount);
+                d.lastUpdated = block.timestamp;
+
+                emit RateLimitIncreaseTriggered(key, amountToIncrease, currentRateLimit, newLimit);
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Lifecycle Management</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define processes for invoking (onboarding) new Launch Agent 1 Liquidity Layer Instances and offboarding existing ones. This process will be specified in a future iteration of the Launch Agent 1 Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Upgrading Controller</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the process for deploying new Controller contracts. This process will be specified in a future iteration of the Launch Agent 1 Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Non-Routine Protocol</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the process for non-routine ongoing management of the Launch Agent 1 Liquidity Layer and its active Instances.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Emergency Protocol</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define all the possible actions that can be taken in case of an emergency within Launch Agent 1 Liquidity Layer operations.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Remove Compromised Relayer As Freezer</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>In the event of a compromised Relayer, the <code>FREEZER_ROLE</code> can call the function to <code>removeRelayer</code> from the Controller contract. This function takes an address, and then the Freezer can remove the compromised Relayer, thereby preventing it from doing any harm to the system. The backstop relayer can then take over. This function should only be used if the keys to the relayer multisig have been leaked or compromised, and the relayer is now in the hands of an external bad actor.
+            <pre><code>
+              mainnetController.removeRelayer(compromisedRelayer)
+            </code></pre>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Redeem All Mainnet Positions</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the actions that should be performed by an operator if there is a need to recover the liquidity from Mainnet Protocols and centralize it in the Mainnet Launch Agent 1 ALM Proxy.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>ERC-4626 Withdrawal Action</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>In order to withdraw all ERC-4626 balances, the operator must execute the following action:
+            <pre><code>
+              mainnetController.redeemERC4626(address(token), token.balanceOf(address(proxy)))
+            </code></pre>
+            For more detailed instructions on the code to execute this, see <dfn>General Withdraw from ERC-4626 Tokens Procedure</dfn> and <dfn>General Redeem from ERC-4626 Tokens Procedure</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDC to USDS Swap Action</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This document defines the action that should be performed by an operator if there is a need to centralize all recovered liquidity in USDS.
+            <pre><code>
+              mainnetController.swapUSDCToUSDS(usdc.balanceOf(address(proxy))
+            </code></pre>
+            For more detailed instructions on the code to execute this, see <dfn>Swap USDC to USDS</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>USDS Burn Action</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This document defines the action that should be performed if there is a need to repay and then burn Launch Agent 1's USDS debt.
+            <pre><code>
+              mainnetController.burnUSDS(usds.balanceOf(address(proxy))
+            </code></pre>
+            More detailed instructions on the code to execute this, see <dfn>Burn USDS</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Allocation Strategy</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>In the future, additional logic will be added herein regarding the strategy by which capital is allocated between different Instances of the Launch Agent 1 Liquidity Layer.</td>
         </tr>
         <tr>
           <td>
@@ -34079,7 +35425,170 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The Instances of the Allocation System Primitive with Active Status are stored herein.</td>
+          <td>The Instances of the Launch Agent 1 Liquidity Layer with <code>Active</code> Status are stored herein. The <code>RRC Framework Full Implementation</code> status defines whether the Instance Financial RRC is calculated based on a fully implemented risk model (see <dfn>A.3.3 - Fully Implemented Risk Models</dfn>) or a pending risk model (see <dfn>A.3.3 - Pending Risk Models</dfn>). If the Instance Financial RRC is calculated based on a fully implemented risk model the status is <code>Covered</code>. If the Instance Financial RRC is calculated based on a pending risk model the status is <code>Pending</code>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet Instances</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Ethereum Mainnet Instances of the Launch Agent 1 Liquidity Layer with <code>Active</code> Status are stored herein and are organized by target protocol.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Centrifuge</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The Ethereum Mainnet Instances of the Centrifuge Protocol with <code>Active</code> Status are stored herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Ethereum Mainnet - Centrifuge USDC Instance Configuration Document</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Centrifuge USDC Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td><strong><code>Pending</code></strong></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Centrifuge USDC instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Ethereum Mainnet</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Centrifuge</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By Launch Agent 1 Liquidity Layer</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>USDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>JTRSY</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td><code>0x8c213ee79581Ff4984583C6a801e5263418C4b86</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>This address will be specified in a future iteration of the Launch Agent 1 Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Launch Agent 1 Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 100,000,000 USDC</li>
+              <li><code>slope</code>: 50,000,000 USDC</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: This parameter will be specified in a future iteration of the Launch Agent 1 Artifact</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general Launch Agent 1 Liquidity Layer processes.</td>
         </tr>
         <tr>
           <td>
@@ -34087,7 +35596,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>The Instances of the Allocation System Primitive with Completed Status are stored herein.</td>
+          <td>The Instances of the Launch Agent 1 Liquidity Layer with Completed Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -34095,9 +35604,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>
-            The in progress Invocations of the Allocation System Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.
-          </td>
+          <td>The in progress Invocations of the Allocation System Primitive are contained herein. Once an Invocation is successfully completed, its subtree will be moved to <dfn>Active Instances</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -34483,7 +35990,15 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Launch Agent 1's initial priority is to deploy a RWA Allocation Conduit, following which it will deploy crypto-native Conduits for Morpho and Curve.</td>
+          <td>Launch Agent 1 will unlock the full potential of USDS by building an institutional-grade credit platform designed to facilitate credit creation and seamlessly move yield in and out of the onchain economy. Launch Agent 1's priority is to make USDS more attractive through diversified stability fee streams, more efficient rates, and greater utility, with CLOs as the first step into accessing higher yielding investment-grade credit assets. To accomplish these goals, Launch Agent 1 will deploy a RWA Allocation Conduit focused on traditional credit opportunities, as well as crypto-native Conduits for Morpho and Curve.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Collateralized Loan Obligation Strategy</dfn>
+          </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Launch Agent 1 will prioritize Collateralized Loan Obligations (CLOs) as the initial pathway to provide Sky ecosystem with rapid exposure to higher yielding investment-grade credit assets, establishing a scalable model for offchain credit with onchain governance.</td>
         </tr>
         <tr>
           <td>
@@ -34491,9 +36006,15 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
+          <td>Launch Agent 1 will begin with onboarding winners of the Grand Prix (<a href="https://forum.sky.money/t/announcement-spark-tokenization-grand-prix-request-for-proposal/24631">https://forum.sky.money/t/announcement-spark-tokenization-grand-prix-request-for-proposal/24631</a>).</td>
+        </tr>
+        <tr>
           <td>
-            Launch Agent 1 will begin with onboarding winners of the Grand Prix (<a href="https://forum.sky.money/t/announcement-spark-tokenization-grand-prix-request-for-proposal/24631">https://forum.sky.money/t/announcement-spark-tokenization-grand-prix-request-for-proposal/24631</a>) and will expand to additional partners shortly thereafter.
+            <dfn>Institutional Credit Platform</dfn>
           </td>
+          <td>Launch Agent 1</td>
+          <td>Core</td>
+          <td>Launch Agent 1 will build partnerships with leading financial institutions to scale credit opportunities. This will provide transparent insight into balance sheet allocations while delivering higher, more stable yields through diversified institutional-grade assets.</td>
         </tr>
         <tr>
           <td>
@@ -34525,7 +36046,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Launch Agent 1 will consider allocations to basis trades, pendle PTs, and other delta-neutral crypto primitives.</td>
+          <td>Launch Agent 1 will consider allocations to basis trades, Pendle PTs, and other delta-neutral crypto primitives.</td>
         </tr>
         <tr>
           <td>
@@ -34533,7 +36054,14 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Launch Agent 1's phased plan to execute its strategy includes:1) Deploy infrastructure to enable initial allocation conduits;2) Establish manual reallocation processes; and 3) Develop quantitative reallocation parameters and conditions to optimize and decentralize conduit management over time.</td>
+          <td>Launch Agent 1's phased plan to execute its strategy includes:
+            <ol>
+              <li>Deploy infrastructure to enable initial allocation conduits;</li>
+              <li>Establish manual reallocation processes;</li>
+              <li>Develop quantitative reallocation parameters and conditions to optimize and decentralize conduit management over time; and</li>
+              <li>Develop transparent insights into the allocation of the balance sheet.</li>
+            </ol>
+          </td>
         </tr>
         <tr>
           <td>
@@ -35449,12 +36977,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document Location</dfn>
+            <dfn>DAOcraft Instance Configuration Document Location</dfn>
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOCraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -35517,11 +37045,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document</dfn>
+            <dfn>DAOcraft Instance Configuration Document</dfn>
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOCraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -35529,7 +37057,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -35537,7 +37065,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>In the near term DAOCraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -35545,7 +37073,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOCraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -35553,7 +37081,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -35561,7 +37089,7 @@
           </td>
           <td>Launch Agent 2</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -39183,12 +40711,12 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document Location</dfn>
+            <dfn>DAOcraft Instance Configuration Document Location</dfn>
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
           <td>
-            This Instance's associated Instance Configuration Document is located at <dfn>DAOCraft Instance Configuration Document</dfn>.
+            This Instance's associated Instance Configuration Document is located at <dfn>DAOcraft Instance Configuration Document</dfn>.
           </td>
         </tr>
         <tr>
@@ -39251,11 +40779,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>DAOCraft Instance Configuration Document</dfn>
+            <dfn>DAOcraft Instance Configuration Document</dfn>
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein contain the Instance Configuration Document for the DAOCraft Executor Accord Primitive Instance.</td>
+          <td>The documents herein contain the Instance Configuration Document for the DAOcraft Executor Accord Primitive Instance.</td>
         </tr>
         <tr>
           <td>
@@ -39263,7 +40791,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the parameters of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the parameters of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -39271,7 +40799,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>In the near term DAOCraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
+          <td>In the near term DAOcraft will take on the functions of an Operational Executor Agent, including both Operational GovOps and Operational Facilitator roles.</td>
         </tr>
         <tr>
           <td>
@@ -39279,7 +40807,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the custom parameters of the DAOCraft Instance of the Executor Accord Primitive, if any.</td>
+          <td>The documents herein define the custom parameters of the DAOcraft Instance of the Executor Accord Primitive, if any.</td>
         </tr>
         <tr>
           <td>
@@ -39287,7 +40815,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein define the process for the ongoing management of the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein define the process for the ongoing management of the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -39295,7 +40823,7 @@
           </td>
           <td>Launch Agent 3</td>
           <td>Core</td>
-          <td>The documents herein contain data relevant to the DAOCraft Instance of the Executor Accord Primitive.</td>
+          <td>The documents herein contain data relevant to the DAOcraft Instance of the Executor Accord Primitive.</td>
         </tr>
         <tr>
           <td>
