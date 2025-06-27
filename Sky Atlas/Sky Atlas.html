@@ -9205,7 +9205,7 @@
           </td>
           <td>Core GovOps TRC Report Validation Process</td>
           <td>Core</td>
-          <td><p>Core GovOps receives TRC Reports from Stars on a regular basis and must perform the following validation process.</p><p>Core GovOps verifies against the Atlas any Ecosystem Accord referenced in the TRC Report for sourced Star-External Junior Risk Capital (SEJRC) or rented Originated Senior Risk Capital (OSRC). This includes confirming the existence, current validity, and terms of such Accords as formally recorded within the Atlas.</p><p>Core GovOps validates the Star Agent's reported IJRC by reconciling the reported IJRC amount and its constituent asset composition against the actual on-chain state of the Star Agent's designated SubProxy account. This involves direct on-chain verification of asset balances. Core GovOps verifies that all assets reported as IJRC and held within the SubProxy account meet the definition of "eligible assets" for IJRC as defined by the Atlas. See <dfn>A.3.3 - Internal Junior Risk Capital (IJRC)</dfn>.</p><p>For reported Tokenized External Junior Risk Capital (TEJRC) and Originated Senior Risk Capital directly originated by the Star, Core GovOps validates the reported amounts and statuses by cross-referencing data from the relevant smart contract systems. This may involve querying TEJRC pool contracts, OSRC auction records, and other on-chain infrastructure to confirm the existence, ownership, and eligibility of these capital components.</p><p>Core GovOps reviews all attestations and disclosures made by the Star Agent in the TRC Report. This review focuses on understanding the Star Agent's TRC compliance with Aggregate RRC throughout the entire reporting period. This assessment is critical for identifying intra-period shortfalls that might not be visible to on-chain monitoring systems or reflected in the end-of-period snapshot alone. The assessment process may include requiring the Star Agent to provide supplementary documentation, verifiable evidence, or independent third-party confirmations for material off-chain claims or attestations concerning intra-period events; and/or cross-referencing disclosed off-chain information with relevant on-chain indicators or transactions that might corroborate or contradict the attestations.</p><p>Core GovOps reviews all attestations and disclosures made by the Star Agent in the TRC Report concerning off-chain agreements, encumbrances, capital impairments, or other conditions that are not directly verifiable on-chain but which affect the Star's actual TRC. This assessment is critical for understanding the true availability and eligibility of capital beyond what on-chain data alone can reveal. The assessment process may include requiring the Star Agent to provide supplementary documentation, verifiable evidence, or independent third-party confirmations for material off-chain claims; and/or cross-referencing disclosed off-chain information with any relevant on-chain indicators or transactions that might corroborate or contradict the attestations.</p><p>Finally, Core GovOps independently calculates and verifies the Star Agent's compliance with all Atlas-defined capital sourcing ratios (e.g., External Per Internal (EPI), Senior Per Junior (SPJ)).</p></td>
+          <td><p>Core GovOps receives TRC Reports from Stars on a regular basis and must perform the following validation process.</p><p>Core GovOps verifies against the Atlas any Ecosystem Accord referenced in the TRC Report for sourced Star-External Junior Risk Capital (SEJRC) or rented Originated Senior Risk Capital (OSRC). This includes confirming the existence, current validity, and terms of such Accords as formally recorded within the Atlas.</p><p>Core GovOps validates the Star Agent's reported IJRC by reconciling the reported IJRC amount and its constituent asset composition against the actual on-chain state of the Star Agent's designated SubProxy account. This involves direct on-chain verification of asset balances. Core GovOps verifies that all assets reported as IJRC and held within the SubProxy account meet the definition of "eligible assets" for IJRC as defined by the Atlas. See <dfn>A.3.3 - Internal Junior Risk Capital (IJRC)</dfn>.</p><p>For reported Tokenized External Junior Risk Capital (TEJRC) and Originated Senior Risk Capital directly originated by the Star, Core GovOps validates the reported amounts and statuses by cross-referencing data from the relevant smart contract systems. This may involve querying TEJRC pool contracts, OSRC auction records, and other on-chain infrastructure to confirm the existence, ownership, and eligibility of these capital components.</p><p>Core GovOps reviews all attestations and disclosures made by the Star Agent in the TRC Report. This review focuses on understanding the Star Agent's TRC compliance with Aggregate RRC throughout the entire reporting period. This assessment is critical for identifying intra-period shortfalls that might not be visible to on-chain monitoring systems or reflected in the end-of-period snapshot alone. The assessment process may include requiring the Star Agent to provide supplementary documentation, verifiable evidence, or independent third-party confirmations for material off-chain claims or attestations concerning intra-period events; and/or cross-referencing disclosed off-chain information with relevant on-chain indicators or transactions that might corroborate or contradict the attestations.</p><p>Finally, Core GovOps independently calculates and verifies the Star Agent's compliance with all Atlas-defined capital sourcing ratios (e.g., External Per Internal (EPI), Senior Per Junior (SPJ)).</p></td>
         </tr>
         <tr>
           <td>
@@ -10593,7 +10593,15 @@
           </td>
           <td>2025 Bonus</td>
           <td>Core</td>
-          <td>An additional 0.4% Accessibility Reward bonus will apply during the calendar year 2025 (ending December 31, 2025). This bonus is strictly limited to the Star and does not extend to the Star Foundation.</td>
+          <td>An additional 0.4% Accessibility Reward bonus will apply during the calendar year 2025 (ending December 31, 2025). This bonus is strictly limited to the Star and does not extend to the Star Foundation. The bonus is subject to the limitation specified in <dfn>A.2.10 - Bonus Limitation</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.10 - Bonus Limitation</dfn>
+          </td>
+          <td>Bonus Limitation</td>
+          <td>Core</td>
+          <td>USDS and sUSDS balances held by the Star itself are not eligible for the Accessibility Reward bonus specified in <dfn>A.2.10 - 2025 Bonus</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -10682,6 +10690,14 @@
           <td>Initial Allocation Mechanism</td>
           <td>Core</td>
           <td>Shortly after the Agent Token launch, an Atlas Edit Proposal submitted to Sky Governance will allow the respective founding teams of Spark and Launch Agent 1 to propose an initial cash grant to their respective Star Foundation. Sky Governance must consent to this initial cash grant via approving the Sky Atlas modification.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.2.10 - Initial Cash Grant To Spark Foundation</dfn>
+          </td>
+          <td>Initial Cash Grant To Spark Foundation </td>
+          <td>Core</td>
+          <td><p>The founding team of Spark has proposed a cash grant of 800,000 USDS per month to the Spark Foundation from Spark's Genesis Capital Allocation for a three (3) month period, beginning at the time of the Genesis Capital Allocation. The purpose of the grant is to enable Spark Foundation to fulfill its purpose of promoting the growth and development of Spark. This funding will support essential activities such as engineering efforts, community engagement, research, infrastructure, and administrative operations.</p><p>Sky Governance hereby consents to this cash grant. The first month's transfer must be made to the Spark Foundation immediately after the transfer of the Genesis Capital Allocation. See <dfn>A.2.10 - Transfer Of Genesis Capital Allocation To Spark SubProxy</dfn>. Transfers for subsequent months will be made proportionally in Spark Spells included in Sky Executive Votes unless otherwise agreed by Sky and Spark.</p></td>
         </tr>
         <tr>
           <td>
@@ -10908,6 +10924,14 @@
         </tr>
         <tr>
           <td>
+            <dfn>A.2.10 - Transfer Of Genesis Capital Allocation To Spark SubProxy</dfn>
+          </td>
+          <td>Transfer Of Genesis Capital Allocation To Spark SubProxy</td>
+          <td>Core</td>
+          <td><p>The transfer of 20.6 million USDS from the Surplus Buffer to the Spark SubProxy for the Genesis Capital Allocation must be included in the June 26, 2025 Executive Vote. This action is authorized to proceed directly to an Executive Vote without a prior Governance Poll.</p><p>This amount reflects that 4.4 million USDS of pre-TGE expenses were paid by Sky as specified in <dfn>A.2.10 - Treatment of Expenses Paid By Sky Pre-TGE</dfn>. This includes 2 million USDS transferred from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to market makers and 2.4 million USDS transferred from the Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to exchanges. See <dfn>A.2.10 - Transfer From Liquidity Bootstrapping Budget To Spark For Market Makers</dfn> and <dfn>A.2.10 - Transfer From Liquidity Bootstrapping Budget To Spark For Exchanges</dfn>.</p><p>No penalties were applied under <dfn>A.2.10 - Token Launch Penalty</dfn>.</p></td>
+        </tr>
+        <tr>
+          <td>
             <dfn>A.2.10 - Cessation Of MKR and SKY Token Flow</dfn>
           </td>
           <td>Cessation Of MKR and SKY Token Flow</td>
@@ -10928,7 +10952,7 @@
           </td>
           <td>Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Market Makers</td>
           <td>Core</td>
-          <td>Sky has transferred 2 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to market makers (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and refunded by the Spark Foundation to the Sky Ecosystem Liquidity Bootstrapping Budget at the time of the Genesis Capital Allocation.</td>
+          <td>Sky has transferred 2 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to market makers (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and deducted from Spark's allocated capital funds at the time of the Capital Transfer.</td>
         </tr>
         <tr>
           <td>
@@ -10936,7 +10960,7 @@
           </td>
           <td>Treatment of Expenses Paid By Sky Pre-TGE - Transfer From Liquidity Bootstrapping Budget To Spark For Exchanges</td>
           <td>Core</td>
-          <td>Sky will transfer 2.4 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to exchanges (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and refunded by the Spark Foundation to the Sky Ecosystem Liquidity Bootstrapping Budget at the time of the Genesis Capital Allocation.</td>
+          <td>Sky has transferred 2.4 million USDS from the Sky Ecosystem Liquidity Bootstrapping Budget to Spark to provide liquidity to exchanges (see <dfn>A.5.9 - Launch Project - Sky Ecosystem Liquidity Bootstrapping</dfn>). This amount shall be treated as an advance against Spark's Genesis Capital Allocation and deducted from Spark's allocated capital funds at the time of the Capital Transfer.</td>
         </tr>
         <tr>
           <td>
@@ -12356,9 +12380,9 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.2 - Core Stability Parameters - Agent Rate - Spark</dfn>
+            <dfn>A.3.2 - Core Stability Parameters - Parameters - Agent Rate - Spark</dfn>
           </td>
-          <td>Core Stability Parameters - Agent Rate - Spark</td>
+          <td>Core Stability Parameters - Parameters - Agent Rate - Spark</td>
           <td>Core</td>
           <td>Spark is entitled to a higher Agent Rate equal to the Base Rate on USDS and sUSDS balances held in Peg Stability Modules. See <dfn>A.3.4 - Peg Stability Module</dfn>. The Agent Rate earned by Spark is still subject to the limitations set forth in <dfn>A.3.2 - Core Stability Parameters - Parameters - Agent Rate - Limitations For Star Agents Receiving Subsidized Rate</dfn>.</td>
         </tr>
@@ -12587,16 +12611,17 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Near Term Treatment</dfn>
+            <dfn>A.3.3 - Near-Term Treatment</dfn>
           </td>
-          <td>Near Term Treatment</td>
+          <td>Near-Term Treatment</td>
           <td>Core</td>
           <td>In the near term pending development of the implementation of the model for perpetual positions, the following Instance Financial RRC Ratios will apply:
             <ul>
               <li>Direct Ethena exposure - 3% Instance Financial RRC Ratio</li>
-              <li>Indirect Ethena exposure through Morpho - 3% Instance Financial RRC Ratio</li>
+              <li>Indirect Ethena exposure through lending markets - 4% Instance Financial RRC Ratio</li>
               <li>All other protocols - 4% Instance Financial RRC Ratio</li>
             </ul>
+            For indirect Ethena exposure through lending markets, only the portion of the exposure to the lending market that is backed by Ethena-related assets (including PT-USDe, PT-sUSDe, and PT-eUSDe) is subject to the Instance Financial RRC Ratio specified above. The Instance Financial RRC Ratio for the remaining portion of the exposure is calculated based on the nature of the assets backing the exposure.
           </td>
         </tr>
         <tr>
@@ -12625,11 +12650,16 @@
         </tr>
         <tr>
           <td>
-            <dfn>A.3.3 - Near Term Treatment</dfn>
+            <dfn>A.3.3 - Near-Term Treatment</dfn>
           </td>
-          <td>Near Term Treatment</td>
+          <td>Near-Term Treatment</td>
           <td>Core</td>
-          <td>In the near term pending development of the implementation of the model for bond-like exposures, a 4% Instance Financial RRC Ratio will be applied to all bond-like exposures. In the near term, only Pendle PT tokens will be eligible for investment under this provision.</td>
+          <td>In the near term pending development of the implementation of the model for bond-like exposures, the following Instance Financial RRC Ratios will apply:
+            <ul>
+              <li>PT-USDS - 0% Instance Financial RRC Ratio</li>
+              <li>All other bond-like exposures - 4% Instance Financial RRC Ratio</li>
+            <ul>
+            In the near term, only Pendle PT tokens will be eligible for investment under this provision.</td>
         </tr>
         <tr>
           <td>
@@ -13278,7 +13308,16 @@
           </td>
           <td>Fluid</td>
           <td>Core</td>
-          <td>The Instance Financial RRC Ratio for Fluid is 3%.</td>
+          <td>The Instance Financial RRC Ratio for Fluid is 3% of the amount of funds supplied to Fluid that are borrowed.</td>
+        </tr>
+        <tr>
+          <tr>
+          <td>
+            <dfn>A.3.3 - Ethena-Related Assets</dfn>
+          </td>
+          <td>Ethena-Related Assets</td>
+          <td>Core</td>
+          <td>The portion of exposure to lending markets that is backed by Ethena-related assets is not subject to the standard Instance Financial RRC calculation. Instead, an alternative calculation method applies: the Instance Financial RRC Ratio for indirect Ethena exposure through lending markets should be applied for this portion. See <dfn>A.3.3 - Near-Term Treatment</dfn>. This portion of exposure is calculated based on the proportional debt amount backed by Ethena-related assets, weighted by the collateral amount times liquidation threshold.</td>
         </tr>
         <tr>
           <td>
@@ -15310,6 +15349,23 @@
           <td>Actively Stabilizing Collateral</td>
           <td>Core</td>
           <td>Actively Stabilizing Collateral must provide buy support at a price of at least 0.999 USD per USDS (10bps downside spread). Actively Stabilizing Collateral includes cash stablecoins (e.g., USDC, USDT) in PSMs or decentralized exchanges (e.g., Curve), other stablecoins, crypto assets, or off-chain Real World Asset (RWA) loans to market makers, provided they meet the specified redemption price and transparency requirements.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>A.3.4 - Actively Stabilizing Collateral Calculations</dfn>
+          </td>
+          <td>Actively Stabilizing Collateral Calculations</td>
+          <td>Core</td>
+          <td>Actively Stabilizing Collateral is currently calculated as the sum of:
+            <ol>
+              <li>USDC in the LitePSM;</li>
+              <li>USDC in the PSM3 on Base, Arbitrum, Unichain, Optimism;</li>
+              <li>USDT in Curve;</li>
+              <li>USDC in GUNI 0.01%;</li>
+              <li>USDC in GUNI 0.05%; and</li>
+              <li>USDC & USDT in a Star ALM Proxy.</li>
+            </ol>
+          </td>
         </tr>
         <tr>
           <td>
@@ -21241,7 +21297,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Spark Governance. Sky Governance retains the ability to revert where Spark is in violation of Junior Risk Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.</td>
+          <td>Token emissions beyond the Genesis Supply are permanently disabled; this cannot be reverted by Spark Governance. Sky Governance retains the ability to revert where Spark is in violation of Risk Capital requirements and emissions are required by the Risk Framework. See <dfn>A.3.3</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -21305,7 +21361,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><p>The SPK Company Ltd account will transfer all of the SPK tokens held by it, other than the tokens specified in Transfer Of Tokens For Token Launch, to the Spark Foundation. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The address of the Spark Foundation on the Ethereum Mainnet will be specified in a future iteration of the Spark Artifact.</p></td>
+          <td><p>The SPK Company Ltd account will transfer all of the SPK tokens held by it, other than the tokens specified in <dfn>Transfer Of Tokens For Token Launch</dfn>, to the Spark Foundation. The SPK Company Ltd account is specified in <dfn>Minting Of Tokens To SPK Company Ltd</dfn>.</p><p>The address of the Spark Foundation on the Ethereum Mainnet is <code>0x92e4629a4510AF5819d7D1601464C233599fF5ec</code>.</p></td>
         </tr>
         <tr>
           <td>
@@ -21795,11 +21851,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Short Term Transitionary Measures</dfn>
+            <dfn>Short-Term Transitionary Measures</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>In the short term, the parameters of the Spark Liquidity Layer, SparkLend, and Spark Savings are controlled by Sky Core, but will be transitioned to Spark in a future iteration of the Spark Artifact. See <dfn>SparkLend Risk Parameters Modification</dfn>.</td>
+          <td>The parameters specified in <dfn>Allocation System Primitive</dfn> and <dfn>SparkLend</dfn> will be controlled by Sky Core Governance until Sky determines that the SPK token is decentralized enough to allow for meaningful governance by tokenholders. At such time, which is currently estimated for September 17, 2025, control will transition to Spark Governance. This transitionary measure ensures better decentralization of the SPK token before Spark Governance takes full control of the named parameters under the Root Edit Primitive.</td>
         </tr>
         <tr>
           <td>
@@ -23471,7 +23527,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein contain a Directory of all Instances on the Base Mainnet of the Allocation System Primitive with Instance status of <code>Active</code>.</td>
+          <td>The documents herein contain a Directory of all Instances on Base of the Allocation System Primitive with Instance status of <code>Active</code>.</td>
         </tr>
         <tr>
           <td>
@@ -23479,15 +23535,15 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Base Mainnet Instances Directory of the Morpho Protocol with <code>Active</code> Status are stored herein.</td>
+          <td>The Base Instances Directory of the Morpho Protocol with <code>Active</code> Status are stored herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Base Mainnet - Morpho Blue USDC ERC4626 Vault Instance Configuration Location</dfn>
+            <dfn>Base - Morpho Blue USDC ERC4626 Vault Instance Configuration Document Location</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This Instance's associated Instance Configuration Document is located at <dfn>Base Mainnet - Morpho Blue USDC ERC4626 Vault Instance Configuration Document</dfn>.</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Base - Morpho Blue USDC ERC4626 Vault Instance Configuration Document</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -23495,15 +23551,31 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Base Mainnet Instances Directory of the Fluid Protocol with <code>Active</code> Status are stored herein.</td>
+          <td>The Base Instances Directory of the Fluid Protocol with <code>Active</code> Status are stored herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Base Mainnet - Fluid sUSDS ERC4626 Vault Instance Configuration Location</dfn>
+            <dfn>Base - Fluid sUSDS ERC4626 Vault Instance Configuration Document Location</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>This Instance's associated Instance Configuration Document is located at <dfn>Base Mainnet - Fluid sUSDS ERC4626 Vault Instance Configuration Document</dfn>.</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Base - Fluid sUSDS ERC4626 Vault Instance Configuration Document</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Aave</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The Base Instances Directory of the Aave Protocol with <code>Active</code> Status are stored herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Base - Aave USDC Instance Configuration Document Location</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This Instance's associated Instance Configuration Document is located at <dfn>Base - Aave USDC Instance Configuration Document</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -26150,7 +26222,7 @@
             <pre><code>
               foreignController.redeemERC4626(address(token), token.balanceOf(address(proxy)))
             </code></pre>
-            For more detailed instructions on the code to execute this, see <dfn>General Withdraw from ERC-4626 Tokens Procedure</dfn> and <dfn>General Redeem from ERC-4626 Tokens Procedure</dfn>.
+            For more detailed instructions on the code to execute this, see <dfn>Withdraw ERC-4626 Tokens</dfn> and <dfn>Redeem ERC-4626 Tokens</dfn>.
           </td>
         </tr>
         <tr>
@@ -26161,9 +26233,9 @@
           <td>Core</td>
           <td>In order to withdraw all AToken balances, the operator must execute the following action:
             <pre><code>
-              foreignController.withdrawAave(aToken, aToken.balanceOf(address(proxy))
+              foreignController.withdrawAave(aToken, aToken.balanceOf(address(proxy)))
             </code></pre>
-            For more detailed instructions on the code to execute this, see <dfn>General Withdraw from Aave ATokens Procedure</dfn>.
+            For more detailed instructions on the code to execute this, see <dfn>Withdraw Aave ATokens</dfn>.
           </td>
         </tr>
         <tr>
@@ -29419,11 +29491,11 @@
         </tr>
         <tr>
           <td>
-            <dfn>Base Mainnet</dfn>
+            <dfn>Base</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Base Mainnet Instances of the Spark Liquidity Layer with <code>Active</code> Status are stored herein.</td>
+          <td>The Base Instances of the Spark Liquidity Layer with <code>Active</code> Status are stored herein.</td>
         </tr>
         <tr>
           <td>
@@ -29431,11 +29503,11 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Base Mainnet Instances of the Morpho Protocol with <code>Active</code> Status are stored herein.</td>
+          <td>The Base Instances of the Morpho Protocol with <code>Active</code> Status are stored herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Base Mainnet - Morpho Blue USDC ERC4626 Vault Instance Configuration Document</dfn>
+            <dfn>Base - Morpho Blue USDC ERC4626 Vault Instance Configuration Document</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
@@ -29447,8 +29519,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><strong>Pending</strong></td>
-        </tr>
+          <td><strong><code>Covered</code></strong></td>
         <tr>
           <td>
             <dfn>Parameters</dfn>
@@ -29463,7 +29534,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
+          <td>The documents herein define the Instance identifiers.</td>
         </tr>
         <tr>
           <td>
@@ -29471,7 +29542,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Base Mainnet</td>
+          <td>Base</td>
         </tr>
         <tr>
           <td>
@@ -29585,11 +29656,11 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The Base Mainnet Instances of the Fluid Protocol with <code>Active</code> Status are stored herein.</td>
+          <td>The Base Instances of the Fluid Protocol with <code>Active</code> Status are stored herein.</td>
         </tr>
         <tr>
           <td>
-            <dfn>Base Mainnet - Fluid sUSDS ERC4626 Vault Instance Configuration Document</dfn>
+            <dfn>Base - Fluid sUSDS ERC4626 Vault Instance Configuration Document</dfn>
           </td>
           <td>Spark</td>
           <td>Core</td>
@@ -29601,8 +29672,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><strong><code>Pending</code></strong></td>
-        </tr>
+          <td><strong><code>Covered</code></strong></td>
         <tr>
           <td>
             <dfn>Parameters</dfn>
@@ -29617,7 +29687,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>The documents herein define the Instance identifiers</td>
+          <td>The documents herein define the Instance identifiers.</td>
         </tr>
         <tr>
           <td>
@@ -29625,7 +29695,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Base Mainnet</td>
+          <td>Base</td>
         </tr>
         <tr>
           <td>
@@ -29735,6 +29805,168 @@
         </tr>
         <tr>
           <td>
+            <dfn>Aave</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The Base Instances of the Aave Protocol with <code>Active</code> Status are stored herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Base - Aave USDC Instance Configuration Document</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain the Instance Configuration Document for the Aave USDC Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>RRC Framework Full Implementation</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><strong><code>Pending</code></strong></td>
+        <tr>
+          <td>
+            <dfn>Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the parameters of the Aave USDC Instance of the Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance Identifiers</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance identifiers.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Network</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Base</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Target Protocol</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>Aave</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Asset Supplied By SLL</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>USDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>aBasUSDC</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Contract Addresses</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein define the Instance contract addresses.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Token Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Underlying Asset Address</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td><code>0x4e65fE4DbA92790696d040ac24Aa414708F5c0AB</code></td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Pool</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>This parameter will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Rate Limit IDs</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The specific <code>RateLimitID</code>(s) for this conduit's inflow and outflow will be specified in a future iteration of the Spark Artifact.</td>
+        </tr>
+        <tr>
+          <tr>
+          <td>
+            <dfn>Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The current <code>maxAmount</code> and <code>slope</code> for this conduit's inflow/outflow are defined in the subdocuments herein.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Inflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The inflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: 50,000,000</li>
+              <li><code>slope</code>: 25,000,000</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Outflow Rate Limits</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The outflow rate limits are:
+            <ul>
+              <li><code>maxAmount</code>: Unlimited</li>
+              <li><code>slope</code>: Unlimited</li>
+            </ul>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Off-chain Operational Parameters</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain specific off-chain parameters for this Instance.</td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Instance-specific Operational Processes</dfn>
+          </td>
+          <td>Spark</td>
+          <td>Core</td>
+          <td>The documents herein contain operational procedures or monitoring requirements unique to this Instance that deviate from or otherwise supplement the general SLL processes. For the general operational procedures applicable to all Aave-type instances. See <dfn>Aave Functions</dfn> and <dfn>Aave AToken Withdrawal Action</dfn>. For detailed example of the SLL interaction logic for depositing to and withdrawing from Aave see <dfn>Process Definition For Depositing</dfn> and <dfn>Process Definition For Withdrawing</dfn>.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>Arbitrum</dfn>
           </td>
           <td>Spark</td>
@@ -29763,7 +29995,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td><strong><code>Pending</code></strong></td>
+          <td><strong><code>Covered</code></strong></td>
         </tr>
         <tr>
           <td>
@@ -29941,7 +30173,7 @@
           </td>
           <td>Spark</td>
           <td>Core</td>
-          <td>Etherum Mainnet</td>
+          <td>Arbitrum</td>
         </tr>
         <tr>
           <td>
@@ -35718,7 +35950,7 @@
           </td>
           <td>Launch Agent 1</td>
           <td>Core</td>
-          <td>Launch Agent 1 engaged in terms of agreement with the Spark Agent in Ecosystem Accord 1, located in located in <dfn>A.2.10 - Ecosystem Accord 1: Launch Agent 1 And Spark Agent</dfn>.</td>
+          <td>Launch Agent 1 engaged in terms of agreement with the Spark Agent in Ecosystem Accord 1, located in <dfn>A.2.10 - Ecosystem Accord 1: Launch Agent 1 And Spark Agent</dfn>.</td>
         </tr>
         <tr>
           <td>
@@ -39436,6 +39668,15 @@
           <td>Core</td>
           <td>
             The documents herein specify Launch Agent 2 governance information that is unrelated to the use of the Root Edit Primitive. The governance process for updating the Launch Agent 2 Artifact is specified in the Root Edit Primitive above at <dfn>Root Edit Primitive</dfn>.
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <dfn>Use Of Idle Funds</dfn>
+          </td>
+          <td>Use Of Idle Funds</td>
+          <td>Core</td>
+          <td>In the short term prior to Launch Agent 2's implementation of the Allocation System Primitive, Launch Agent 2 may invest idle funds in low-risk decentralized finance opportunities, including providing liquidity to established lending protocols on Solana. These deployments will be subject to the approval of Operational GovOps.
           </td>
         </tr>
         <tr>
