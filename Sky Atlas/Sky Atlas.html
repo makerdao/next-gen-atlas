@@ -12539,11 +12539,19 @@
         </tr>
         <tr>
           <td>
+            <dfn>A.3.2 - Core Stability Parameters - Parameters - Agent Credit Line Borrow Rate - Use Of Funds</dfn>
+          </td>
+          <td>Core Stability Parameters - Parameters - Agent Credit Line Borrow Rate - Use Of Funds</td>
+          <td>Core</td>
+          <td>Funds borrowed by Agents from Sky at the Agent Credit Line Borrow Rate must be deposited into the Agent’s Allocation Vault and used to invest in Allocation System Instances. See <dfn>A.2.4 - Allocation System Primitive</dfn>. These funds may not be transferred to the Agent’s SubProxy account or otherwise outside of the Agent’s designated accounts for its Allocation System Primitive.</td>
+        </tr>
+        <tr>
+          <td>
             <dfn>A.3.2 - Core Stability Parameters - Parameters - Agent Credit Line Borrow Rate - Accrued Interest</dfn>
           </td>
           <td>Core Stability Parameters - Parameters - Agent Credit Line Borrow Rate - Accrued Interest</td>
           <td>Core</td>
-          <td>Funds must be regularly transferred from the SubProxy account of each Star Agent borrowing from Sky Core to the Allocation Vault for the Star Agent so that the Allocation Vault only reflects the principal balance as of the date of transfer. Any accrued interest that has not yet been transferred from the SubProxy account must be deducted from the Star Agent's Total Risk Capital. See <dfn>A.3.3 - Total Risk Capital Definition</dfn>.</td>
+          <td>Interest accrues on borrowed funds and is reflected in the Allocation Vault balance. Star Agents must regularly transfer interest payments to the Allocation Vault to pay down accrued interest, ensuring the Allocation Vault balance returns to the principal amount only. Any accrued but unpaid interest reduces the Star Agent’s available Total Risk Capital. See <dfn>A.3.3 - Total Risk Capital Definition</dfn>.</td>
         </tr>
         <tr>
           <td>
